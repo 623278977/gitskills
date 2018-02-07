@@ -1,0 +1,51 @@
+<h2 class="title-h2 absolute">
+    获取最新版——xihuan
+</h2>
+<p class="p-pub-title">url链接：/api/version/new</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>platform（必）</td>
+        <td>终端平台（android|ios）</td>
+    </tr>
+    <tr>
+        <td>number（必）</td>
+        <td>当前版本号</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {"message":{"version":"1.1.1","comment":"","downurl":"http:\/\/admin.wjsq.loc\/down\/android_1.1.1.apk","upgrade":"1"},"status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>version</td>
+        <td>最新版本</td>
+    </tr>
+    <tr>
+        <td>comment</td>
+        <td>版本说明</td>
+    </tr>
+    <tr>
+        <td>downurl</td>
+        <td>下载地址</td>
+    </tr>
+    <tr>
+        <td>force</td>
+        <td>是否强制更新（false|true）当终端版本小于服务器最新版本为true，否则为false</td>
+    </tr>
+    <tr>
+        <td>upgrade</td>
+        <td>是否更新（false|true）当终端版本小于服务器最新版本为true，否则为false</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

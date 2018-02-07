@@ -1,0 +1,28 @@
+.padding00{
+	padding:0 1.5rem 0 0;
+}
+.width20{
+	width:7rem;
+}
+.add_ui1 {
+    width: 100%;
+    padding: 1.2rem 0 1.2rem 1.2rem;
+}
+.ui_refus{
+    width:100%;
+    height:auto;
+ }
+ .ui_refus li{
+    float:left;
+    display:inline-block;
+ }
+ .ui_refus li:nth-child(1){
+    width:20%;
+    text-align:left;
+ }
+ .ui_refus li:nth-child(2){
+    width:80%;
+    text-align:right;
+    word-break:break-all;
+    padding-left: 1rem;
+ }

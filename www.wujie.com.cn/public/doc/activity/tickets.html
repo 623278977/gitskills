@@ -1,0 +1,156 @@
+<h2 class="title-h2 absolute">
+    活动门票——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/tickets</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>活动id(必)</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>登录用户uid，未登录传0(必)</td>
+    </tr>
+    <!--<tr>-->
+        <!--<td>is_share</td>-->
+        <!--<td>默认0获取所有票，1获取分享现场票</td>-->
+    <!--</tr>-->
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": [
+    {
+    "id": 1,
+    "activity_id": 2,
+    "type": 2,
+    "price": "2",
+    "intro": "现场参加",
+    "num": 20,
+    "status": 1,
+    "remark": "123",
+    "created_at": 1465012425,
+    "updated_at": 1465012425,
+    "surplus": 20,
+    "is_share": "yes",
+    "subject": "活动3",
+    "end_time": 1467431200,
+    "begin_time": 1467341200,
+    "vip_id": 2,
+    "left": 0,
+    "is_over": 1,
+    "is_vip": 0
+    },
+    {
+    "id": 2,
+    "activity_id": 2,
+    "type": 1,
+    "price": "20",
+    "intro": "现场参加",
+    "num": 20,
+    "status": 1,
+    "remark": "www",
+    "created_at": 1465012425,
+    "updated_at": 1468566952,
+    "surplus": 20,
+    "is_share": "no",
+    "subject": "活动3",
+    "end_time": 1467431200,
+    "begin_time": 1467341200,
+    "vip_id": 2,
+    "left": 7,
+    "is_over": 1,
+    "is_vip": 0
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }
+
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>门票id(string)</td>
+    </tr>
+    <tr>
+        <td>activity_id</td>
+        <td>活动id(string)</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>门票类型 1现场票 2直播票</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>价格(string)</td>
+    </tr>
+    <tr>
+        <td>intro</td>
+        <td>门票介绍(string)</td>
+    </tr>
+    <tr>
+        <td>num</td>
+        <td>门票总数量(string)</td>
+    </tr>
+    <tr>
+        <td>remark</td>
+        <td>备注(string)</td>
+    </tr>
+    <tr>
+        <td>left</td>
+        <td>该类型门票还剩下多少(num)</td>
+    </tr>
+    <tr>
+        <td>is_over</td>
+        <td>该场活动是否已经结束，1：已结束，0：未结束(num)</td>
+    </tr>
+    <tr>
+        <td>is_share</td>
+        <td>该门票是否允许通过分享活动 1:可分享 0：不可分享</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>该门票所属于的活动是否为专版活动， 如果是则返回该专版的id， 如果不是则返回0</td>
+    </tr>
+    <tr>
+        <td>is_vip</td>
+        <td>当前登录用户是否是该活动的有效会员 1:代表是，0:代表不是</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动名称</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>活动开始时间</td>
+    </tr>
+    <tr>
+        <td>end_time</td>
+        <td>活动结束时间</td>
+    </tr>
+    <tr>
+        <td>maker_id</td>
+        <td>活动主办场地空间id</td>
+    </tr>
+    <tr>
+        <td>address </td>
+        <td>活动主办场地空间地址</td>
+    </tr>
+    <tr>
+        <td>maker_subject </td>
+        <td>活动主办场地空间名称</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

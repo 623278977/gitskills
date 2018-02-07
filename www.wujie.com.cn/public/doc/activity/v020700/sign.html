@@ -1,0 +1,87 @@
+<h2 class="title-h2 absolute">
+    活动签到——yaokai
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/sign/_v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>activity_id(必)</td>
+        <td>活动id(string)</td>
+    </tr>
+    <tr>
+        <td>maker_id(必)</td>
+        <td>ovo中心id</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+    {
+    "message": "签到成功",
+    "status": true,
+    "forwardUrl": ""
+    }
+
+    标准活动返回数据
+    {
+    "message": {
+    "subject": "北京3W咖啡，C",
+    "list_img": "http://dev.wjsq3.loc//attached/image/20161018/_large/20161018143909_32223.jpg",
+    "activity_begin_time": "2016-10-18 16:00",
+    "live_begin_time": "1970-01-01 08:00",
+    "user": "",
+    "maker": "硅谷OVO运营中心",
+    "sign_time": "2016-06-24 15:22"
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+
+        标准活动其他情况返回数据
+    {
+      "message": {
+        "message": "没有在该会场报名活动",
+        "type": "0"
+      },
+      "status": false,
+      "forwardUrl": ""
+    }
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+返回half_open,说明该活动是半开放的活动,需要调用临时签到接口
+返回数组,说明该活动是标准活动,返回的数据用于页面展示:
+{
+"message": {
+"subject": "北京3W咖啡，C",
+"list_img": "http://dev.wjsq3.loc//attached/image/20161018/_large/20161018143909_32223.jpg",
+"activity_begin_time": "2016-10-18 16:00",
+"live_begin_time": "1970-01-01 08:00",
+"user": "",
+"maker": "硅谷OVO运营中心",
+"sign_time": "2016-06-24 15:22"
+},
+"status": true,
+"forwardUrl": ""
+}
+<p class="p-pub-title b">参数说明（返回参数可补充）除了新参数其他参数可参照之前</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>(新)标准活动时返回数据</td>
+        <td>message.type 为0则为未报名活动，为1则为已签到 为2则为活动已结束</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

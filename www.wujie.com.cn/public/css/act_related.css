@@ -1,0 +1,167 @@
+/*12.12 活动时间、地点、报名人数*/
+
+.time{
+	padding-left:1.333rem;
+	font-size: 1.4rem;
+}
+
+.c0{
+    color:#000;
+    padding-top:1rem;
+    border-bottom:1px solid #ddd;
+}
+
+.c6{
+    color:#666;
+    padding-top:1rem;
+    border-bottom:0.1px solid #f2f2f2;
+}
+
+.f63{
+	color:#ff6633;
+}
+.ovo_name{
+	color:#666;
+	font-size: 1.4rem;
+	margin:0;
+}
+.c9{
+	color:#999;
+	font-size: 1.2rem;
+	margin:0;
+}
+.address{
+	padding:1.2rem 1.33rem 1.2rem 0;
+}
+#address div:nth-last-child(2){
+	margin-bottom :4.9rem;
+}
+#address div:nth-last-child(2)::after{
+	background: transparent;
+}
+
+.footer{
+	height: 4.9rem;
+    font-size: 1.2rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    text-align: center;
+    line-height: 4.9rem;
+}
+.footer>span{
+	opacity: 0.95;
+}
+.signup{
+	color:#fff;
+	font-size:1.6rem;
+	background: #6BC24B;
+	height:100%;
+	width:40%;
+	border:none;
+	float:right;
+}
+.gomap {
+    float: right;
+    width: 0.6rem;
+    height: 1.1rem;
+    margin-top: 2rem;
+}
+
+.enrollment{
+	background: #f2f2f2;
+	margin-top:0.8rem;
+	padding-left:1.33rem;
+}
+.enroll{
+	padding:1.2rem 0;
+	margin:0;
+	line-height:3.33rem;
+}
+.enroll span{
+	vertical-align: middle;
+}
+.enroll img{
+	width:3.33rem;
+	height:3.33rem;
+
+}
+.name{
+	font-size: 1.6rem;
+	color:#333;
+	margin-left:1.3rem;
+}
+.enrollment p:last-child::after{
+	background: transparent;
+}
+.ticket{
+	float: right;
+	margin-right:1.33rem;
+	color:#999;
+	font-size: 1.2rem;
+}
+.more{
+	color:#999;
+	font-size:1.2rem;
+	text-align: center;
+	padding: 4.7rem 0;
+	background-color: #f9f9f9;
+}
+.no_data{
+	text-align: center;
+	background-color: #f2f2f2!important;
+	margin-top:16rem;
+}
+.no_data>img {
+	width:9.5rem;
+	height: 8.9rem;
+}
+.nomessage{
+	color:#00a0ff;
+	margin-top:2rem;
+}
+
+/*2.5.2更新*/
+
+.c00a{
+	color: #00a0ff;
+}
+.c8a{
+	color:#8a869e;
+}
+.tc{
+	text-align: center;
+}
+.baoming{
+	padding:1rem 1.3rem;
+}
+.bf{
+	background: #fff;
+}
+.address_intro{
+	padding-right:1.33rem;
+}
+.address_intro p{
+	overflow: hidden;
+	margin:0;
+	padding:1.5rem 0rem 1.5rem 1.33rem;
+}
+.bmap{
+	text-align: right;
+	padding:2rem 0;
+	font-weight: bold;
+
+}
+.bmap span{
+	padding-right:1.1rem;
+}
+.bmap img{
+	width:0.8rem;
+	height:1.4rem;
+	vertical-align: middle;
+}
+.mt4{
+	margin-top:4rem;
+}

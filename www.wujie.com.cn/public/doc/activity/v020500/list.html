@@ -1,0 +1,184 @@
+<h2 class="title-h2 absolute">
+    活动列表——pengwt
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/list/_v020500</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+    <tr>
+        <td>pageSize</td>
+        <td>分页长度(默认15)</td>
+    </tr>
+    <tr>
+        <td>maker_id</td>
+        <td>ovo中心id(不传取所有活动)</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>1将来活动(默认)2过去活动 0所有活动</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>专版id(非必传)</td>
+    </tr>
+    <tr>
+        <td>keywords</td>
+        <td>关键词</td>
+    </tr>
+    <tr>
+        <td>hotwords</td>
+        <td>热门关键字</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": [
+    {
+    "id": 1267,
+    "subject": "男子三星工厂持枪抢劫350部note7 过年回家自首",
+    "keywords": [],
+    "end_time": 1486465200,
+    "list_img": "http://dev.wjsq3.loc//attached/image/20170207/_large/20170207101859_83278.jpg",
+    "begin_time": "02/07",
+    "created_at": 1486434115,
+    "is_recommend": 1,
+    "is_hot": 1,
+    "vip_id": 0,
+    "view": 2,
+    "maker_id": 94,
+    "city": "北京市",
+    "price": -1,
+    "ticket_num": 1,
+    "is_vip": 0,
+    "is_new": 1,
+    "host_cities": [
+    "北京",
+    "贵阳"
+    ],
+    "is_shareable": 0,
+    "isOver": -1,
+    "url": "http://dev.wjsq3.loc/webapp/activity/detail?id=1267&pagetag=02-2",
+    "brand_name": "",
+    "begin_time_format": "02月07日 09:00",
+    "live_support": 0,
+    "sign": 0,
+    "dataCount": 298
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>活动id(string)</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动标题(string)</td>
+    </tr>
+    <tr>
+        <td>view</td>
+        <td>浏览量(string)</td>
+    </tr>
+    <tr>
+        <td>list_img</td>
+        <td>列表页图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>detail_img</td>
+        <td>一张详情图片地址(string)，isOver==-1时才存在该值</td>
+    </tr>
+    <tr>
+        <td>is_recommend</td>
+        <td>是否推荐0否 1是</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>开始时间</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>门票价格</td>
+    </tr>
+    <tr>
+        <td>isOver</td>
+        <td>活动是否已经结束 1:已经结束 0:未开始 -1:正在进行</td>
+    </tr>
+    <tr>
+        <td>city</td>
+        <td>举行该场活动的城市</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>举行该场活动的城市的类型（主办方，协办方），当有多个时，以@隔开,与上面的city字段对应(string或array)</td>
+    </tr>
+    <tr>
+        <td>url</td>
+        <td>当前活动的链接</td>
+    </tr>
+    <tr>
+        <td>is_vip</td>
+        <td>是否为专版活动(1是，0否)</td>
+    </tr>
+    <tr>
+        <td>is_hot</td>
+        <td>是否为热门活动(1是，0否)</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>专版ID</td>
+    </tr>
+    <tr>
+        <td>ticket_num</td>
+        <td>门票数量</td>
+    </tr>
+    <tr>
+        <td>is_shareable</td>
+        <td>是否可分享(1是，0否)</td>
+    </tr>
+    <tr>
+        <td>share_score</td>
+        <td>分享送积分数</td>
+    </tr>
+    <tr>
+        <td>keywords</td>
+        <td>关键字</td>
+    </tr>
+    <tr>
+        <td>brand_name</td>
+        <td>品牌名称</td>
+    </tr>
+    <tr>
+        <td>begin_time_format</td>
+        <td>开始时间,对应020500版本</td>
+    </tr>
+    <tr>
+        <td>live_support</td>
+        <td>直播支持 1 是 0 否</td>
+    </tr>
+    <tr>
+        <td>sign</td>
+        <td>正在报名中 1 是 0 否</td>
+    </tr>
+    <tr>
+        <td>dataCount</td>
+        <td>数据总数</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

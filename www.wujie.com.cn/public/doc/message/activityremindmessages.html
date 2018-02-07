@@ -1,0 +1,215 @@
+<h2 class="title-h2 absolute">
+    活动提醒——tangem
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/message/activityremindmessages</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>分页长度(默认15)</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>用户uid（必）</td>
+    </tr>
+    <tr>
+        <td>Demo Params</td>
+        <td>uid=183680</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+<pre>
+
+</pre>
+    {
+    "message": [
+    {
+    "type": 2,
+    "activities": [
+    {
+    "subject": "12-杭州站",
+    "activity_id": 306,
+    "begin_time": "08/10 00:00",
+    "ovo_name": "杭州下城区OVO运营中心",
+    "ovo_id": 1,
+    "ovo_address": "杭州大厦8楼801室",
+    "price": "1",
+    "list_img": "attached/image/20160810/20160810095722_92960.jpg",
+    "tip": "活动将于明天举行，请届时准时赴会参加",
+    "highlightSubstringOfTip": "明天"
+    }
+    ]
+    },
+    {
+    "type": 1,
+    "activities": [
+    {
+    "subject": "12-杭州站",
+    "activity_id": 306,
+    "begin_time": "08/10 00:00",
+    "ovo_name": "杭州下城区OVO运营中心",
+    "ovo_id": 1,
+    "ovo_address": "杭州大厦8楼801室",
+    "price": "1",
+    "list_img": "attached/image/20160810/20160810095722_92960.jpg",
+    "tip": "你已成功订购活动门票,收取活动费用1届时请准点参加活动",
+    "highlightSubstringOfTip": "你已成功订购活动门票,收取活动费用1届时请准点参加活动"
+    }
+    ]
+    },
+    {
+    "type": 1,
+    "activities": [
+    {
+    "subject": "ios-杭州站",
+    "activity_id": 307,
+    "begin_time": "09/30 00:00",
+    "ovo_name": "杭州下城区OVO运营中心",
+    "ovo_id": 1,
+    "ovo_address": "杭州大厦8楼801室",
+    "price": "1",
+    "list_img": "attached/image/20160812/20160812115021_89942.jpg",
+    "tip": "你已成功订购活动门票,收取活动费用1届时请准点参加活动",
+    "highlightSubstringOfTip": "你已成功订购活动门票,收取活动费用1届时请准点参加活动"
+    }
+    ]
+    },
+    {
+    "type": 1,
+    "activities": [
+    {
+    "subject": "22-杭州站",
+    "activity_id": 311,
+    "begin_time": "10/07 00:00",
+    "ovo_name": "杭州下城区OVO运营中心",
+    "ovo_id": 1,
+    "ovo_address": "杭州大厦8楼801室",
+    "price": "1",
+    "list_img": "attached/image/20160814/20160814110809_29058.jpg",
+    "tip": "你已成功订购活动门票,收取活动费用1届时请准点参加活动",
+    "highlightSubstringOfTip": "你已成功订购活动门票,收取活动费用1届时请准点参加活动"
+    }
+    ]
+    },
+    {
+    "activities": [
+    {
+    "subject": "大约2提醒2222",
+    "activity_id": 37,
+    "price": 0,
+    "list_img": "attached/image/20160530/20160530172828_53104.jpg",
+    "begin_time": "01/01"
+    },
+    {
+    "subject": "123123123123",
+    "activity_id": 38,
+    "price": 0,
+    "list_img": "attached/image/20160530/20160530173058_37762.jpg",
+    "begin_time": "01/01"
+    },
+    {
+    "subject": "123123123123123",
+    "activity_id": 39,
+    "price": 0,
+    "list_img": "attached/image/20160530/20160530173421_77747.jpg",
+    "begin_time": "01/01"
+    }
+    ],
+    "type": 4
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>
+            消息类型：1:活动报名成功 2:活动将举办 3:活动临时取消；4:活动关注推荐；5:入驻的ovo中心有活动；6:专版有活动
+        </td>
+    </tr>
+    <tr>
+        <td>created_at</td>
+        <td>
+            消息创建时间
+        </td>
+    </tr>
+    <tr>
+        <td>activities</td>
+        <td>活动列表</td>
+    </tr>
+    <tr>
+        <td>activities.subject</td>
+        <td>消息标题</td>
+    </tr>
+    <tr>
+        <td>activities.activity_id</td>
+        <td>消息关联活动ID</td>
+    </tr>
+    <tr>
+        <td>activities.begin_time</td>
+        <td>消息关联活动开始时间</td>
+    </tr>
+    <tr>
+        <td>activities.ovo_name</td>
+        <td>消息关联活动OVO名</td>
+    </tr>
+    <tr>
+        <td>activities.ovo_id</td>
+        <td>消息关联活动OVOID</td>
+    </tr>
+    <tr>
+        <td>activities.ovo_address</td>
+        <td>消息关联活动OVO地址</td>
+    </tr>
+    <tr>
+        <td>activities.price</td>
+        <td>消息关联活动票价</td>
+    </tr>
+    <tr>
+        <td>activities.score_price</td>
+        <td>消息关联活动积分票价, 只有当type为[1|2|3]的时候才会返回</td>
+    </tr>
+    <tr>
+        <td>activities.pay_way</td>
+        <td>关联的门票的支付方式(weixin,ali,none,score), 只有当type为[1|2|3]的时候才会返回</td>
+    </tr>
+    <tr>
+        <td>activities.ticket_id</td>
+        <td>消息关联活动门票ID</td>
+    </tr>
+    <tr>
+        <td>activities.list_img</td>
+        <td>消息关联活动图片</td>
+    </tr>
+    <tr>
+        <td>activities.tip</td>
+        <td>消息关联活动提示</td>
+    </tr>
+    <tr>
+        <td>activities.highlightSubstringOfTip</td>
+        <td>消息关联活动提示中需高亮显示的子串</td>
+    </tr>
+    <tr>
+        <td>activities.url</td>
+        <td>活动详情地址</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

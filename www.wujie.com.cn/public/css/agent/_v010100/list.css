@@ -1,0 +1,222 @@
+
+.flex{
+          display: flex;
+        }
+.flex-around{
+          justify-content: space-around;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          background: #fff
+        }
+ .flex-around>div{
+ 	text-align: left;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+ }
+.lh45{
+          height: 3.5rem;
+          line-height:3.5rem;
+        }
+.c2873ff{
+          color:#2873ff;
+        }
+.choosen{
+          color:#2873ff;
+          border-bottom: 2px solid #2873ff;
+        }
+.banner{
+          padding-bottom:1.2rem;
+          background: #f2f2f2;
+        }
+.banner .slide_img{
+          width: 100%;
+          height: 12rem;
+        }
+.tf.fline::after{
+            top:-1px;
+            bottom: 0;
+        }
+.ui-pictcon{
+  width:100%;
+  height:12rem;
+  background: url('/images/pict/pict3.png')  no-repeat center;
+  background-size: 100% 100%!important;
+  position: relative;
+}
+.ui-pict{
+	width:4.4rem;
+    height:4.4rem;
+    position: absolute;
+    right:1.5rem;
+    bottom:-1rem;
+}
+footer{
+	background: #fff;
+}
+.con-list{
+	width:100%;
+	padding: 1rem 1.5rem 1rem  1.5rem;
+    
+}
+.con-list li{
+	float:left;
+	display:inline-block;
+	text-align:left;
+	background: #fff
+}
+.con-list li:nth-child(1){
+	width:13%;
+
+}
+.con-list li:nth-child(2){
+	width:87%;
+
+}
+.ui-picture{
+	width:3.3rem;
+	height:3.3rem;
+}
+.soncontain{
+	width:100%;
+}
+.soncontain li{
+	float:left;
+	display: inline-block;
+	width:7.8rem!important;
+	margin-right: 0.5rem;
+	margin-bottom:0.5rem;
+	text-align:left;
+
+}
+.ui-picturson{
+	width:7.8rem;
+	height:7.8rem;
+}
+.con-list button{
+	padding: 0.3rem 1.5rem;
+	border:0;
+	background:#2873ff;
+	color:#fff;
+	border-radius: 0.2rem;
+	
+}
+.style{
+	    width:100%;
+	    height:1rem;
+}
+
+.flex{
+          display: flex;
+        }
+.flex-around{
+          justify-content: space-around;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          background: #fff
+        }
+ .flex-around>div{
+ 	text-align: left;
+  -webkit-tap-highlight-color:rgba(0,0,0,0)!important;
+ }
+.lh45{
+          height: 3.5rem;
+          line-height:3.5rem;
+        }
+.c2873ff{
+          color:#2873ff;
+        }
+.choosen{
+          color:#2873ff;
+          border-bottom: 2px solid #2873ff;
+        }
+.banner{
+          padding-bottom:1.2rem;
+          background: #f2f2f2;
+        }
+.banner .slide_img{
+          width: 100%;
+          height: 12rem;
+        }
+.tf.fline::after{
+            top:-1px;
+            bottom: 0;
+        }
+.ui-pictcon{
+  width:100%;
+  height:12rem;
+  background: url('/images/pict/pict3.png')  no-repeat center;
+  background-size: 100% 100%!important;
+  position: relative;
+}
+.ui-pict{
+	width:4.4rem;
+    height:4.4rem;
+    position: absolute;
+    right:1.5rem;
+    bottom:-1rem;
+}
+footer{
+	background: #fff;
+}
+.con-list{
+	width:100%;
+	padding: 1rem 1.5rem 1rem  1.5rem;
+    
+}
+.con-list li{
+	float:left;
+	display:inline-block;
+	text-align:left;
+	background: #fff
+}
+.con-list li:nth-child(1){
+	width:13%;
+
+}
+.con-list li:nth-child(2){
+	width:87%;
+
+}
+.ui-picture{
+	width:3.3rem;
+	height:3.3rem;
+}
+.soncontain{
+	width:100%;
+}
+.soncontain li{
+	float:left;
+	display: inline-block;
+	width:7.8rem!important;
+	margin-right: 0.5rem;
+	margin-bottom:0.5rem;
+	text-align:left;
+
+}
+.ui-picturson{
+	width:7.8rem;
+	height:7.8rem;
+}
+.con-list button{
+	padding: 0.3rem 1.5rem;
+	border:0;
+	background:#2873ff;
+	color:#fff;
+	border-radius: 0.2rem;
+	
+}
+.style{
+	    width:100%;
+	    height:1rem;
+}
+.newcontain{
+  width:100%;
+}
+.newcontain li{
+  width:24.75rem!important;
+  max-height: 24.75rem!important;
+  overflow: hidden;
+}
+
+.none{
+  display: none!important
+}

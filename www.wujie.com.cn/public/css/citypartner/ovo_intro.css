@@ -1,0 +1,54 @@
+h1{
+    font-size: 24px;
+    color:#666;
+    text-align: center;
+    padding-top:112px;
+    padding-bottom:60px;
+    font-weight: normal;
+}
+.container>div{
+    width:1200px;
+    background-color: #fff;
+    margin:40px auto;
+    border:1px solid #E6E7E8;
+    padding-bottom: 40px;
+}
+h2{
+    color:#333;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 78px;
+    padding-left: 30px;
+}
+.container div >ul,.container div>p{
+    padding:0 60px;
+}
+.container div ul{
+    padding-top:30px;
+}
+.container div ul li h3{
+    font-size: 14px;
+    color: #333;
+}
+.container p{
+    line-height: 24px;
+    color:#666;
+}
+.container div ul>li>p{
+    text-indent: 2em;
+}
+.container .require p{
+    text-indent: 0;
+}
+.require h3{
+    padding-top:30px;
+}
+.container .require >ul{
+    padding-top:0;
+}
+.require ul>li:last-child>p{
+    text-indent: 2em;
+}
+.nav_menu ul li:first-child+li a{
+	color: #23a4f8;
+}

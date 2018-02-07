@@ -1,0 +1,167 @@
+<h2 class="title-h2 absolute">
+    活动列表——pengwt
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/list/_v020400</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>分页长度(默认15)</td>
+    </tr>
+    <tr>
+        <td>maker_id</td>
+        <td>ovo中心id(不传取所有活动)</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>1将来活动(默认)2过去活动 0所有活动</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>专版id</td>
+    </tr>
+    <tr>
+        <td>keywords</td>
+        <td>关键词</td>
+    </tr>
+    <tr>
+        <td>Demo Params</td>
+        <td>maker_id=58</td>
+    </tr>
+    <!--<tr>-->
+        <!--<td>zone_id</td>-->
+        <!--<td>地区id(用来筛选)</td>-->
+    <!--</tr>-->
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": [
+    {
+    "id": 310,
+    "subject": "22-潜江站",
+    "list_img": "attached/image/20160813/20160813135740_60509.jpg",
+    "begin_time": "08/26",
+    "created_at": 1471067881,
+    "is_recommend": 1,
+    "is_hot": 1,
+    "vip_id": 0,
+    "view": 0,
+    "maker_id": 58,
+    "city": "潜江市",
+    "price": "1",
+    "is_vip": 0,
+    "is_new": 1,
+    "category": "C",
+    "is_shareable": 0,
+    "url": "http://mt.wujie.com.cn/webapp/activity/detail?id=310&pagetag=02-2"
+    },
+    {
+    "id": 1224,
+    "subject": "停车场20多辆豪车深夜被砸 男子砸车后裸奔-北京站",
+    "end_time": 1482062400,
+    "list_img": "http://dev.wjsq3.loc//attached/image/20161217/_large/20161217161806_88847.jpg",
+    "begin_time": "12/18",
+    "created_at": 1481962850,
+    "is_recommend": 1,
+    "is_hot": 1,
+    "vip_id": 0,
+    "view": 21,
+    "maker_id": 93,
+    "city": "北京市",
+    "price": "免费",
+    "ticket_num": 1,
+    "is_vip": 0,
+    "is_new": 1,
+    "host_cities": [
+    "北京",
+    "深圳",
+    "贵阳",
+    "哈尔滨"
+    ],
+    "is_shareable": 0,
+    "isOver": 0,
+    "url": "http://mt.wujie.com.cn/webapp/activity/detail?id=1224&pagetag=02-2"
+    }</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>活动id(string)</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动标题(string)</td>
+    </tr>
+    <tr>
+        <td>view</td>
+        <td>浏览量(string)</td>
+    </tr>
+    <tr>
+        <td>list_img</td>
+        <td>列表页图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>is_recommend</td>
+        <td>是否推荐0否 1是</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>开始时间</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>门票价格(string) '免费','xx元起','xx元起' </td>
+    </tr>
+    <tr>
+        <td>isOver</td>
+        <td>活动是否已经结束</td>
+    </tr>
+    <tr>
+        <td>city</td>
+        <td>举行该场活动的城市</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>举行该场活动的城市的类型（主办方，协办方），当有多个时，以@隔开,与上面的city字段对应(string或array)</td>
+    </tr>
+    <tr>
+        <td>url</td>
+        <td>当前活动的链接</td>
+    </tr>
+    <tr>
+        <td>is_vip</td>
+        <td>是否为专版活动(1是，0否)</td>
+    </tr>
+    <tr>
+        <td>is_hot</td>
+        <td>是否为热门活动(1是，0否)</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>专版ID</td>
+    </tr>
+    <tr>
+        <td>ticket_num</td>
+        <td>门票数量</td>
+    </tr>
+    <tr>
+        <td>is_shareable</td>
+        <td>是否可分享(1是，0否)</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

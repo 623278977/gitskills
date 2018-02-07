@@ -1,0 +1,109 @@
+/*zhangxm*/
+p {
+	margin-bottom: 0;
+}
+button {
+	border: 0;
+}
+#container {
+	background-image: url(/images/agent/nybgc.png);
+	width: 100%;
+}
+ .acquirefu,#container,.noacquirefu{
+ 	background-size: 100% 100%;
+ }
+.acquirefu {
+	background-image: url(/images/agent/fuliang.png);
+	
+}
+.acquirefu,.noacquirefu {
+	/*height: 34.35rem;*/
+	border-radius: 0.5rem;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 3.35rem;
+}
+.noacquirefu {
+	background-image: url(/images/agent/fuhui.png);
+}
+.shareFuka,.sendFriend,.blag {
+	width: 13rem;
+	height: 4rem;
+	border-radius: 0.2rem;
+	text-align: center;
+	line-height: 1.45rem;
+}
+.shareFuka {
+    background-color: #f4c85d;
+}
+.look_act {
+	width: 27.65rem;
+	height: 4rem;
+	background-color: #fef9e7;
+	border-radius: 0.2rem;
+	color: #ff422f;
+}
+.sendFriend {
+	background-color: #fef9e7;
+	
+}
+.cff422f {
+	color: #ff422f;
+}
+.c4f3b0b {
+	color: #4f3b0b;
+}
+.acquirefu_btn,.noacquirefu_btn {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.huojiang {
+	text-align: center;
+}
+.huojiang img {
+	width: 20rem;
+	height: 2rem;
+}
+.cfff {
+	color: #FFFFFF;
+}
+.fuka_num {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.sendFuka {
+	width: 27.65rem;
+	height: 4rem;
+	background-color: #e5e5e5;
+	border-radius: 0.2rem;
+	color: #b3b3b3;
+}
+.send_yes {
+	margin-bottom: 3.35rem;
+	text-align: center;
+}
+.fuzi_img {
+	width: 15.45rem;
+	height: 15.45rem;
+	margin-top: 4.15rem;
+}
+.lingxing {
+	width: 0.9rem;
+	height: 0.9rem;
+}
+.fuzi_text {
+	font-size: 1.4rem;
+	color: #f3cb97;
+}
+.fu_wenzi {
+	line-height: 1.4rem;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	margin-top: 1.4rem;
+	margin-bottom: 1.15rem;
+}
+.noacquirefu_text {
+	text-align: center;
+}

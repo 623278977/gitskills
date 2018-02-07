@@ -1,0 +1,375 @@
+body{
+background: #f2f2f2!important;	
+}
+.ui_con{
+	background: #fff;
+	min-height:12rem;
+}
+.padding{
+	padding: 1.5rem 1.5rem 0  1.5rem;
+}
+img{
+	width:100%;
+}
+/*导师照片*/
+.ui_professor_pict{
+	width:100%;
+	height:18.5rem;
+	background: url('/images/pict/pict3.png')  no-repeat center;
+	background-size: 100% 100%!important;
+}
+.ui_professor_text{
+	width:100%;
+	padding:1.5rem 1.5rem  1rem  1.5rem;
+	padding-top: 12rem;
+}
+.ui-nowrap-multi {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3
+}
+/*赋值*/
+body{
+	background: #f2f2f2;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.ui-container{
+	width:100%;
+	padding: 1.5rem  1.5rem;
+	background: #fff;
+}
+.ui-titletext{
+	font-size:2rem;
+}
+.ui-author{
+	width:100%;
+
+}
+.ui-author li{
+	float:left;
+	display:inline-block;
+}
+.ui-author li:nth-child(1){
+	width:15%;
+	text-align:left;
+}
+.ui-author li:nth-child(2){
+	width:85%;
+	text-align:left;
+}
+.ui-pict1{
+	width:4rem;
+	height:4rem;
+	border-radius:50%;
+}
+.ui-add-height{
+	width:100%;
+	height:4rem;
+}
+.ui-text-detail{
+	width:100%;
+	padding:1.5rem 1.5rem;
+	background: #fff;
+}
+.ui-margin{
+        margin: 0 0  3rem  0 ;
+}
+.ui-reltitle{
+	width:100%;
+	height:4.5rem;
+	line-height:4.5rem;
+}
+.color2873ff{
+	color:#2873ff;
+}
+.ui-zan-zhaun{
+	width:100%;
+	display:flex;
+	padding:2rem 0 2rem  0;
+	background: #fff;
+}
+.ui-zan-zhaun li{
+	flex:1;	
+	text-align:center!important;
+}
+.ui-zan-zhaun li button{
+	display:block;
+	width:6.5rem;
+	height:6.5rem;
+	border-radius:50%;
+	border:1px solid #999;
+	background: #fff;
+}
+.ui-margain2{
+	margin:1rem 0  0  0;
+}
+.ui-pict7{
+	width:2.2rem;
+	height:2.2rem;
+}
+.ui-pict6{
+	width:2rem;
+	height:2.2rem;
+}
+.ui-margin5{
+	margin:0.5rem 0 1rem;
+}
+.footer{
+	border-top:1rem solid #f2f2f2;
+	background: #fff;
+}
+.ui-commnet-title{
+	padding: 1.5rem  1.5rem;
+}
+.ui-commnet-list{
+	width:100%;
+}
+.ui-commnet-list li{
+	float:left;
+	display:inline-block;
+}
+.ui-commnet-list li:nth-child(1){
+	width:15%;
+	padding: 1.5rem  1.5rem;
+}
+.ui-commnet-list li:nth-child(2){
+	width:85%;
+	padding: 1.5rem  1.5rem;
+	text-align:left;
+}
+.ui-pict10{
+	width:4rem;
+	height:4rem;
+	border-radius:50%;
+}
+.ui-get-more{
+	display:block;
+	width:100%;
+	height:4rem;
+	line-height: 4rem;
+	border:0;
+	background: #f2f2f2
+}
+.ui-pict20{
+	width:1.2rem;
+	height:1.1rem;
+}
+.ui-fixed-botton{
+	width:100%;
+	/*height:4.3rem;*/
+	padding: 0.8rem 1.5rem  0.8rem  1.5rem;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left:0;
+	z-index:100;
+}
+.ui-fixed-botton input{
+	color:#999;
+	font-size:1.3rem;
+	padding: 1rem 1.5rem;
+	width:78%;
+	border:1px solid #ccc;
+
+}
+.ui-fixed-botton button{
+	font-size:1.5rem;
+	border:0;
+	color:#fff;
+	padding: 0.72rem 1.5rem 0.72rem 1.5rem;
+	background: #2873ff;
+	border-radius:0.2rem;
+	margin-left: 1rem;
+	margin-top:0.1rem;
+}
+.none{
+	display: none!important;
+}
+.tips{
+	    padding:1rem 2rem;
+	    background-color: rgba(0,0,0,0.8);
+	    position: fixed;
+	    top: 45%;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    text-align: center;
+	    z-index: 9999999;
+	    font-size: 1.6rem;
+	    color:#fff;
+	    border-radius: 0.4rem;
+	    -ms-transform:translateX(-50%); /* IE 9 */
+	    -moz-transform:translateX(-50%);    /* Firefox */
+	    -webkit-transform:translateX(-50%); /* Safari 和 Chrome */
+	    -o-transform:translateX(-50%);  /* Opera*/ 
+ }
+ .formore{
+ 	display:block;
+	width:100%;
+	height:4rem;
+	line-height: 4rem;
+	border:0;
+	background: #f2f2f2
+ }
+ .ui-nowrap-multi1 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1
+}
+/*新增的品牌*/
+.ui-brand-zone{
+	width:100%;
+	padding: 1.5rem 1.5rem 0rem 1.5rem;
+	background: #fff!important;
+	min-height:10.5rem;
+	display: flex;
+}
+.ui-brand-zone li{
+	float:left;
+	display:inline-block;
+	background: #fff;
+}
+.ui-brand-zone li:nth-child(1){
+	width:20%;
+}
+.ui-brand-zone li:nth-child(2){
+	width:53%;
+	text-align:left;
+	padding-left: 1rem;
+}
+.ui-brand-zone li:nth-child(3){
+	width:27%;
+	text-align: right
+}
+.ui-brand-pict{
+	width:6.5rem;
+	height:6.5rem;
+	border-radius:0.3rem!important;
+}
+.margin-ui{margin:0 0 0.7rem!important;}
+.circle{
+	margin-right: 0.666666rem;
+	font-size: 1.1rem;
+	color:#999;
+	padding: 0.1rem 0.5rem
+}
+.ui-video-zone{
+	width:100%;
+	padding: 1.5rem 1.5rem;
+	background: #fff!important;
+	min-height:9.5rem;
+	display: flex;
+}
+.ui-video-zone li{
+	float:left;
+	display:inline-block;
+}
+.ui-video-zone li:nth-child(1){
+	width:40%;
+	text-align: left;
+}
+.ui-video-zone li:nth-child(2){
+	width:60%;
+	text-align:left;
+}
+.ui-video-pict{
+	width:12.5rem;
+	height:7rem;
+	border-radius:0.3rem!important;
+}
+.margin-ui2{
+	margin:3.5rem 0 0!important;
+}
+.ui-nowrap-multi2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+#brandcon{
+	width:100%;
+    background: #fff;
+}
+#videocon{
+	width:100%;
+    background: #fff;
+}
+
+
+/*1.0.5评论回复功能*/
+.comment_tip{
+	background: #2a2a2a;
+    /*display: block;*/
+    width: 13rem;
+    height: 3.6rem;
+    border-radius: 1rem;
+    color: #fff;
+    text-align: center;
+    line-height: 3.6rem;
+    position: absolute; 
+    top: -7rem;
+    right: 0rem;
+}
+/*小三角*/
+.comment_tip::after{
+	content: '';
+	width:0;height: 0;
+	border-top:0.9rem solid #2a2a2a;
+	border-right:0.9rem solid transparent;
+	border-bottom:0.9rem solid transparent;
+	border-left:0.9rem solid transparent;
+	position: absolute;
+	bottom:-1.6rem;
+	right:3rem;
+}
+.change_position::after{
+	left:1rem;
+}
+.comment_tip em{
+	display: inline-block;
+	width: 50%;
+	font-size: 1.3rem;
+}
+.reply{
+	border-right:1px solid #fff;
+}
+
+.copy_suc{
+	width:9rem;
+	/*height: 9rem;*/
+	border-radius:1rem;
+	background: #2a2a2a;
+	position: fixed;
+	padding-top: 2em;
+	top:50%;margin-top: -4.5rem;
+	left:50%;margin-left: -4.5rem;
+	z-index: 10;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5;	
+	-moz-transition:all 0.5;	
+	-o-transition:all 0.5;	
+}
+.copy_suc img{
+	width: 2.2rem;
+	height: 2.2rem;
+	margin-bottom: 1rem;
+}
+
+.comment_text{
+	word-break: break-all;
+	display: block;	
+}
+.break-word{
+	word-wrap: break-word;
+}
+
+.views{
+	position: absolute;
+	right: 0.5rem;
+	bottom: 0.5rem;
+	z-index: 10;
+}

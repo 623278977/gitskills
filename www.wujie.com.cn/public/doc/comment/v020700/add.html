@@ -1,0 +1,92 @@
+<h2 class="title-h2 absolute">
+    评论新增——yaokai
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/comment/add</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>评论人uid，匿名传0,送花或打赏时,uid不能为0</td>
+    </tr>
+    <tr>
+        <td>type(必)</td>
+        <td>目标类型，评论类型Activity:活动;Video:点播;Opportunity:商机;Live直播;Brand品牌;News资讯</td>
+    </tr>
+    <tr>
+        <td>post_id（必)</td>
+        <td>目标id</td>
+    </tr>
+    <tr>
+        <td>content（必）</td>
+        <td>内容</td>
+    </tr>
+    <tr>
+        <td>upid</td>
+        <td>被回复的评论id</td>
+    </tr>
+    <tr>
+        <td>uid_at</td>
+        <td>数组，被@的会员uid，不包括被回复的评论人的uid</td>
+    </tr>
+    <tr>
+        <td>images</td>
+        <td>数组，评论中的图片地址,如[attached/image/20160621/20160621101018_44949.jpg",attached/image/20160622/20160621101018_44943.jpg"]</td>
+    </tr>
+    <tr>
+        <td>form</td>
+        <td>评论形式，normal:普通,flower:送花,reward:打赏</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {"message":{"count":8},"status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>count</td>
+        <td>新增前该目标下的评论总数</td>
+    </tr>
+    <tr>
+        <td>comment.id</td>
+        <td>该新增评论的id</td>
+    </tr>
+    <tr>
+        <td>comment.post_id</td>
+        <td>评论目标的id</td>
+    </tr>
+    <tr>
+        <td>comment.type</td>
+        <td>评论目标的id</td>
+    </tr>
+    <tr>
+        <td>comment.content</td>
+        <td>评论内容</td>
+    </tr>
+    <tr>
+        <td>comment.upid</td>
+        <td>被回复的评论id</td>
+    </tr>
+    <tr>
+        <td>comment.nickname</td>
+        <td>评论人的昵称</td>
+    </tr>
+    <tr>
+        <td>comment.form</td>
+        <td>评论形式，normal:普通,flower:送花,reward:打赏</td>
+    </tr>
+    <tr>
+        <td>flowerCount</td>
+        <td>一分钟内所送的花数，已经包括此次送的花</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

@@ -1,0 +1,103 @@
+<h2 class="title-h2 absolute">
+    用户注册——pengwt
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/login/register/_v020400</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>username(必)</td>
+        <td>手机号</td>
+    </tr>
+    <tr>
+        <td>is_outh(必)</td>
+        <td>是否是第三方注册  默认0（不是） 如果是 传1</td>
+    </tr>
+    <tr>
+        <td>zone_id</td>
+        <td>地区id</td>
+    </tr>
+    <tr>
+        <td>industry_id</td>
+        <td>关注行业id  数组</td>
+    </tr>
+
+    <tr>
+        <td>outh_id</td>
+        <td>第三方登陆的access_token  如果是第三方注册必填</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>第三方登陆必填 qq传qq  微信传wx  微博传wb</td>
+    </tr>
+    <tr>
+        <td>code</td>
+        <td>分享唯一标识</td>
+    </tr>
+    <tr>
+        <td>is_invited</td>
+        <td>是不是通过邀请注册默认0不是，1是</td>
+    </tr>
+    <tr>
+        <td>captcha_id</td>
+        <td>若是邀请注册则，验证码id必传</td>
+    </tr>
+    <tr>
+        <td>captcha_value</td>
+        <td>若是邀请注册则，验证码值比传</td>
+    </tr>
+    <tr>
+        <td>reg_method</td>
+        <td>注册方式 sms:短信登录注册  setinfo:完善资料 </td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": {
+    "uid": 782,
+    "username": "18658318156",
+    "nickname": "815643f0",
+    "avatar": "http://dev.wjsq3.loc/images/default/avator-m.png",
+    "big_avatar": "http://dev.wjsq3.loc/images/default/avator-xl.png",
+    "firstcharter": "",
+    "yinpin": "8",
+    "industry": [
+    {
+    "name": "住宿和餐饮",
+    "id": 14
+    }
+    ],
+    "qrcode": "http://dev.wjsq3.loc/attached/image/qrcode/_large/5b5009bc2a23f21c26980494e3f86ed4.png",
+    "maker_id": 93,
+    "realname": "",
+    "sign": "",
+    "is_huanxin": 1,
+    "activity_remind": 2,
+    "subject": "北京3W咖啡",
+    "gender": -1,
+    "institution": "",
+    "job": "",
+    "activity_count": 0,
+    "exist_card": 0,
+    "zone": "北京市",
+    "zone_id": 1,
+    "is_done_reg": 1,
+    "has_brand": 0,
+    "brand_name": ""
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    返回参数同登录接口
+    is_done_reg = 1 该用户资料以及完善,不需要补全<br/>
+    is_dong_reg = 0 需要补全资料,再次调用注册接口,reg_method = 'setinfo'
+</table>
+<div class="p-pub-title color10"></div>

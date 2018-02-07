@@ -1,0 +1,181 @@
+<h2 class="title-h2 absolute">
+    活动门票——pengwt
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/tickets/_v020400</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>活动id(必)</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>登录用户uid，未登录传0(必)</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+    "message": [
+        {
+            "id": 1356,
+            "activity_id": 1359,
+            "type": 1,
+            "price": "0.00",
+            "intro": "",
+            "num": 30,
+            "status": 1,
+            "remark": "",
+            "created_at": 1498448910,
+            "updated_at": 1498473752,
+            "surplus": 26,
+            "is_share": 0,
+            "is_recommend": 0,
+            "name": "免费票",
+            "original": "1.00",
+            "score_price": 0,
+            "subject": "测试下分销活动，报名跟签到",
+            "end_time": "2017-06-26 21:00",
+            "begin_time": "2017-06-26 06:00",
+            "vip_id": 0,
+            "left": 26,
+            "is_over": 1,
+            "is_vip": 0,
+            "maker_id": 94,
+            "address": "北京市海淀区西大街39号2",
+            "maker_subject": "北京BINGGO咖啡"
+        },
+        {
+            "id": 1357,
+            "activity_id": 1359,
+            "type": 1,
+            "price": "0.10",
+            "intro": "",
+            "num": 30,
+            "status": 1,
+            "remark": "",
+            "created_at": 1498448910,
+            "updated_at": 1498473752,
+            "surplus": 29,
+            "is_share": 0,
+            "is_recommend": 0,
+            "name": "现场票",
+            "original": "2.00",
+            "score_price": 10,
+            "subject": "测试下分销活动，报名跟签到",
+            "end_time": "2017-06-26 21:00",
+            "begin_time": "2017-06-26 06:00",
+            "vip_id": 0,
+            "left": 29,
+            "is_over": 1,
+            "is_vip": 0,
+            "maker_id": 94,
+            "address": "北京市海淀区西大街39号2",
+            "maker_subject": "北京BINGGO咖啡"
+        }
+    ],
+    "status": true,
+    "forwardUrl": ""
+}
+        </pre>
+
+
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>门票id</td>
+    </tr>
+    <tr>
+        <td>activity_id</td>
+        <td>活动id</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>门票类型 1现场票 2直播票</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>价格(string)</td>
+    </tr>
+    <tr>
+        <td>score_price</td>
+        <td>积分形式价格(string)</td>
+    </tr>
+    <tr>
+        <td>intro</td>
+        <td>门票介绍(string)</td>
+    </tr>
+    <tr>
+        <td>num</td>
+        <td>门票总数量</td>
+    </tr>
+    <tr>
+        <td>remark</td>
+        <td>备注(string)</td>
+    </tr>
+    <tr>
+        <td>left</td>
+        <td>该类型门票还剩下多少</td>
+    </tr>
+    <tr>
+        <td>is_over</td>
+        <td>该场活动是否已经结束，1：已结束，0：未结束(num)</td>
+    </tr>
+    <tr>
+        <td>is_share</td>
+        <td>该门票是否允许通过分享活动 1:可分享 0：不可分享</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>门票名称</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>该门票所属于的活动是否为专版活动， 如果是则返回该专版的id， 如果不是则返回0</td>
+    </tr>
+    <tr>
+        <td>is_vip</td>
+        <td>当前登录用户是否是该活动的有效会员 1:代表是，0:代表不是</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动名称</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>活动开始时间</td>
+    </tr>
+    <tr>
+        <td>end_time</td>
+        <td>活动结束时间</td>
+    </tr>
+    <tr>
+        <td>maker_id</td>
+        <td>活动主办场地空间id</td>
+    </tr>
+    <tr>
+        <td>address </td>
+        <td>活动主办场地空间地址</td>
+    </tr>
+    <tr>
+        <td>maker_subject </td>
+        <td>活动主办场地空间名称</td>
+    </tr>
+    <tr>
+        <td>is_recommend </td>
+        <td>是否推荐，1推荐，0不推荐</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

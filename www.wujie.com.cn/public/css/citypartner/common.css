@@ -1,0 +1,152 @@
+body,button,h1,h2,h3,h4,h5,h6,input,select{
+    font:12px  "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size:0;
+    clear: both;
+}
+/*去除自带样式*/
+textarea,select,input{-webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none;}
+
+a {
+
+    outline: none;
+}
+.relative{
+    position: relative;
+}
+.hide{
+    display: none;
+
+}
+
+button{
+    border:0;
+}
+.container{
+    width: 1200px;
+    margin:0 auto;
+}
+.mc{
+    margin:0 auto;
+}
+.tc{
+    text-align: center;
+}
+.tr{
+    text-align: right;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt50{
+    margin-top: 50px;
+}
+.mt100{
+    margin-top: 100px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb50{
+    margin-bottom:50px;
+}
+.mb0{
+    margin-bottom: 0;
+}
+.ml80{
+    margin-left: 80px;
+}
+.mr0{
+    margin-right: 0;
+}
+.mr50{
+    margin-right: 50px;
+}
+.mr-50{
+    margin-right: -50px;
+}
+.pl50{
+    padding-left: 50px;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.f36{
+    font-size: 36px;
+}
+.f20{
+    font-size: 20px;
+}
+.f24{
+    font-size: 24px;
+}
+.f26{
+    font-size: 26px;
+}
+.f14{
+    font-size: 14px;
+}
+.f12{
+    font-size: 12px;
+}
+.f16{
+    font-size: 16px;
+}
+.f18{
+    font-size: 18px;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+}
+.c6{
+    color: #666;
+}
+.c9{
+    color: #999;
+}
+/*公用底部*/
+.g-ft{
+    height: 220px;
+    padding-top: 50px;
+    background-color: #1e2832;
+    box-sizing: border-box;
+}
+.m-foot{
+    border-top: 1px solid #2f3842;
+    padding-top:100px;
+}
+.m-foot p{
+    color: #bcbfc2;
+    line-height: 24px;
+    letter-spacing: 3px;
+}
+/*遮罩层*/
+.bg{
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top:0;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.3);
+    filter:alpha(opacity=30);
+}

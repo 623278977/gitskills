@@ -1,0 +1,32 @@
+<h2 class="title-h2 absolute">
+    检测支付结果并改变活动报名及订单状态——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/check-and-apply</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>order_no(必)</td>
+        <td>订单号(string)</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {"message":1,"status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>str</td>
+        <td>-1：不存在此订单，或者此订单为免费订单， 1：查询成功，支付成功 0：查询成功，但支付失败</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

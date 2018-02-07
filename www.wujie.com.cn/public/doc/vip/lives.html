@@ -1,0 +1,75 @@
+<h2 class="title-h2 absolute">
+    专版直播列表——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/vip/lives</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>vip_id(必)</td>
+        <td>专版id</td>
+        <td>uid(必)</td>
+        <td>登陆者uid，未登录传0</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": [
+    {
+    "list_img": "attached/image/20160617/20160617141646_43538.jpeg",
+    "subject": "teststest",
+    "begin_time": "08/08 13:07",
+    "id": 256,
+    "is_living": 1,
+    "is_subscribe": 0
+    },
+    {
+    "list_img": "attached/image/20160617/20160617141646_43538.jpeg",
+    "subject": "新增的商机,很多人收到了",
+    "begin_time": "08/08 13:07",
+    "id": 4150,
+    "is_living": 1,
+    "is_subscribe": 0
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>直播id(string)</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>直播标题(string)</td>
+    </tr>
+    <tr>
+        <td>list_img</td>
+        <td>直播图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>直播开始时间(string)</td>
+    </tr>
+    <tr>
+        <td>is_living</td>
+        <td>是否正在直播1，代表正在直播，0代表未开始(string)</td>
+    </tr>
+    <tr>
+        <td>is_subscribe</td>
+        <td>是否订阅了该直播</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

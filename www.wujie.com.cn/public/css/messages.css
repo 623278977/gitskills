@@ -1,0 +1,135 @@
+.messagelist {
+    background-color: #fff;
+    font-size: 1.6rem;
+    margin: 1.33rem;
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+    padding-bottom: 1.33rem;
+    border-radius: 0.5rem;
+}
+
+.messagelist > h1 {
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    margin:0;
+}
+.messagelist>h1 em{
+    color: #f63;
+    /*padding:0 0.5rem 0 0;*/
+}
+.pubtime {
+    color: #888;
+    padding-bottom:1rem;
+}
+
+.messcontent {
+    /*text-indent: 2.8rem;*/
+    color: #444;
+    font-size: 1.4rem;
+}
+.messcontent a{
+    /*color:#00a0ff;*/
+     color:#ff5a00 !important;
+}
+.messcontent p{
+    margin:0;
+}
+.tipcontainer{
+    padding-top:8rem;
+}
+.tipimage{
+    width:16rem;
+    height: 16rem;
+    background: url(../images/nomessage_icon1.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left:50%;
+    margin-left: -8rem;
+}
+.tiptext{
+    font-size:1.6rem;
+    color:#1e8cd4;
+    margin-top:2rem;
+}
+.mess-box{
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    padding:0.8rem 0 0.8rem 0.8rem;
+    color: #999;
+    margin:1rem 0;
+    display: table;
+    width: 100%;
+}
+.messagelist .seen_more a{
+    color: #1e8cd4;
+    padding:0 0.5rem;
+}
+.messagelist .seen_more{
+    padding:0;
+    font-size: 1.2rem;
+}
+.mess-box  a{
+    display: inline-block;
+    color: #fff;
+    background-color: #1e8cd4;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    padding:0 1rem;
+    border-radius: 0.4rem;
+    float: right;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+.mess-box >span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.pl05{
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}
+.pr05{
+    padding-right:0.5rem;
+}
+.pl1{
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.pl2{
+    padding-left:1.6rem;
+    padding-right:2rem;
+}
+.messageimg{
+    float:left;
+    height: 7.4rem;
+    width: 13.2rem;
+}
+.rightinfo {
+    float: left;
+    font-size: 1.4rem;
+    color:#666;
+    padding-left: 1rem;
+}
+.rightinfo > p{
+    padding-bottom:0.5rem;
+}
+.rightinfo .acttitle{
+    color:black;
+}
+.acolor{
+    color:#1e8cd4;
+}
+.timespan{
+    height:1.8rem;
+    line-height: 1.8rem;
+}
+.rightinfo .mt05{
+    margin-top:0.5rem;
+}
+.mt06{
+    margin-top:0.6rem;
+}
+.mt07{
+    margin-top:0.7rem;
+}

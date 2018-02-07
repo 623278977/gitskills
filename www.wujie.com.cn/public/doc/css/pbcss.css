@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import "theme.css";
+/* CSS Document */
+
+/*重置标签元素*/
+html,body,div,nav,header,footer,iframe,textarea,video,span,input,label,form,canvas,pre,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,a,p,b,i,em,br,strong,img,sub,sup,tbody,table,tr,th,td,button{
+	margin:0; 
+	padding:0;
+	box-sizing: border-box;	/*height= +边框*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+ul,ol,li{list-style:none;}
+
+/*a各种状态*/
+a,a:active,a:link,a:hover,a:visited{text-decoration:none; border:0 none; outline:0;}
+
+/*ie下去框*/
+img{border:0 none; width:100%; vertical-align:middle; display:inline-block; font-size:0;}
+
+input,textarea,img,button,select{outline:0px none;}
+
+/*textarea禁止拉伸*/
+textarea{word-break:break-all; word-wrap:break-word; resize:none; overflow:auto; padding:3px; line-height:1.6em;}
+
+br{border:0; height:0; display:block; clear:both;}
+
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+
+em,i{font-style:normal;}
+
+button{border:0 none;/*button有个outline*/}
+
+body{font:12px/1.5 "Microsoft YaHei","微软雅黑","Arial","simsum","sans-serif"; color:#333;}
+
+.b,.strong{font-weight:bold;}
+
+.container{width:100%; min-height:100%; margin:0 auto; font-size:inherit;}
+
+/*width集*/
+.wfull{width:100%;}
+
+.w1200{width:1200px;}
+
+.w1080{width:1080px;}
+
+.w1000{width:1000px;}
+
+/*字体大小合集*/
+.f12{font-size:12px;}
+
+.f14{font-size:14px;}
+
+.f16{font-size:16px;}
+
+.f18{font-size:18px;}
+
+/*浮动,轻浮 字体对齐*/
+.l{float:left;}
+
+.r{float:right;}
+
+.auto{margin:0 auto;}
+
+.tc{text-align:center;}
+
+.tr{text-align:right;}
+
+.tl{text-align:left;}
+
+.vc{vertical-align:middle;}
+
+.clearfix{clear:both; height:0; display:block; overflow:hidden; font-size:0;}
+
+/*显示，隐藏 无边框*/
+.none{display:none;}
+
+.show,.block{display:block;}
+
+.inline{display:inline;}
+
+.inline-block{display:inline-block;}
+
+.noBorder{border:0 !important;}
+
+/*other wrap换行 no-wrap不换行*/
+.fixed{position:fixed;}
+
+.relative{position:relative;}
+
+.absolute{position:absolute;}
+
+.wrap{word-break:break-all; word-wrap:break-word;}
+
+.no-wrap{white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;}
+
+/*字体缩进2em*/
+.indent2em,.indentP p{text-indent:2em;}
+
+/*内间距*/
+.pt5{padding-top:5px;}
+
+.pt10{padding-top:10px;}
+
+.pt15{padding-top:15px;}
+
+.pt20{padding-top:20px;}
+
+.pl5{padding-left:5px;}
+
+.pl10{padding-left:10px;}
+
+.pl15{padding-left:15px;}
+
+.pl20{padding-left:20px;}
+
+.pr5{padding-right:5px;}
+
+.pr10{padding-right:10px;}
+
+.pr15{padding-right:15px;}
+
+.pr20{padding-right:20px;}
+
+.pb5{padding-bottom:5px;}
+
+.pb10{padding-bottom:10px;}
+
+.pb15{padding-bottom:15px;}
+
+.pb20{padding-bottom:20px;}
+
+/*外边距*/
+.mt10{margin-top:10px;}
+
+.mt15{margin-top:15px;}
+
+.mt20{margin-top:20px;}
+
+.ml5{margin-left:5px;}
+
+.ml10{margin-left:10px;}
+
+.ml15{margin-left:15px;}
+
+.ml20{margin-left:20px;}
+
+.mr5{margin-right:5px;}
+
+.mr10{margin-right:10px;}
+
+.mr15{margin-right:15px;}
+
+.mr20{margin-right:20px;}
+
+.mb5{margin-bottom:5px;}
+
+.mb10{margin-bottom:10px;}
+
+.mb15{margin-bottom:15px;}
+
+.mb20{margin-bottom:20px;}
+
+/*圆角*/
+.r3{border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px;}
+
+.r5{border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;}
+
+/*居中 鼠标手 阴影框(透明)*/
+.middle{vertical-align:middle; height:inherit; display:table-cell;}
+
+.hand{cursor:pointer;}
+
+.input{border:1px solid #ccc; width: 160px; height:32px; line-height:32px\9; padding:0 2%;}
+
+.box-shadow{box-shadow:1px 1px 10px rgba(0,0,0,0.5); -webkit-box-shadow:1px 1px 10px rgba(0,0,0,0.5); -moz-box-shadow:1px 1px 10px rgba(0,0,0,0.5);}
+
+/*复选框重置  visibility: hidden;隐藏*/
+input[type="checkbox"],input[type="radio"]{margin:-2px 5px 0 0; vertical-align:middle; /*visibility:hidden;*/}
+
+/*隐藏元素*/
+.visibility{visibility:hidden;}
+
+/*栅格栏 2,3,4栏*/
+.gridBar{width:100%; overflow:hidden; text-align:center;}
+
+.gridBar .bar2{width:50%;}
+
+.gridBar .bar3{width:33.33%;}
+
+.gridBar .bar4{width:25%;}
+
+/*蒙层 按钮*/
+.mceng{width:100%; height:100%; position:absolute; top:0; left:0; z-index:10000; background:#000; opacity:0.4;}
+
+.btn{border:1px solid #ddd; width:100%; padding:2% 0; color:inherit;}

@@ -1,0 +1,175 @@
+.container{
+    width:1200px;
+    height:848px;
+    margin:0 auto;
+}
+.font{
+    padding-top: 30px;
+    padding-bottom: 14px;
+}
+.font h2{
+    font-size: 18px;
+    color:#666666;
+    display: inline-block;
+    line-height:30px;
+}
+.font>ul{
+    float: right;
+    line-height: 30px;
+}
+.font>ul>li{
+    float: left;
+}
+.font>ul>li:first-child{
+    font-size: 12px;
+    color: #c8c8c8;
+    margin-right:20px;
+}
+.font>ul>li>span{
+    display: inline-block;
+    width:32px;
+    height:18px;
+    vertical-align: text-bottom;
+    background:url("/images/citypartner/img/OVO.png") no-repeat 8px 0;
+    opacity: 0.5;
+}
+.font>ul>li>a{
+    display: inline-block;
+    width:100px;
+    height:30px;
+    border-radius:2px;
+    background-color:#23A4F8;
+    color:#fff;
+    font-size:14px;
+    line-height: 30px;
+    text-align: center;
+}
+.font>ul>li>a:hover{
+    background-color:#47B6FF;
+}
+.main {
+    width:1200px;
+    padding-top: 40px;
+    border-top:1px solid #DAE1E5;
+}
+.main ul li{
+    float:left;
+    width:270px;
+    height:160px;
+    margin-right:40px;
+    margin-bottom:40px;
+    border-radius:10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    position: relative;
+}
+.main ul li:hover{
+    -webkit-box-shadow:#D0E0ED 0 0 10px;
+    -moz-box-shadow: #D0E0ED 0 0 10px;
+    -o-box-shadow: #D0E0ED 0 0 10px;
+    box-shadow: #D0E0ED 0 0 10px;
+    cursor: pointer;
+}
+.main ul>li:nth-child(4n){
+    margin-right:0;
+ }
+.main .vertical{
+    width:130px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    color:#c8c8c8;
+    font-size: 18px;
+    position: absolute;
+    border-top:1px dashed #c8c8c8;
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top:56px;left:-40px;
+    top:14px\9;left:0px\9;
+}
+.main .intro{
+    width:190px;
+    margin-left:-15px;
+    float: right;
+}
+.main .intro>dl>dt{
+    margin-top: 30px;
+    display: table;
+}
+.main .intro>dl>dt>div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.main .intro>dl>dt>a{
+    display: inline-block;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    margin-right:20px;
+}
+.main .intro>dl>dt>div>p:first-child>a{
+    color:#333333;
+    font-size: 18px;
+}
+.main .intro>dl>dt>div>p:first-child>a>b{
+	max-width: 72px;
+    min-width: 18px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+    text-align: center;
+    vertical-align:top;
+}
+.main .intro>dl>dt>div>p:first-child>a>span{
+    display: inline-block;
+    width: 18px;
+    height:20px;
+    background: url("/images/citypartner/img/OVO.png") no-repeat 2px 2px;
+}
+.main .intro>dl>dt>div>p>a{
+    color:#666666;
+    font-size: 14px;
+    padding-right: 8px;
+}
+.main .intro>dl>dd{
+    font-size: 14px;
+    color:#666666;
+}
+.main .intro>dl>dd>a{
+    font-size: 24px;
+    color:#ff6633;
+    padding-left:25px;
+    vertical-align: sub;
+}
+.nav_menu ul li:nth-child(3) a{
+	color:#23a4f8;
+}
+.nav_menu ul li:first-child +li+li a{
+    color:#23a4f8;
+}
+.no_msg{
+    width: 300px;
+    height: 150px;
+    padding-top: 50px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -150px;
+    position: absolute;
+    z-index: 100;
+}
+.no_msg p{
+      color:#23a4f8; 
+      font-size: 18px; 
+}
+.hidden{
+    display:none;
+}

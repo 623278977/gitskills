@@ -1,0 +1,391 @@
+<h2 class="title-h2 absolute">
+    活动详情——xihuan
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/detail/_v020600</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id(必)</td>
+        <td>活动id</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>用户id</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+  "message": {
+    "id": 2,
+    "subject": "活动的名称id33",
+    "detail_img": [
+      "http://www.wjsq3.com/./a"
+    ],
+    "is_vip": 1,
+    "can_buy": 1,
+    "vip_name": "专版的名字1",
+    "vip_id": 1,
+    "is_shareable": 0,
+    "is_collect": 0,
+    "share_image": "http://www.wjsq3.com/images/share_image.png",
+    "begin_time": 1514512800,
+    "end_time": 1514612800,
+    "begin_time_content": {
+      "begin_time": 1514512800,
+      "time_explain": "",
+      "period": "27.7"
+    },
+    "activity_location_arr": [
+      {
+        "id": 1,
+        "subject": "杭州下城区OVO运营中心",
+        "address": "杭州大厦8楼801室",
+        "tel": "12345678",
+        "description": "<b>无界商圈</b>是天涯若比邻旗下政府、园区智慧服务平台，主要为中小企业、个人、地方政府招商机构等客户提供政府和园区跨域招商对接服务、跨域投融资对接服务、跨域技术对接服务、跨域人才对接服务、企业管理咨询与教育培训等智慧服务。\r\n\r\n \r\n\r\n政府、园区跨域招商服务\r\n\r\n天涯若比邻整合线上线下产业链信息资源，为地方政府、企业、机构及个人招商引资提供项目对接服务，持续收集各地招商引资信息并有针对性地传递给投资人，促进资本、产业、项目的高效整合。",
+        "zone_id": 175,
+        "zone": "杭州市"
+      }
+    ],
+    "activity_location": "杭州",
+    "min_ticket_price": "免费",
+    "min_ticket_price_type": "现场票",
+    "ticket_id": "",
+    "sign_count": 124,
+    "description": "haha",
+    "brand": [
+      {
+        "id": 2,
+        "uid": 435,
+        "logo": "http://www.gpqqtx.com/uploads/allimg/151027/2234562339-5.jpg",
+        "name": "品牌二号",
+        "investment_min": "2",
+        "investment_max": "2",
+        "keywords": [
+          "凑足五个字"
+        ],
+        "zone_name": "杭州",
+        "activity_id": "2,331,766",
+        "category_name": "美容养生",
+        "investment_arrange": "2万-2万"
+      }
+    ],
+    "view_count": 451,
+    "zan_count": 0,
+    "comment_count": 1,
+    "share_count": 3,
+    "hot_count": 238.5,
+    "zans": [],
+    "share_reward_unit": "none",
+    "share_reward_num": 0,
+    "banners": [],
+    "share_mark": "eyJpdiI6IkVhYWFlZmdyUVRCNThlMkx4NmxyQnc9PSIsInZhbHVlIjoiSnBaSzBGZTllcWRtdE5ibXN5MVhxVkdKTnN5bDBPcExnZjc2U3FHTGdQV0gzRkZndVgwSE5rTElHRXdiYmFwa1hmQmpHUUNnYkFPdzArdkMzc1lEdGc9PSIsIm1hYyI6ImQ5ZjNmNzViYjBlM2VlMDdiNWNmMzM5OGNhOWM1MzMxZDAwMGZkMTYxMmIwNzdmYTBjOTk5ZjJjMTg0MGM2NmIifQ=="
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>活动id</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动名称</td>
+    </tr>
+    <tr>
+        <td>is_vip</td>
+        <td>是否专版活动 1 是 0 否</td>
+    </tr>
+    <tr>
+        <td>vip_name</td>
+        <td>专版名称</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>vip的id</td>
+    </tr>
+    <tr>
+        <td>is_shareable</td>
+        <td>是否可以分享：1可以， 0不可以</td>
+    </tr>
+    <tr>
+        <td>is_collect</td>
+        <td>是否已经收藏活动：1已经收藏， 0未收藏</td>
+    </tr>
+    <tr>
+        <td>share_image</td>
+        <td>分享图标</td>
+    </tr>
+    <tr>
+        <td>can_buy</td>
+        <td>是否可以购买专版 1 可以 0 否</td>
+    </tr>
+    <tr>
+        <td>detail_img</td>
+        <td>活动详情图,返回数组</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>活动开始时间</td>
+    </tr>
+    <tr>
+        <td>end_time</td>
+        <td>活动结束时间</td>
+    </tr>
+    <tr>
+        <td>begin_time_content.begin_time</td>
+        <td>活动开始时间</td>
+    </tr>
+    <tr>
+        <td>begin_time_content.time_explain</td>
+        <td>活动时间说明文字</td>
+    </tr>
+    <tr>
+        <td>begin_time_content.period</td>
+        <td>活动时长</td>
+    </tr>
+    <tr>
+        <td>activity_location</td>
+        <td>活动地点</td>
+    </tr>
+    <tr>
+        <td>activity_location_arr.id</td>
+        <td>ovo的id</td>
+    </tr>
+    <tr>
+        <td>activity_location_arr.subject</td>
+        <td>ovo名称</td>
+    </tr>
+    <tr>
+        <td>activity_location_arr.address</td>
+        <td>ovo地址</td>
+    </tr>
+    <tr>
+        <td>activity_location_arr.tel</td>
+        <td>ovo电话</td>
+    </tr>
+    <tr>
+        <td>activity_location_arr.zone_id</td>
+        <td>ovo的zone_id</td>
+    </tr>
+    <tr>
+        <td>activity_location_arr.zone</td>
+        <td>ovo的地区名</td>
+    </tr>
+    <tr>
+        <td>activity_location_arr.description</td>
+        <td>ovo的描述</td>
+    </tr>
+    <tr>
+        <td>min_ticket_price</td>
+        <td>最便宜的票价格</td>
+    </tr>
+    <tr>
+        <td>min_ticket_price_type</td>
+        <td>最便宜的票类型</td>
+    </tr>
+    <tr>
+        <td>ticket_id</td>
+        <td>免费票 ticket_id ; 其他票 0</td>
+    </tr>
+    <tr>
+        <td>sign_count</td>
+        <td>活动数</td>
+    </tr>
+    <tr>
+        <td>view_count</td>
+        <td>浏览数</td>
+    </tr>
+    <tr>
+        <td>zan_count</td>
+        <td>赞数</td>
+    </tr>
+    <tr>
+        <td>comment_count</td>
+        <td>评论数</td>
+    </tr>
+    <tr>
+        <td>share_count</td>
+        <td>分享次数</td>
+    </tr>
+    <tr>
+        <td>hot_count</td>
+        <td>热度</td>
+    </tr>
+    <tr>
+        <td>site_need_pay</td>
+        <td>是否具有需要付费的现场票，1有，0没有</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>活动详情</td>
+    </tr>
+    <tr>
+        <td>brand.summary</td>
+        <td>品牌概述</td>
+    </tr>
+    <tr>
+        <td>brand.id</td>
+        <td>品牌id</td>
+    </tr>
+    <tr>
+        <td>brand.uid</td>
+        <td>品牌入驻用户</td>
+    </tr>
+    <tr>
+        <td>brand.logo</td>
+        <td>品牌logo</td>
+    </tr>
+    <tr>
+        <td>brand.name</td>
+        <td>品牌名称</td>
+    </tr>
+    <tr>
+        <td>brand.investment_min</td>
+        <td>投资最小值</td>
+    </tr>
+    <tr>
+        <td>brand.investment_max</td>
+        <td>投资最大值</td>
+    </tr>
+    <tr>
+        <td>brand.keywords</td>
+        <td>关键字(array)</td>
+    </tr>
+    <tr>
+        <td>brand.zone_name</td>
+        <td>所在地区名称</td>
+    </tr>
+    <tr>
+        <td>brand.activity_id</td>
+        <td>关联活动id</td>
+    </tr>
+    <tr>
+        <td>brand.category_name</td>
+        <td>一级分类</td>
+    </tr>
+    <tr>
+        <td>brand.remark</td>
+        <td>标识语句</td>
+    </tr>
+
+    <tr>
+        <td>zans.avatar</td>
+        <td>点赞用户头像</td>
+    </tr>
+
+    <tr>
+        <td>share_reward_unit</td>
+        <td>活动分享所得奖励的单位,score:积分,currency:无界币，none:什么都不奖励</td>
+    </tr>
+
+
+    <tr>
+        <td>share_reward_num</td>
+        <td>活动分享所得奖励的个数</td>
+    </tr>
+
+    <tr>
+        <td>banners</td>
+        <td>活动横幅(数组)</td>
+    </tr>
+
+    <tr>
+        <td>is_praise</td>
+        <td>是否点赞，1已点赞，0未点赞</td>
+    </tr>
+
+    <tr>
+        <td>share_mark</td>
+        <td>分享识别码</td>
+    </tr>
+    <tr>
+        <td>code</td>
+        <td>用于分享的唯一码</td>
+    </tr>
+    <tr>
+        <td>news<br/>限活动结束才有</td>
+        <td>
+            <table class="table-ck">
+                <tr class="tc b">
+                    <td>参数</td>
+                    <td>值</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>ID值</td>
+                </tr>
+                <tr>
+                    <td>logo</td>
+                    <td>资讯图片地址</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>资讯标题</td>
+                </tr>
+                <tr>
+                    <td>author</td>
+                    <td>发布人</td>
+                </tr>
+                <tr>
+                    <td>detail</td>
+                    <td>详情内容</td>
+                </tr>
+                <tr>
+                    <td>keywords</td>
+                    <td>关键字数组</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>videos<br/>限活动结束才有</td>
+        <td>
+            <table class="table-ck">
+                <tr class="tc b">
+                    <td>参数</td>
+                    <td>值</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>ID值</td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td>图片地址</td>
+                </tr>
+                <tr>
+                    <td>subject</td>
+                    <td>标题</td>
+                </tr>
+                <tr>
+                    <td>duration</td>
+                    <td>时长秒</td>
+                </tr>
+                <tr>
+                    <td>created</td>
+                    <td>创建日期</td>
+                </tr>
+                <tr>
+                    <td>keywords</td>
+                    <td>关键字数组</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

@@ -1,0 +1,167 @@
+<h2 class="title-h2 absolute">
+    专版搜索——tangem
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/vip/search</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>vip_id（必传）</td>
+        <td>专版id</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页</td>
+    </tr>
+    <tr>
+        <td>pageSize</td>
+        <td>分页大小</td>
+    </tr>
+    <tr>
+        <td>keywords</td>
+        <td>搜索关键词</td>
+    </tr>
+    <tr>
+        <td>category</td>
+        <td>分类:1活动,2直播，3视频 不传则是全部</td>
+    </tr>
+    <tr>
+        <td>Demo Params</td>
+        <td>vip_id=1&keywords=&category=1</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": {
+    "vip_name": "专版的名字1",
+    "vip_activity": [
+    {
+    "activity_id": 33,
+    "subject": "活动的名称id33",
+    "begin_time": "2016-09-01 09:40",
+    "city": [
+    "杭州市",
+    "绍兴市",
+    "绍兴市",
+    "绍兴市"
+    ]
+    },
+    {
+    "activity_id": 34,
+    "subject": "6666666666666666666666666",
+    "begin_time": "2016-09-01 09:40",
+    "city": [
+    "杭州市"
+    ]
+    },
+    {
+    "activity_id": 308,
+    "subject": "ios2",
+    "begin_time": "2016-10-08 00:00",
+    "city": [
+    "杭州市"
+    ]
+    },
+    {
+    "activity_id": 314,
+    "subject": "2",
+    "begin_time": "2016-12-31 00:00",
+    "city": [
+    "瑞典",
+    "湖州市",
+    "绍兴市",
+    "绍兴市",
+    "潜江市"
+    ]
+    }
+    ],
+    "vip_video": [
+    {
+    "image": "http://dev.wjsq3.com/images/default/large-pro.jpg",
+    "id": 256,
+    "subject": "subject1",
+    "video_url": null,
+    "description": "描述啊"
+    },
+    {
+    "image": "http://dev.wjsq3.com/images/default/large-pro.jpg",
+    "id": 200035,
+    "subject": "3333",
+    "video_url": null,
+    "description": ""
+    },
+    {
+    "image": "http://dev.wjsq3.com/images/default/large-pro.jpg",
+    "id": 200036,
+    "subject": "subject29",
+    "video_url": null,
+    "description": ""
+    },
+    {
+    "image": "http://dev.wjsq3.com/attached/image/20160615/_large/20160615160206_19162.jpg",
+    "id": 210023,
+    "subject": "china",
+    "video_url": null,
+    "description": "dafdafdadfad"
+    }
+    ],
+    "vip_live": [
+    {
+    "list_img": "http://dev.wjsq3.com/attached/image/20160617/_large/20160617141646_43538.jpeg",
+    "begin_time": "2016-08-29 10:48",
+    "id": 256,
+    "subject": "直播标题1",
+    "live_url": "http://2123.liveplay.myqcloud.com/2123_9ee45b0a9f0e11e5b91fa4dcbef5e35a_900.m3u8",
+    "description": "这里是直播描述文字256"
+    },
+    {
+    "list_img": "http://dev.wjsq3.com/attached/image/20160617/_large/20160617141646_43538.jpeg",
+    "begin_time": "2016-08-29 10:48",
+    "id": 4150,
+    "subject": "直播标题2",
+    "live_url": "http://2123.liveplay.myqcloud.com/2123_9ee45b0a9f0e11e5b91fa4dcbef5e35a_900.m3u8",
+    "description": "新增的商机,很多人收到了"
+    },
+    {
+    "list_img": "http://dev.wjsq3.com/images/live.png",
+    "begin_time": "2016-08-29 10:48",
+    "id": 4151,
+    "subject": "直播标题3",
+    "live_url": "http://dev.wjsq3-passport.loc/live/addoreditlive",
+    "description": "地对地导弹"
+    }
+    ]
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>vip_activity</td>
+        <td>专版下的活动列表</td>
+    </tr>
+    <tr>
+        <td>vip_video</td>
+        <td>专版下的视频列表</td>
+    </tr>
+    <tr>
+        <td>vip_live</td>
+        <td>专版下的直播列表</td>
+    </tr>
+    <tr>
+        <td>vip_name</td>
+        <td>专版名字</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

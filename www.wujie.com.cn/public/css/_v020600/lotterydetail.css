@@ -1,0 +1,606 @@
+/*body{
+    background: url('/images/lottery/choujiang.png') no-repeat;
+    background-size: 100% 100%;
+}*/
+
+
+.background{
+     background:url('/images/lottery/bg.png') no-repeat;
+     background-position: center;
+     background-size:100% 100%;
+     /*height:4033px;*/
+     height:134.43rem;
+     z-index: 0;
+    text-align: center;
+}
+
+/*蒙层*/
+.masked{
+    z-index: 3;
+    height:134.43rem;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+
+}
+
+.dollar{
+    /*width:43px;*/
+    /*height:61px;*/
+    /*margin-top:53px;*/
+    /*margin-left:40px;*/
+    width:1.43rem;
+    height:2.03rem;
+    margin-top:1.77rem;
+    margin-left:1.33rem;
+    float: left;
+}
+
+.balancetext{
+    color:#ffffff;
+    /*margin-top:38px;*/
+    /*margin-left:21px;*/
+    /*font-size:61px;*/
+    margin-top:1.27rem;
+    margin-left:0.7rem;
+    font-size:2.03rem;
+    float: left;
+}
+
+.balancevalue{
+    color:#ffef68;
+    /*font-size:61px;*/
+    /*margin-top:38px;*/
+    /*margin-left:21px;*/
+    /*font-size:2.03rem;*/
+    /*margin-top:1.27rem;*/
+    /*margin-left:0.7rem;*/
+    float: left;
+    font-size: 2.43rem;
+    margin-left: 0.7rem;
+    margin-top: 0.77rem;
+}
+
+
+.bottom{
+    /*font-size:44px;*/
+    /*margin-top:498px;*/
+    /*margin-left:166px;*/
+    /*width:906px;*/
+    /*height:906px;*/
+    /*font-size:1.47rem;*/
+    /*margin-left:2.53rem;*/
+    /*width:30.2rem;
+    height:30.2rem;
+    margin: 0 auto;
+    margin-top:11.6rem;
+    display: block;*/
+    /*float: left;*/
+}
+.dial{
+    position: relative;
+    width: 30.2rem;
+    height: 30.2rem;
+    margin: 10.5rem auto 0;
+}
+.innercircle{
+
+    position: absolute;
+    width: 13.2rem;
+    height: 10.5rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -5.05rem;
+    margin-left: -5.2rem;
+    transform-origin:5.23rem 5.23rem;
+}
+
+.record{
+    float: right;
+    border:1px solid #ffffff;
+    /*margin-right:40px;*/
+    /*margin-top:33px;*/
+    /*height:95px;*/
+    /*width:273px;*/
+    /*border-radius:47px 39px;*/
+    margin-right:1.33rem;
+    margin-top:1.1rem;
+    height:3.17rem;
+    width:9.1rem;
+    border-radius:1.57rem 1.3rem;
+}
+
+.recordButton{
+    background:url('/images/lottery/recordbutton.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    margin-right:1.33rem;
+    margin-top:1.1rem;
+    height:3.17rem;
+    width:9.1rem;
+    float: right;
+
+}
+
+
+
+
+.start{
+    float: left;
+    /*height:98px;*/
+    /*width:276px;*/
+    /*border-radius:47px 39px;*/
+    /*border:2px solid #ffffff;*/
+    /*margin-left:485px;*/
+    /*margin-top:122px;*/
+    height:3.27rem;
+    width:9.2rem;
+    border-radius:1.56rem 1.3rem;
+    border:1px solid #ffffff;
+    margin-left:16.16rem;
+    margin-top:14.06rem;
+}
+
+.startButton{
+    background:url('/images/lottery/startbutton.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    /*float: left;*/
+    /*height:98px;*/
+    /*width:276px;*/
+    /*border-radius:47px 39px;*/
+    /*border:2px solid #ffffff;*/
+    /*margin-left:485px;*/
+    /*margin-top:122px;*/
+    height:3.27rem;
+    width:9.2rem;
+   /* margin-left:16.16rem;
+    margin-top:14.06rem;*/
+    margin: 4.06rem auto 0
+}
+
+.recordText{
+    color:#ffffff;
+    /*font-size:44px;*/
+    /*margin-top:15px;*/
+    /*margin-left:46px;*/
+    font-size:1.47rem;
+    margin-top:0.5rem;
+    margin-left:1.53rem;
+    float: left;
+}
+
+
+.startText{
+    color:#ffffff;
+    /*font-size:44px;*/
+    /*margin-top:15px;*/
+    /*margin-left:94px;*/
+    font-size:1.46rem;
+    margin-top:0.5rem;
+    margin-left:3.13rem;
+    float: left;
+}
+
+
+.surplus{
+    color:#ffffff;
+    /*font-size:44px;*/
+    /*margin-top:235px;*/
+    /*margin-left:-414px;*/
+    font-size:1.47rem;
+   /* margin:2rem auto;*/
+    margin-top:2rem;
+    /*margin-left:-15.8rem;*/
+    /*float: left;*/
+   /* text-align:center;*/
+    /*position:relative;*/
+}
+
+.surplusText{
+    color:#ffffff;
+    /*float: left;*/
+
+    /*font-size:44px;*/
+    /*margin-top:15px;*/
+    /*margin-left:94px;*/
+    font-size:1.47rem;
+    margin-top:0.5rem;
+    /*margin-left:3.13rem;*/
+}
+
+.surplusAfterText{
+    /*float: left;*/
+    color:#ffffff;
+    /*font-size:44px;*/
+    /*margin-top:15px;*/
+    /*margin-left:4px;*/
+    font-size:1.47rem;
+    margin-top:0.5rem;
+    margin-left:0.13rem;
+}
+
+.surplusNumber{
+    /*float: left;*/
+    color:#ffef68;
+    /*font-size:44px;*/
+    /*margin-top:15px;*/
+    /*margin-left:4px;*/
+    font-size: 2.07rem;
+    margin-left: 0.43rem;
+    margin-right: 0.43rem;
+    margin-top: 0.1rem;
+
+}
+
+
+.question{
+    /*!*float: left;*!*/
+    /*border-radius:50%;*/
+    /*border:1px solid #ffef68;*/
+    /*text-align: center;*/
+
+    /*height:1.7rem;*/
+    /*width:1.7rem;*/
+    /*!*margin-top:0.7rem;*!*/
+    /*!*margin-left:0.7rem;*!*/
+    /*line-height: 1.7rem;*/
+
+    background:url('/images/lottery/question.png') no-repeat;
+    background-position: 100% 100%;
+    background-size:1.6rem 1.6rem;
+    /*height:4033px;*/
+    z-index: 0;
+    /*float:left;*/
+    margin-top: 0.1rem;
+    display: inline-block;
+    width:1.7rem;
+    height:1.7rem;
+    vertical-align: text-top;
+}
+
+
+.questionText{
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border:1px solid #ffef68;
+    text-align: center;
+    color:#ffef68;
+    font-size:1.27rem;
+    margin:0 auto;
+    width:1.7rem;
+    height:1.7rem;
+    line-height: 1.7rem;
+    vertical-align: text-bottom;
+}
+
+
+.recordArea{
+    background:url('/images/lottery/tablebg.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    position:absolute;
+    margin: auto;
+    /*height:1380px;*/
+    /*width:1104px;*/
+    height:46rem;
+    width:36.8rem;
+    z-index: 100;
+}
+
+
+.newRecordArea{
+    background:url('/images/lottery/newrecord.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    position:absolute;
+    margin: auto;
+    /*height:1380px;*/
+    /*width:1104px;*/
+    height:46rem;
+    width:36.8rem;
+    z-index: 100;
+}
+
+
+.newContextbg{
+    background:url('/images/lottery/newrecord.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    position:absolute;
+    overflow:scroll;
+    height:33.6rem;
+    width:34.1rem;
+    z-index: 2;
+    margin-top: 11.47rem;
+    margin-left:1.4rem;
+    /*margin-right:0.9rem;*/
+}
+
+
+.Absolute-Center {
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*margin-top:137px;*/
+    margin-top:4.57rem;
+
+}
+
+
+.recordTitle{
+    color:#ffffff;
+    float: left;
+
+    /*margin-top:38px;*/
+    /*margin-left:420px;*/
+    /*font-size:61px;*/
+    margin-top:2.27rem;
+    margin-left:14rem;
+    font-size:2.03rem;
+}
+
+.contextbg{
+    background:url('/images/lottery/record.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    position:absolute;
+    overflow:scroll;
+    height:38.1rem;
+    width:35.03rem;
+    z-index: 2;
+    margin-top: 6.97rem;
+    margin-left:0.9rem;
+}
+
+.titleimage{
+    /*margin-top:15px;*/
+    margin-top:0.5rem;
+}
+
+
+
+table{
+    /*border-collapse:collapse;*/
+    font-size:1.2rem;
+    color:#999999;
+    background-color: #ffffff;
+    border-radius:5px;
+}
+
+/*thead{*/
+    /*position:fixed;*/
+/*}*/
+
+
+/*偶数*/
+tr:nth-child(even){
+    /*background-color: #efeff4;*/
+    background-color: #ffffff;
+    /*width:1022px;*/
+    /*-webkit-border-radius: 4px;*/
+    /*-moz-border-radius: 4px;*/
+    /*border-radius: 4px;*/
+    /*height:114px;*/
+    width:34.07rem;
+    -webkit-border-radius: 0.13rem;
+    -moz-border-radius: 0.13rem;
+    border-radius: 1.13rem;
+    height:3.8rem;
+}
+
+/*奇数*/
+tr:nth-child(odd){
+    background-color: #ffffff;
+    /*width:1022px;*/
+    /*-webkit-border-radius: 4px;*/
+    /*-moz-border-radius: 4px;*/
+    /*border-radius: 4px;*/
+    /*height:114px;*/
+    width:34.06rem;
+    height:3.8rem;
+}
+
+.firstTdDiv{
+    width:8.57rem;
+    height:3.8rem;
+    border-top-left-radius: 0.53rem;
+    border-bottom-left-radius: 0.53rem;
+}
+
+.grayDiv{
+    background-color: #efeff4;
+    width:8.57rem;
+    height:3.8rem;
+}
+
+
+.lastTdDiv{
+    border-top-right-radius: 0.53rem;
+    border-bottom-right-radius: 0.53rem;
+    width:8.57rem;
+    height:3.8rem;
+}
+
+
+
+ /*.fixed {*/
+    /*background: #fcf;*/
+    /*position:fixed;*/
+     /*top:178px;*/
+/*}*/
+
+.tabletitle{
+    height:3.8rem;
+}
+
+
+td{
+    /*width:257px;*/
+    width:8.57rem;
+    text-align:center;
+    vertical-align: middle;
+    empty-cells:show;
+}
+
+.entity{
+    font-size:0.9rem;
+}
+
+.hide{
+    display:none;
+}
+
+
+.closebutton{
+    background:url('/images/lottery/closebutton.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    /*height:52px;*/
+    /*width:50px;*/
+    /*margin-top: 1446px;*/
+    /*margin-left:452px;*/
+    height:1.73rem;
+    width:1.67rem;
+    margin:0 auto;
+    margin-top: 48.2rem;
+    /*margin-left:15.06rem;*/
+}
+
+.losed{
+    background:url('/images/lottery/losed.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    /*position:absolute;*/
+    margin: auto;
+    margin-top: -35rem;
+    /*height:869px;*/
+    /*width:850px;*/
+    height:20.3rem;
+    width:29.3rem;
+    z-index: 100;
+    position: relative;
+}
+
+
+
+
+.losedbutton{
+    /*float: right;*/
+    border:1px solid #ab0f88;
+    /*margin-right:40px;*/
+    /*margin-top:33px;*/
+    /*height:98px;*/
+    /*width:276px;*/
+    /*border-radius:47px 39px;*/
+    margin-left:10.23rem;
+    margin-top:13.6rem;
+    height:3.26rem;
+    width:9.2rem;
+    border-radius:1.57rem 1.3rem;
+    background-color: #ab0f88;
+    position: absolute;
+    text-align: center;
+}
+
+
+.losedtext{
+    color:#ffffff;
+    margin:0 auto;
+    /*margin-left:2.47rem;*/
+    /*margin-top:0.9rem;*/
+    font-size:1.5rem;
+    line-height: 3.26rem;
+}
+
+.winning{
+    /*margin-left:5.23rem;*/
+    margin-top:-45.9rem;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+}
+
+.winninglogo{
+    background:url('/images/lottery/winninglogo.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    margin: auto;
+    height:28.97rem;
+    width:27.3rem;
+}
+
+.winningname{
+    /*margin-left: 5rem;*/
+    /*margin-top:-10rem;*/
+    /*left:34%;*/
+    top:57%;
+    position: absolute;
+    font-size:2.77rem;
+    /*margin-left:15.06rem;*/
+    margin-top:1rem;
+    float:left;
+    z-index: 101;
+    color:#ffffff;
+    text-align: center;
+    width:100%
+}
+
+
+.winningclose{
+    background:url('/images/lottery/closebutton.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    /*height:52px;*/
+    /*width:50px;*/
+    /*margin-top: 1446px;*/
+    /*margin-left:452px;*/
+    height:1.73rem;
+    width:1.67rem;
+    margin: 3rem auto 0;
+    /*z-index: 101;*/
+}
+
+
+.slide{
+    background:url('/images/lottery/slide.png') no-repeat;
+    background-position: center;
+    background-size:100% 100%;
+    height:3.83rem;
+    width:3.83rem;
+    margin: 0 auto;
+    margin-top:4.4rem;
+}
+
+.module{
+    background:rgba(0,0,0,0.6);
+    height:100%;
+    width:100%;
+    position: fixed; 
+    z-index: 99;
+    top:0;left:0;
+}
+.foreshow{
+    width: 60%;
+    height: 10rem;
+    line-height: 9rem;
+    border-radius: 0.5rem;
+    margin: 45% auto;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: 0.6rem solid #5b295c;
+}
+.foreshow p{
+    height:100%;
+    border-radius:0.5rem;
+    background-color: #fff;
+}
+
+
+
+

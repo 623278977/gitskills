@@ -1,0 +1,87 @@
+.avatar{
+	width:4.8rem;
+	height: 4.8rem;
+	border-radius: 50%;
+}
+.gender{
+	display: inline-block;
+	width:1.3rem;
+	height: 1.3rem;
+	vertical-align: sub;
+}
+.flex-start{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.ver-super{
+	vertical-align: super;
+}
+.ver-middle{
+	vertical-align: middle;
+}
+
+.flex-center{
+	display: flex;
+	align-items: center;
+}
+.honour{
+	width:0.8rem;
+	height: 1rem;
+}
+.red-point,.green-point,.orange-point,.yellow-point{
+	display: inline-block;
+	width:0.6rem;
+	height: 0.6rem;
+	border-radius: 50%;
+}
+.red-point{
+	background: #ff4d64;
+}
+.green-point{	
+	background: #6dc772;
+}
+.orange-point{
+	background: #ff5a00;
+}
+.yellow-point {
+	background: #ffb84d;
+}
+.cffa300 {
+	color:#ffa300;
+}
+.bottom-btn{
+	height: 5.5rem;
+	font-size: 0;
+	text-align: center;
+	position: fixed;
+	bottom: 0;left: 0;right: 0;
+	z-index: 10;
+
+}
+.bottom-btn button{
+	width: 50%;
+	height: 100%;
+	/*border:none;*/
+	font-size: 1.5rem;
+}
+.uninterest{
+	color:#2873ff;
+	background: #f2f2f2;
+	background: #fff;
+	border-top:1px solid #e5e5e5;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+}
+.tobeAgent{
+	color:#fff;
+	background: #2873ff;
+	border-top:1px solid #e5e5e5;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+}
+.yellow {
+	color:#ff5a00;
+}

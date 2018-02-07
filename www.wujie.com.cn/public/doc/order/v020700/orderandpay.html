@@ -1,0 +1,72 @@
+<h2 class="title-h2 absolute">
+    使用积分下单并支付——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/order/order-and-pay/_v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>当前登录用户uid</td>
+    </tr>
+
+    <tr>
+        <td>items(必)</td>
+        <td>
+            <pre>
+            购买项，一个二维数组
+            [
+                ['type' => 'news', 'product_id' => 1, 'score_price' => 50, 'num' => 1],
+                ['type' => 'video', 'product_id' => 5, 'score_price' => 4000, 'num' => 1],
+            ];
+            type:类型
+                (news:资讯,
+                video:视频)、
+            product_id:对应的id，视频打赏及直播打赏传对应视频或直播的id、
+                score_price:积分、
+                num:数量
+            </pre>
+        </td>
+    </tr>
+    <tr>
+        <td>score_num(必)</td>
+        <td>使用积分数</td>
+    </tr>
+    <tr>
+        <td>mobile</td>
+        <td>购买人手机号</td>
+    </tr>
+    <tr>
+        <td>realname</td>
+        <td>购买人真实姓名</td>
+    </tr>
+    <tr>
+        <td>zone_id</td>
+        <td>购买人所在地区</td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td>购买人地址</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+    "message": "支付成功",
+    "status": true,
+    "forwardUrl": ""
+}
+        </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

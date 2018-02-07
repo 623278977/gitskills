@@ -1,0 +1,335 @@
+@import "../sass/base.scss";
+@import "../sass/themes.scss";
+
+@font-face	{
+	font-family: PingFang;
+	src: url('../images/PingFang Bold.ttf'),
+	     url('../images/PingFang Bold.eot'); /* IE9+ */
+}
+
+@font-face	{
+	font-family: chinaz;
+	src: url('../images/chinaz.ttf'),
+	     url('../images/chinaz.eot'); /* IE9+ */
+}
+
+html {
+	display: table;
+	width: 100%;
+	font-family: "宋体"
+}
+body {
+	background: url(../images/body_bg.png) no-repeat center top;
+	background-size: 100% 110%;
+	min-height: 100%;
+	height: 100%
+}
+
+.container {
+	width: 1424px;
+	@extend .c;
+	.top {
+		margin: 35px 0 15px 0;
+		text-align: center;
+		height: 217px;
+	}
+	.content {
+		background: url(../images/jiang_bg.png) no-repeat center top;
+		background-size: 100%;
+		height: 694px;
+		margin-bottom: 50px;
+		padding-top: 24px;
+		.con_top {
+			height:75px;
+			margin-left: 20px;
+    		width: 1400px;
+		}
+		.con_top>div {
+			float:left
+		}
+		.con_top>div.steps {
+			width: 750px;
+			margin-left: 20px;
+			margin-top: 22px;
+		}
+		.baseline {
+			@extend .absolute;
+			width: 540px;
+			top: 25px;
+			right:25px;
+			height: 4px;
+		}
+		.baseline.yellow {
+			background: $yellow;
+			width: 100%;
+		}
+		.baseline.blue {
+			background: $blue;
+			width: 100%;
+		}
+		.five_step {
+			@extend .relative,.c,.tc;
+			width: 540px;
+			color: $yellow;
+			.four {
+				left: 12px;
+			}
+			.three {
+				left: 122px;
+			}
+			.two {
+				left: 243px;
+			}
+			.one {
+				left: 353px;
+			}
+			.special {
+				right: -50px;
+				bottom: -45px;
+			}
+			.yuan {
+				background: $yellow;
+				margin-top: 9px;
+			}
+			.blue{
+				color: $blue;
+				.yuan {
+					background: $blue;
+				}
+				.big_j {
+					background: url(../images/blue_tdj.png) no-repeat;
+				}
+			}
+
+		}
+		.five_step>div {
+			@extend .absolute,.pf;
+			bottom: -40px;
+			font-size: 18px;
+			width: 20%;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			font-family: PingFang;
+		}
+		.con_top>button.next {
+			width: 220px;
+			background: url(../images/next_bg.png) no-repeat;
+			font-size: $fontSize;
+			color: $blue;
+			height: 55px;
+			line-height: 55px;
+			@extend .vb,.tc,.cursor,.pf;
+			margin: 9px 0 0 15px;
+			letter-spacing: 3px;
+			font-family: PingFang;
+		}
+		.con_top>div.current {
+			@extend .c;
+			margin-left: 67px;
+		}
+
+		.pmd_con {
+			margin-top: 40px;
+			@extend .relative;
+			.pmd{
+				background: url(../images/yjc_bg.png) no-repeat;
+				width: 757px;
+				height: 522px;
+				margin-left: 103px;
+				@extend .relative;
+				.pmd_z,.pmd_f{
+					background: url(../images/pmd_z.png) no-repeat;
+					width: 884px;
+					height: 575px;
+					left: -63px;
+					top: -68px;
+					@extend .absolute;
+				}
+				.pmd_f {
+					background: url(../images/pmd_f.png) no-repeat!important;
+
+				}
+				.pmd_top,.pmd_top_f{
+					@extend .absolute;
+				 	background: url(../images/pmd2_z.png) no-repeat;
+				 	color: #ffce0c;
+				 	font-size: 36px;
+				 	width: 593px;
+				 	margin-left: 129px;
+				 	margin-top: 29px;
+				 	height: 64px;
+				 	span {
+				 		float: left;
+						display: inline-block;
+				 	}
+				 	.renshu {
+				 		@extend .tc,.fzby;
+				 		margin-top: 15px;
+				 		display:inline-block;
+				 		width: 95px;
+				 		font-family: chinaz;
+				 		
+				 	}
+				}
+				.pmd_top_f {
+				 	background: url(../images/pmd2_f.png) no-repeat;
+				 }
+				.pmd_person {
+					margin: 116px 0 0 40px;
+					height: 280px;
+					overflow: hidden;
+					@extend .relative;
+					ul {
+						li {
+							width: 100%;
+							height: 280px;
+							oveflow: hidden;
+							clear: both;
+						}
+					}
+					.person_head {
+						background: url(../images/head_bg.png) no-repeat;
+						float: left;
+						height: 270px;
+						width: 270px;
+						padding: 5px;
+						img {
+							border-radius: $borderRadius * 3;
+							width: 270px;
+							height: 270px;
+						}
+					}
+					.person_news,.default_r {
+						@extend .pf;
+						background: url(../images/person_newsbg.png) no-repeat;
+						padding: 5px;
+						float: left;
+						width: 382px;
+						height: 270px;
+						margin-left: 10px;
+						color: $red;
+						.name {
+							font-family:PingFang;
+							font-size: $fontSize * 2;
+							margin: 45px 0 0 20px;
+						}
+						.tel {
+							font-family: chinaz;
+							font-size: $fontSize * 2.5;
+							margin: 59px 0 0 20px;
+						}
+					}
+					.default_r {
+						padding-left: 5px;
+					}
+				}
+				.pmd_btn {
+					@extend .absolute;
+					bottom: 17px;
+					width: 505px;
+					margin-left: 120px;
+					cursor: url(../images/default.cur), default
+				}
+				.hand1,.hand2 {
+					position: relative;
+					z-index: 4;
+					margin-right: 168px;
+					width: 165px;
+					float: right
+				}
+			}
+			.gan {
+				background: url(../images/gan_top.png) no-repeat;
+				width: 47px;
+				height: 235px;
+				@extend .absolute;
+				right: -36px;
+				top: 88px;
+			}
+			.gan.bottom {
+				background: url(../images/gan_bottom.png) no-repeat;
+				top: 175px;
+			}
+		}
+
+		.winnerList {
+			background: url(../images/person_bg.png) no-repeat;
+			width: 404px;
+			height: 507px;
+			margin: 43px 97px 0 0;
+			ul {
+				width: 289px;
+				margin: 23px 43px;
+				padding-top: 5px;
+				li {
+					@extend .pf;
+					padding: 5px 30px 5px 10px;
+					height: 28px;
+					line-height: 28px;
+					font-size: $fontSize * 0.75;
+					margin-bottom: 8px;
+					font-family: PingFang;
+					.head {
+						background: url(../images/md_head.png) no-repeat 10px center;
+						background-size: 28px 28px;
+						padding-left: 50px;
+						display: inline-block;
+						height: 28px;
+					}
+				}
+				li:hover {
+					@extend .cursor;
+					background: url(../images/lihover.png) no-repeat center;
+					background-size: 100%;
+				}
+			}
+		}
+	}
+}
+
+.tc_bg {
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height:100%;
+	top:0;
+	position: fixed; 
+	display: none;
+	img,.Tc {
+		@extend .cursor;
+		position: fixed;
+		width: 576px;
+		height: 313px;
+		top: 50%;
+		left: 50%;
+		margin-left: -288px;
+		margin-top: -157px;
+	}
+}
+#tc4 {
+	button {
+		@extend .absolute,.cursor;
+		bottom: -38px;
+		width: 100px;
+		height: 68px;
+	}
+	.sure{
+		background: url(../images/sure.png) no-repeat;
+		right: 150px;
+	}
+	.cancel {
+		background: url(../images/cancel.png) no-repeat;
+		right: 40px;
+	}
+	.sure:hover {
+		background: url(../images/sure_hover.png) no-repeat;
+		right: 150px;
+	}
+	.cancel:hover {
+		background: url(../images/cancel_hover.png) no-repeat;
+		right: 40px;
+	}
+}
+
+	
+

@@ -1,0 +1,75 @@
+<h2 class="title-h2 absolute">
+    获取一个用户详细信息——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/user/getuserdetail</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>用户自己uid</td>
+    </tr>
+    <tr>
+        <td>user_outh(必)</td>
+        <td>用户的uid或者username（字符串）</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    详细信息：
+    <pre>
+    {
+    "message": [
+    {
+    "uid": 185592,
+    "username": "18268881502",
+    "nickname": "185592",
+    "avatar": "http://www.wjsq3.com/images/default/avator-m.png",
+    "big_avatar": "http://www.wjsq3.com/images/default/avator-xl.png",
+    "firstcharter": "",
+    "yinpin": "1",
+    "industry": [
+    {
+    "name": "硬件",
+    "id": 7
+    },
+    {
+    "name": "物流仓储",
+    "id": 13
+    }
+    ],
+    "qrcode": "http://www.wjsq3.com/attached/image/qrcode/_large/e91151ff6c8bb5cc193edd4bce553301.png",
+    "maker_id": 0,
+    "my_invite": "25732512",
+    "realname": "",
+    "sign": "",
+    "is_huanxin": 1,
+    "activity_remind": 2,
+    "subject": "",
+    "gender": -1,
+    "institution": "",
+    "job": "",
+    "activity_count": 0,
+    "exist_card": 0,
+    "zone": "鞍山市",
+    "zone_id": 109,
+    "is_done_reg": 1,
+    "has_brand": 0,
+    "brand_name": "",
+    "is_wjsq": 1,
+    "friend_number": 0
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }
+    {"is_wjsq":0}],"status":true,"forwardUrl":""}
+        </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<b>如果存在 返回详细信息同登陆接口 外加is_wjsq=1的key-value，is_huanxin（1是0否）,relation(stranger，friend，self)</b><br>
+<b>如果不存在 message里面是is_wjsq=0的key-value</b><br>
+<div class="p-pub-title color10"></div>

@@ -1,0 +1,82 @@
+<h2 class="title-h2 absolute">
+    专版购买记录列表——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/vip/record</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>当前登录用户uid</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>若是传递了此参数，则返回用户在该专版下的购买记录</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": [
+    {
+    "name": "测试数据",
+    "id": 1,
+    "start_time": "2016/05/05",
+    "end_time": "2016/05/05",
+    "package_name": "6个月专版会员套餐",
+    "is_expire": 1
+    },
+    {
+    "name": "测试数据2",
+    "id": 2,
+    "start_time": "2016/05/05",
+    "end_time": "2016/05/05",
+    "package_name": "1个月专版会员套餐",
+    "is_expire": 1
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>专版名称(string)</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>专版id(string)</td>
+    </tr>
+    <tr>
+        <td>start_time</td>
+        <td>生效时间(string)</td>
+    </tr>
+    <tr>
+        <td>end_time</td>
+        <td>过期时间(string)</td>
+    </tr>
+    <tr>
+        <td>package_name</td>
+        <td>套餐名称(string)</td>
+    </tr>
+    <tr>
+        <td>is_expire</td>
+        <td>是否已经过期， 1：已过期，0：未过期</td>
+    </tr>
+    <tr>
+        <td>is_using</td>
+        <td>是否正在使用中，1：正在使用，0：不是正在使用</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

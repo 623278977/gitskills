@@ -1,0 +1,94 @@
+body,.bg_red{
+	background: #f13335;
+}
+.bg_blue{
+	background: #2873ff;
+}
+.bg_yellow{
+	background: #ff5a00;
+}
+.packet_lump {
+	width:38.6rem;
+	background: #fff;
+	border-radius: 0.2rem;
+	margin:auto;
+}
+.cf13{
+	color:#f13335;
+}
+.title_img{
+	width:1.33rem;
+	height: 0.5rem;
+}
+.overturn {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+}
+.cfefefe{
+	color:#fefefe;
+}
+.brand_img{
+	width: 6rem;
+	height: 6rem;
+}
+.packet_bg{
+	padding: 1rem 1.5rem;
+	border-radius:0.3rem; 
+	background: url('/images/packet_bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.amount{
+	width:13.5rem;
+	border-left: 1px solid #fff;
+	height: 6rem;
+}
+.f28{
+	font-size: 2.8rem;
+}
+.fullcut{
+	background: #fff;
+	width: 8.8rem;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	border-radius: 0.8rem;
+	margin:auto;
+}
+.btns {
+	width: 17.33rem;
+	height: 3.53rem;
+	line-height: 3.53rem;
+	border-radius: 0.2rem;
+	font-size: 1.4rem;
+	color:#fff;
+	border:none;
+}
+.flex_between{
+	display: flex;
+	justify-content: space-between;
+}
+.align_center{
+	align-items: center;
+}
+.img_left{
+	width: 9.9rem;
+	height: 12.4rem;
+	background-color: #f13335;
+}
+.lh1-5{
+	line-height: 1.5rem;
+}
+.method{
+	width: 5rem;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	background-color: #f13335;
+	border-radius: 0.8rem;
+	text-align: center;
+	font-size: 1.2rem;
+	color:#fefefe;
+}
+.mt2{
+	margin-top:2rem;
+}

@@ -1,0 +1,95 @@
+<h2 class="title-h2 absolute">
+    资讯详情——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/news/detail</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id(必)</td>
+        <td>资讯id</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": {
+    "id": 1,
+    "created_at": "1478586078",
+    "relation_id": 1,
+    "type": "brand",
+    "detail": "1",
+    "banner": "http://www.wjsq3.com/./1",
+    "title": "1",
+    "created_at_format": "2016-11-08 14:35",
+    "brand": {
+    "name": "测试",
+    "category_name": "第一个分类"
+    }
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>新闻id</td>
+    </tr>
+    <tr>
+        <td>created_at</td>
+        <td>发布时间时间戳</td>
+    </tr>
+    <tr>
+        <td>created_at_format</td>
+        <td>发布时间，已格式化</td>
+    </tr>
+    <tr>
+        <td>banner</td>
+        <td>新闻banner</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>新闻标题</td>
+    </tr>
+    <tr>
+        <td>author</td>
+        <td>新闻作者</td>
+    </tr>
+    <tr>
+        <td>detail</td>
+        <td>新闻详情</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>新闻分类，brand:品牌,none:无</td>
+    </tr>
+    <tr>
+        <td>share_mark</td>
+        <td>分享标识码</td>
+    </tr>
+    <tr>
+        <td>code</td>
+        <td>用于分享的唯一码</td>
+    </tr>
+    <tr>
+        <td>brand.name</td>
+        <td>品牌名称， 只有当type为brand时才返回</td>
+    </tr>
+    <tr>
+        <td>brand.category_name</td>
+        <td>品牌分类名称， 只有当type为brand时才返回</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

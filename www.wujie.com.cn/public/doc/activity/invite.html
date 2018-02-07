@@ -1,0 +1,86 @@
+<h2 class="title-h2 absolute">
+    活动邀请——tangem
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/invite</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>activity_id(必)</td>
+        <td>活动id(string)</td>
+    </tr>
+    <tr>
+        <td>maker_id(必)</td>
+        <td>ovoid(string)</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": {
+    "vip_id": 1,
+    "need_invite_num": 5,
+    "has_invited_num": 0,
+    "tickets": {
+    "subject": "2",
+    "is_receivable": 1,
+    "type": "现场票",
+    "begin_time": "2016-12-31 00:00"
+    }
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>专版ID</td>
+    </tr>
+    <tr>
+        <td>need_invite_num</td>
+        <td>需邀请人数</td>
+    </tr>
+    <tr>
+        <td>has_invited_num</td>
+        <td>已经邀请人数</td>
+    </tr>
+    <tr>
+        <td>tickets.subject</td>
+        <td>活动标题</td>
+    </tr>
+    <tr>
+        <td>tickets.is_receivable</td>
+        <td>是否可领取（0不可 1可以领取 2已经领取）</td>
+    </tr>
+    <tr>
+        <td>tickets.type</td>
+        <td>门票类型</td>
+    </tr>
+    <tr>
+        <td>tickets.end_time</td>
+        <td>活动结束时间</td>
+    </tr>
+    <tr>
+        <td>tickets.begin_time</td>
+        <td>活动开始时间</td>
+    </tr>
+    <tr>
+        <td>tickets.remark</td>
+        <td>备注</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

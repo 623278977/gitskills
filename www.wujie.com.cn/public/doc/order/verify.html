@@ -1,0 +1,250 @@
+<h2 class="title-h2 absolute">
+    根据uid和order_no去自己数据库查询支付结果(新)——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/order/verify</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>当前登录用户uid</td>
+    </tr>
+    <tr>
+        <td>order_no(必)</td>
+        <td>订单编号</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+    {
+    "message": {
+    "result": 1,
+    "entities": [
+    {
+    "name": "专版的名字1",
+    "detail": "新起点ID1",
+    "poster": "http://www.wjsq3.com/attached/image/20160809/_large/20160809174129_73341.jpg",
+    "subtitle": "专版的副标题1",
+    "groupid": "231218433952317868",
+    "activity_count": 6,
+    "video_count": 4,
+    "live_count": 3,
+    "is_valid": 0,
+    "term_name": "6个月asdf",
+    "expire_time": [
+    1471536000,
+    1471622400
+    ],
+    "type": "vip"
+    },
+    {
+    "name": "专版的名字1",
+    "detail": "新起点ID1",
+    "poster": "http://www.wjsq3.com/attached/image/20160809/_large/20160809174129_73341.jpg",
+    "subtitle": "专版的副标题1",
+    "groupid": "231218433952317868",
+    "activity_count": 6,
+    "video_count": 4,
+    "live_count": 3,
+    "is_valid": 0,
+    "term_name": "3个月好套餐",
+    "expire_time": [
+    1471536000,
+    1471881600
+    ],
+    "type": "vip"
+    }
+    ]
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+            </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>result</td>
+        <td>支付结果，1：支付成功， 0：支付失败或未支付</td>
+    </tr>
+    <tr>
+        <td>err</td>
+        <td>失败信息，只有当result为0时才返回</td>
+    </tr>
+    <tr>
+        <td>entities.type</td>
+        <td>实体类型(如专版)</td>
+    </tr>
+    <tr style="background: #0e90d2">
+        <td>entities.name</td>
+        <td>专版的名称,只有当购买项为专版时才返回</td>
+    </tr>
+    <tr style="background: #0e90d2">
+        <td>entities.detail</td>
+        <td>专版的详情,只有当购买项为专版时才返回</td>
+    </tr>
+    <tr style="background: #0e90d2">
+        <td>entities.poster</td>
+        <td>专版的海报图片地址,只有当购买项为专版时才返回</td>
+    </tr>
+    <tr style="background: #0e90d2">
+        <td>entities.subtitle</td>
+        <td>专版的副标题,只有当购买项为专版时才返回</td>
+    </tr>
+    <tr style="background: #0e90d2">
+        <td>entities.activity_count</td>
+        <td>专版下活动数量,只有当购买项为专版时才返回</td>
+    </tr>
+    <tr style="background: #0e90d2">
+        <td>entities.video_count</td>
+        <td>专版下视频数量,只有当购买项为专版时才返回</td>
+    </tr>
+    <tr style="background: #0e90d2">
+        <td>entities.live_count</td>
+        <td>专版下直播数量,只有当购买项为专版时才返回</td>
+    </tr>
+    <tr style="background: #0e90d2">
+        <td>entities.live_count</td>
+        <td>专版下直播数量,只有当购买项为专版时才返回</td>
+    </tr>
+    <tr style="background: #0e90d2">
+        <td>entities.term_name</td>
+        <td>专版套餐名称,只有当购买项为专版时才返回</td>
+    </tr>
+    <tr style="background: #0e90d2">
+        <td>entities.expire_time</td>
+        <td>专版会员结束时间，一个升序排列好的数组,只有当购买项为专版时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.order.order_no</td>
+        <td>订单号，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.order.order_no</td>
+        <td>订单号，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.order.nickname</td>
+        <td>订单购买人昵称，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.order.created_at_format</td>
+        <td>订单创建时间，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.order.username</td>
+        <td>订单购买人手机号，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.order.amount</td>
+        <td>订单总价，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.order.online_money</td>
+        <td>订单实际付款，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.order.score</td>
+        <td>订单使用积分，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.order.pay_at</td>
+        <td>订单支付时间，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.goods.goods_title</td>
+        <td>订单商品标题，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.goods.name</td>
+        <td>品牌名称，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.goods.zone_name</td>
+        <td>品牌地区名称，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.goods.category_name</td>
+        <td>品牌行业分类，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.goods.investment_arrange</td>
+        <td>品牌投资额度，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.goods.keywords</td>
+        <td>品牌关键词，数组，只有当购买项为品牌商品时才返回</td>
+    </tr>
+    <tr style="background: #01a863">
+        <td>entities.goods.logo</td>
+        <td>品牌logo，只有当购买项为品牌商品时才返回</td>
+    </tr>
+
+    <tr style="background: pink">
+        <td>entities.brand.id</td>
+        <td>品牌id，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.brand.brand_name</td>
+        <td>品牌名称，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.brand.categorys_name</td>
+        <td>品牌分类名称，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.brand.summary</td>
+        <td>公司简介，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.brand.logo</td>
+        <td>品牌缩略图，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.order.order_no</td>
+        <td>订单号，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.order.amount</td>
+        <td>预付金额，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.order.score</td>
+        <td>积分使用，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.order.online_money</td>
+        <td>实际付款，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.order.created_at_format</td>
+        <td>订单生成时间和提交时间，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.order.pay_at</td>
+        <td>订单支付时间，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.order.realname</td>
+        <td>支付人，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.order.mobile</td>
+        <td>手机号，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+    <tr style="background: pink">
+        <td>entities.order.zone_name</td>
+        <td>所在地，只有当购买项为品牌商品加盟时才返回</td>
+    </tr>
+</table>
+
+<div class="p-pub-title color10"></div>

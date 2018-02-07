@@ -1,0 +1,101 @@
+<h2 class="title-h2 absolute">
+    专版视频列表——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/vip/videos</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>vip_id(必)</td>
+        <td>专版id</td>
+    </tr>
+    <tr>
+        <td>category</td>
+        <td>类别，默认为空</td>
+    </tr>
+    <tr>
+        <td>sort</td>
+        <td>排序，不传则综合排序</td>
+    </tr>
+    <tr>
+        <td>filter</td>
+        <td>筛选，(maker:本地商圈、recommend:小编推荐、hot:热门视频)</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>当参数filter为maker时，该参数必传</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": [
+    {
+    "id": 200036,
+    "subject": "subject29",
+    "image": null,
+    "type": "金融产品",
+    "is_recommend": 0,
+    "description": "",
+    "view": 0,
+    "favor_count": 0
+    },
+    {
+    "id": 200035,
+    "subject": "3333",
+    "image": null,
+    "type": "金融产品",
+    "is_recommend": 0,
+    "description": "",
+    "view": 0,
+    "favor_count": 0
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>视频id(string)</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>视频标题(string)</td>
+    </tr>
+    <tr>
+        <td>image</td>
+        <td>视频图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>视频类别(string)</td>
+    </tr>
+    <tr>
+        <td>is_recommend</td>
+        <td>是否推荐1，代表推荐，0代表未推荐(string)</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>视频描述</td>
+    </tr>
+    <tr>
+        <td>view</td>
+        <td>观看数</td>
+    </tr>
+    <tr>
+        <td>favor_count</td>
+        <td>收藏数</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

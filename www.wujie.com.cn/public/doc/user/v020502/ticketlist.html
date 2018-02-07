@@ -1,0 +1,174 @@
+<h2 class="title-h2 absolute">
+    我的票券，未完成的票券—xihuan
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/user/userticketlist/v020502</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>type(必)</td>
+        <td>我的票券type 传my   未完成的type传notover</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页从1开始的整数</td>
+    </tr>
+    <tr>
+        <td>pageSize</td>
+        <td>每页几条数据默认15</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": [
+    {
+    "group": "expire",
+    "subject": "温州楼塌悲剧，只怪房主自私自利吗？-杭州站",
+    "begin_time": "2016年10月12日 09:00",
+    "ticket_type": "现场票",
+    "price": "888",
+    "online_money": "888.00",
+    "ticket_name": "",
+    "ticket_status": "超出支付时间",
+    "activity_id": 252,
+    "is_sign": 0,
+    "ticket_url": "http://dev.wjsq3.loc/webapp/ticket/not-ticket?id=1512&pagetag=02-2",
+    "is_over": 1,
+    "order_lefttime": -7950325,
+    "maker_id": 98,
+    "live_id": 173,
+    "video_id": 0,
+    "ticket_id": 1512,
+    "is_check": 0,
+    "pay_way":"微信支付",
+    "order_id":1235
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>group</td>
+        <td>分组名称 starting :正在进行 no_start:还未开启 end:已过期 need_pay:请尽快支付 expire:已失效</td>
+    </tr>
+    <tr>
+        <td>order_no</td>
+        <td>订单号</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动标题</td>
+    </tr>
+    <tr>
+        <td>ticket_id</td>
+        <td>门票id</td>
+    </tr>
+    <tr>
+        <td>ticket_type</td>
+        <td>门票类型</td>
+    </tr>
+    <tr>
+        <td>ticket_name</td>
+        <td>门票名称</td>
+    </tr>
+    <tr>
+        <td>ticket_status</td>
+        <td>门票状态</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>门票价格(总)</td>
+    </tr>
+    <tr>
+        <td>online_money</td>
+        <td>需要支付的门票价格</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>活动开始时间（字符串：2016年10月12日 09:00）</td>
+    </tr>
+    <tr>
+        <td>surplus_time</td>
+        <td>还差多少秒开始直播，为-1表示已经开始或结束</td>
+    </tr>
+    <tr>
+        <td>maker_id</td>
+        <td>会场id</td>
+    </tr>
+    <tr>
+        <td>live_id</td>
+        <td>直播id</td>
+    </tr>
+    <tr>
+        <td>activity_id</td>
+        <td>活动id</td>
+    </tr>
+    <tr>
+        <td>video_id</td>
+        <td>点播id</td>
+    </tr>
+    <tr>
+        <td>is_over</td>
+        <td>活动是否结束</td>
+    </tr>
+    <tr>
+        <td>is_check</td>
+        <td>门票是否验证 1 已验证  0未验证</td>
+    </tr>
+    <tr>
+        <td>order_status</td>
+        <td>订单状态-2：删除，-1：超时，0：待支付，1：已支付</td>
+    </tr>
+    <tr>
+        <td>order_lefttime</td>
+        <td>订单状态是未支付情况下:还剩多少秒过期  返回的秒数</td>
+    </tr>
+    <tr>
+        <td>ticket_url</td>
+        <td>我的门票详情url</td>
+    </tr>
+    <tr>
+        <td>pay_way</td>
+        <td>支付方式</td>
+    </tr>
+    <tr>
+        <td>order_id</td>
+        <td>订单id</td>
+    </tr>
+    <tr>
+        <td>activity_ticket_id</td>
+        <td>活动门票id</td>
+    </tr>
+    <tr>
+        <td>maker_subject</td>
+        <td>场地名称</td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td>详细地址</td>
+    </tr>
+    <tr>
+        <td>tel</td>
+        <td>联系电话</td>
+    </tr>
+    <tr>
+        <td>city</td>
+        <td>所在地区名数组 [省,市] 或 [直辖市]</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

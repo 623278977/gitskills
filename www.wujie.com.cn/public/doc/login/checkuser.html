@@ -1,0 +1,33 @@
+<h2 class="title-h2 absolute">
+    判断账号(1.用户名是否存在  2.密码是否正确)——fengzq
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/login/checkuser</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>username</td>
+        <td>判断username是否存在时必填，其他可不传</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>检验密码是否正确时必填，其他可不传</td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td>检验密码是否正确时必填，其他可不传</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    1.用户名是否存在：存在的话message：1   不存在message是0<br>
+    {"message":"1","status":true,"forwardUrl":""}<br>
+    {"message":"0","status":true,"forwardUrl":""}<br>
+    2.密码是否正确 正确的话status:true(1)   不存在false(0)<br>
+    {"message":"\u8d26\u53f7\u5f02\","status":true,"forwardUrl":""}
+    {"message":"\u8d26\u53f7\u5f02\","status":false,"forwardUrl":""}
+</div>
+

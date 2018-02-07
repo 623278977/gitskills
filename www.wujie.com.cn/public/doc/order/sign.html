@@ -1,0 +1,68 @@
+<h2 class="title-h2 absolute">
+    签名(新)——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/order/sign</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>order_no(必)</td>
+        <td>订单no</td>
+    </tr>
+    <tr>
+        <td>pay_way(必)</td>
+        <td>ali或weixin</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    支付宝：
+    {
+    "message": "partner=\"2088801170381412\"&seller_id=\"461839223@qq.com\
+    "&out_trade_no=\"al1470967537uu\"&subject=\"好套餐\"&body=\"好套餐；\
+    "&total_fee=\"0.01\"&notify_url=\"http://mt.wujie.com.cn/api/order/
+    alinotify\"&service=\"mobile.securitypay.pay\"&payment_type=\"1\
+    "&_input_charset=\"utf-8\"&sign=
+    \"4d5haJaq1aYdc3kwEXs3SF5DxCVVrYLROnXGwQQ5HQ26nvxr7vlClj0ZDZCphFk5eIVHcZzKLKQfTcigHumZEK1XiBwd
+    %2F%2FTimXnmdGG7u71cZYNBeV8dIiuj7%2B78OohKIrqkVjvY22lFt%2FrI0lAj%2FzhaefrBAbSfBqaPQRSrt6Y%3D\
+    "&sign_type=\"RSA\"",
+    "status": true,
+    "forwardUrl": ""
+    }
+
+
+    微信
+    {
+    "message": {
+    "sign": "5D754387B5B8B4E53CDA489B6F8ABA37",
+    "appid": "wx47ca479ca4f6053b",
+    "partnerid": "1330486601",
+    "prepayid": "wx20160812113625fdb55280bc0943048934",
+    "packageValue": "Sign=WXPay",
+    "noncestr": "ly07iq06lfugri5t778m7d5k0wyd8dwi",
+    "timestamp": 1470972957,
+    "body": "好套餐",
+    "out_trade_no": "al1470967537uu",
+    "spbill_create_ip": "127.0.0.1"
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>str</td>
+        <td>一个用来发起支付的字符串</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

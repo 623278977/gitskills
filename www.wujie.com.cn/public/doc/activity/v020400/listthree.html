@@ -1,0 +1,221 @@
+<h2 class="title-h2 absolute">
+    活动ABC列表——pengwt
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/listthree/_v020400</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+    <tr>
+        <td>pageSize</td>
+        <td>分页长度(默认15)</td>
+    </tr>
+    <tr>
+        <td>maker_id</td>
+        <td>ovo中心id</td>
+    </tr>
+    <tr>
+        <td>position_id</td>
+        <td>当前所在地区id</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>专版id</td>
+    </tr>
+    <tr>
+        <td>fetch_end</td>
+        <td>是否取已结束的活动，默认为0,0代表不取，1代表取</td>
+    </tr>
+    <tr>
+        <td>Demo Params</td>
+        <td>maker_id=50&position_id=175</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": {
+    "activity_a": [
+    {
+    "id": 309,
+    "subject": "111-杭州市",
+    "list_img": "attached/image/20160813/20160813135548_11238.jpg",
+    "begin_time": "12/09",
+    "is_recommend": 1,
+    "is_hot": 1,
+    "view": 1,
+    "maker_id": 50,
+    "city": "杭州市",
+    "price": "1",
+    "is_vip": 0,
+    "host_cities": [
+    "杭州市"
+    ],
+    "is_new": 1,
+    "category": "A",
+    "is_shareable": 0,
+    "url": "http://mt.wujie.com.cn/webapp/activity/detail?id=309&pagetag=02-2"
+    }
+    ],
+    "activity_b": [
+    {
+    "id": 307,
+    "subject": "ios-杭州市",
+    "list_img": "attached/image/20160812/20160812115021_89942.jpg",
+    "begin_time": "09/30",
+    "is_recommend": 1,
+    "is_hot": 1,
+    "view": 13,
+    "maker_id": 1,
+    "city": "杭州市",
+    "price": "1",
+    "is_vip": 0,
+    "is_new": 1,
+    "host_cities": [
+    "杭州市"
+    ],
+    "category": "B",
+    "is_shareable": 0,
+    "url": "http://mt.wujie.com.cn/webapp/activity/detail?id=307&pagetag=02-2"
+    },
+    {
+    "id": 308,
+    "subject": "ios2-杭州市",
+    "list_img": "attached/image/20160812/20160812115159_21189.jpg",
+    "begin_time": "10/08",
+    "is_recommend": 1,
+    "is_hot": 1,
+    "view": 9,
+    "maker_id": 1,
+    "city": "杭州市",
+    "price": "1",
+    "is_vip": 1,
+    "is_new": 1,
+    "host_cities": [
+    "杭州市"
+    ],
+    "category": "B",
+    "is_shareable": 0,
+    "url": "http://mt.wujie.com.cn/webapp/activity/detail?id=308&pagetag=02-2"
+    },
+    {
+    "id": 311,
+    "subject": "22-杭州市",
+    "list_img": "attached/image/20160814/20160814110809_29058.jpg",
+    "begin_time": "10/07",
+    "is_recommend": 1,
+    "is_hot": 1,
+    "view": 0,
+    "maker_id": 1,
+    "city": "杭州市",
+    "price": "1",
+    "is_vip": 0,
+    "is_new": 1,
+    "host_cities": [
+    "杭州市",
+    "瑞典",
+    "杭州市",
+    "杭州市"
+    ],
+    "category": "B",
+    "is_shareable": 0,
+    "url": "http://mt.wujie.com.cn/webapp/activity/detail?id=311&pagetag=02-2"
+    }
+    ],
+    "activity_c": {}
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+    </div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>活动id(string)</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动标题(string)</td>
+    </tr>
+    <tr>
+        <td>view</td>
+        <td>浏览量(string)</td>
+    </tr>
+    <tr>
+        <td>list_img</td>
+        <td>列表页图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>is_recommend</td>
+        <td>是否推荐0否 1是</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>开始时间</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>门票(最低价) -1 免费票</td>
+    </tr>
+    <tr>
+        <td>city</td>
+        <td>活动举办城市</td>
+    </tr>
+    <tr>
+        <td>host_cities</td>
+        <td>活动举办城市</td>
+    </tr>
+    <tr>
+        <td>url</td>
+        <td>当前活动的链接</td>
+    </tr>
+    <tr>
+        <td>is_vip</td>
+        <td>是否为专版活动(1是，0否)</td>
+    </tr>
+    <tr>
+        <td>is_hot</td>
+        <td>是否为热门活动(1是，0否)</td>
+    </tr>
+    <tr>
+        <td>category</td>
+        <td>活动类别(A,B,C)</td>
+    </tr>
+    <tr>
+        <td>isOver</td>
+        <td>该活动是否已结束，只有当该活动为C类时，才返回该字段</td>
+    </tr>
+    <tr>
+        <td>maker_id</td>
+        <td>活动OVOid</td>
+    </tr>
+    <tr>
+        <td>is_shareable</td>
+        <td>是否可以分享</td>
+    </tr>
+    <tr>
+        <td>ticket_num</td>
+        <td>门票数量</td>
+    </tr>
+    <tr>
+        <td>maker_name</td>
+        <td>Ovo名称</td>
+    </tr>
+    <tr>
+        <td>location</td>
+        <td>定位地点</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

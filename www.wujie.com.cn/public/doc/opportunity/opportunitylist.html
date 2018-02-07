@@ -1,0 +1,117 @@
+<h2 class="title-h2 absolute">
+    发现商机——fengzq
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/opportunity/list</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>用户uid(没登陆传0 或不传)</td>
+    </tr>
+    <tr>
+        <td>page（必）</td>
+        <td>从0开始的整数</td>
+    </tr>
+	<tr>
+        <td>pageSize （不传默认10）</td>
+        <td>分页页数</td>
+    </tr>
+	<tr>
+        <td>keyword</td>
+        <td>关键词</td>
+    </tr>
+    <tr>
+        <td>zone_id</td>
+        <td>地区id</td>
+    </tr>
+    <tr>
+        <td>industry_id</td>
+        <td>行业id 数组 </td>
+    </tr>
+    <tr>
+        <td>quyu</td>
+        <td>江浙沪传1  珠三角传2 长三角传3 港澳台传4 </td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>商机类型 政府传goverment  园区park</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {"message":[{
+        "subject":"\u7b2c1\u4e2a\u5546\u673a",
+        "recommend":0,
+        "type":"goverment",
+        "park_level":"\u56fd\u5bb6\u7ea7",
+        "park_type":"\u6587\u521b\u56ed\u533a",
+        "park_attr":"\u6c11\u8425",
+        "attract_invest_way":"BOO",
+        "view":100,
+        "id":1,
+        "url":"http:\/\/mt.wujie.com.cn\/webapp\/opportunity\/detail?id=1&pagetag=12-2",
+        "maker_subject":"\u676d\u5ddeOVO\u4e2d\u5fc3",
+        "address":"sdfasdf",
+        "industry":"\u4e92\u8054\u7f51",
+        "favorite_count":0}],"status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>商机标题</td>
+    </tr>
+    <tr>
+        <td>recommend</td>
+        <td>是否推荐 1是 0否</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>商机类型 goverment代表政府 park代表园区</td>
+    </tr>
+    <tr>
+        <td>park_level</td>
+        <td>园区级别 -- 商机为园区，其它不存在</td>
+    </tr>
+    <tr>
+        <td>park_type</td>
+        <td>园区类型 -- 商机为园区，其它不存在</td>
+    </tr>
+    <tr>
+        <td>park_attr</td>
+        <td>园区属性 -- 商机为园区，其它不存在</td>
+    </tr>
+    <tr>
+        <td>attract_invest_way</td>
+        <td>招商融资方式 -- 商机为政府，其它不存在</td>
+    </tr>
+    <tr>
+        <td>view</td>
+        <td>访问量</td>
+    </tr>
+    <tr>
+        <td>dapartment</td>
+        <td>商机主题</td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td>详细地址</td>
+    </tr>
+    <tr>
+        <td>industry</td>
+        <td>行业</td>
+    </tr>
+    <tr>
+        <td>favorite_count</td>
+        <td>收藏量</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

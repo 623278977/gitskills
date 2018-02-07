@@ -1,0 +1,451 @@
+body {
+    font-size: 1.4rem;
+}
+
+.zb_banner .zb_bannerBg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 4.8rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 0.4rem;
+}
+.zb_banner > img{
+    width: 100%;
+    height: 23.1rem;
+}
+.relative {
+    position: relative;
+}
+.hide{
+    display: none!important;
+}
+.f12 {
+    font-size: 1.2rem;
+}
+.f14{
+    font-size: 1.4rem;
+}
+
+.f18 {
+    font-size: 1.8rem;
+}
+
+.c9 {
+    color: #999;
+}
+
+.c-blue {
+    color: #1e8cd4;
+}
+
+.zb_bannerBg .l {
+    margin-left: 1.3333rem;
+}
+
+.zb_bannerBg .l span:nth-child(1) {
+    font-size: 1.6rem;
+    color: #fff;
+    display: block;
+}
+
+.zb_bannerBg .l span:nth-child(2) {
+    font-size: 1.2rem;
+    color: #fff;
+    opacity: 0.75;
+    display: inline-block;
+    max-width: 20rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zb_bannerBg .r a {
+    /*width: 12rem;*/
+    display: block;
+    padding: 0.6rem 3.3rem;
+    color: #1e8cd4;
+    font-size: 1.4rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.7rem;
+    vertical-align: middle;
+    margin-right: 1.33rem;
+    margin-top: 0.5rem;
+}
+.zb_bannerBg .r a.unmember{
+   padding:0.6rem 2rem;   
+}
+.zb-fold{
+    text-align: center;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    color: #999;
+    border-top:1px solid #ddd;
+}
+i.fold{
+    background:url(../images/down.png) no-repeat;
+    display: inline-block;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-size: cover;
+    vertical-align: middle;
+}
+i.unfold{
+    background:url(../images/up.png) no-repeat ;
+     display: inline-block;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-size: cover;
+    vertical-align: middle;
+}
+section.zb {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding-left: 1.1rem;
+}
+
+section.zb .about_act {
+    margin-top: 0;
+}
+
+.zb_title {
+    height: 4rem;
+    line-height: 4rem;
+    border-bottom: 1px solid #ddd;
+    padding-right: 1.33rem;
+}
+
+.zb_title em {
+    /*display: inline-block;*/
+    float: left;
+    margin-top: 1.35rem;
+    /*vertical-align: middle;*/
+    height: 1.4rem;
+    background-color: #1e8cd4;
+    width: 0.333rem;
+    margin-right: 0.667rem;
+}
+.live_empty{
+    background:url(../images/live_empty.png) no-repeat;
+    background-size: cover;
+    width: 14.7333rem;
+    height: 11.3667rem;
+    margin:4rem auto;
+}
+.activity_empty{
+    background:url(../images/activity_empty.png) no-repeat;
+    background-size: cover;
+    width: 15.7333rem;
+    height: 15.3667rem;
+    margin:4rem auto;
+}
+.video_empty{
+    background:url(../images/video_empty.png) no-repeat;
+    background-size: cover;
+    width: 15.7333rem;
+    height: 15.3667rem;
+    margin:4rem auto;
+}
+/*section p.zb_p {
+    padding: 1.1rem 0;
+    color: #666;
+    font-size: 1.2rem;
+    max-height: 11rem;
+    overflow-y: hidden;
+}*/
+section p.zb_p {
+    padding: 1.1rem 0;
+    color: #666;
+    font-size: 1.2rem;
+    max-height: 13rem;
+    overflow-y: hidden;
+    line-height: 2rem;
+}
+section p.zb_p span{
+    display: block;
+}
+section p.zb_p span p{
+    margin:0;
+}
+.lubo-img{
+    display: inline-block;
+    margin-right: 0.5rem;
+    /*vertical-align: middle;*/
+}
+.lubo-img img{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+.massive {
+    border-bottom: 1px solid #ddd;
+    padding: 1.1rem 0;
+    background-color: #fff;
+}
+.mas-act img{
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.mas-act{
+    margin-top: 8.5rem;
+    color: #999;
+    height: 2rem;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    border-top:1px solid #ddd;
+}
+.massive >img {
+    display: block;
+    height: 7.46rem;
+    width: 13.2rem;
+    margin-right: 1.2rem;
+    float: left;
+}
+#activity-section .about_act .money_collect{
+    /*bottom: 4rem;*/
+    float: right;
+    /*position: relative;*/
+    right: 2rem;
+    /*margin-bottom: 2rem;*/
+    top:7rem;
+}
+.other-zb{
+    position: absolute;
+    bottom: 1rem;
+}
+.massive .name {
+    font-size: 1.6rem;
+    color: #333;
+    width: 22.3rem;
+    float: left;
+    margin-bottom: 1rem;
+}
+
+.massive .l {
+    color: #999;
+    font-size: 1.2rem;
+    max-height: 7.46rem;
+    overflow: hidden;
+}
+
+.massive .act_name {
+    font-size: 1.6rem;
+    color: #333;
+    width: 22.3rem;
+    float: left;
+}
+
+.massive .more {
+    color: #999;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.massive .more .r {
+    padding-right: 1.1rem;
+}
+.seen_more .sj_icon {
+    margin-top: 1.33rem;
+}
+.massive p.p-over{
+    width: 22.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+i.icon {
+    margin-right: 0.1rem;
+    width: 1.55rem;
+    height: 1.8rem;
+}
+
+i.icon_zb {
+    background: url(../images/zb.png) no-repeat;
+    background-size: cover;
+}
+
+i.icon_lb {
+    background: url(../images/lb.png) no-repeat;
+    background-size: cover;
+}
+
+i.icon_hd {
+    background: url(../images/hd.png) no-repeat;
+    background-size: cover;
+}
+
+i.icon_zheng {
+    background: url(../images/zheng.png) no-repeat;
+    background-size: cover;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-top: -0.22rem;
+    margin-right: 0.5rem;
+}
+
+i.icon_qu {
+    background: url(../images/qu.png) no-repeat;
+    background-size: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -0.22rem;
+    margin-right: 0.5rem;
+}
+i.icon_zblive {
+    background: url(../images/zblive.png) no-repeat;
+    background-size: cover;
+    width: 2.8rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    margin-top: -0.4rem;
+}
+i.icon_zb-logo{
+    display: inline-block;
+    background: url(../images/zb-logo.png) no-repeat;
+    background-size: cover;
+    width: 1.8rem;
+    height: 1.9rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+/*/---------------------------搜索界面----------------------------------/*/
+#zbSearch {
+    padding: 1rem;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 2px 2px 3px #ddd;
+}
+.zb-sel {
+    position: absolute;
+    width: 6.35rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    color: #999;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+#zbSearch input.zb-hold {
+    width: 88.64%;
+    float: left;
+    height: 3rem;
+    border: 0;
+    border-radius: 0.8rem;
+    background-color: #dedede;
+    /*padding-left: 17.24%;*/
+    padding-left: 6.35rem;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+input.zb-search-cancel {
+    width: 11.36%;
+    float: left;
+    height: 3rem;
+    background-color: #fff;
+    border: 0;
+    color: #999;
+}
+
+i.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    border-top: 1rem solid #666;
+    display: inline-block;
+    margin-left: 0.8rem;
+}
+i.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    border-bottom: 1rem solid #49484b;
+    display: inline-block;
+    margin-left: 1.8rem;
+    position: absolute;
+    top: -0.6rem
+}
+#zbSearch .zb-sel-ul{
+    position: absolute;
+    width: 9rem;
+    background-color: #49484b;
+    border-radius: 0.4rem;
+    top:3.5rem;
+    left: 0.1rem;
+}
+
+.zb-sel-ul li a{
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    color: #fff;
+    padding:0 2rem;
+     border-bottom: 1px solid #5b5b5d;
+}
+.massive-head{
+    height: 3.333rem;
+    line-height: 3.333rem;
+    color: #1E8CD4;
+    font-size: 1.2rem;
+    padding-left: 0.6rem;
+    background-color: #fff;
+    margin:1rem 0;
+}
+.bd0{
+    border-bottom: 0;
+}
+section.zb-search{
+    padding-bottom:0;
+    margin-bottom: 0;
+}
+#zb-rights{
+    background-color: #fff;
+    margin-top: 1rem;
+    padding:1.1rem;
+}
+.massive-sel #zb-liveMore{
+    padding-left: 1.1rem;
+}
+#rights-fix{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.rights-bottom{
+    margin-bottom: 10rem;
+}
+.massive-grey{
+    height: 1rem;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+.pl1{
+    padding-left: 1.1rem;
+}
+/*-----对common.css做的修改---*/
+section.zb .seen_icon, section.zb .collect_icon{
+    height: 1.2rem
+}
+.massive .dark_gray{
+    margin-top:1rem;
+}
+@media screen and (max-device-width: 640px) {
+   section p.zb_p{
+       font-size: 1.4rem;
+   }
+  
+}
+@media screen and (min-device-width: 640px) {
+   section p.zb_p{
+       font-size: 1.2rem;
+   }
+  
+}

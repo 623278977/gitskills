@@ -1,0 +1,170 @@
+header{
+	width: 100%;
+	height:11rem;
+	background-image: url(/images/ha.png);
+	background-size: 100% 100%;
+	
+}
+/*顶部红包*/
+article{
+	width:95%;
+	height:auto;
+	border-radius: 0.5rem;
+	margin: 0 auto;
+	background: #fff;
+}
+.ui-red-bao{
+	width:100%;
+	height:auto;
+}
+.ui-red-bao li{
+	display: inline-block;
+}
+.ui-red-bao li:nth-child(1){
+	width:35%;
+}
+.ui-red-bao li:nth-child(2){
+	width:60%;
+	height:100%;
+	text-align:left;
+}
+.mt20{
+	margin-top:2rem;
+
+}
+.f32{
+	font-size:3.2rem;
+}
+.f04{
+	color:#ff0004;
+}
+.margin1{
+	margin: 1rem 0 0rem;
+}
+.margin2{
+	margin: 0rem 0 0.1rem;
+}
+.margin3{
+	margin: 0 0 0.5rem!important;
+}
+.margin4{
+	margin: -2rem 0 0rem;
+}
+.margin5{
+	margin: 1.5rem 0 1rem;
+}
+.margin6{
+	margin-top: -0.7rem;
+}
+.opcity{
+	opacity: 0;
+}
+.ui-bar{
+	width:100%;
+	height:1rem;
+	background-image: url(/images/hap.png);
+	background-size:100% 100%;
+	
+}
+.ui-use{
+	padding: 0.4rem 1.5rem;
+	background: #ff0004;
+	color:#fff;
+	border: 0;
+	border-radius:2rem;
+}
+.ui-bety{
+   padding: 1rem 1.4rem;
+   background: #fafafa;
+}
+.none{
+	display: none!important
+}
+.ui-bar2{
+	width:100%;
+	height:4rem;
+	line-height: 4rem;
+	text-align:center;
+}
+.ui-span{
+	display: block;
+	width:3.333rem;
+	height:0.2rem;
+	background: #999;
+	border-radius:0.5rem;
+	margin: 2rem auto;
+}
+/*怎么使用红包*/
+.ui-how-use{
+	width:95%;
+	height:auto;
+	border-radius: 0.5rem;
+	margin: 0 auto;
+	background: #fff;
+	padding: 2rem 2rem;
+}
+.ui-bg{
+	width:17.8rem;
+	height:1.5rem;
+	background-image:url(/images/020902/s.png);
+	background-size:17.8rem 1.5rem ;
+	margin:0 auto;	
+
+}
+.ui-flex-text{
+	width:100%;
+}
+.ui-flex-text li{
+	display:inline-block;
+	float:left;
+}
+.ui-flex-text li:nth-child(1){
+	width:31%;
+	text-align:left;
+}
+.ui-flex-text li:nth-child(2){
+	width:66%;
+	text-align:left;
+}
+.ui-pict-size{
+	width:9.7rem;
+	height:12.4rem;
+}
+.f28{
+	color:#2873ff;
+}
+.b28{
+	background: #2873ff;
+}
+footer{
+	text-align:center;
+	width:100%;
+	height:5.5rem;
+	line-height:5.5rem;
+	position: fixed;
+	left:0;
+	bottom:0;
+	background: #efeff4;
+	z-index:1000;
+}
+/*已经使用*/
+.ui-has-used,.ui-has-ordered{
+	background: #fff;
+	width:100%;
+	height:auto;
+}
+.ui-title{
+	width:100%;
+	height:4.2rem;
+	line-height: 4.2rem;
+	padding-left: 1.5rem
+}
+.ui-middle,.ui-footer{
+	padding: 1.5rem 1.5rem;
+}
+.fd4d4d{
+	color:#fd4d4d;
+}
+.add148{
+	height:14.8rem;
+}

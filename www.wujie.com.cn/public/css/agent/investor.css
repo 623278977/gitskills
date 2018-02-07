@@ -1,0 +1,242 @@
+/*zhangxm*/
+span {
+	display: inline-block;
+}
+body {
+	background-color: #efeff4;
+	
+}
+p {margin:0;}
+.photo {
+	width:6.5rem;
+	height: 6.5rem;
+	border-radius: 50%;
+	/*background: #000000;*/
+	float: left;
+	margin:2rem 1.5rem 1.5rem 0;
+}
+.f26 {
+	font-size: 2.6rem;
+}
+.c2873ff {
+	color:#2873FF;
+}
+.datum-l {
+	display: inline-block;
+}
+.datum-l>div {
+	display: flex;
+	align-items: center;
+}
+.datum {
+	padding:0 1.5rem;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.2rem;
+}
+.bcg-f {
+	background-color: #FFFFFF;
+}
+.relation {
+	padding:1.5rem;
+}
+.relation p {
+	margin: 0;
+}
+.relation,.content,.datum-l{
+	margin:1.2rem 0;
+}
+.content {
+	margin:1.2rem 0;
+	padding-left:1.35rem;
+}
+.content p {
+	padding:1.5rem 1.5rem 1.5rem 0;
+	margin:0;
+}
+.relation,.content p,.remark-btn,.p125-1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*.caret {
+	margin-left: 18rem;
+}*/
+.remark-btn {
+	width: 100%;
+	height: 3rem;
+	padding-left: 1.5rem;
+}
+.p125-1 {
+	width: 100%;
+	padding:1.25rem 0 1.1rem 1.5rem;
+}
+.dropdown ul {width: 100%;}
+.input {border:0;}
+/*客户提醒*/
+.top {
+	padding:1.2rem 1.5rem 1.1rem;
+	
+}
+.remind-client {
+	padding:0.5rem 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.via {
+	width:4.4rem;
+	height: 4.4rem;
+	float: left;
+}
+.grade {
+	margin-left: 0.6rem;
+	width:100%;
+	height:1.3rem;
+	text-align: center;
+	
+}
+.remark-li {
+	padding:1rem 0;
+}
+.gender {
+	width: 1.2rem;
+	height: 1.35rem;
+	float: left;
+}
+.btn {
+	width: 100%;
+	height: 5.5rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #FFFFFF;
+	border:0.5px solid #E5E5E5;
+	z-index:999;
+}
+.btn-l,.btn-r{
+	width:49%;
+	height:100%;
+	text-align: center;
+	line-height: 5.5rem;
+	background-color: #FFFFFF;
+}
+.btn-l {
+	border: 0;
+}
+.btn-r {
+	border-bottom: 0;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0.5px solid #e5e5e5;
+}
+.btn-l img,.btn-r a img {
+	width: 2.8rem;
+	height: 2.8rem;
+}
+.defend {
+	border-radius: 2rem;
+	color:#FFFFFF;
+	position:absolute;
+	top: 3rem;
+	right: -1rem;
+	width:9rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	display: table;
+	/*background: -webkit-gradient(linear, left, right, from(#2775fe), to(#oea6e9));
+    background: -moz-linear-gradient(top,  #2775fe,  #oea6e9); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2775fe', endColorstr='#oea6e9');
+    */
+    background:#2775fe;
+/*background:-webkit-gradient(linear, left, left, from(#2775fe), to(#oea6e9));
+background:-webkit-linear-gradient(left, #2775fe, #oea6e9);background-image:-moz-linear-gradient(left, #2775fe, #oea6e9);
+background:-ms-linear-gradient(left, #2775fe, #oea6e9);
+background:-o-linear-gradient(left, #2775fe, #oea6e9);
+background:linear-gradient(left, #2775fe, #oea6e9);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#2775fe', EndColorStr='#oea6e9');*/
+
+/*background: -webkit-gradient(linear, 0 0, 0 right, from(#2775fe), to(#oea6e9));  
+background: -moz-linear-gradient(left, #2775fe, #oea6e9);*/
+}
+.masking {
+	
+	top: 0;
+	left: 0;
+	text-align: -webkit-center;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+.masking-con {
+	width: 80%;
+	height: 22.25rem;
+	position: relative;
+	top: 28%;
+	left: 0;
+	background: #FFFFFF;
+	opacity: 1;
+	z-index: 9999;
+	
+}
+.masking-p1 {
+	width:100%;
+	height: 4.5rem;
+	text-align: center;
+	line-height: 4.5rem;
+	background-color: #0bade8;
+}
+.color-f {
+	color:#FFFFFF;
+}
+.pl-r {
+	padding:0 3rem;
+}
+.pw-lr {
+	width:100%;
+	padding-top: 1.5rem;
+	text-align: left;	
+}
+.p_flex {
+	display: flex;
+	align-items: flex-start;
+}
+.dot {
+	display: inline-block;
+	width:0.5rem;
+	height:0.5rem;
+	background-color:#10a2ea ;
+	margin-right: 0.6rem;
+	border-radius: 50%;
+	margin-top: 0.5rem;
+}
+.inline {
+	display: inline;
+	line-height: 1.9rem;
+}
+.cancel,.close {
+	border-radius: 0.5rem;
+	width:49%;
+	height: 2.8rem;
+	text-align: center;
+	line-height: 2.8rem;
+}
+.cancel {
+	border: 1px solid #000000;
+	float: left;
+	background-color: #FFFFFF;
+}
+.close {
+	float: right;
+	background-color: #2873FF;
+}
+.masking-p-btn {
+	overflow: hidden;
+}
+
+
+

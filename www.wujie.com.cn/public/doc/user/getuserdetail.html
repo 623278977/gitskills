@@ -1,0 +1,53 @@
+<h2 class="title-h2 absolute">
+    获取一个用户详细信息——fengzq
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/user/getuserdetail</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>用户自己uid</td>
+    </tr>
+    <tr>
+        <td>user_outh(必)</td>
+        <td>用户的uid或者username（字符串）</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    详细信息：
+    {"message":[
+        {"uid":32,
+        "username":"15868429342",
+        "nickname":"\u51af\u5fd7\u5f3a\u91c7\u6851\u5b50",
+        "avatar":"http:\/\/www.wjsq1.com\/images\/default\/avator-m.png",
+        "firstcharter":"M",
+        "qrcode":"http:\/\/www.wjsq1.com\/",
+        "maker_id":1,
+        "subject":"\u676d\u5ddeOVO\u4e2d\u5fc3",
+        "gender":0,
+        "is_huanxin":0,
+        "relation":"stranger"
+        "industry":[{"name":"\u4e92\u8054\u7f51","id":1},
+            {"name":"\u5b89\u5168 IT\u670d\u52a1","id":3},
+            {"name":"\u7535\u5546O2O\u6e38\u620f","id":4}],
+        "is_wjsq":1
+        "friend":{ <b>好友备注(不是好友没有这个字典)</b><br>
+        "uid":4,<br>
+        "other_uid":32,<br>
+        "remark":备注<br>
+        "friend_tel":手机号（数组）<br>
+        "friend_intro":描述<br>
+        "friend_number":环信好友数<br>
+    }
+        },
+    {"is_wjsq":0}],"status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<b>如果存在 返回详细信息同登陆接口 外加is_wjsq=1的key-value，is_huanxin（1是0否）,relation(stranger，friend，self)</b><br>
+<b>如果不存在 message里面是is_wjsq=0的key-value</b><br>
+<div class="p-pub-title color10"></div>

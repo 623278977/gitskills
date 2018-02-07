@@ -1,0 +1,120 @@
+<h2 class="title-h2 absolute">
+    下单并签名——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/order/order-and-sign/_v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>当前登录用户uid</td>
+    </tr>
+    <tr>
+        <td>amount(必)</td>
+        <td>订单总价(元)</td>
+    </tr>
+    <tr>
+        <td>pay_way(必)</td>
+        <td>ali或weixin</td>
+    </tr>
+
+    <tr>
+        <td>items(必)</td>
+        <td>
+            <pre>
+            购买项，一个二维数组
+
+            [
+            ['type' => 'score', 'product_id' => 1, 'price' => 0.5, 'num' => 1],
+            ['type' => 'video_reward', 'product_id' => 2, 'price' => 1000, 'num' => 1],
+            ['type' => 'live_reward', 'product_id' => 3, 'price' => 2000, 'num' => 1],
+            ['type' => 'brand', 'product_id' => 5, 'price' => 4000, 'num' => 1],
+            ['type' => 'brand_goods', 'product_id' => 5, 'price' => 4000, 'num' => 1],
+            ];
+            type:类型
+                (score:积分,video_reward,视频打赏，live_reward：直播打赏，brand_goods:品牌商品
+                brand:品牌推介会下的品牌商品)、
+            product_id:对应的id，视频打赏及直播打赏传对应视频或直播的id、
+                price:价格,单位:元、
+                num:数量
+            </pre>
+        </td>
+    </tr>
+    <tr>
+        <td>mobile</td>
+        <td>购买人手机号</td>
+    </tr>
+    <tr>
+        <td>realname</td>
+        <td>购买人真实姓名</td>
+    </tr>
+    <tr>
+        <td>zone_id</td>
+        <td>购买人所在地区</td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td>购买人地址</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+    支付宝：
+        {
+    "message": {
+        "str": "partner=\"2088801170381412\"&seller_id=\"461839223@qq.com\"&out_trade_no=
+        \"qki1497601182rja\"&subject=\"50积分\"&total_fee=\"1.00\"&notify_url=\"http://www.wjsq3.com/
+        api/order/alinotify\"&service=\"mobile.securitypay.pay\"&payment_type=\"1\"&_input_charset=\
+        "utf-8\"&sign=\"rn29J11n6to7rXUMnFjZhmnSrOKjYgJKvclyNA3oxh5RokcyMxwKTK5IKOlK6c%2B7EOm0Js704BIDIXgVA3pH
+        XOBFTprh8Fkm7xR8EoQq7zTfWM8jzrOuXguDdwegKPK9Sgb%2FqcTNXWaLU3iiOrkBzAreY4WKFTlw1SHgMPwUhu0%3D\"&sign_type=
+        \"RSA\"",
+        "order_no": "qki1497601182rja"
+    },
+    "status": true,
+    "forwardUrl": ""
+}
+
+
+    微信
+{
+    "message": {
+        "str": {
+            "sign": "9E91C6A1B9D29CF520B56E01EBBD53E2",
+            "appid": "wx47ca479ca4f6053b",
+            "partnerid": "1330486601",
+            "prepayid": "wx201706161619091f9f20a6fc0992021910",
+            "packageValue": "Sign=WXPay",
+            "noncestr": "quqxraqfl7vdka5j0r3i4wl59gz19ntw",
+            "timestamp": 1497601160,
+            "body": "50积分",
+            "out_trade_no": "wxf1497601160rrw",
+            "spbill_create_ip": "127.0.0.1"
+        },
+        "order_no": "wxf1497601160rrw"
+    },
+    "status": true,
+    "forwardUrl": ""
+}
+        </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>str</td>
+        <td>一个用来发起支付的字符串</td>
+    </tr>
+    <tr>
+        <td>order_no</td>
+        <td>订单号</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

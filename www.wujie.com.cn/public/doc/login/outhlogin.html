@@ -1,0 +1,44 @@
+<h2 class="title-h2 absolute">
+    第三方登陆——fengzq
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/login/outhlogin</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>type(必)</td>
+        <td>第三方类型 qq传qq 微信传wx  微博传wb</td>
+    </tr>
+    <tr>
+        <td>outh_id(必)</td>
+        <td>第三方登陆的access_token  如果是第三方注册必填</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {"message":
+        {"uid":51,
+        "nickname":"melo20",
+        "avatar":"http:\/\/www.wjsq1.com\/images\/default\/avator-m.png",
+        "qrcode":"http:\/\/www.wjsq1.com\/attached\/image\/qrcode\/ccb88987a4.png",
+        "maker_id":2,
+        "gender":-1,
+        "industry":[
+            {"name":"\u79fb\u52a8\u4e92\u8054\u7f51","id":2},
+            {"name":"\u5b89\u5168 IT\u670d\u52a1","id":3}]
+    },"status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    如果返回的结果是true，说明第三方登陆已经绑定过商圈账号，直接登陆进去，返回参数同登陆接口
+    <br>
+    如果返回的结果是false，且message为"请先绑定手机号",请跳转绑定手机号页面，
+    <br>
+    然后走绑定接口（如果绑定接口返回false message为：手机号不存在 ）说明未注册:请走注册接口
+</table>
+<div class="p-pub-title color10"></div>

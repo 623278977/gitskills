@@ -1,0 +1,868 @@
+/*头部*/
+.m-banner-bg{
+    background: url("../../images/citypartner/banner_01.png") no-repeat center center;
+    position: relative;
+    height: 900px;
+    /*background-attachment:fixed;*/
+}
+.g-hd{
+    height:120px;
+
+    border-bottom: 1px solid #338fa9;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.m-logo{
+    height: 120px;
+    line-height: 120px;
+}
+.m-logo img{
+    /*vertical-align: middle;*/
+    margin-top:25px
+}
+.m-about a{
+    display: inline-block;
+    margin-right: 40px;
+    color: #a3b6c6;
+}
+.g-hd a:hover{
+    color: #fff;
+}
+
+.m-banner-c img{
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+    top:50%;
+    margin-top:-180px;
+}
+.btn{
+    color: #fff;
+}
+.btn-login{
+    width: 320px;
+    display: block;
+    height:50px;
+    line-height: 50px;
+    background-color: #23a4f8;
+    border-radius: 40px;
+    margin:0 auto;
+    transition: 0.4s;
+    font-size: 20px;
+}
+.btn-login:hover{
+    background-color: #47b6ff;
+}
+.m-login-btn{
+    position: absolute;
+    top:75%;
+    width:1200px;
+}
+.m-login-btn a{
+    left: 50%;
+    position: absolute;
+    margin: 10px 0 0 90px;
+    color:#a3b6c6 ;
+}
+/*首页主体部分*/
+.g-m-bg{
+    background-color: #f2f2f2;
+    height:780px;
+    width: 100%;
+    padding-top: 70px;
+}
+.m-login-btn{
+    position: absolute;
+    top:75%;
+    width:1200px;
+}
+.m-login-btns{
+    position: absolute;
+    top:75%;
+    width:1055px;
+    margin-left: 70px;
+}
+.btn-loged{
+    width: 250px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #1e8cd3;
+    transition: 0.4s;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+.btn-loged:hover{
+    background-color: #47b6ff;
+}
+.m-box{
+    height: 320px;
+    margin-bottom:70px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.m-text{
+    width: 545px;
+    padding:20px 50px;
+
+}
+.m-text p{
+    line-height: 40px;
+}
+.btn-know{
+    width: 160px;
+    /*height:40px;*/
+    line-height: 40px;
+    color: #47b6ff;
+    border:1px solid #47b6ff;
+    border-radius:20px;
+    background-color: #fff;
+    transition: 0.4s;
+}
+.btn-know a{
+    color: #47b6ff;
+    font-size: 14px;
+}
+.btn-know:hover {
+    background-color: #47b6ff;
+    color: #fff;
+}
+.btn-know:hover a{
+    color: #fff;
+}
+.g-m-about{
+    padding:100px 0;
+    padding-bottom: 170px;
+}
+.g-m-about p{
+    line-height: 24px;
+}
+.m-about-box{
+    background: url("../../images/citypartner/about.png") no-repeat;
+    width: 1200px;
+    height:320px;
+}
+.m-about-box ul li{
+    width: 240px;
+    height: 160px;
+    float: left;
+}
+.m-about-box ul li a{
+    display: inline-block;
+    width: 240px;
+    position: relative;
+    height:160px;
+    /*background-color:#000;*/
+    /*background-color: rgba(0,0,0,0);*/
+    /*filter:alpha(opacity=0);*/
+    float: left;
+    /*transition: 0.4s;*/
+}
+
+.m-about-box a{
+    color:#FEF9F9;
+}
+.m-about-box  span{
+    position: absolute;
+    bottom:0;
+    display: inline-block;
+    width:240px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.2);
+    filter:alpha(opacity=20);
+}
+.m-about-box ul li a:hover{
+
+    color: rgba(255,255,255,1);
+    background-color: #000;
+    background-color: rgba(0,0,0,0);
+    filter:alpha(opacity=0);
+
+
+}
+.m-about-box u li a:hover  span {
+    color: rgba(255,255,255,1);
+}
+/*加入我们 表单*/
+.m-join{
+    padding-top: 50px;
+    background-color: #1e2832;
+    color: #fff;
+}
+form#join{
+    padding:20px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 50px;
+
+}
+form#join label{
+    color: #989b9e;
+    position: absolute;
+    margin:10px 0 0 15px;
+    font-size: 16px;
+
+}
+form#join input{
+    border:0;
+    width: 244px;
+    height:40px;
+    line-height: 40px;
+    margin-right: 20px;
+    background-color: #28313b;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 120px;
+    box-sizing: border-box;
+    width: 364px;
+}
+form#join textarea{
+    border:0;
+    border-radius: 5px;
+    background-color: #28313b;
+    color: #fff;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+}
+form#join label.form-text{
+    left: 0;
+    margin: 30px 0 0 35px;
+    color: #989b9e;
+    top: 60px;
+}
+form#join textarea{
+    padding:14px 13px 0 16px;
+    width:1110px;
+}
+form .btns{
+    width: 440px;
+}
+form .btn-form-s{
+    color: #fff;
+    background-color: #23a4f8;
+    margin-right: 100px;
+}
+form .btn-form-r{
+    color: #bcbfc2;
+    border-color: #bcbfc2;
+    background-color: transparent;
+}
+form .btn-form-r:hover{
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+}
+.m-login-join{
+    width: 290px;
+    height: 160px;
+    background-color: rgba(17, 24, 31,0.85);
+    position: fixed;
+    top:50%;
+    margin-top: -80px;
+    left: 50%;
+    margin-left: -145px;
+    color: #fff;
+    border-radius: 15px;
+}
+.m-login-join p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+/*注册表单*/
+.m-form{
+    background-color: #1e2832;
+    border:0px solid #bcbfc2;
+    border-radius: 4px;
+    /*box-shadow: 0 0 10px #fff;*/
+    position: fixed;
+    font-size: 14px;
+}
+
+.m-form h2{
+    height: 70px;
+    line-height: 60px;
+    color: #fff;
+}
+.form-reg{
+    width: 760px;
+    height:650px;
+    top:50%;
+    margin-top: -325px;
+    left: 50%;
+    margin-left: -380px;
+    color: #fff;
+}
+.form-info{
+    width: 600px;
+    height: 650px;
+    top: 50%;
+    margin-top: -325px;
+    left: 50%;
+    margin-left: -300px;
+    color: #fff;
+}
+.form-success{
+    width: 560px;
+    height: 380px;
+    top: 50%;
+    margin-top: -190px;
+    left: 50%;
+    margin-left: -280px;
+    color: #fff;
+}
+.form-login{
+    width: 400px;
+    height:500px;
+    top:50%;
+    margin-top:-250px;
+    left:50%;
+    margin-left:-200px;
+    color: #989b9e;
+}
+.form-forget{
+    width: 600px;
+    height:480px;
+    top:50%;
+    margin-top: -240px;
+    left:50%;
+    margin-left:-300px;
+    color:#989b9e ;
+}
+.form-modify, .form-modify-success{
+    width: 600px;
+    height: 480px;
+    top:50%;
+    margin-top: -240px;
+    left:50%;
+    margin-left: -300px;
+    color: #989b9e;
+}
+.form-modify-success{
+    color:#fff;
+
+}
+.form-login a{
+    color: #989b9e;
+}
+.form-login .btn{
+    margin-top: 110px;
+}
+.form-login a:hover{
+    color: #fff;
+}
+.form-login label{
+    position: absolute;
+    margin: 10px 0 0 60px;
+    color: #cfd0d2;
+}
+
+.form-success .relative,.form-modify-success .relative {
+    padding-top: 120px;
+}
+.form-modify-success button{
+    margin-top: 150px;
+}
+
+#formInfo{
+    color: #bcbfc2;
+}
+#formRegister{
+    width:436px;
+    height:650px;
+    color: #bcbfc2;
+    /*position: relative;*/
+}
+#formModify{
+    width: 420px;
+}
+#formInfo{
+    width: 440px;
+}
+#formForget,#formForget2{
+    width: 420px;
+}
+.m-form a{
+    color: #bcbfc2;
+}
+.m-form a:hover{
+    color: #fff;
+}
+.m-form label{
+    width: 100px;
+    display: inline-block;
+    font-size: 16px;
+}
+.m-form span.error{
+    display: inline-block;
+    margin-left: 120px;
+    margin-top: 5px;
+    color: #fff;
+    float: left;
+}
+.m-form input{
+    border:1px solid #28313b;
+    height: 40px;
+    /*line-height: 40px;*/
+    width: 320px;
+    background-color: #28313b;
+    border-radius: 5px;
+    color: #fff;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+.m-form select{
+    border:1px solid #28313b;
+    height: 40px;
+    line-height: 40px;
+    width: 320px;
+    background-color: #28313b;
+    border-radius: 5px;
+    color: #fff;
+    padding-left: 14px;
+    color: #A9A9A9;
+}
+.m-form #province ,.m-form #city{
+    width: 160px;
+}
+.m-form p{
+    margin-bottom: 30px;
+}
+.form-login input{
+    padding-left: 50px;
+    margin-left: 45px;
+    text-align: right;
+    padding-right: 12px;
+}
+.btn-reg{
+    height:40px;
+    line-height: 40px;
+    margin-top: 50px;
+}
+#tip-invite{
+    position: absolute;
+    right: 5px;
+    top: 320px;
+    transition: 0.4s;
+}
+
+#inputCheck{
+    color: #fff;
+    margin-left: 120px;
+    position: relative;
+}
+.m-form .m-check{
+    position: absolute;
+    background-color: #3e4b58;
+    right: 179px;
+    top:141px;
+    height: 38px;
+    line-height: 38px;
+    width: 100px;
+    color: #bcbfc2;
+    /*margin-top:-42px;*/
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+a.close{
+
+    position: absolute;
+    width: 22px;
+    height:22px;
+    top:10px;
+    right: 10px;
+    background: url("../../images/citypartner/close.png") no-repeat;
+}
+a.close:hover{
+    /*border:1px solid #bcbfc2;*/
+    /*border-radius: 2px;*/
+    /*padding-bottom:17px;*/
+    /*padding-right: 15px;*/
+    background: url("../../images/citypartner/closed.png") no-repeat;
+
+}
+a.close2{
+    position: absolute;
+    width: 22px;
+    height:22px;
+    top:10px;
+    right: 10px;
+    background: url("../../images/citypartner/close.png") no-repeat;
+}
+a.close2:hover{
+    background: url("../../images/citypartner/closed.png") no-repeat;
+
+}
+#formRegister .login-now{
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+}
+.m-head{
+    width: 500px;
+    height:260px;
+    padding-top: 20px;
+    /*border:1px dashed #28333d;*/
+    /*border-radius: 5px;*/
+    margin-left: -40px;
+    box-sizing: border-box;
+}
+.img-head img{
+    width: 112px;
+    height: 112px;
+    border-radius: 56px;
+}
+.m-head-pic{
+    width: 500px;
+    height:260px;
+    padding-top: 10px;
+    border:1px dashed #28333d;
+    border-radius: 5px;
+    margin-left: -40px;
+    box-sizing: border-box;
+}
+button.btn-head{
+    width: 100px;
+    height:30px;
+    line-height: 30px;
+    background-color: #23a4f8;
+    border-radius: 40px;
+}
+button.btn-head:hover{
+    background-color: #47b6ff;
+}
+.m-block{
+    margin-top: 180px;
+}
+.m-block p{
+    margin-bottom: 10px;
+}
+.m-block .btn-head{
+    margin:5px 20px;
+}
+.m-form span.uncheckbox{
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color: #28313b;
+    border-radius: 2px;
+    color: #999;
+    font-size: 12px;
+    margin-right: 8px;
+    margin-top: 2px;
+
+}
+.m-form span.uncheckbox:hover{
+    border:1px solid #989b9e;
+    color: #fff;
+    box-sizing: border-box;
+}
+.m-form span.uncheckbox.checkbox{
+    background: url("../../images/citypartner/checkbox.png") no-repeat;
+    background-color: #28313b;
+    background-position: 3px 3px;
+}
+
+.m-form input.login-checkbox{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    filter: alpha(opacity = 0);
+}
+.m-form label.checkbox:hover{
+    color: #fff;
+}
+.form-login .checkbox{
+    position: static;
+    margin:0;
+    float: left;
+    /*margin: -3px 0 0 5px;*/
+}
+.m-form .selbg{
+    display: inline-block;
+    border-radius: 5px;
+    /*background-color: ;*/
+    width: 320px;
+    height: 40px;
+    overflow: hidden;
+    background: url("../../images/citypartner/icon-select.png") no-repeat right #28313b;
+    vertical-align: middle;
+    background-position: 300px;
+}
+.m-form .selbg2 select{
+    background: url("../../images/citypartner/icon-select.png") no-repeat right #28313b;
+    vertical-align: middle;
+    background-position: 140px;
+
+}
+.m-form .selbg select{
+    background: url("../../images/citypartner/icon-select.png") no-repeat right #28313b;
+    vertical-align: middle;
+    background-position: 300px;
+}
+
+
+.form-modify button.btn-login{
+    margin-top: 100px;
+}
+.form-login p.forget{
+    padding:0 20px;
+}
+.form-forget .m-check{
+    right: 90px;
+}
+.form-forget .btn-login{
+    margin-top: 100px;
+}
+ .form-forget h2,.form-modify h2,.form-login h2{
+    height: 80px;
+    line-height: 100px;
+}
+
+/*翻转表单*/
+#formContainer{
+    width:600px;
+    height:500px;
+    margin:0 auto;
+    position:fixed;
+    top:50%;
+    margin-top: -250px;
+    left:50%;
+    margin-left: -300px;
+    z-index:1;
+    -moz-perspective: 800px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+
+}
+#formContainer #form-login,#form-forget,.form-reg{
+    /*width:100%;*/
+    /*height:100%;*/
+    /*position:absolute;*/
+    /*top:0;*/
+    /*left:0;*/
+
+    /* Enabling 3d space for the transforms */
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    /* When the forms are flipped, they will be hidden */
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    /* Enabling a smooth animated transition */
+    -moz-transition:0.8s;
+    -webkit-transition:0.8s;
+    transition:0.8s;
+
+    /* Configure a keyframe animation for Firefox */
+    -moz-animation: pulse 2s infinite;
+
+    /* Configure it for Chrome and Safari */
+    -webkit-animation: pulse 2s infinite;
+}
+/* Firefox Keyframe Animation */
+@-moz-keyframes pulse{
+    0%{		box-shadow:0 0 1px #bcbfc2;}
+    50%{	box-shadow:0 0 8px #bcbfc2;}
+    100%{	box-shadow:0 0 1px #bcbfc2;}
+}
+
+/* Webkit keyframe animation */
+@-webkit-keyframes pulse{
+    0%{		box-shadow:0 0 1px #bcbfc2;}
+    50%{	box-shadow:0 0 10px #bcbfc2;}
+    100%{	box-shadow:0 0 1px #bcbfc2;}
+    /*0%{		box-shadow:0 0 1px #008aff;}*/
+    /*50%{	box-shadow:0 0 10px #008aff;}*/
+    /*100%{	box-shadow:0 0 1px #008aff;}*/
+}
+#form-login{
+    z-index: 100;
+}
+#form-forget{
+    z-index: 1;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+}
+#formContainer.flipped #form-login{
+
+    opacity:0;
+    filter: alpha(opacity=0);
+
+    /**
+     * Rotating the login form when the
+     * flipped class is added to the container
+     */
+
+    -moz-transform:rotateY(-180deg);
+    -webkit-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+}
+#formContainer.flipped #form-forget{
+
+    opacity:1;
+    filter: alpha(opacity=100);
+
+    /* Rotating the recover div into view */
+    -moz-transform:rotateY(0deg);
+    -webkit-transform:rotateY(0deg);
+    transform:rotateY(0deg);
+}
+#formContainer.flipped .form-forget{
+
+    opacity:1;
+    filter: alpha(opacity=100);
+    z-index: 100;
+
+    /* Rotating the recover div into view */
+    -moz-transform:rotateY(0deg);
+    -webkit-transform:rotateY(0deg);
+    transform:rotateY(0deg);
+}
+
+
+/*------------------------------关于我们-------------------------------------*/
+.g-about{
+   width: 100%;
+    height: 100%;
+    background-color: #f0f1f3;
+}
+.aboutUs{
+    padding:30px;
+}
+.aboutUs .m-side{
+    width: 140px;
+    margin-left: 30px;
+}
+.aboutUs ul span{
+    display: block;
+    height:30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #004873;
+    border-bottom: 1px solid #f0f1f3;
+}
+.aboutUs ul li a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #f0f1f3;
+    transition: 0.4s;
+    color: #fff;
+}
+.aboutUs ul li a:hover{
+    background-color: #fff;
+    color: #1a82c1;
+}
+.aboutUs ul li.cur a{
+    background-color: #fff;
+    color: #1a82c1;
+}
+.aboutUs .m-context{
+    width: 965px;
+    margin-left: 30px;
+    padding:30px;
+    min-height: 835px;
+    background-color: #fff;
+}
+.aboutUs .m-context{
+    box-sizing: border-box;
+}
+.aboutUs .m-context h2{
+    font-size: 22px;
+    height: 34px;
+    width: 100%;
+    border-bottom: 1px solid #saf;
+}
+.aboutUs .box p{
+    line-height: 24px;
+}
+.aboutUs .box p, .aboutUs .box b{
+    text-indent: 28px;
+    font-size: 14px;
+}
+
+.aboutUs .box table thead th{
+    font-weight: bold;
+}
+.aboutUs .box table td{
+    background-color: #f0f1f3;
+    text-align: center;
+    border:1px solid #fff;
+    padding:20px;
+}
+.g-suggested{
+    background-color: #f0f1f3;
+}
+.g-suggested .suggested{
+    padding:20px 150px;
+    min-height: 850px;
+    box-sizing: border-box;
+    background-color:#fff;
+}
+
+
+
+.fuwu{
+    width: 770px;
+    height: 700px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    position: fixed;
+    font-size: 14px;
+    left: 50%;
+    margin-left: -385px;
+    top:50%;
+    margin-top: -350px;
+}
+.fuwu h1{
+    text-align: center;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    padding:15px;
+}
+.fuwu .content{
+    width: 700px;
+    height: 522px;
+    background-color: #f2f2f2;
+    margin:5px auto;
+    padding:15px;
+    overflow-y: auto;
+}
+.fuwu .content h3{
+    font-size: 16px;
+    font-weight: bold;
+}
+.fuwu .content p{
+    text-indent: 28px;
+    margin-bottom: 20px;
+}
+.fuwu a.queren {
+    display: block;
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #23a4f8;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin:0 auto;
+    margin-top: 20px;
+}

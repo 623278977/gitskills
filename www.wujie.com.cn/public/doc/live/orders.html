@@ -1,0 +1,584 @@
+<h2 class="title-h2 absolute">
+    某场直播相关的订单——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/live/order-list</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>live_id(必)</td>
+        <td>直播id</td>
+    </tr>
+    <tr>
+        <td>real_order_max_id(必)</td>
+        <td>真实订单最大id,默认为0</td>
+    </tr>
+
+    <tr>
+        <td>sham_order_max_id(必)</td>
+        <td>假订单最大id,默认为0</td>
+    </tr>
+
+
+    <tr>
+        <td>type</td>
+        <td>默认为mix(真假数据都有),如果传real则只返回真实的数据</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+  "message": {
+    "all_amount": 103,
+    "all_count": 96,
+    "online_count": 443,
+    "real_order_max_id": 588,
+    "sham_order_max_id": 31,
+    "orders_structure": [
+      {
+        "total_amount": 49,
+        "orders_count": 15,
+        "product_id": 9,
+        "title": "标准足球场"
+      },
+      {
+        "total_amount": "24.00",
+        "orders_count": 12,
+        "product_id": 10,
+        "title": "暑期课程"
+      },
+      {
+        "total_amount": "15.00",
+        "orders_count": 15,
+        "product_id": 11,
+        "title": "新马泰之旅"
+      }
+    ],
+    "orders_dynamic": [
+      {
+        "id": "sham31",
+        "title": null,
+        "zone_name": "福建省",
+        "mobile": "47****",
+        "created_at": 1480401300,
+        "realname": "3**",
+        "type": "sham"
+      },
+      {
+        "id": "sham30",
+        "title": null,
+        "zone_name": "徐州市",
+        "mobile": "43****",
+        "created_at": 1480401300,
+        "realname": "2**",
+        "type": "sham"
+      },
+      {
+        "id": "sham29",
+        "title": null,
+        "zone_name": "呼和浩特市",
+        "mobile": "1880****413",
+        "created_at": 1480399938,
+        "realname": "艾***",
+        "type": "sham"
+      },
+      {
+        "id": "sham28",
+        "title": null,
+        "zone_name": "黑龙江省",
+        "mobile": "92****",
+        "created_at": 1480399877,
+        "realname": "2**",
+        "type": "sham"
+      },
+      {
+        "id": "sham27",
+        "title": null,
+        "zone_name": null,
+        "mobile": "280****",
+        "created_at": 1480399877,
+        "realname": "2**",
+        "type": "sham"
+      },
+      {
+        "id": "sham26",
+        "title": null,
+        "zone_name": "江苏省",
+        "mobile": "271****",
+        "created_at": 1480399877,
+        "realname": "2**",
+        "type": "sham"
+      },
+      {
+        "id": "sham25",
+        "title": null,
+        "zone_name": "泰州市",
+        "mobile": "321****",
+        "created_at": 1480399877,
+        "realname": "3**",
+        "type": "sham"
+      },
+      {
+        "id": "sham24",
+        "title": null,
+        "zone_name": "广西省",
+        "mobile": "149****",
+        "created_at": 1480399877,
+        "realname": "2**",
+        "type": "sham"
+      },
+      {
+        "id": "sham23",
+        "title": null,
+        "zone_name": "芜湖市",
+        "mobile": "302****",
+        "created_at": 1480399836,
+        "realname": "2**",
+        "type": "sham"
+      },
+      {
+        "id": "sham22",
+        "title": null,
+        "zone_name": "黑龙江省",
+        "mobile": "257****",
+        "created_at": 1480399836,
+        "realname": "3**",
+        "type": "sham"
+      },
+      {
+        "id": "sham21",
+        "title": null,
+        "zone_name": "长治市",
+        "mobile": "1300****000",
+        "created_at": 1480399825,
+        "realname": "京**",
+        "type": "sham"
+      },
+      {
+        "id": "sham20",
+        "title": null,
+        "zone_name": "丽水市",
+        "mobile": "1586****336",
+        "created_at": 1480399387,
+        "realname": "杨*",
+        "type": "sham"
+      },
+      {
+        "id": "sham19",
+        "title": null,
+        "zone_name": "北京市",
+        "mobile": "1317****319",
+        "created_at": 1480398154,
+        "realname": "艾*",
+        "type": "sham"
+      },
+      {
+        "id": "sham18",
+        "title": null,
+        "zone_name": "宿州市",
+        "mobile": "220****",
+        "created_at": 1480387092,
+        "realname": "3**",
+        "type": "sham"
+      },
+      {
+        "id": "sham17",
+        "title": null,
+        "zone_name": "江西省",
+        "mobile": "165****",
+        "created_at": 1480387003,
+        "realname": "3**",
+        "type": "sham"
+      },
+      {
+        "id": "sham16",
+        "title": null,
+        "zone_name": "无锡市",
+        "mobile": "28****",
+        "created_at": 1480386614,
+        "realname": "2**",
+        "type": "sham"
+      },
+      {
+        "id": "sham15",
+        "title": null,
+        "zone_name": "淮南市",
+        "mobile": "89****",
+        "created_at": 1480386571,
+        "realname": "3**",
+        "type": "sham"
+      },
+      {
+        "id": "sham14",
+        "title": null,
+        "zone_name": "镇江市",
+        "mobile": "277****",
+        "created_at": 1480386530,
+        "realname": "2**",
+        "type": "sham"
+      },
+      {
+        "id": "sham13",
+        "title": null,
+        "zone_name": "湖南省",
+        "mobile": "293****",
+        "created_at": 1480386476,
+        "realname": "1",
+        "type": "sham"
+      },
+      {
+        "id": "sham12",
+        "title": null,
+        "zone_name": "徐州市",
+        "mobile": "218****",
+        "created_at": 1480385941,
+        "realname": "3**",
+        "type": "sham"
+      },
+      {
+        "id": "sham11",
+        "title": null,
+        "zone_name": "四川省",
+        "mobile": "261****",
+        "created_at": 1480385941,
+        "realname": "2**",
+        "type": "sham"
+      },
+      {
+        "id": 588,
+        "title": "暑期课程",
+        "zone_name": "宁波市",
+        "mobile": "1586****296",
+        "created_at": 1479434995,
+        "realname": "杨**",
+        "type": "real"
+      },
+      {
+        "id": 589,
+        "title": "暑期课程",
+        "zone_name": "湖州市",
+        "mobile": "1586****336",
+        "created_at": 1479434991,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 586,
+        "title": "暑期课程",
+        "zone_name": "湖州市",
+        "mobile": "1586****336",
+        "created_at": 1479375015,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 585,
+        "title": "标准足球场",
+        "zone_name": null,
+        "mobile": "****",
+        "created_at": 1479371081,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 579,
+        "title": "标准足球场",
+        "zone_name": "株洲市",
+        "mobile": "1310****003",
+        "created_at": 1479369196,
+        "realname": "小*",
+        "type": "real"
+      },
+      {
+        "id": 574,
+        "title": "新马泰之旅",
+        "zone_name": null,
+        "mobile": "****",
+        "created_at": 1479368569,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 572,
+        "title": "新马泰之旅",
+        "zone_name": "宁波市",
+        "mobile": "1586****296",
+        "created_at": 1479367890,
+        "realname": "杨**",
+        "type": "real"
+      },
+      {
+        "id": 570,
+        "title": "标准足球场",
+        "zone_name": "湖州市",
+        "mobile": "1586****336",
+        "created_at": 1479366321,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 565,
+        "title": "暑期课程",
+        "zone_name": "宁波市",
+        "mobile": "1586****296",
+        "created_at": 1479366150,
+        "realname": "杨**",
+        "type": "real"
+      },
+      {
+        "id": 563,
+        "title": "暑期课程",
+        "zone_name": "湖州市",
+        "mobile": "1586****336",
+        "created_at": 1479365998,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 568,
+        "title": "新马泰之旅",
+        "zone_name": "湖州市",
+        "mobile": "1586****336",
+        "created_at": 1479365959,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 567,
+        "title": "标准足球场",
+        "zone_name": "宁波市",
+        "mobile": "1586****296",
+        "created_at": 1479365843,
+        "realname": "杨**",
+        "type": "real"
+      },
+      {
+        "id": 560,
+        "title": "暑期课程",
+        "zone_name": "株洲市",
+        "mobile": "1310****003",
+        "created_at": 1479361538,
+        "realname": "小*",
+        "type": "real"
+      },
+      {
+        "id": 552,
+        "title": "标准足球场",
+        "zone_name": "阿拉善盟",
+        "mobile": "1826****502",
+        "created_at": 1479360172,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 550,
+        "title": "新马泰之旅",
+        "zone_name": "大连市",
+        "mobile": "1880****413",
+        "created_at": 1479289704,
+        "realname": "萌**",
+        "type": "real"
+      },
+      {
+        "id": 549,
+        "title": "新马泰之旅",
+        "zone_name": "大连市",
+        "mobile": "1880****413",
+        "created_at": 1479289561,
+        "realname": "萌**",
+        "type": "real"
+      },
+      {
+        "id": 547,
+        "title": "新马泰之旅",
+        "zone_name": "长春市",
+        "mobile": "1585****992",
+        "created_at": 1479287557,
+        "realname": "席**",
+        "type": "real"
+      },
+      {
+        "id": 546,
+        "title": "新马泰之旅",
+        "zone_name": "长春市",
+        "mobile": "1585****992",
+        "created_at": 1479287433,
+        "realname": "席**",
+        "type": "real"
+      },
+      {
+        "id": 545,
+        "title": "暑期课程",
+        "zone_name": "宁波市",
+        "mobile": "1586****296",
+        "created_at": 1479287250,
+        "realname": "杨**",
+        "type": "real"
+      },
+      {
+        "id": 544,
+        "title": "暑期课程",
+        "zone_name": "长春市",
+        "mobile": "1585****992",
+        "created_at": 1479286981,
+        "realname": "席**",
+        "type": "real"
+      },
+      {
+        "id": 542,
+        "title": "新马泰之旅",
+        "zone_name": "湖州市",
+        "mobile": "1586****336",
+        "created_at": 1479286960,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 541,
+        "title": "标准足球场",
+        "zone_name": "长春市",
+        "mobile": "1585****992",
+        "created_at": 1479285228,
+        "realname": "席**",
+        "type": "real"
+      },
+      {
+        "id": 540,
+        "title": "新马泰之旅",
+        "zone_name": "阿拉善盟",
+        "mobile": "1826****502",
+        "created_at": 1479285143,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 539,
+        "title": "新马泰之旅",
+        "zone_name": "宁波市",
+        "mobile": "1586****296",
+        "created_at": 1479284088,
+        "realname": "杨**",
+        "type": "real"
+      },
+      {
+        "id": 538,
+        "title": "新马泰之旅",
+        "zone_name": "澳门",
+        "mobile": "1537****373",
+        "created_at": 1479283039,
+        "realname": "某*",
+        "type": "real"
+      },
+      {
+        "id": 537,
+        "title": "标准足球场",
+        "zone_name": "阿拉善盟",
+        "mobile": "1826****502",
+        "created_at": 1479282890,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 536,
+        "title": "标准足球场",
+        "zone_name": "阿拉善盟",
+        "mobile": "1826****502",
+        "created_at": 1479282392,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 535,
+        "title": "标准足球场",
+        "zone_name": "阿拉善盟",
+        "mobile": "1826****502",
+        "created_at": 1479282342,
+        "realname": "",
+        "type": "real"
+      },
+      {
+        "id": 533,
+        "title": "新马泰之旅",
+        "zone_name": "澳门",
+        "mobile": "1537****373",
+        "created_at": 1479280857,
+        "realname": "某*",
+        "type": "real"
+      }
+    ]
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>all_amount</td>
+        <td>成交总额(单位:元)</td>
+    </tr>
+    <tr>
+        <td>all_count</td>
+        <td>总成交单数</td>
+    </tr>
+    <tr>
+        <td>online_count</td>
+        <td>在线人数(累计)</td>
+    </tr>
+
+  <tr>
+    <td>real_order_max_id</td>
+    <td>真实订单最大id(如果此次返回没有真实订单，就返回，传入的数字)</td>
+  </tr>
+
+  <tr>
+    <td>sham_order_max_id</td>
+    <td>假订单最大id(如果此次返回没有假订单，就返回，传入的数字)</td>
+  </tr>
+
+
+    <tr>
+        <td>orders_structure.title</td>
+        <td>订单构成商品标题</td>
+    </tr>
+    <tr>
+        <td>orders_structure.orders_count</td>
+        <td>订单构成订单总数</td>
+    </tr>
+    <tr>
+        <td>orders_structure.total_amount</td>
+        <td>该商品的成交额</td>
+    </tr>
+    <tr>
+        <td>orders_dynamic.title</td>
+        <td>订单动态品牌名称</td>
+    </tr>
+
+    <tr>
+        <td>orders_dynamic.zone_name</td>
+        <td>订单动态城市名</td>
+    </tr>
+
+    <tr>
+        <td>orders_dynamic.realname</td>
+        <td>订单动态下单人名称</td>
+    </tr>
+
+    <tr>
+        <td>orders_dynamic.mobile</td>
+        <td>订单动态下单人手机号</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

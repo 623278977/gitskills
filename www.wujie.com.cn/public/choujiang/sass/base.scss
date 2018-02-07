@@ -1,0 +1,78 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+.tc {
+	text-align: center
+}
+.radius {
+	border-radius: 50%;
+}
+.c {
+	margin: 0 auto;
+}
+.l {
+	float:left
+}
+.r {
+	float:right
+}
+.relative {
+	position: relative
+}
+.absolute {
+	position: absolute
+}
+
+.vb {
+	vertical-align: middle
+}
+.tc {
+	text-align: center
+}
+
+button {
+	border: 0;
+	background: none
+}
+
+.cursor {
+	cursor: pointer
+}
+
+.pf {
+	font-family: "PingFang Medium";
+}
+.fzby {
+	font-family: "FZYDZHJW_0";
+}
+
+$fontSize: 24px;
+
+$linkColor: #fff  #000;
+
+$borderRadius:5px;
+
+a {
+	color:nth($linkColor,1); 
+	&:hover {
+		color:nth($linkColor,2)
+	}
+}
+
+.yuan {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+.big_j {
+	background: url(../images/yellow_tdj.png) no-repeat;
+	width: 40px;
+	height: 32px;
+	display: inline-block;
+}

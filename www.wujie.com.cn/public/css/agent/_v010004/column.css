@@ -1,0 +1,197 @@
+body{
+background: #f2f2f2!important;	
+}
+.ui_con{
+	background: #fff;
+	min-height:12rem;
+}
+.padding{
+	padding: 1.5rem 1.5rem 0  1.5rem;
+}
+.ui_text_pict{
+	width:100%;	
+	
+}
+.ui_text_pict li{
+	float:left;
+	display:inline-block;
+}
+.ui_text_pict li:nth-child(1){
+	width:64%;
+	min-height:7rem;
+	text-align:left;
+}
+.ui_text_pict li:nth-child(2){
+	width:36%;
+	min-height:7rem;
+	text-align:right;
+}
+.ui_pict1{
+	padding-top: 0.3rem;
+	border-radius:0.3rem;
+	height:7rem!important;
+}
+.ui_protect_pict{
+    width:11.5rem;
+	height:7rem!important;
+	text-align: center;
+	overflow: hidden;	
+}
+.ui_pict2{
+	padding-top: 0.3rem;
+	width:6.4rem;
+	height:6.4rem;
+	border-radius:0.3rem;
+}
+.ui_row{
+	width:4.5rem;
+    height:1px;
+    padding-top:0.5rem;
+}
+.ui_text_down{
+  width:100%;
+}
+.ui_text_down li{
+	float:left;
+	display:inline-block;
+}
+.ui_text_down li:nth-child(1){
+	width:60%;
+	height:2rem;
+	line-height: 2rem;
+	text-align:left;
+}
+.ui_text_down li:nth-child(2){
+	width:40%;
+	height:2rem;
+	text-align:center;
+	line-height: 2rem;
+}
+.margin{
+	margin:0 0 0 !important;
+}
+.ui_flex{
+	width:100%;
+	height:100%;
+	display: flex;
+}
+.ui_flex li{
+	flex:1;
+   height:100%;
+   text-align:left!important;
+}
+.ui_zan{
+	width: 1.3rem;
+	height:1.3rem;
+	margin-top: 0.2rem;
+}
+.ui_padding{
+	padding-left:0.5rem;
+	padding-bottom: 0rem!important;
+}
+.ui_seen{
+	width:1.5rem;
+	height:1.3rem;
+	margin-top: 0.1rem;
+}
+.ui_mess{
+	margin-top: -0.3rem;
+}
+.fline {
+    position: relative;
+    padding-left: .21333333rem 0 .13333333rem ;
+    vertical-align: middle;
+}
+
+.fline::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.style{
+	width:96%;
+	height:1rem;
+	margin-left:4%;
+}
+img{
+	width:auto;
+}
+/*导师照片*/
+.ui_professor_pict{
+	width:100%;
+	height:18.5rem;
+	background: url('/images/pict/pict3.png')  no-repeat center;
+	background-size: 100% 100%!important;
+}
+.ui_professor_text{
+	width:100%;
+	padding:1.5rem 1.5rem  1rem  1.5rem;
+	padding-top: 12rem;
+}
+.ui_column_introduce{
+	width:100%;
+	padding: 1.5rem 1.5rem;
+	background: #fff;
+}
+.ui-nowrap-multi {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3
+}
+.ui_add_hieght{
+	height:4.4rem;
+	line-height:4.4rem;
+}
+article{
+	background: #fff;
+	border-top:1rem solid #f2f2f2;
+}
+footer{
+	background: #fff;
+	border-top:1rem solid #f2f2f2;
+}
+.ui_get_more{
+	display:block;
+	height:4.5rem;
+	line-height:4.5rem;
+	background: #fff;
+	width:100%;
+	border:0;
+}
+.ui_video{
+	width:100%;
+	padding: 1.5rem 1.5rem  1.5rem 0;
+}
+.ui_video li{
+	margin-left:1.5rem;
+	margin-bottom:1.5rem;
+	float:left;
+	display:inline-block;
+	width:45.5555%;
+	text-align:left;
+}
+.ui_images{
+	width:16.5rem;
+	height:9.2rem;
+}
+.colord3d3d3{
+	color:#d3d3d3;
+}
+.ui_margin1{
+	margin:0.8rem 0 0.8rem 0!important;
+}
+.ui_margin2{
+	margin:0 0 0 0!important;
+}

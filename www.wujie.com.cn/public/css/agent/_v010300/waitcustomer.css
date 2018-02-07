@@ -1,0 +1,148 @@
+.ui-contain{
+	margin-top: 1.5rem;
+	width:100%;
+	background: #fff;
+	height:auto;
+}
+.ui-title{
+	width:100%;
+	padding: 0 2rem 0 1.5rem;
+	height:4.4rem;
+	line-height:4.4rem;
+}
+.ui-three{
+	width: 100%;
+	padding: 0 0 0 1.5rem;
+}
+.ui-line-height{
+	margin:1rem 1rem 1rem 0;
+}
+.ui-pict-text{
+	width:100%;
+	padding-right: 1.5rem;
+}
+.ui-pict-text li{
+	float:left;
+	display: inline-block;
+}
+.ui-pict-text li:nth-child(1){
+	width:20%;
+}
+.ui-pict-text li:nth-child(2){
+	width:40%;
+}
+.ui-pict-text li:nth-child(3){
+	width:35%;
+	padding-top: 0.5rem;
+	text-align:right;
+}
+.ui-pict-text li:nth-child(4){
+	width:28.5%;
+	padding-top: 0.5rem;
+}
+.ui-length{
+	width:4.4rem;
+	height:4.4rem;
+	border-radius:0.4rem;
+}
+.ui-length2{
+	width:5rem;
+	height:5rem;
+	border-radius:0.4rem;
+}
+.ui-line-height{
+	text-align: left;
+}
+.text-align{
+	text-align: left;
+	margin:0.2rem 0.5rem 0 0; 
+}
+.ui-pay{
+	width:9rem;
+	height:3.3rem;
+	border:1px solid #999;
+	border-radius: 0.2rem;
+	background: #fff;
+	font-size: 1.4rem;
+	color: #666
+}
+.ui-add{
+	background: #2873ff;
+	color: #fff;
+	border:1px solid #2873ff;
+}
+.ui-style{
+	width:100%;
+	height:1.5rem;
+}
+.text-align2{
+	text-align: left;
+	margin:0rem 0.5rem 0 0; 
+}
+.width1{
+	width:60%!important;
+}
+.width2{
+	width:100%!important;
+	padding-left: 2.5rem;
+}
+.text-align4{
+	text-align: left
+}
+.k{
+	margin:0 0 0.5rem;
+}
+.pl10{
+	padding-left: 1.5rem
+}
+.ui-strch{
+	width:100%;
+	height:4rem;
+	line-height: 4rem;
+    color:#2873ff;
+    text-align: center;
+}
+.down{
+	width:1.2rem;
+	height:0.5rem;
+}
+.fd{
+	color:#fd6e6e;
+}
+.ui-grey{
+	width:100%;
+	background:#f2f2f2;
+	padding: 1.5rem 1.5rem;
+	border-radius:0.4rem;
+}
+.margin05{
+	margin:0 0 0.8rem;
+}
+.f8{
+	color:#fdad1e;
+}
+.fe{
+  color:#2873ff;
+}
+.a180{
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); 	/* IE 9 */
+	-moz-transform:rotate(180deg); 	/* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+	-o-transform:rotate(180deg);
+  }
+  .ui-pay-detail{
+  	width:100%;
+  }
+.ui-pay-detail li{
+	float:left;
+	display: inline-block;
+}
+.ui-pay-detail li:nth-child(1){
+	width:30%;
+	text-align: left
+}
+.ui-pay-detail li:nth-child(2){
+	width:70%;
+	text-align: right
+}

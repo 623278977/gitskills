@@ -1,0 +1,183 @@
+.chr_body{
+	background-color:#c73947 ;
+	background-image:url('/images/agent/christmas/snows.png'),url('/images/agent/christmas/snowflake.png');
+	background-repeat:repeat ,no-repeat;
+	background-position:0 0 ,1rem 1rem;  
+	background-size: 100% 20rem,2.3rem 2.3rem;
+	min-height: 40rem;
+}
+.che_title{
+	display: inline-block;
+	width: 17rem;
+	height: 3rem;
+	line-height: 3rem;
+	background-image: url('/images/agent/christmas/title_bg.png') ;
+	background-size: cover;	
+	text-align: center;
+}
+.uniques{
+	position: relative;
+	z-index: 2;
+	margin-bottom:3rem; 
+}
+.uniques>div{
+	width:33.8rem;
+	height: 7.5rem;
+	background-image: url('/images/agent/christmas/border.png');
+	background-size: cover;
+	display: flex;
+	justify-content:space-between;
+	margin-bottom:2rem; 
+	padding: 1rem;
+	align-items: center;
+}
+.skill{
+	width:4rem;
+	height: 4rem;
+	background-color:#f97a4e;
+	color:#fff;
+	border-radius: 50%; 
+	line-height: 4rem;
+	text-align: center;
+	font-size: 1.3rem;
+}
+.skill_btn ,.skill_done {
+	background-color: #08844d;
+	color: #fff;
+	border-radius: 0.2rem;
+	padding: 0.5rem;
+}
+.skill_done{
+	background-color: #d2d2d2;
+	font-size: 1.4rem;
+	padding: 0.5rem 1rem;
+}
+.flex_start{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.cf24d57{
+	color: #f24d57;
+}
+.fir_snow{
+	background:url('/images/agent/christmas/snowflake.png') no-repeat ;
+	position: absolute;
+	opacity: 0.8;
+	top:10rem;right: 5rem;
+	width:1.6rem;height: 1.6rem;
+	background-size:cover; 
+}
+.sec_snow{
+	background:url('/images/agent/christmas/snowflake.png') no-repeat ;
+	position: absolute;
+	opacity: 0.6;
+	top: 29rem;
+	left: 13rem;
+	width:2.5rem;height: 2.5rem;
+	background-size:cover; 
+}
+.thi_snow{
+	background:url('/images/agent/christmas/snowflake.png') no-repeat ;
+	position: absolute;
+	opacity: 0.6;
+	top:47rem;left: 6rem;
+	width:3.2rem;height: 3.2rem;
+	background-size:cover; 
+}
+.fou_snow{
+	background:url('/images/agent/christmas/snowflake.png') no-repeat ;
+	position: absolute;
+	top:53.5rem;right: 1.8rem;
+	width:3.2rem;height: 3.2rem;
+	background-size:cover; 
+}
+.chr_bottom{
+	color: #ffdfe2;
+	text-align: center;
+	font-size: 1.1rem;
+	padding:2rem;
+}
+.rule{
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	font-size: 1.1rem;
+	height: 1.8rem;line-height: 1.7rem;
+	width:3.9rem;text-align: center;
+	border-radius:0.9rem;
+	position: absolute;
+	top:3rem;right: 1.2rem;
+}
+.reward_list{
+	background: #0c9056;
+	border-top-left-radius:0.3rem;
+	border-top-right-radius: 0.3rem;
+	height: 4.5rem;line-height: 4.5rem;
+	font-size: 0;
+}
+.reward_list span{
+	display: inline-block;
+	width: 50%;height: 100%;
+	color:#fff;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.flex_between{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.hero_list{
+	max-height: 27rem;
+	overflow: hidden;
+}
+.hero_list li{
+	padding: 1rem 1rem 1rem 2rem;
+}
+.avatar{
+	width:3.4rem;
+	height: 3.4rem;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.tips{
+	padding:1rem 2rem;
+	background-color: rgba(0,0,0,0.9);
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 9999999;
+	font-size: 1.6rem;
+	color:#fff;
+	border-radius: 0.4rem;
+	-ms-transform:translateX(-50%);	/* IE 9 */
+	-moz-transform:translateX(-50%); 	/* Firefox */
+	-webkit-transform:translateX(-50%); /* Safari 和 Chrome */
+	-o-transform:translateX(-50%); 	/* Opera */
+}
+.loadapp{
+	width:23.5rem;
+	height: 3.8rem;
+	line-height: 3.8rem;
+	background: url('/images/agent/christmas/load_bg.png') 0 0 /100% 100%;
+	margin: auto;
+	font-size: 1.5rem;
+	color: #a2362e;
+	padding-left: 2.5rem;
+}
+.mt-05{
+	margin-top:-0.5rem; 
+}
+.fline::after{
+	bottom: 0;
+}
+.width5{
+	width:5rem;
+}
+.text_ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

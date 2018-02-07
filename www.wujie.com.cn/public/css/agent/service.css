@@ -1,0 +1,20 @@
+span {
+	display: inline-block;
+}
+.c2873ff {
+	color: #2873FF;
+}
+.service_img {
+	width: 2.2rem;
+	height: 1.9rem;
+	margin-top:4.4rem;
+	margin-bottom: 2.2rem;
+}
+.service {
+	text-align: center;
+	width: 90%;
+	margin: 1.5rem auto;
+	padding-bottom: 2rem;
+	background-color: rgba(255, 255, 255, 1);
+}
+

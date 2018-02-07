@@ -1,0 +1,113 @@
+<h2 class="title-h2 absolute">
+    机器人回答—tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/user/doubt/v020600</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>source(必)</td>
+        <td>来源类型：brand_list 发现商机，cate_brand 品牌分类页， brand_detail 品牌详情页</td>
+    </tr>
+    <tr>
+        <td>source_id(必)</td>
+        <td>来源ID，品牌详情页传品牌ID，分类页传分类ID(传二级分类id，如果是全部则传一级分类id),发现商机页则传0</td>
+    </tr>
+    <tr>
+        <td>type(必)</td>
+        <td>first:首次进去，keyword:关键词提问，precise:精确点击</td>
+    </tr>
+    <tr>
+        <td>content(必)</td>
+        <td>关键词或者问题的id</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+  "message": {
+    "data": [
+      {
+        "id": 1,
+        "title": "疑问标题"
+      },
+      {
+        "id": 2,
+        "title": "无界商圈"
+      },
+      {
+        "id": 4,
+        "title": "加盟"
+      },
+      {
+        "id": 5,
+        "title": "商机"
+      },
+      {
+        "id": 6,
+        "title": "无界商圈会提供什么优惠？"
+      },
+      {
+        "id": 7,
+        "title": "无界商圈平台加盟可信度高吗？"
+      }
+    ],
+    "message": "欢迎来到无界商圈，我们为你提供OVO品牌招商一站式服务。很高兴见到你，我是机器人小5。也许你会问：",
+    "type": 1
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+        或者
+{
+  "message": {
+    "content": "疑问解答内容",
+    "tel": "15566668888",
+    "type": 0
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>message.type(当返回的答案为列表时)</td>
+        <td>1:返回列表，0返回详情</td>
+    </tr>
+    <tr>
+        <td>data.id(当返回的答案为列表时)</td>
+        <td>问题id</td>
+    </tr>
+    <tr>
+        <td>data.title(当返回的答案为列表时)</td>
+        <td>问题标题</td>
+    </tr>
+    <tr>
+        <td>message(当返回的答案为列表时)</td>
+        <td>提示语</td>
+    </tr>
+    <tr>
+        <td>content(当返回的答案为单个时)</td>
+        <td>提示语</td>
+    </tr>
+    <tr>
+        <td>tel(当返回的答案为单个时)</td>
+        <td>联系电话</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

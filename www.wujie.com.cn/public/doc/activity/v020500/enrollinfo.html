@@ -1,0 +1,142 @@
+<h2 class="title-h2 absolute">
+    活动报名信息——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/enroll-infos/_v020500</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id(必)</td>
+        <td>活动id</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+  "message": {
+    "activity": {
+      "subject": "里约奥运场馆惨不忍睹 主体育场成流浪猫乐园",
+      "begin_time": 1488258000,
+      "keywords": [
+        "里约奥运会"
+      ],
+      "host_cities": [
+        "杭州"
+      ],
+      "begin_time_format": "2017年02月28日 13:00"
+    },
+    "makers": [
+      {
+        "name": "杭州",
+        "address": "杭州市西湖区黄姑山路29号颐高创业大厦4楼",
+        "tel": "13500000000",
+        "subject": "楼友会",
+        "id": 98
+      }
+    ],
+    "ticket": [
+      {
+        "is_recommend": 0,
+        "name": "现场票",
+        "price": "0.00",
+        "original": "0.00",
+        "surplus": 100,
+        "intro": "",
+        "type": 1,
+        "id": 1190
+      }
+    ]
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充） 直播票在活动票数组的第一条</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>activity.subject</td>
+        <td>活动名称</td>
+    </tr>
+    <tr>
+        <td>activity.begin_time</td>
+        <td>活动开始时间</td>
+    </tr>
+    <tr>
+        <td>activity.begin_time_format</td>
+        <td>活动开始时间(已格式化)</td>
+    </tr>
+    <tr>
+        <td>activity.keywords</td>
+        <td>活动关键词，数组</td>
+    </tr>
+    <tr>
+        <td>activity.host_cities</td>
+        <td>活动举办城市，数组</td>
+    </tr>
+    <tr>
+        <td>makers.name</td>
+        <td>举办地名称</td>
+    </tr>
+    <tr>
+        <td>makers.address</td>
+        <td>举办地地址</td>
+    </tr>
+    <tr>
+        <td>makers.tel</td>
+        <td>举办地电话</td>
+    </tr>
+    <tr>
+        <td>makers.subject</td>
+        <td>空间名称</td>
+    </tr>
+    <tr>
+        <td>makers.id</td>
+        <td>空间id</td>
+    </tr>
+    <tr>
+        <td>ticket.is_recommend</td>
+        <td>该票是否推荐</td>
+    </tr>
+    <tr>
+        <td>ticket.name</td>
+        <td>该票的名称</td>
+    </tr>
+    <tr>
+        <td>ticket.price</td>
+        <td>该票的价格</td>
+    </tr>
+    <tr>
+        <td>ticket.original</td>
+        <td>该票的原始价格</td>
+    </tr>
+    <tr>
+        <td>ticket.surplus</td>
+        <td>该票的剩余张数</td>
+    </tr>
+    <tr>
+        <td>ticket.intro</td>
+        <td>该票的简介</td>
+    </tr>
+    <tr>
+        <td>ticket.id</td>
+        <td>该票的id</td>
+    </tr>
+    <tr>
+        <td>ticket.type</td>
+        <td>该票的type,1现场票，2直播票</td>
+    </tr>
+
+
+</table>
+<div class="p-pub-title color10"></div>

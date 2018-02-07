@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html class="not-ie no-js" lang="en">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <link href="css/pbcss.css" rel="stylesheet" type="text/css" />
+   <link href="css/css.css" rel="stylesheet" type="text/css" />
+   <script src="js/angular-1.2.19/angular.min.js"></script>
+   <script src="js/angular-1.2.19/angular-ui-router.js"></script>
+   <script src="js/app.js"></script>
+   <title>无界商圈API文档</title>
+   <style type="text/css">
+        #version-lists{height: 37px;text-align: center;line-height: 37px;background-color: #f3f3f3;margin-bottom: 5px;}
+        #version-lists li{float:left;height: 42px;padding:0px 10px;}
+        #version-lists li a{color: blue;}
+        #version-lists li a.current{background-color: #67AD03;color:white;padding: 2px 6px;border-radius: 10px;}
+        a.current{background-color: green;}
+    </style>
+</head>
+<body data-ng-app="myApp">
+   <div class="container f14">  
+      <!--顶部-->
+      <header id="header">
+         <h1 class="container-child b">
+            API  <span style="font-size: small; color:darkolivegreen">如果需要在新版本的接口中调用老接口，可以在参数中传递_version参数指定</span>
+            <button class=" r">开发</button>
+            <button class=" r">测试</button>
+            <button class=" r">验收</button>
+         </h1>
+      </header>
+      <div class="container-child" >
+         <div class="clearfix"></div>
+         <!--左侧-->
+         <div id="leftNav">
+            <ul class="nav-ul">
+               <li>
+                  <span class="portal_arrow"></span>
+                  登陆注册
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="ajaxlogin" >登陆</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="register" >注册</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="registeraccount" >注册(包含第三方绑定)</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="inviteregister" >邀请注册</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="logout" >退出</a>
+                   </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="outhlogin" >第三方登陆</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="outhbang" >绑定已有账号</a>
+                   </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="dopassword" >忘记，修改密码</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="checkuser" >判断账号(用户名，密码)</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="userinfo" >获取用户信息</a>
+                   </ul>
+               </li>
+               <li>
+                  <span class="portal_arrow"></span>
+                  用户，设置
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="zan">点赞</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="recommendusers">推荐用户</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="myfavorite">我的收藏</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="mybrandlist">我的品牌列表</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="myorders">我的订单</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="myorderinfo">订单详情</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="mybrandoperation">品牌申请操作</a>
+                   </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="favorite">收藏，取消收藏</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="edituser">编辑用户,活动提醒</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="business_card">电子名片管理</a>
+                   </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="feedback" >用户反馈</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="userApply" >对接申请池</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="remindReply" >提醒答复</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="scoresum" >获取积分总数</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="currencysum" >获取用户无界币总数</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="scorelist" >获取积分明细</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="getuserdetail" >获取用户详情</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="userbusinesscarddetail" >获取用户电子名片详情</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="intentBrands">我的意向品牌</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="brandsBrowse">我的品牌浏览记录</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="addBrowse">添加浏览记录</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="addShareCount">分享次数加1</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="myfundlist">我的创业基金</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="withdraw">积分提现</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="withdrawdetail">提现记录详情</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="withdrawlist">提现记录列表</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="withdrawrecord">提现账号记录</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="writecode">填写邀请码</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="userinfoext">用户额外信息</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="userlottery">用户抽奖</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="userSign">用户签到</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="userdoubt">机器人</a>
+                   </ul>
+
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="DuiBaLogin">登录兑吧</a>
+                   </ul>
+               </li>
+               <li>
+                  <span class="portal_arrow"></span>
+                  票券，订单
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="ticketlist" >我的票券，未完成的票券</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="ticketdetail" >票券（详情）</a>
+                   </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="livedata" >根据活动id获取直播信息</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="deadline" >根据门票票号获取订单状态</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="deleteticket" >删除票券</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="payorder" >支付</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="payorderandsign" >下单并签名(新)</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="paysign" >签名(新)</a>
+                   </ul>
+                   <!--<ul class="nav-ul nav-ul-child">-->
+                       <!--<a href="#" ui-sref="thirdresult" >去第三方库查询支付结果</a>-->
+                   <!--</ul>-->
+                   <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="paycheck" >根据order_no去第三方库查询支付结果(新)</a>
+                   </ul>
+
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="payverify" >
+                           根据uid和order_no去
+                           自己数据库查询支付结果(新)
+                       </a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="continuepay" >
+                           根据order_no继续支付
+                       </a>
+                   </ul>
+
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="orderandpay" >
+                           使用积分下单并支付(仅仅针对视频和资讯)
+                       </a>
+                   </ul>
+               </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    聊天模块
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="getuserdetail">搜索，获取用户详细信息</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="getuserbasic">搜索，获取用户基本信息</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="setuserguard" >设置能否看我好友</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="checkuserguard" >判断能否看我好友</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="setremark" >设置好友备注</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="friendlist" >获取好友列表</a>
+                    </ul>
+                </li>
+               <li>
+                  <span class="portal_arrow"></span>
+                  ovo中心
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="fmakerlist" >ovo中心列表</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="makerdetail" >ovo中心详情</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="groupchat" >本地群聊</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="deletegroupchat" >删除本地群聊</a>
+                   </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="memberlist" >成员列表</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="member-industry-list" >成员行业列表</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="makermember" >申请入驻ovo</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="switchmaker" >ovo详情</a>
+                   </ul>
+               </li>
+               <li>
+                  <span class="portal_arrow"></span>
+                  点播(视频，精彩回放)
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="videotype" >类型</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="videolist" >列表</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="videodetail" >详情</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="special-lists" >专题列表</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="special-detail" >专题详情</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="video-curriculum" >无界学院-课程</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="video-buyinfo" >视频购买信息</a>
+                   </ul>
+               </li>
+               <li>
+                  <span class="portal_arrow"></span>
+                  短信
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="sendcode" >发送验证码</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="checkcode" >验证验证码</a>
+                  </ul>
+               </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    图形验证码
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="sendcaptcha" >获取图形验证码数字</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="checkcaptcha" >获取验证码ID</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="piccaptcha" >获取图形验证码(get方法，放在img里面)</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="verifycaptcha">验证图形验证码</a>
+                    </ul>
+                </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    活动
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="enrollInfos" >获取活动报名信息</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityList" >获取活动列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityListthree" >获取活动ABC列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityDetail" >获取活动详情</a>
+                    </ul>
+                    <!--<ul class="nav-ul nav-ul-child">-->
+                        <!--<a href="#" ui-sref="activityApply" >活动报名</a>-->
+                    <!--</ul>-->
+
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityTickets" >门票</a>
+                    </ul>
+                    <!--<ul class="nav-ul nav-ul-child">-->
+                        <!--<a href="#" ui-sref="activityFavorite" >收藏活动</a>-->
+                    <!--</ul>-->
+                    <!--<ul class="nav-ul nav-ul-child">-->
+                        <!--<a href="#" ui-sref="activityUnFavorite" >取消收藏活动</a>-->
+                    <!--</ul>-->
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityApplyactivity" >活动申请</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activitySign" >活动签到(用户扫活动二维码)</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityTempSign" >活动临时签到</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityPadsign" >活动签到(工作人员扫用户票卷)</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityApplyNoPay" >活动报名</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activitySignuserlist" >活动报名列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityCheckAndApply" >检测支付结果并改变活动报名及订单状态</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityIncre" >自增或自减</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="applyList" >用户活动报名列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityInvite" >活动邀请</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityMakers" >活动OVO中心</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityReceive" >活动分享票领取</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityRecordshare" >活动分享入库</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityRecordcontent" >获取分享信息</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activitySharename" >获取分享人名</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityScrolls" >获取首页活动轮播图</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="activityZan" >活动点赞</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="telApplied" >判断某手机号是否已经报名</a>
+                    </ul>
+
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="applyandpay" >使用积分购买现场票或者直播票</a>
+                    </ul>
+                </li>
+				<li>
+                    <span class="portal_arrow"></span>
+                    商机
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="opportunityPublic" >发布商机</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="opportunitylist" >发现商机</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="opportunitydetail" >商机详细</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="opportunityactivity">商机相关活动</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="opportunityapply">申请对接商机</a>
+                    </ul>
+                </li>
+				<li>
+                    <span class="portal_arrow"></span>
+                    关注的活动主办方
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="organizerMyfollow" >关注的主办方</a>
+                    </ul>
+					<ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="organizerInfo" >发布者</a>
+                    </ul>
+					<ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="organizerActivityList" >发布者活动</a>
+                    </ul>
+					<ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="organizerFollow" >关注</a>
+                    </ul>
+                </li>
+				<li>
+                    <span class="portal_arrow"></span>
+                    消息通知
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="messageIndex" >消息中心</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="messageOfficialmessage" >官方通知</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="messageLiveremind" >直播提醒(旧)</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="messageLiveremindmessages" >直播提醒（新）</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="messageActivityremind" >活动提醒（旧）</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="messageActivityremindmessages" >活动提醒（新）</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="messageList" >评论回复</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="messageUnreadcounts" >未读消息数</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="messageReadmessage" >读取消息</a>
+                    </ul>
+                </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    评论
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="commentList" >评论列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="commentZhan" >评论点赞或者取消赞</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="commentDelete" >删除评论</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="commentAdd" >新增评论</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="commentFreshList" >动态评论列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="singleComment" >单条评论</a>
+                    </ul>
+                </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    直播
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="liveList" >获取直播列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="liveDetail" >获取某个直播详情</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="liveSubscribe" >订阅一个直播</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="liveUserSubscribe" >某个用户直播订阅列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="liveToday" >今日直播</a>
+                    </ul>
+                    <!--<ul class="nav-ul nav-ul-child">-->
+                        <!--<a href="#" ui-sref="liveOrder" >下单购买视频</a>-->
+                    <!--</ul>-->
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="liveIncre" >直播观看数自增</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="liveShare" >直播或视频首次分享加积分</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="shareSubscribe">分享直播的订阅</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="liveSendcode">直播留存发送短信</a>
+                    </ul>
+
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="liveOrders">直播相关订单</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="viewers">直播的在线人数及登录用户头像</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="wallinfo">获取数据墙基本信息</a>
+                    </ul>
+
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="buyinfo">直播购买信息</a>
+                    </ul>
+
+                </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    专版
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="vipList" >专版列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="vipDetail" >专版详情</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="vipSearch" >专版搜索</a>
+                    </ul>
+                    <!--<ul class="nav-ul nav-ul-child">-->
+                        <!--<a href="#" ui-sref="vipLives" >专版直播列表</a>-->
+                    <!--</ul>-->
+                    <!--<ul class="nav-ul nav-ul-child">-->
+                        <!--<a href="#" ui-sref="vipVideos" >专版视频表</a>-->
+                    <!--</ul>-->
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="vipRecords" >专版会员购买记录</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="vipRecommend" >专版下资源推荐</a>
+                    </ul>
+
+                </li>
+               <li>
+                  <span class="portal_arrow"></span>
+                  其他(搜索,轮播,行业,地区)
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="indexlist" >首页列表</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="indexsearch" >全部搜索</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="hotwords" >热门关键词</a>
+                   </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="adslist" >首页轮播图</a>
+                  </ul>
+                  <ul class="nav-ul nav-ul-child">
+                     <a href="#" ui-sref="industry" >行业分类</a>
+                  </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="zonelist" >全部地区</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="makerzone" >创客空间所在地区</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="pkpass" >生成pkpass</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="upload" >上传</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="sendmessage" >加好友发送消息</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="getcode" >生成唯一的code</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="ifliving" >是否有正在进行中的直播</a>
+                   </ul>
+                   <ul class="nav-ul nav-ul-child">
+                       <a href="#" ui-sref="index-data">获取数据部分详情</a>
+                   </ul>
+               </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    群聊管理
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="creategroupchat" >创建群聊</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="editgroupchat" >编辑群聊</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="getgroupinfo" >获取群聊信息</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="deletegroup" >删除群组</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="addordelmember" >群组加人/减人</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="changeavatar" >更新群组头像</a>
+                    </ul>
+                </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    版本管理
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="version-new" >获取最新版</a>
+                    </ul>
+                </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    个推
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="push-receive" >个推用户信息存储</a>
+                    </ul>
+                </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    品牌
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandLists"> 品牌列表 </a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandDetail"> 品牌详情 </a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandNews" >品牌相关新闻列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandCollect" >收藏或取消收藏某个品牌</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandAsk" >对品牌提问</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandMessage" >对品牌留言</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandCategories" >品牌分类</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandEnter" >品牌入驻</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandConsult" >品牌洽询信息</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandGoods" >获取商品信息</a>
+                    </ul>
+
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandTodayGoods" >获取该品牌今天可购买的商品</a>
+                    </ul>
+
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="fetchfund" >领取创业基金</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandQuestion" >品牌相关问题</a>
+                    </ul>
+
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandWall" >品牌墙</a>
+                    </ul>
+
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="showdetail">品牌招商详情</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="brandtel">品牌电话咨询留存</a>
+                    </ul>
+
+                </li>
+
+                <li>
+                    <span class="portal_arrow"></span>
+                    资讯
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="newsList" >资讯列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="newsDetail" >资讯详情</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="newsZan" >资讯点赞</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="news-buyinfo" >资讯购买信息</a>
+                    </ul>
+                </li>
+                <li>
+                    <span class="portal_arrow"></span>
+                    分享
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="collectScore" >分享奖励入库</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="collectShare" >分享记录入库</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="myShare" >我的分享列表</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="shareDetail" >分享详情</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="shareList" >分享有奖</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="shortUrl" >生成分享短链接</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="shareUrl" >生成详情分享链接</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="share-profit" >分享有奖可收益</a>
+                    </ul>
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="share-subordinates" >下属</a>
+                    </ul>
+                </li>
+
+                <li>
+                    <span class="portal_arrow"></span>
+                    积分
+                    <ul class="nav-ul nav-ul-child">
+                        <a href="#" ui-sref="score-goods" >积分商品</a>
+                    </ul>
+                </li>
+
+            </ul>
+         </div>
+         <!--右侧-->
+         <div class="relative" style="width: 860px;float: right;">
+             <ul id="version-lists">
+                 <li>迭代版本</li>
+             </ul>
+            <div id="rightcon" class="relative" data-ui-view="">
+
+            </div>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+   </div>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+   (function(){
+      $('.nav-ul>li').click(function(){
+         $(this).find(".nav-ul-child").toggle();
+         $(this).siblings().find(".nav-ul-child").hide();
+      }).find('ul').click(function(){
+          return false;
+      });
+   })();
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<h2 class="title-h2 absolute">
+    用户注册——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/login/registeraccount/_v020602</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>username(必)</td>
+        <td>手机号</td>
+    </tr>
+    <tr>
+        <td>is_outh(必)</td>
+        <td>是否是第三方注册  默认0（不是） 如果是 传1</td>
+    </tr>
+    <tr>
+        <td>nation_code</td>
+        <td>默认：86，中国:86，美国:1</td>
+    </tr>
+    <tr>
+        <td>outh_id</td>
+        <td>第三方登陆的access_token  如果是第三方注册必填</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>第三方登陆必填 qq传qq  微信传wx  微博传wb</td>
+    </tr>
+    <tr>
+        <td>code</td>
+        <td>分享唯一标识</td>
+    </tr>
+    <tr>
+        <td>is_invited</td>
+        <td>是不是通过邀请注册默认0不是，1是</td>
+    </tr>
+    <tr>
+        <td>captcha_id</td>
+        <td>若是邀请注册则，验证码id必传</td>
+    </tr>
+    <tr>
+        <td>captcha_value</td>
+        <td>若是邀请注册则，验证码值比传</td>
+    </tr>
+    <tr>
+        <td>birth</td>
+        <td>出生日期 YYYY-MM-DD 没有设置为 0000-00-00</td>
+    </tr>
+    <tr>
+        <td>diploma</td>
+        <td>学历</td>
+    </tr>
+    <tr>
+        <td>earning</td>
+        <td>收入</td>
+    </tr>
+    <tr>
+        <td>profession</td>
+        <td>职业</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": {
+    "uid": 851,
+    "username": "18658318156",
+    "nickname": "8156a1ad",
+    "avatar": "http://dev.wjsq3.loc/images/default/avator-m.png",
+    "big_avatar": "http://dev.wjsq3.loc/images/default/avator-xl.png",
+    "firstcharter": "",
+    "yinpin": "8",
+    "industry": [],
+    "qrcode": "http://dev.wjsq3.loc/attached/image/qrcode/_large/c831b5c52186dd724223b56d688fcdc1.png",
+    "maker_id": 0,
+    "my_invite": "",
+    "realname": "",
+    "sign": "",
+    "is_huanxin": 0,
+    "activity_remind": 2,
+    "subject": "",
+    "gender": -1,
+    "institution": "",
+    "job": "",
+    "activity_count": 0,
+    "exist_card": 0,
+    "zone": "",
+    "zone_id": "",
+    "is_done_reg": 0,
+    "has_brand": 0,
+    "brand_name": "",
+    "is_register": 1
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    返回参数同登录接口
+</table>
+<div class="p-pub-title color10"></div>

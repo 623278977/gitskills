@@ -1,0 +1,149 @@
+<h2 class="title-h2 absolute">
+  下属——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/share/subordinates/_v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+  <tr class="tc b">
+    <td>参数</td>
+    <td>值</td>
+  </tr>
+  <tr>
+    <td>uid(必)</td>
+    <td>用户uid</td>
+  </tr>
+  <tr>
+    <td>content(必)</td>
+    <td>类型:activity：活动，live:直播，video：视频，brand:品牌</td>
+  </tr>
+
+  <tr>
+    <td>content_id(必)</td>
+    <td>目标id</td>
+  </tr>
+
+  <tr>
+    <td>参数示列</td>
+    <td>uid:386, content:activity, content_id:1287</td>
+  </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+    "message": {
+        "entity": {
+            "id": 1287,
+            "subject": "三大运营商数据发布：心疼联通一秒钟",
+            "begin_time": "02月23日 07:00",
+            "share_num": 37,
+            "view": 89,
+            "distribution_id": 1,
+            "host_cities": [
+                "北京"
+            ],
+            "type": "activity"
+        },
+        "subordinate": {
+            "count": 2,
+            "users": [
+                {
+                    "uid": 143,
+                    "nickname": "阿达尔",
+                    "avatar": "http://www.wjsq3.com/attached/image/20160624/_large/20160624143842_20405.jpg"
+                },
+                {
+                    "uid": 140,
+                    "nickname": "若有无",
+                    "avatar": "http://test.wujie.com.cn/attached/image/20170420/20170420204136_95582.jpg"
+                }
+            ]
+        }
+    },
+    "status": true,
+    "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+  <tr class="tc b">
+    <td>参数</td>
+    <td>值</td>
+  </tr>
+  <tr>
+    <td>entity.id</td>
+    <td>目标id</td>
+  </tr>
+
+  <tr>
+    <td>entity.type</td>
+    <td>目标类型，activity:活动，video:视频， live：直播， brand:品牌</td>
+  </tr>
+  <tr>
+    <td>entity.subject</td>
+    <td>目标标题</td>
+  </tr>
+
+  <tr>
+    <td>entity.begin_time</td>
+    <td>开始时间</td>
+  </tr>
+  <tr>
+    <td>entity.view</td>
+    <td>浏览次数</td>
+  </tr>
+
+  <tr>
+    <td>entity.host_cities</td>
+    <td>举办地，一个数组，只有活动才返回</td>
+  </tr>
+
+  <tr>
+    <td>entity.share_num</td>
+    <td>分享次数</td>
+  </tr>
+
+  <tr>
+    <td>entity.description</td>
+    <td>描述</td>
+  </tr>
+
+  <tr>
+    <td>entity.category_name</td>
+    <td>品牌分类名，只有品牌才返回</td>
+  </tr>
+
+  <tr>
+    <td>entity.investment_min</td>
+    <td>品牌最小投资额，只有品牌才返回</td>
+  </tr>
+
+  <tr>
+    <td>entity.investment_max</td>
+    <td>品牌最大投资额，只有品牌才返回</td>
+  </tr>
+
+  <tr>
+    <td>subordinates.count</td>
+    <td>下属总数</td>
+  </tr>
+
+  <tr>
+    <td>subordinates.users.uid</td>
+    <td>下属uid</td>
+  </tr>
+
+  <tr>
+    <td>subordinates.users.nickname</td>
+    <td>下属昵称</td>
+  </tr>
+
+  <tr>
+    <td>subordinates.users.avatar</td>
+    <td>下属头像</td>
+  </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

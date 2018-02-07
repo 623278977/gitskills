@@ -1,0 +1,98 @@
+<h2 class="title-h2 absolute">
+    直播购买信息——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/live/buy-info/_v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id(必)</td>
+        <td>直播或者活动id</td>
+    </tr>
+    <tr>
+        <td>type(必)</td>
+        <td>live或者activity</td>
+    </tr>
+    <tr>
+        <td>uid(必)/td>
+        <td>用户id</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+    "message": {
+        "user": {
+            "score": 102720,
+            "username": "91344407510",
+            "nickname": "哈哈1"
+        },
+        "live": {
+            "id": 103,
+            "begin_time": "02月20日 17:20",
+            "list_img": "http://www.wjsq3.com/attached/image/20160627/20160627170818_68184.jpg",
+            "subject": "ces ",
+            "summary": null,
+            "activity_id": 1279,
+            "score_price": 0,
+            "ticket_id": 1211
+        }
+    },
+    "status": true,
+    "forwardUrl": ""
+}
+        </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>user.score</td>
+        <td>当前用户积分</td>
+    </tr>
+    <tr>
+        <td>user.username</td>
+        <td>当前用户手机号</td>
+    </tr>
+    <tr>
+        <td>user.nickname</td>
+        <td>当前用户昵称</td>
+    </tr>
+    <tr>
+        <td>live.begin_time</td>
+        <td>直播开始时间</td>
+    </tr>
+    <tr>
+        <td>live.summary</td>
+        <td>直播描述</td>
+    </tr>
+
+    <tr>
+        <td>live.list_img</td>
+        <td>直播图片</td>
+    </tr>
+    <tr>
+        <td>live.activity_id</td>
+        <td>相关活动id</td>
+    </tr>
+
+    <tr>
+        <td>live.score_price</td>
+        <td>直播价格</td>
+    </tr>
+
+    <tr>
+        <td>live.ticket_id</td>
+        <td>直播票id</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

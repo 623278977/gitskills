@@ -1,0 +1,370 @@
+<h2 class="title-h2 absolute">
+    专版直播资源推荐(活动，视频，直播，专版)——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/vip/recommend</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>vip_id(必)</td>
+        <td>专版id</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>登陆者uid，未登录传0</td>
+    </tr>
+    <tr>
+        <td>position_id(必)</td>
+        <td>当前所在地区的id，获取不到传0</td>
+    </tr>
+    <tr>
+        <td>resource(必)</td>
+        <td>{"activity":2,"video":2,"live":3,"vip":4}</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": {
+    "activities": [],
+    "videos": [
+    {
+    "id": 1,
+    "view": 39,
+    "image": "http://www.wjsq3.com/images/default/large-pro.jpg",
+    "subject": "subject1",
+    "is_recommend": 0,
+    "is_hot": 0,
+    "description": "描述啊",
+    "type": "金融产品",
+    "url": "http://mt.wujie.com.cn/webapp/vod/detail?id=1&pagetag=05-4",
+    "small_image": "http://www.wjsq3.com/",
+    "favorite_count": 1,
+    "is_favorite": 1
+    },
+    {
+    "id": 200035,
+    "view": 0,
+    "image": "http://www.wjsq3.com/images/default/large-pro.jpg",
+    "subject": "3333",
+    "is_recommend": 0,
+    "is_hot": 0,
+    "description": "",
+    "type": "金融产品",
+    "url": "http://mt.wujie.com.cn/webapp/vod/detail?id=200035&pagetag=05-4",
+    "small_image": "http://www.wjsq3.com/",
+    "favorite_count": 0,
+    "is_favorite": 0
+    }
+    ],
+    "lives": [
+    {
+    "id": 256,
+    "activity_id": 42,
+    "subject": "teststest",
+    "live_url": "http://dev.wjsq3-passport.loc/live/addoreditlive",
+    "list_img": "http://www.wjsq3.com/attached/image/20160617/_large/20160617141646_43538.jpeg",
+    "description": "新增的商机,很多人收到了",
+    "need_ticket": 0,
+    "begin_time": 1471767030,
+    "end_time": 1471867030,
+    "preview_time": 1467663943,
+    "created_at": "5",
+    "updated_at": "0",
+    "detail_img": "http://www.wjsq3.com/attached/image/20160804/_large/20160804142214_70015.jpg",
+    "view": 25,
+    "maker_id": 1,
+    "status": 1,
+    "chatroom_id": null,
+    "vip_id": 1,
+    "subscribe": 0,
+    "is_being": 0
+    },
+    {
+    "id": 4150,
+    "activity_id": 43,
+    "subject": "新增的商机,很多人收到了",
+    "live_url": "http://dev.wjsq3-passport.loc/live/addoreditlive",
+    "list_img": "http://www.wjsq3.com/attached/image/20160617/_large/20160617141646_43538.jpeg",
+    "description": "新增的商机,很多人收到了",
+    "need_ticket": 0,
+    "begin_time": 1471767030,
+    "end_time": 1471867030,
+    "preview_time": 1466144226,
+    "created_at": "9",
+    "updated_at": "0",
+    "detail_img": "http://www.wjsq3.com/attached/image/20160617/_large/20160617141644_61421.jpg",
+    "view": 83,
+    "maker_id": 1,
+    "status": 1,
+    "chatroom_id": "208650062408974764",
+    "vip_id": 1,
+    "subscribe": 0,
+    "is_being": 0
+    },
+    {
+    "id": 4151,
+    "activity_id": 44,
+    "subject": "地对地导弹",
+    "live_url": "http://dev.wjsq3-passport.loc/live/addoreditlive",
+    "list_img": "http://www.wjsq3.com/images/live.png",
+    "description": "地对地导弹",
+    "need_ticket": 0,
+    "begin_time": 1471767030,
+    "end_time": 1471867030,
+    "preview_time": 0,
+    "created_at": "8",
+    "updated_at": "0",
+    "detail_img": "http://www.wjsq3.com/images/live.png",
+    "view": 1,
+    "maker_id": 0,
+    "status": 1,
+    "chatroom_id": null,
+    "vip_id": 1,
+    "subscribe": 0,
+    "is_being": 0
+    }
+    ],
+    "vips": [
+    {
+    "name": "帅哥帅哥撒嘎撒嘎",
+    "detail": "市供水公司的是",
+    "poster": "attached/image/20160805/20160805144807_86901.jpg",
+    "subtitle": "",
+    "is_valid": 0
+    },
+    {
+    "name": "中级测试大王",
+    "detail": "中级测试大王",
+    "poster": "attached/image/20160805/20160805172856_84286.jpg",
+    "subtitle": "",
+    "is_valid": 0
+    },
+    {
+    "name": "测试数据",
+    "detail": "good",
+    "poster": "attached/image/20160809/20160809174129_73341.jpg",
+    "subtitle": "",
+    "is_valid": 0
+    }
+    ]
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>videos.small_image</td>
+        <td>点播显示的分类图片（小图）</td>
+    </tr>
+    <tr>
+        <td>videos.id</td>
+        <td>点播id</td>
+    </tr>
+    <tr>
+        <td>videos.view</td>
+        <td>点播访问量</td>
+    </tr>
+    <tr>
+        <td>videos.image</td>
+        <td>点播图片</td>
+    </tr>
+    <tr>
+        <td>videos.subject</td>
+        <td>点播标题</td>
+    </tr>
+    <tr>
+        <td>videos.description</td>
+        <td>点播摘要</td>
+    </tr>
+    <tr>
+        <td>videos.type</td>
+        <td>点播类型 中文</td>
+    </tr>
+    <tr>
+        <td>videos.url</td>
+        <td>点播跳转地址</td>
+    </tr>
+    <tr>
+        <td>videos.favorite_count</td>
+        <td>点播收藏量</td>
+    </tr>
+    <tr>
+        <td>videos.is_favorite</td>
+        <td>点播是否收藏 1是  0否</td>
+    </tr>
+    <tr>
+        <td>videos.is_recommend</td>
+        <td>点播是否推荐 1是  0否</td>
+    </tr>
+    <tr>
+        <td>videos.is_hot</td>
+        <td>点播是否热门 1是  0否</td>
+    </tr>
+
+    <tr>
+        <td>videos.is_new</td>
+        <td>点播是否最新 1是  0否</td>
+    </tr>
+
+
+    <tr>
+        <td>live.id</td>
+        <td>直播id(string)</td>
+    </tr>
+    <tr>
+        <td>live.subject</td>
+        <td>直播标题(string)</td>
+    </tr>
+    <tr>
+        <td>live.begin_time</td>
+        <td>直播开始时间,时间戳</td>
+    </tr>
+    <tr>
+        <td>live.begin_time_format</td>
+        <td>直播开始时间,已经格式化</td>
+    </tr>
+    <tr>
+        <td>live.end_time</td>
+        <td>直播结束时间,已经格式化</td>
+    </tr>
+    <tr>
+        <td>live.end_time_stamp</td>
+        <td>直播结束时间时间戳</td>
+    </tr>
+    <tr>
+        <td>live.list_img</td>
+        <td>直播列表页图片地址(string)</td>
+    </tr>
+
+    <tr>
+        <td>live.subscribe</td>
+        <td>直播是否已订阅，1代表已订阅，0代表未订阅</td>
+    </tr>
+    <tr>
+        <td>live.is_being</td>
+        <td>是否正在直播，1代表正直播，0非正直播</td>
+    </tr>
+    <tr>
+        <td>live.view</td>
+        <td>直播浏览量</td>
+    </tr>
+    <tr>
+        <td>vips.name</td>
+        <td>专版标题</td>
+    </tr>
+    <tr>
+        <td>vips.detail</td>
+        <td>专版详情</td>
+    </tr>
+    <tr>
+        <td>vips.detail</td>
+        <td>专版详情</td>
+    </tr>
+
+    <tr>
+        <td>vips.poster</td>
+        <td>专版图片地址</td>
+    </tr>
+
+    <tr>
+        <td>vips.subtitle</td>
+        <td>专版副标题</td>
+    </tr>
+
+    <tr>
+        <td>vips.activity_count</td>
+        <td>专版下活动的数量</td>
+    </tr>
+
+    <tr>
+        <td>vips.video_count</td>
+        <td>专版下点播的数量</td>
+    </tr>
+
+    <tr>
+        <td>vips.live_count</td>
+        <td>专版下直播的数量</td>
+    </tr>
+
+
+    <tr>
+        <td>activities.id</td>
+        <td>活动id(string)</td>
+    </tr>
+    <tr>
+        <td>activities.subject</td>
+        <td>活动标题(string)</td>
+    </tr>
+    <tr>
+        <td>activities.view</td>
+        <td>浏览量(string)</td>
+    </tr>
+    <tr>
+        <td>activities.list_img</td>
+        <td>列表页图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>activities.is_recommend</td>
+        <td>是否推荐0否 1是</td>
+    </tr>
+    <tr>
+        <td>activities.begin_time</td>
+        <td>开始时间</td>
+    </tr>
+    <tr>
+        <td>activities.price</td>
+        <td>门票(最低价)</td>
+    </tr>
+    <tr>
+        <td>activities.city</td>
+        <td>所在城市</td>
+    </tr>
+    <tr>
+        <td>activities.host_cities</td>
+        <td>活动举办城市</td>
+    </tr>
+    <tr>
+        <td>activities.url</td>
+        <td>当前活动的链接</td>
+    </tr>
+    <tr>
+        <td>activities.is_vip</td>
+        <td>是否为专版活动(1是，0否)</td>
+    </tr>
+    <tr>
+        <td>activities.is_hot</td>
+        <td>是否为热门活动(1是，0否)</td>
+    </tr>
+    <tr>
+        <td>activities.category</td>
+        <td>活动类别(A,B,C)</td>
+    </tr>
+    <tr>
+        <td>activities.maker_id</td>
+        <td>活动OVOid</td>
+    </tr>
+    <tr>
+        <td>activities.is_shareable</td>
+        <td>是否可以分享</td>
+    </tr>
+    <tr>
+        <td>city</td>
+        <td>当前所在城市名</td>
+    </tr>
+    <tr>
+        <td>maker_name</td>
+        <td>当前所在空间名</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

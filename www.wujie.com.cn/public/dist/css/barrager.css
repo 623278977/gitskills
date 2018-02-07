@@ -1,0 +1,120 @@
+@font-face{
+    font-family: 'AccidentalPresidency';
+    src:url('../css/fonts/AccidentalPresidency.ttf');
+    font-weight:normal;
+    font-style: normal;
+}
+.barrage {
+    position: fixed;
+    bottom: 70px;
+    /*right: -500px;*/
+    display: inline-block;
+    width: 550px;
+    z-index: 999;
+}
+
+.barrage_box {
+    background-color: rgba(0, 0, 0, 0);
+    padding-right: 20px;
+    padding-left: 10px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 25px;
+    transition: all .3s;
+}
+
+.barrage_box .portrait {
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 4px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.barrage_box .portrait img {
+    width: 100%;
+    height: 100%;
+}
+
+.barrage_box div.p a {
+    margin-right: 2px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.barrage_box div.p a:hover {
+    text-decoration: underline;
+}
+
+.barrage_box .close {
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 8px;
+    background-image: url(close.png);
+}
+
+.barrage_box:hover .close {
+    visibility: visible;
+    opacity: 1;
+}
+
+.barrage_box .close a {
+    display: block;
+}
+
+.barrage_box .close .icon-close {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .5);
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.barrage .z {
+    float: left !important;
+}
+
+.barrage a {
+    text-decoration: none;
+}
+
+/*数字滚动*/
+.mt-number-animate {
+    /*font-family: '微软雅黑';*/
+    line-height: 40px;
+    height: 40px; /*设置数字显示高度*/;
+    font-size: 42px; /*设置数字大小*/
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    font-family: 'AccidentalPresidency';
+}
+
+.mt-number-animate .mt-number-animate-dot {
+    width: 15px; /*设置分割符宽度*/
+    line-height: 40px;
+    float: left;
+    text-align: center;
+}
+
+.mt-number-animate .mt-number-animate-dom {
+    width: 20px; /*设置单个数字宽度*/
+    text-align: center;
+    float: left;
+    position: relative;
+    top: 0;
+}
+
+.mt-number-animate .mt-number-animate-dom .mt-number-animate-span {
+    width: 100%;
+    float: left;
+}

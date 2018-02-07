@@ -1,0 +1,122 @@
+<h2 class="title-h2 absolute">
+    用户活动报名列表——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/user-apply</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页，默认0</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>规格，默认10</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {"message":[{"id":1,"subject":"\u6d3b\u52a8\u7b2c\u4e00\u53f7","view":171,
+    "list_img":"http:\/\/www.wjsq3.com\/attached\/image\/20160613\/_large\/20160613174042_88436.jpg",
+    "description":"\u6b64\u5904\u662f\u6d3b\u52a8\u4e00\u53f7\u63cf\u8ff0","begin_time":"06\/12",
+    "is_recommend":1,"city":"\u7ecd\u5174@\u5317\u4eac@\u7ecd\u5174@\u5317\u4eac","maker_ids":"2@1@18@19",
+    "type":"organizer@assistance@assistance@assistance","price":"","ticket_type":"","min_price":"",
+    "url":"api\/activity\/detail?id=1"},{"id":2,"subject":"\u6d3b\u52a83","view":358,
+    "list_img":"http:\/\/www.wjsq3.com\/images\/default\/large-pro.jpg",
+    "description":"\u6b64\u5904\u662f\u6d3b\u52a8\u4e09\u53f7\u7684\u63cf\u8ff0\u554a\u554a\u554a\u554a\u554a...","begin_time":"06\/20","is_recommend":1,"city":"\u5317\u4eac@\u7ecd\u5174",
+    "maker_ids":"1@2","type":"organizer@organizer","price":"2@10","ticket_type":"2@1","min_price":"2",
+    "url":"api\/activity\/detail?id=2"},{"id":32,"subject":"\u6cd5\u5927\u5e08\u5085\u58eb\u5927\u592b\u58eb
+    \u5927\u592b","view":1,"list_img":"http:\/\/www.wjsq3.com\/images\/default\/large-pro.jpg",
+    "description":"","begin_time":"04\/27","is_recommend":1,"city":"","maker_ids":"0","type":"organizer",
+    "price":"11","ticket_type":"-1","min_price":"11","url":"api\/activity\/detail?id=32"},{"id":34,
+    "subject":"\u6d3b\u52a8\u540d\u6d3b\u52a8\u540d","view":0,"list_img":"http:\/\/www.wjsq3.com\/\/images
+    \/citypartner\/img\/_large\/haibao.png","description":"\u6d3b\u52a8\u8be6\u60c5\u6d3b\u52a8\u8be6\u60c5
+    \u6d3b\u52a8\u8be6\u60c5\u6d3b\u52a8\u8be6\u60c5\u6d3b\u52a8\u8be6\u60c5\u6d3b\u52a8\u8be6\u60c5",
+    "begin_time":"06\/02","is_recommend":0,"city":"","maker_ids":null,"type":null,"price":"","ticket_type":"",
+    "min_price":"","url":"api\/activity\/detail?id=34"},{"id":45,"subject":"aiaiiai","view":0,
+    "list_img":"http:\/\/www.wjsq3.com\/attached\/image\/20160531\/_large\/20160531142150_14015.jpg",
+    "description":"11111111111111","begin_time":"05\/01","is_recommend":1,
+    "city":"\u5317\u4eac@\u7ecd\u5174@\u7ecd\u5174","maker_ids":"1@2@18",
+    "type":"organizer@assistance@assistance","price":"","ticket_type":"","min_price":"",
+    "url":"api\/activity\/detail?id=45"}],"status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>活动id(string)</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动标题(string)</td>
+    </tr>
+    <tr>
+        <td>view</td>
+        <td>浏览量(string)</td>
+    </tr>
+    <tr>
+        <td>list_img</td>
+        <td>列表页图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>is_recommend</td>
+        <td>是否推荐0否 1是</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>开始时间</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>门票,多个以@隔开(string)</td>
+    </tr>
+    <tr>
+        <td>ticket_type</td>
+        <td>门票类型,多个以@隔开 1现场票 2直播票  0免费票 3vip票 (string)</td>
+    </tr>
+    <tr>
+        <td>min_price</td>
+        <td>最低门票</td>
+    </tr>
+    <tr>
+        <td>city</td>
+        <td>举行该场活动的城市，当有多个时，以@隔开(string)</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>举行该场活动的城市的类型（主办方，协办方），当有多个时，以@隔开,与上面的city字段对应(string或array)</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>当前活动的描述</td>
+    </tr>
+    <tr>
+        <td>url</td>
+        <td>当前活动的链接</td>
+    </tr>
+    <tr>
+        <td>is_over</td>
+        <td>当前活动是否已经结束，0:未结束，1:已结束</td>
+    </tr>
+    <tr>
+        <td>is_vip</td>
+        <td>当前活动是否是专版活动，0:不是，1:1</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>当前活动的专版id</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

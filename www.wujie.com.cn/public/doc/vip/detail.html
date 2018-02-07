@@ -1,0 +1,165 @@
+<h2 class="title-h2 absolute">
+    专版详情——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/vip/detail</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>专版id</td>
+    </tr>
+
+    <tr>
+        <td>uid</td>
+        <td>登录用uid,未登录传0</td>
+    </tr>
+
+    <tr>
+        <td>attach</td>
+        <td>传1将会返回该专版下的活动数量，视频数量，直播数量，默认0</td>
+    </tr>
+
+    <tr>
+        <td>agreement</td>
+        <td>传1将会返回该专版下的会员权益说明，默认0</td>
+    </tr>
+
+    <tr>
+        <td>package</td>
+        <td>传1将会返回该专版下的套餐信息说明，默认0</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    "message": {
+    "name": "测试数据",
+    "detail": "good",
+    "poster": "attached/image/20160809/20160809174129_73341.jpg",
+    "agreement": "很不错的套餐",
+    "subtitle": "",
+    "activity_count": 2,
+    "video_count": 3,
+    "live_count": 2,
+    "package": [
+    {
+    "is_recommend": 1,
+    "period": "6个月",
+    "name": "asdf",
+    "price": "500.00",
+    "status": 1
+    },
+    {
+    "is_recommend": 1,
+    "period": "6个月",
+    "name": "hahah",
+    "price": "500.00",
+    "status": 0
+    },
+    {
+    "is_recommend": 1,
+    "period": "6个月",
+    "name": "563",
+    "price": "500.00",
+    "status": 0
+    },
+    {
+    "is_recommend": 1,
+    "period": "3个月",
+    "name": "好套餐",
+    "price": "1000.00",
+    "status": 0
+    }
+    ]
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>专版id(string)</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>专版名(string)</td>
+    </tr>
+    <tr>
+        <td>poster</td>
+        <td>海报图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>detail</td>
+        <td>专版详情(string)</td>
+    </tr>
+    <tr>
+        <td>groupid</td>
+        <td>环信群聊id(string)</td>
+    </tr>
+    <tr>
+        <td>subtitle</td>
+        <td>副标题(string)</td>
+    </tr>
+    <tr>
+        <td>status</td>
+        <td>该专版状态，1：可用，0：不可用</td>
+    </tr>
+    <tr>
+        <td>activity_count</td>
+        <td>该专版下的活动数目，当参数attach为1时才返回</td>
+    </tr>
+    <tr>
+        <td>video_count</td>
+        <td>该专版下的视频数目，当参数attach为1时才返回</td>
+    </tr>
+
+    <tr>
+        <td>live_count</td>
+        <td>该专版下的直播数目，当参数attach为1时才返回</td>
+    </tr>
+
+    <tr>
+        <td>agreement</td>
+        <td>该专版下的会员权益，当参数agreement为1时才返回</td>
+    </tr>
+    <tr>
+        <td>is_valid</td>
+        <td>当前登录用户是否为该专版的有效会员，当参数agreement为1时才返回</td>
+    </tr>
+    <tr>
+        <td>package.is_recommend</td>
+        <td>该套餐是否推荐，当参数package为1时才返回</td>
+    </tr>
+    <tr>
+        <td>package.period</td>
+        <td>该套餐的周期如3个月、1年，当参数package为1时才返回</td>
+    </tr>
+    <tr>
+        <td>package.name</td>
+        <td>该套餐的名称，当参数package为1时才返回</td>
+    </tr>
+    <tr>
+        <td>package.price</td>
+        <td>该套餐的价格，当参数package为1时才返回</td>
+    </tr>
+    <tr>
+        <td>package.status</td>
+        <td>该套餐的状态，为1则表示可用，为0则表示不可用，当参数package为1时才返回</td>
+    </tr>
+    <tr>
+        <td>package.id</td>
+        <td>该套餐的id</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

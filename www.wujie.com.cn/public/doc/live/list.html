@@ -1,0 +1,131 @@
+<h2 class="title-h2 absolute">
+    直播列表——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/live/list</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>分页长度(默认10)</td>
+    </tr>
+    <tr>
+        <td>keywords</td>
+        <td>关键词</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>用户id</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>专版id</td>
+    </tr>
+
+    <tr>
+        <td>fetch_end</td>
+        <td>是否取已结束的直播，默认为0,0表示不取，1表示取</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+
+        {"message":[{"id":1,"activity_id":1,"subject":"\u7b2c\u4e00\u4e2a\u76f4\u64ad",
+        "live_url":"","list_img":"","description":"","need_ticket":0,
+        "begin_time":1562859817,"end_time":3,"preview_time":0,"created_at":"0",
+        "updated_at":"0","detail_img":null,"subscribe":1},{"id":2,"activity_id":2,
+        "subject":"\u7b2c2\u4e2a\u76f4\u64ad","live_url":"","list_img":"","description":"",
+        "need_ticket":0,"begin_time":1562859817,"end_time":0,"preview_time":0,
+        "created_at":"0","updated_at":"0","detail_img":null,"subscribe":1},
+        {"id":3,"activity_id":3,"subject":"\u7b2c3\u4e2a\u76f4\u64ad","live_url":"",
+        "list_img":"","description":"","need_ticket":0,"begin_time":1562859817,"end_time":0,
+        "preview_time":0,"created_at":"0","updated_at":"0","detail_img":null,"subscribe":0}],
+        "status":true,"forwardUrl":""}
+    </pre>
+
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>直播id</td>
+    </tr>
+    <tr>
+        <td>activity_id</td>
+        <td>相关联的活动id</td>
+    </tr>
+    <tr>
+        <td>live_url</td>
+        <td>直播频道号</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>直播标题</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>描述</td>
+    </tr>
+    <tr>
+        <td>need_ticket</td>
+        <td>是否需要门票，0不需要，1需要</td>
+    </tr>
+    <tr>
+        <td>preview_time</td>
+        <td>预告时间，已经格式化(如：09/30 19:56)</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>开始时间，时间戳</td>
+    </tr>
+    <tr>
+        <td>begin_time_format</td>
+        <td>开始时间，已经格式化(如：09/30 19:56)</td>
+    </tr>
+    <tr>
+        <td>end_time</td>
+        <td>结束时间，已经格式化(如：09/30 19:56)</td>
+    </tr>
+    <tr>
+        <td>list_img</td>
+        <td>列表页图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>view</td>
+        <td>浏览量</td>
+    </tr>
+    <tr>
+        <td>status</td>
+        <td>是否已删除，0，未删除，1，已删除</td>
+    </tr>
+    <tr>
+        <td>chatroom_id</td>
+        <td>聊天室id</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>所属专版id</td>
+    </tr>
+    <tr>
+        <td>subscribe</td>
+        <td>是否已订阅，1代表已订阅，0代表未订阅</td>
+    </tr>
+    <tr>
+        <td>is_being</td>
+        <td>是否正在直播，1代表正直播，0代表预告，-1代表已结束</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

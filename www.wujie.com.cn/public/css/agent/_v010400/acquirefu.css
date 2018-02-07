@@ -1,0 +1,89 @@
+/*zhangxm*/
+p {
+	margin-bottom: 0;
+}
+button {
+	border: 0;
+}
+#container {
+	background-image: url(/images/agent/nybgc.png);
+	width: 100%;
+}
+ .acquirefu,#container,.noacquirefu{
+ 	background-size: 100% 100%;
+ }
+.acquirefu {
+	background-image: url(/images/agent/fuliang.png);
+	
+}
+.acquirefu,.noacquirefu {
+	width: 30.9rem;
+	/*height: 33.45rem;*/
+	border-radius: 0.5rem;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 3.35rem;
+}
+.noacquirefu {
+	background-image: url(/images/agent/fuhui.png);
+}
+.shareFuka,.sendFriend,.blag {
+	width: 13rem;
+	height: 4rem;
+	border-radius: 0.2rem;
+	text-align: center;
+	line-height: 1.45rem;
+	
+}
+.shareFuka {
+	background-color: #f4c85d;
+}
+.sendFriend,.blag {
+	background-color: #fef9e7;
+	
+}
+.cff422f {
+	color: #ff422f;
+}
+.c4f3b0b {
+	color: #4f3b0b;
+}
+.acquirefu_btn,.noacquirefu_btn {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.huojiang,.fu_wenzi {
+	text-align: center;
+}
+.huojiang img {
+	width: 20rem;
+	height: 2rem;
+}
+.cfff {
+	color: #FFFFFF;
+}
+.fuzi_img {
+	width: 15.45rem;
+	height: 15.45rem;
+	margin-top: 4.15rem;
+}
+.lingxing {
+	width: 0.9rem;
+	height: 0.9rem;
+}
+.fuzi_text {
+	font-size: 1.4rem;
+	color: #f3cb97;
+}
+.fu_wenzi {
+	line-height: 1.4rem;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	margin-top: 1.4rem;
+	margin-bottom: 3.75rem;
+}
+.noacquirefu_text {
+	text-align: center;
+}

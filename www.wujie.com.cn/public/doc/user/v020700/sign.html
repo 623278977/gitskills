@@ -1,0 +1,100 @@
+<h2 class="title-h2 absolute">
+    签到领取—tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/user/sign/v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>用户uid</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+    "message": {
+        "serial_sign": 5,
+        "today_score": 10,
+        "tomorrow_score": 30,
+        "lists": [
+            {
+                "score": 10,
+                "day": "06.19",
+                "color": "red"
+            },
+            {
+                "score": 10,
+                "day": "06.20",
+                "color": "red"
+            },
+            {
+                "score": 15,
+                "day": "06.21",
+                "color": "red"
+            },
+            {
+                "score": 20,
+                "day": "今天",
+                "color": "red"
+            },
+            {
+                "score": 25,
+                "day": "明天",
+                "color": "gray"
+            },
+            {
+                "score": 30,
+                "day": "06.24",
+                "color": "gray"
+            },
+            {
+                "score": 55,
+                "day": "06.25",
+                "color": "gray"
+            }
+        ]
+    },
+    "status": true,
+    "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>message.serial_sign</td>
+        <td>连续签到次数</td>
+    </tr>
+    <tr>
+        <td>message.today_score</td>
+        <td>今天得分</td>
+    </tr>
+    <tr>
+        <td>message.tomorrow_score</td>
+        <td>明天得分</td>
+    </tr>
+    <tr>
+        <td>message.lists.score</td>
+        <td>日期得分</td>
+    </tr>
+    <tr>
+        <td>message.lists.day</td>
+        <td>日期名</td>
+    </tr>
+    <tr>
+        <td>message.lists.color</td>
+        <td>日期颜色,red：红色，gray：灰色</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

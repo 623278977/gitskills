@@ -1,0 +1,49 @@
+<h2 class="title-h2 absolute">
+    验证验证码——fengzq
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/identify/checkidentify</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>code(必)</td>
+        <td>验证码</td>
+    </tr>
+    <tr>
+        <td>username(必)</td>
+        <td>手机号</td>
+    </tr>
+    <tr>
+        <td>type(必)</td>
+        <td>验证码类型(注册传register  忘记密码:forget_password  第三方登陆:outh_register 短信登陆:sms_login 其他:standard)</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": {
+    "remark": "can_login",
+    "message": "验证码正确"
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>message</td>
+        <td>返回字符串 can_login:短信登录 need_register:短信注册 ,如果是常规验证和以前一样</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>
+

@@ -1,0 +1,312 @@
+<h2 class="title-h2 absolute">
+    分享详情——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/share/share-detail/_v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>share_id(必)</td>
+        <td>分享id</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>默认1</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>默认10</td>
+    </tr>
+    <tr>
+        <td>参数示列</td>
+        <td>share_id:442</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+    "message": {
+        "entity": {
+            "id": 1287,
+            "subject": "三大运营商数据发布：心疼联通一秒钟",
+            "begin_time": "02月23日 07:00",
+            "share_num": 37,
+            "view": 89,
+            "distribution_id": 1,
+            "host_cities": [
+                "北京"
+            ],
+            "type": "activity"
+        },
+        "actions": [
+            {
+                "action": "share",
+                "give": "score",
+                "trigger": 10,
+                "describe": ""
+            },
+            {
+                "action": "watch",
+                "give": "score",
+                "trigger": 10,
+                "describe": ""
+            },
+            {
+                "action": "enroll",
+                "give": "currency",
+                "trigger": 10,
+                "describe": ""
+            },
+            {
+                "action": "sign",
+                "give": "currency",
+                "trigger": 20,
+                "describe": ""
+            },
+            {
+                "action": "intent",
+                "give": "currency",
+                "trigger": 10,
+                "describe": ""
+            }
+        ],
+        "achieves": {
+            "score_num": 130,
+            "currency_num": 10,
+            "share_num": 4,
+            "view_num": 0,
+            "order_num": 0,
+            "apply_num": 1,
+            "sign_num": 0
+        },
+        "subordinates": {
+            "count": 2,
+            "users": [
+                {
+                    "uid": 143,
+                    "nickname": "阿达尔",
+                    "avatar": "http://www.wjsq3.com/attached/image/20160624/_large/20160624143842_20405.jpg"
+                },
+                {
+                    "uid": 140,
+                    "nickname": "若有无",
+                    "avatar": "http://test.wujie.com.cn/attached/image/20170420/20170420204136_95582.jpg"
+                }
+            ]
+        },
+        "details": [
+            {
+                "share": {
+                    "time_count": 2,
+                    "sum": "20",
+                    "give_type": "score",
+                    "genus_type": "share",
+                    "day": "02-24"
+                },
+                "sign": {
+                    "time_count": 1,
+                    "sum": "10",
+                    "give_type": "currency",
+                    "genus_type": "sign",
+                    "day": "02-24"
+                },
+                "day": "02-24"
+            },
+            {
+                "apply": {
+                    "time_count": 1,
+                    "sum": "10",
+                    "give_type": "score",
+                    "genus_type": "apply",
+                    "day": "02-23"
+                },
+                "day": "02-23"
+            },
+            {
+                "apply": {
+                    "time_count": 1,
+                    "sum": "100",
+                    "give_type": "score",
+                    "genus_type": "apply",
+                    "day": "02-22"
+                },
+                "day": "02-22"
+            }
+        ]
+    },
+    "status": true,
+    "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>entity.id</td>
+        <td>目标id</td>
+    </tr>
+
+    <tr>
+        <td>entity.type</td>
+        <td>目标类型，activity:活动，video:视频， live：直播， brand:品牌</td>
+    </tr>
+    <tr>
+        <td>entity.subject</td>
+        <td>目标标题</td>
+    </tr>
+
+    <tr>
+        <td>entity.begin_time</td>
+        <td>开始时间</td>
+    </tr>
+    <tr>
+        <td>entity.view</td>
+        <td>浏览次数</td>
+    </tr>
+
+    <tr>
+        <td>entity.host_cities</td>
+        <td>举办地，一个数组，只有活动才返回</td>
+    </tr>
+
+    <tr>
+        <td>entity.share_num</td>
+        <td>分享次数</td>
+    </tr>
+
+    <tr>
+        <td>entity.description</td>
+        <td>描述</td>
+    </tr>
+
+    <tr>
+        <td>entity.category_name</td>
+        <td>品牌分类名，只有品牌才返回</td>
+    </tr>
+
+    <tr>
+        <td>entity.investment_min</td>
+        <td>品牌最小投资额，只有品牌才返回</td>
+    </tr>
+
+    <tr>
+        <td>entity.investment_max</td>
+        <td>品牌最大投资额，只有品牌才返回</td>
+    </tr>
+
+    <tr>
+        <td>actions.action</td>
+        <td>分销动作名,share:分享，relay:转发， view:点击，watch：观看，enroll：报名，sign:签到，intent:意向加盟</td>
+    </tr>
+    <tr>
+        <td>actions.give</td>
+        <td>奖励单位，score:积分，currency:无界币</td>
+    </tr>
+
+    <tr>
+        <td>actions.trigger</td>
+        <td>奖励数量</td>
+    </tr>
+
+    <tr>
+        <td>actions.describe</td>
+        <td>动作描述</td>
+    </tr>
+
+    <tr>
+        <td>achieves.score_num</td>
+        <td>实得积分</td>
+    </tr>
+
+    <tr>
+        <td>achieves.currency_num</td>
+        <td>实得佣金</td>
+    </tr>
+
+    <tr>
+        <td>achieves.share_num</td>
+        <td>总分享次数</td>
+    </tr>
+
+    <tr>
+        <td>achieves.view_num</td>
+        <td>有效浏览次数</td>
+    </tr>
+
+
+    <tr>
+        <td>achieves.order_num</td>
+        <td>成单次数</td>
+    </tr>
+
+    <tr>
+        <td>achieves.apply_num</td>
+        <td>报名次数</td>
+    </tr>
+
+    <tr>
+        <td>achieves.sign_num</td>
+        <td>签到次数</td>
+    </tr>
+    <tr>
+        <td>achieves.watch_num</td>
+        <td>有效观看</td>
+    </tr>
+
+    <tr>
+        <td>subordinates.count</td>
+        <td>下属总数</td>
+    </tr>
+
+    <tr>
+        <td>subordinates.users.uid</td>
+        <td>下属uid</td>
+    </tr>
+
+    <tr>
+        <td>subordinates.users.nickname</td>
+        <td>下属昵称</td>
+    </tr>
+
+    <tr>
+        <td>subordinates.users.avatar</td>
+        <td>下属头像</td>
+    </tr>
+
+    <tr>
+        <td>details.日期.动作.time_count</td>
+        <td>次数</td>
+    </tr>
+
+    <tr>
+        <td>details.日期.动作.sum</td>
+        <td>总得</td>
+    </tr>
+
+    <tr>
+        <td>details.日期.动作.give_type</td>
+        <td>单位</td>
+    </tr>
+
+    <tr>
+        <td>details.日期.动作.genus_type</td>
+        <td>分享动作类型,share:分享，share_view:阅读，share_relay:转发，share_watch:观看，intent:品牌意向加盟，enroll：活动报名，sign:活动签到</td>
+    </tr>
+
+    <tr>
+        <td>details.日期.动作.day</td>
+        <td>日期</td>
+    </tr>
+
+
+</table>
+<div class="p-pub-title color10"></div>

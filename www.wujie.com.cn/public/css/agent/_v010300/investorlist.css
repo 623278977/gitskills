@@ -1,0 +1,127 @@
+body {
+	padding-bottom: constant(safe-area-inset-bottom);/*为底下圆弧的高度 34px*/
+}
+p {
+	margin-bottom: 0;
+}
+.choosen {
+	width: 1.7rem;
+	height: 1.15rem;
+}
+.chooseclient>div {
+	padding-right: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.investor {
+	padding: 0.5rem 1.5rem;
+	justify-content: space-between;
+}
+
+.investorMes>p>span {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	
+}
+.investorMes>p:nth-of-type(1),.investor {
+	display: flex;
+	align-items: center;
+}
+.investorMes>p:nth-of-type(1) {
+	justify-content: flex-start;
+	width: 20rem;
+}
+.grade {
+	width: 1.15rem;
+	height: 1.3rem;
+}
+.avatar {
+	width: 4.45rem;
+	height: 4.4rem;
+	border-radius: 0.3rem;
+}
+.foot {
+	width: 100%;
+	text-align: end;
+}
+.setup {
+	position: fixed;
+	height: 5.5rem;
+	line-height: 5.5rem;
+	bottom: 0;
+	width: 100%;
+	background-color: #2873ff;
+	text-align: center;
+}
+.color-f {
+	color: #FFFFFF;
+}
+.choose_btn {
+	width: 100%;
+	text-align: center;
+}
+.choose_btn>span {
+	display: inline-block;
+	width: 15rem;
+	height: 3.5rem;
+	background-color: #2873ff;
+	border-radius: 0.2rem;
+	text-align: center;
+	line-height: 3.5rem;
+}
+.chat {
+	width: 8rem;
+	height: 3.2rem;
+	border-radius: 0.2rem;
+	text-align: center;
+	line-height: 3.2rem;
+}
+.scale-1{
+  position: relative;
+  border:none;
+}
+.scale-1:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 200%;
+  height: 200%;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  border: solid 1px #2873ff;
+  pointer-events: none;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+}
+.tips{
+	padding:1rem 2rem;
+	background-color: rgba(0,0,0,0.9);
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 9999999;
+	font-size: 1.6rem;
+	color:#fff;
+	border-radius: 0.4rem;
+	-ms-transform:translateX(-50%);	/* IE 9 */
+	-moz-transform:translateX(-50%); 	/* Firefox */
+	-webkit-transform:translateX(-50%); /* Safari 和 Chrome */
+	-o-transform:translateX(-50%); 	/* Opera */
+}
+
+
+
+
+
+
+
+
+

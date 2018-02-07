@@ -1,0 +1,234 @@
+<h2 class="title-h2 absolute">
+    品牌详情——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/brand/detail</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id(必)</td>
+        <td>品牌id</td>
+    </tr>
+
+    <tr>
+        <td>uid(必)</td>
+        <td>登录用户uid,未登录传0</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>调用类型,app:app类调用，html5,分享出去调用，默认app</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+    {
+    "message": {
+    "brand": {
+    "name": "测试",
+    "logo": "",
+    "id": 1,
+    "investment_min": "1.00",
+    "investment_max": "2.00",
+    "shops_num": 3,
+    "summary": "4",
+    "introduce": "5",
+    "superiority": "6",
+    "supply": "8",
+    "league": "7",
+    "keywords": [
+    "1"
+    ],
+    "zone_name": "杭州市",
+    "category_name": "第一个分类"
+    },
+    "banners": [
+    {
+    "id": 1,
+    "src": "1"
+    },
+    {
+    "id": 2,
+    "src": "2"
+    }
+    ],
+    "questions": [
+    {
+    "quiz": "1",
+    "answer": "1"
+    },
+    {
+    "quiz": "2",
+    "answer": "2"
+    }
+    ],
+    "news": [
+    {
+    "logo": "1",
+    "title": "1",
+    "detail": "1"
+    },
+    {
+    "logo": "2",
+    "title": "2",
+    "detail": "2"
+    }
+    ],
+    "brands": [
+    {
+    "logo": "",
+    "name": "测试2",
+    "investment_min": "2.00",
+    "investment_max": "2.00",
+    "zone_name": "杭州市",
+    "category_name": "第二个分类",
+    "keywords": [
+    ""
+    ]
+    }
+    ],
+    "relation": {
+    "is_favorite": 0
+    }
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>brand.name</td>
+        <td>品牌名称</td>
+    </tr>
+    <tr>
+        <td>brand.logo</td>
+        <td>品牌logo</td>
+    </tr>
+    <tr>
+        <td>brand.investment_min</td>
+        <td>品牌最小投资额度，单位：万元</td>
+    </tr>
+    <tr>
+        <td>brand.investment_max</td>
+        <td>品牌最大投资额度，单位：万元</td>
+    </tr>
+    <tr>
+        <td>brand.shops_num</td>
+        <td>品牌店铺数量</td>
+    </tr>
+    <tr>
+        <td>brand.summary</td>
+        <td>品牌公司摘要</td>
+    </tr>
+    <tr>
+        <td>brand.introduce</td>
+        <td>品牌项目介绍</td>
+    </tr>
+    <tr>
+        <td>brand.superiority</td>
+        <td>品牌项目优势</td>
+    </tr>
+    <tr>
+        <td>brand.supply</td>
+        <td>品牌补充说明</td>
+    </tr>
+    <tr>
+        <td>brand.league</td>
+        <td>品牌加盟政策</td>
+    </tr>
+    <tr>
+        <td>brand.keywords</td>
+        <td>品牌关键字,数组，如[‘关’，‘键’，‘字’]</td>
+    </tr>
+    <tr>
+        <td>brand.zone_name</td>
+        <td>品牌地区名称</td>
+    </tr>
+    <tr>
+        <td>brand.category_name</td>
+        <td>品牌分类名称</td>
+    </tr>
+    <tr>
+        <td>brand.detail_images.src</td>
+        <td>品牌详情图片地址，数组</td>
+    </tr>
+    <tr>
+        <td>banners.src</td>
+        <td>横幅地址</td>
+    </tr>
+    <tr>
+        <td>questions.quiz</td>
+        <td>提问标题</td>
+    </tr>
+    <tr>
+        <td>questions.answer</td>
+        <td>提问答案</td>
+    </tr>
+    <tr>
+        <td>news.id</td>
+        <td>新闻id</td>
+    </tr>
+    <tr>
+        <td>news.logo</td>
+        <td>新闻logo</td>
+    </tr>
+    <tr>
+        <td>news.title</td>
+        <td>新闻标题</td>
+    </tr>
+    <tr>
+        <td>news.detail</td>
+        <td>新闻详情</td>
+    </tr>
+    <tr>
+        <td>brands.id</td>
+        <td>相关品牌id</td>
+    </tr>
+    <tr>
+        <td>brands.logo</td>
+        <td>相关品牌logo</td>
+    </tr>
+    <tr>
+        <td>brands.name</td>
+        <td>相关品牌名称</td>
+    </tr>
+    <tr>
+        <td>brands.investment_min</td>
+        <td>相关品牌最低投资额度</td>
+    </tr>
+    <tr>
+        <td>brands.investment_max</td>
+        <td>相关品牌最高投资额度</td>
+    </tr>
+    <tr>
+        <td>brands.zone_name</td>
+        <td>相关品牌地区</td>
+    </tr>
+    <tr>
+        <td>brands.category_name</td>
+        <td>相关品牌分类名称</td>
+    </tr>
+    <tr>
+        <td>brands.keywords</td>
+        <td>相关品牌关键字,数组，如[‘关’，‘键’，‘字’]</td>
+    </tr>
+    <tr>
+        <td>relation.is_favorite</td>
+        <td>当前登录用户是否已经收藏该品牌</td>
+    </tr>
+    <tr>
+        <td>todayHasGoods</td>
+        <td>该品牌今天是否有可以购买的商品，1代表有，0代表没</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

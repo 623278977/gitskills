@@ -1,0 +1,1552 @@
+
+
+.app_none {
+    visibility: hidden;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 999;
+}
+
+.app_install {
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+}
+
+.app_install > i {
+    padding-top: 0.3rem;
+}
+
+.app_install > span {
+    width: 10.66rem;
+    height: 2.33rem;
+    display: inline-block;
+}
+
+.app_install img {
+    width: 100%
+}
+
+.inputlayout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    top: 0;
+    left: 0
+}
+
+.safari {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    top: 0;
+    left: 0
+}
+
+.safari > img {
+    width: 100%;
+    position: fixed;
+    top: 5%;
+}
+
+.column {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.act_intro {
+    padding-left: 1.333rem;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", 'Segoe UI', Tahoma, "宋体b8b\4f53", SimSun, sans-serif;
+    
+}
+
+#act_intro {
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+#act_intro.mt0 {
+    margin-top: 0;
+}
+
+.act_intro dt {
+    float: left;
+}
+
+.act_intro .seen_more {
+    display: none;
+}
+
+.act_name {
+    font-size: 1.6rem;
+    color: #333;
+    float: left;
+    width: 25.56rem;
+    margin-left: 1rem;
+    position: relative;
+    height: 5.4rem;
+    padding-right: 1.33rem;
+}
+
+.act_pics {
+    background: #f2f2f2
+}
+
+.act_pics > img {
+    width: 13.2rem;
+    height: 7.4rem;
+    display: block;
+}
+
+.act_address {
+    height: 17.3rem;
+    overflow: hidden;
+}
+
+/**直播**/
+.act_address.max {
+    height: auto;
+    /*max-height: 17rem;*/
+    /*overflow: hidden;*/
+}
+
+.act_address dd {
+    overflow: hidden;
+    clear: both;
+}
+
+.act_address p {
+    margin: 0
+}
+
+.act_address dd.time .time_icon {
+    margin-top: 1.45rem;
+}
+
+.act_address span {
+    float: left;
+    margin-top: 2.23rem;
+}
+
+.act_address .infor {
+    padding: 1.2rem 0;
+    position: relative;
+    margin-left: 2.5rem;
+}
+
+.act_address .nobottomborder {
+    border-bottom: 0 solid #ddd;
+}
+
+.act_address .infor > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%
+}
+
+.act_address .infor p:nth-child(1) {
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.act_address .infor p:nth-child(2) {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+/**视频详情**/
+.video_detail {
+    font-size: 1.4rem;
+}
+
+.video_detail .text {
+    color: #333;
+    padding: 1.2rem 1.33rem 1.2rem 0;
+}
+
+.video_detail .seen_more, .about_video .seen_more {
+    /*border-top: 1px solid #ddd;*/
+    /*margin-top: 1rem;*/
+    font-size: 1.2rem;
+}
+
+.seen_more .sj_icon {
+    margin-top: 1.33rem;
+}
+
+/**相关视频**/
+.about_video nav {
+    font-size: 1.2rem;
+    color: #999;
+    clear: both;
+    /*overflow: hidden;*/
+}
+
+.about_video .line {
+    width: 15rem
+}
+
+/**更多视频**/
+.about_video ul {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 1.33rem;
+}
+
+.about_video ul li {
+    width: 10.4rem;
+    float: left;
+    margin-right: 3.66rem;
+    font-size: 1.2rem;
+    color: #666;
+    text-align: left;
+}
+
+.about_video ul li:last-child {
+    margin-right: 0
+}
+
+.about_video ul li img {
+    display: block;
+    border: 1px solid #f2f2f2;
+    width: 100%;
+    height: 5.93rem;
+    margin-bottom: 1rem
+}
+
+.about_video ul li p {
+    margin: 0;
+}
+
+/*
+**评论留言
+*/
+#comment {
+    /*padding-bottom: 5.6rem;*/
+}
+
+#comment dl dd p {
+    /*margin-bottom: 0.5rem*/
+}
+
+#comment dl:last-child {
+    margin-bottom: 0
+}
+
+/**直播倒计时**/
+.live_time {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.live_time img {
+    width: 100%
+}
+
+.live_time .times {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.live_time .times > p {
+    margin-bottom: .8rem;
+    font-size: 1.2rem;
+}
+
+.live_time .times .day {
+    font-size: 1.6rem;
+}
+
+/**购买栏目**/
+.buy .infor, .buy .buy_btn {
+    width: 50%;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0.95;
+    filter: Alpha(opacity=95);
+}
+
+.buy .infor p {
+    margin: 0
+}
+
+.buy .infor p:nth-child(1) {
+    font-size: 1.2rem;
+    margin-top: .5rem
+}
+
+.buy .infor p:nth-child(2) {
+    font-size: 1.6rem;
+}
+
+.buy .money {
+    font-size: 1.8rem;
+}
+
+/**活动详情**/
+.act_banner {
+    height: 23rem;
+    overflow: hidden;
+}
+
+.act_banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/**底部按钮**/
+.fixed_btn button.collect {
+    width: 12rem
+}
+
+/*.fixed_btn button.chat {
+    width: 11rem
+}*/
+
+.fixed_btn button.ovo {
+    width: 17rem;
+    float: right;
+    background: #6bc24b;
+    color: #fff
+}
+
+/**活动分享**/
+.share_video {
+    color: #fff;
+    font-size: 1.2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+.share_video img {
+    width: 100%
+}
+
+.share_video .share_text {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+    text-align: center;
+}
+
+.share_video .share_text > img {
+    width: 2.9rem;
+    height: 2.67rem;
+    margin-bottom: 1rem;
+}
+
+.fixed_btn .signup {
+    color: #fff;
+}
+
+.fixed_btn .actzan{
+    background:url('/images/littlewz.png') no-repeat center;
+    background-size: 1.8rem 1.8rem;
+    border-left:0.066rem solid #EFEFF4;
+}
+.fixed_btn .chat{
+    background:url('/images/chat.png') no-repeat center;
+    background-size: 1.8rem 1.8rem;
+    border-left:0.066rem solid #EFEFF4;
+}
+.fixed_btn .zhuan{
+    background:url('/images/share_icon.png') no-repeat center;
+    background-size: 1.8rem 1.8rem;
+    border-left:0.066rem solid #EFEFF4;
+}
+.fixed_btn.weixin button ,.fixed_btn.share button{
+    color: #fff;
+    background: #1E8CD4;
+}
+
+/***视频信息盒子**/
+.videonews_box {
+    padding-top: 23.2rem;
+    /*padding-bottom: 5rem;*/
+}
+
+/**评论按钮**/
+.comment_btn button {
+    width: 31rem;
+}
+
+.comment_btn span {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.comment_btn span.uploadpic {
+    background: url('/images/uploadpic.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.comment_btn span.awardpic {
+    background: url('/images/awardflag.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.nocomment {
+    padding: 0.5rem;
+    text-align: center;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.bordertop {
+    border-top: 1px solid #ddd;
+}
+
+.zbrow {
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.2rem;
+    color: #999;
+    position: relative;
+}
+
+.zbrow .zbflag {
+    padding: 0.1rem 1rem;
+    background-color: #6bc24b;
+    color: #fff;
+}
+
+.pl1 {
+    padding: 0.1rem 1rem;
+}
+
+.pl05 {
+    padding: 0.1rem 0.5rem;
+}
+
+.r3 {
+    border-radius: 3px;
+}
+
+.top105 {
+    top: 1.05rem;
+}
+
+.top3 {
+    top: 3rem;
+}
+
+.videotoptip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 3.7rem;
+    line-height: 3.7rem;
+    padding-left: 1.33rem;
+    color: #666;
+    background-color: #fff;
+    width: 100%;
+}
+
+.about_act {
+    background: #fff none repeat scroll 0 0;
+    margin-top: 1rem;
+    padding: 0 0 0 1.33rem;
+}
+
+.recact {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.recact .classAB {
+    border-top: 1px solid #f2f2f2;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    font-size: 1.2rem;
+}
+
+.classAB img {
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    margin-bottom: 0.2rem;
+    margin-right: 1rem;
+}
+
+.recact .recommend {
+    /*background: rgba(0, 0, 0, 0) url("/images/app.png") no-repeat scroll -7.2rem -133rem / 39rem 138.8rem;*/
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4rem
+}
+
+.recact .reccontent {
+    position: relative;
+    padding-bottom: 1.0rem;
+    width: 100%;
+}
+
+.recact .reccontent > img {
+    display: block;
+    height: 7.4rem;
+    width: 13.2rem;
+}
+
+.reccontent .rightinfo {
+    float: right;
+    font-size: 1.6rem;
+    width: 25.66rem;
+}
+
+.rightinfo p {
+    margin: 0;
+    padding-right: 4rem;
+}
+
+.rightinfo .act_name {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    /*width: 90%;*/
+}
+
+.reccontent .money_collect {
+    bottom: 0.6rem;
+    position: absolute;
+    /*right: 1.33rem;*/
+    right: 1.6rem;
+}
+
+.money_collect .money {
+    font-size: 1.4rem;
+    padding-right: 0.5rem;
+}
+
+.reccontent .money_collect .collect {
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.collect .collect_icon {
+    margin-right: 0.5rem;
+}
+
+.reczbflag {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #fff;
+    border-radius: 2px;
+    bottom: 1.67rem;
+    color: #fff;
+    height: 1.67rem;
+    left: 7rem;
+    line-height: 1.67rem;
+    position: absolute;
+    text-align: center;
+    width: 5.4rem;
+}
+
+.pics {
+    height: auto;
+    width: 100%;
+}
+
+.pics > img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.morecomment {
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+    line-height: 4rem;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5rem;
+}
+
+.reward {
+    position: relative;
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.awardflag {
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    right: 0;
+    background: url(/images/awardflag.png) no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.refreshpic {
+    position: fixed;
+    z-index: 999;
+    bottom: 10rem;
+    right: 1.33rem;
+    width: 4rem;
+    height: 4rem;
+    background: url(/images/freshpic.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.downsapp {
+    display: inline-block;
+    height: 4.8rem;
+}
+
+.downsapp img {
+    width: 10rem;
+    height: 2.6rem;
+    display: block;
+    margin-top: 1.1rem;
+    margin-left: 32%;
+}
+
+.width40 {
+    width: 40%;
+}
+
+.width60 {
+    width: 60%;
+}
+
+.greenbc {
+    background-color: #6bc24b;
+    color: #fff;
+    line-height: 4.8rem;
+    text-align: center;
+}
+
+.flowers {
+    position: absolute;
+    top: 15rem;
+    left: 1.33rem;
+    z-index: 1000;
+    color: #F63;
+    height: 3.5rem;
+    width: auto;
+    padding-right: 1rem;
+    background-color: #f2f4f6;
+    border-radius: 2rem;
+}
+
+.nickname {
+    color: #999;
+    line-height: 3.5rem;
+}
+
+.avarimg {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.nums {
+    font-size: 3rem;
+    font-weight: bold;
+    height: 2rem;
+    letter-spacing: 0.3rem;
+    line-height: 3.5rem;
+    position: absolute;
+    right: -4rem;
+    top: 0;
+    width: 3rem;
+}
+
+.flowerpic {
+    display: inline-block;
+    height: 3.8rem;
+    width: 2.2rem;
+    margin-top: -1rem;
+}
+
+.bigimg {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+}
+
+.bigimg > img {
+    margin-top: 50%;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: translateY(-25%);
+}
+
+.commentback {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+}
+
+.commentback .textareacon {
+    position: fixed;
+    bottom: 0;
+    z-index: 1001;
+    width: 100%;
+    padding: 1rem 1.33rem;
+    height: 15rem;
+    background-color: #ddd;
+}
+
+.textareacon textarea {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    height: 10rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: block;
+    color: #999;
+}
+
+.textareacon .subcomment {
+    padding: 1rem;
+    border: medium none;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #999;
+    padding: 0.3rem 1.5rem;
+    color: #fff;
+}
+
+.onimgs {
+
+}
+
+.f63 {
+    color: #ff6633;
+}
+
+.viewnlike {
+    position: absolute;
+    bottom: 0;
+    right: 1.333rem;
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.applysuccess {
+    background: rgba(255, 255, 255, 1) url(/images/applysuccess.png);
+    background-size: cover;
+    width: 100%;
+    height: 40.8rem;
+    margin-top: 1.33rem;
+}
+
+.remindcolor {
+    background-color: #1e8cd4;
+}
+
+.remindfontcolor {
+    color: #1e8cd4;
+}
+
+.height06 {
+    height: 6rem;
+}
+
+.content .putdiv {
+    position: relative;
+    padding: 1rem 1.33rem;
+}
+
+.content .userinput {
+    padding-bottom: 2rem;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.content input {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    padding-left: 3.3rem;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+}
+
+.content .subbtn {
+    background-color: #37a4ec;
+    border: none;
+    border-radius: 1.5rem;
+    color: #fff;
+    height: 3.3rem;
+    width: 12rem;
+    line-height: 3.3rem;
+    margin-top: 2rem;
+}
+
+.ident_code {
+    background: #1e8cd4 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0.3rem;
+    color: #fff;
+    cursor: default;
+    display: inline-block;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 3rem;
+    text-align: center;
+    top: 1.6rem;
+    padding: 0.5rem 1rem;
+}
+
+.content input[name='phonenumber'] {
+    background: rgba(255, 255, 255, 1) url("/images/shouji.png") no-repeat 1.0667rem;
+    background-size: 0.9rem auto;
+}
+
+.content input[name='piccode'] {
+    background: rgba(255, 255, 255, 1) url("/images/pic-code.png") no-repeat 0.7667rem;
+    background-size: 1.53rem auto;
+}
+
+.content input[name='mescode'] {
+    background: rgba(255, 255, 255, 1) url("/images/mes-code.png") no-repeat 0.8333rem;
+    background-size: 1.333rem auto;
+}
+
+.remindpart {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    top: 0;
+    left: 0
+}
+
+.remindpart .content {
+    position: relative;
+    top: 15%;
+    border-radius: 1rem;
+    width: 29rem;
+    left: 50%;
+    margin-left: -14.5rem;
+    padding-bottom: 2rem;
+}
+
+.remindpart .closepic {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    margin-left: -1.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    background: rgba(255, 255, 255, 0) url("/images/tcclose.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.content .tiptitle {
+    height: 6rem;
+    line-height: 6rem;
+    background-color: white;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+
+.content p {
+    margin: 0;
+    line-height: 2rem;
+}
+
+.pdiv {
+    background-color: #37a4ec;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding: 0 1.33rem;
+}
+
+.act_address .no-bottom {
+    border-bottom: 0;
+}
+
+.liveover {
+    padding: 1.4rem 1.33rem;
+}
+
+.liveover p {
+    margin: 0;
+}
+
+.hascolor {
+    background-color: #f9ac92;
+    color: #fff;
+}
+
+.notcolor {
+    color: #666;
+}
+
+.livevideo {
+    border-top: 1px solid #ddd;
+    padding: 1.33rem 0;
+    position: relative;
+}
+
+.livevideo .actimg {
+    height: 7.4rem;
+    width: 13.2rem;
+}
+
+.livevideo .title_description {
+    position: relative;
+    float: right;
+    height: 7.4rem;
+    width: 25.66rem;
+}
+
+.title_description p {
+    margin: 0;
+    padding-right: 1.33rem;
+}
+
+.title_description .textdesp {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.bottomtip {
+    padding-top: 0.5rem;
+    position: relative;
+}
+
+.bottomtip img {
+    height: 1.4rem;
+    margin-bottom: 0.3rem;
+    width: 1.4rem
+}
+
+.bottomtip .viewslikes {
+    position: absolute;
+    right: 1.6rem;
+    top: 0.5rem;
+}
+
+.novideo {
+    border-top: 1px solid #ddd;
+    height: 19rem;
+    width: 100%;
+    position: relative;
+}
+
+.novideo img {
+    position: absolute;
+    height: 5.7rem;
+    width: 5.7rem;
+    left: 50%;
+    margin-left: -2.8rem;
+    top: 5rem;
+}
+
+.novideo p {
+    position: absolute;
+    left: 50%;
+    width: 20rem;
+    margin-left: -10rem;
+    top: 12rem;
+}
+
+.finishedimg {
+
+}
+
+/* 招商会品牌展示*/
+
+.brand_intro {
+    padding-bottom: 0.33rem;
+    padding-top: 1.3rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.brand_intro img {
+    width: 7.4rem;
+    height: 7.4rem;
+    float: left;
+    margin-right: 1.2rem;
+}
+
+.brand_name {
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.6rem;
+}
+
+.industry {
+    color: #f63;
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.industry span {
+    display: inline-block;
+    background-color: #6bc24b;
+    border-radius: 0.133rem;
+    margin-right: 0.666rem;
+    color: #fff;
+    padding: 0.15rem 0.467rem;
+}
+
+.keywords span {
+    display: inline-block;
+    border-radius: 0.133rem;
+    border: 1px solid #6bc24b;
+    color: #6bc24b;
+    margin-right: 0.666rem;
+    font-size: 1.2rem;
+    padding: 0.15rem 0.7rem;
+}
+
+.intro_meeting {
+    background-color: #6bc24b;
+    border-radius: 0.1333rem;
+    color: #fff;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    padding:0.15rem 0.433rem ;
+}
+
+/*.brand_title{
+    border-bottom:0.066rem solid #f2f2f2;
+    padding:1.3rem 0;
+    background-color: #fff;
+    margin-top:1rem;
+
+}
+.brand_title>p{
+    margin-left:1.1rem;
+    border-left:0.333rem solid #1E8CD4;
+    font-size: 1.4rem;
+    color:#333;
+    padding-left:0.8rem;
+    height:1.3rem;
+    line-height: 1.3rem
+}*/
+.act_title {
+    border-bottom: 0.066rem solid #f2f2f2;
+    /*margin-left: -1.3rem;*/
+    padding-bottom: 1.3rem;
+}
+.brandtext .brand_img{
+    height: 2.4rem;
+    background: #fff url(/images/brandbar.png) no-repeat center;
+    -webkit-background-size:2.4rem;
+    background-size:2.4rem;
+
+}
+.brandtext .brand-text{
+    color: #6bc24b;
+}
+.act_title > p {
+    padding-left: 1.33rem;
+    font-size: 1.4rem;
+    margin: 0;
+    border-left: 0.33rem solid #1e8cd4;
+}
+
+/*相关品牌*/
+.brandcontain {
+    padding-left: 1.33rem;
+    background-color: #fff;
+    margin-top: 1rem;
+}
+
+.brandcontain .brandtext {
+    padding: 1.33rem 1.33rem 1.33rem 0;
+}
+
+.brand_text {
+    border-left: 0.33rem solid #1e8cd4;
+    padding-left: 0.8rem;
+}
+
+.brandtext .infocon {
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.brandtext .pricecolor {
+    color: #fd5959;
+}
+
+.infocon .buybutton {
+    width: 7rem;
+    border-radius: 0.3rem;
+    height: 3rem;
+}
+
+.infocon .canbuy {
+    color: rgb(255, 255, 255);
+    background-color: rgb(253, 89, 89);
+}
+
+.infocon .cannotbuy {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.brandcontain .brandcontent {
+    padding-top: 1.33rem;
+    padding-right: 1.33rem;
+    border-top: 1px solid #dddddd;
+    padding-bottom: 1.33rem;
+}
+
+.brandcontent img {
+    height: 7.4rem;
+    width: 7.4rem;
+    float: left;
+}
+
+.brandcontent .branddetail {
+    display: inline-block;
+    height: 7.4rem;
+    padding-left: 1.2rem;
+    width: 80%;
+}
+
+.branddetail p {
+    margin: 0;
+    height: 2.8rem;
+}
+
+.branddetail .brand-sort {
+    background-color: #6bc24b;
+    border-radius: 0.3rem;
+    color: #fff;
+    padding: 0.1rem 0.8rem;
+}
+
+.branddetail .brand-st {
+    color: #f63;
+}
+
+.branddetail .brand-keyword span {
+    margin-right: 0.8rem;
+    border: 1px solid #6bc24b;
+    color: #6bc24b;
+    padding: 0.1rem 0.8rem;
+    border-radius: 0.3rem;
+}
+
+.livetext {
+    padding-bottom: 1.33rem;
+}
+
+.businessflag {
+    position: absolute;
+    z-index: 1;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    width: 100%;
+    background-color: #b2a4a4;
+    color: #fff;
+    bottom: 0;
+}
+
+.block-brandlist {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.act_intro .act-block {
+    position: relative;
+}
+
+.mr2 {
+    margin-right: 2rem;
+}
+
+.lht2 {
+    line-height: 2rem;
+}
+
+.livecount {
+    position: fixed;
+    z-index: 2;
+    top: 19.5rem;
+    height: 4rem;
+    width: 100%;
+    line-height: 4rem;
+    background-color: #000;
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+}
+
+.livecount img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.livecount span {
+    display: inline-block;
+    color: #999;
+}
+
+.livecount .splitspan {
+    width: 5rem;
+    color: #999;
+}
+
+.livecount .awardpicture {
+    width: 2.7rem;
+    height: 2.7rem;
+    background-image: url(/images/shangpic.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    margin-top: 0.6rem;
+    margin-right: 2rem;
+}
+
+.uploadpictext {
+    color: #999;
+    padding-left: 0.5rem;
+
+}
+
+.colorf63 {
+    color: #f63;
+}
+
+.nomp {
+    margin: 0;
+    padding: 0;
+}
+
+.noborder {
+    border: none;
+}
+
+.top4-5 {
+    top: 4.5rem;
+}
+
+.psrelative {
+    position: relative;
+}
+
+.act_address .mt1-25 {
+    margin-top: 1.25rem;
+}
+
+.act_desp {
+    padding: 1rem 1.33rem 1rem 1.33rem;
+}
+
+.hotness {
+    padding-left: 1.33rem;
+    background-color: #fff;
+}
+
+.hotness > div {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1.33rem;
+}
+.hotness span{
+    float: right;
+}
+.hotness .hotnum{
+    position: relative;
+   
+}
+.hotness .hotnum em{
+    vertical-align: initial;
+}
+.commentnum{
+    position: relative;
+    background: #fff;
+    padding:1rem 0;
+}
+.commentnum i{
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    right: 0;
+    top: 2.1rem;
+    width: 80%;
+}
+.hotness .seen {
+    text-indent: 2rem;
+    background:#fff url(/images/seens_0205.png) no-repeat left center;
+    background-size:1.3rem 0.9rem;
+}
+.hotness .dianzan {
+    text-indent: 2rem;
+    background:#fff url(/images/zan_0205.png) no-repeat left center;
+    background-size:1.3rem 1.3rem;
+}
+.hotness .plun {
+    text-indent: 2rem;
+    background:#fff url(/images/plun_0205.png) no-repeat left center;
+    background-size:1.3rem 1.3rem;
+}
+.hotness .zhuan {
+    text-indent: 2rem;
+    background:#fff url(/images/zhuanfa_0205.png) no-repeat left center;
+    background-size:1.3rem 1.3rem;
+}
+.hotness .headicon{
+    max-height: 13rem;
+    overflow: hidden;
+}
+.headicon img{
+    height: 3.4rem;
+    width: 3.4rem;
+    border-radius: 1.7rem;
+    margin-bottom: 0.6rem;
+    margin-right: 0.90rem;
+}
+.hotness .moremig{
+    height:4rem;
+    padding-top: 1rem;
+}
+
+.upjt{
+    background: #fff url("/images/upjt.png") no-repeat right center;
+    background-size:1rem 1rem;
+}
+.actitle {
+    background-color: #fff;
+    padding: 1rem 1.33rem;
+    font-weight: bold;
+}
+.actitle .zb{
+    background-color: #6bc24b;
+    border-radius: 0.3rem;
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+}
+.zbcontainer{
+    background: #fff none repeat scroll 0 0;
+    padding: 0 1.33rem 1rem;
+}
+.zbcontainer .zbname{
+    padding:0.2rem 0.5rem;
+    color:#6bc24b;
+    border:1px solid #6bc24b;
+    margin-right:1rem;
+    border-radius:0.3rem;
+}
+.swiper-pagination{
+    text-align: right;
+    padding-right: 1.33rem;
+    color:#fff;
+}
+.fixed-btn{
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    height: 4.8rem;
+    position: fixed;
+    width: 100%;
+}
+.fixed-btn button{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #999;
+    font-size: 1.6rem;
+    height: inherit;
+    opacity: 0.95;
+    padding: 0;
+    text-align: center;
+    float: left;
+}
+.fixed-btn i{
+    color: #ddd;
+    font-size: 1.2rem;
+    line-height: 4.8rem;
+    position: absolute;
+}
+.fixed-btn .gre{
+    background-color: #6bc24b;
+    color:#fff;
+}
+
+.c8a{
+    color:#8a869e !important;
+}
+.rel_brand{
+    margin-top:5.6rem;
+
+}
+.brand-company{
+    padding: 1.6rem 1.33rem 1.6rem 0; 
+
+}
+img.company{
+    width: 9.4rem;
+    height: 9.4rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+}
+em.service{
+    background-color: #ffac00;
+    border-radius: 0.2rem;
+    padding:0.1rem 0.4rem;
+    color:#fff;
+}
+.brand-desc{
+    max-height: 4.8rem;
+    padding-top:0.5rem;
+    overflow: hidden;
+}
+.color-red{
+    color:#fe556b;
+}
+a.tags-key{
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1.2rem;
+    color:#8a869e;
+    margin:0 0.5rem 0.5rem 0;
+}
+
+.c00a0ff{
+    color:#00a0ff;
+}
+#comment dl dd .name {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.hotness .fline::after{
+    bottom:0;
+}
+.fixed_btn{
+    font-size: 0;
+    opacity: 0.95;
+    z-index: 10;
+}
+.fixed_btn .width20{
+    width:20%;
+}
+.fixed_btn .width40{
+    width:40%;
+}
+.fixed_btn .cff4{
+    background-color:#FF4D64;
+}
+.fixed_btn .ccc{
+    background-color:#ccc; 
+}
+
+#allComment>li {
+    margin-top: 1.4rem;
+    padding-bottom: 0.6rem;
+}
+#allComment>li>img {
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+}
+#allComment .publisher {
+    width: 86%;
+    text-align: left;
+}
+.publisher .time {
+    color: #ccc;
+    font-size: 1rem; 
+}
+.getMore {
+    width: 100%;
+    background: #fff;
+    height: 5.2rem;
+    text-align: center;
+    border: none;
+}
+.a_share{
+    position: fixed;
+    top:0;left:0;
+    background-color: rgba(77,187,247,0.9);
+    width:100%;
+    height:4rem;
+    color:#fefefe;
+    z-index:10;
+    line-height: 4rem;
+}
+.understand {
+    background-color: #fff;
+    padding: 0.5rem 0.7rem;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 0.14rem;
+    margin-left: 6.8rem;
+    margin-top: 0.6rem;
+}
+.c00a0ff {
+    color: #00a0ff;
+}
+.understand img {
+    width: 1.33rem;
+    height: 1.33rem;
+    margin-right: 0.7rem;
+    vertical-align: sub;
+}
+.close_share {
+    width:1.6rem;
+    height:1.6rem;
+}
+.b{
+    font-weight:bold;
+}
+.nor{
+    font-weight: normal;
+}
+.fline::after {
+   z-index: 5;
+}
+.lh3-3{
+    line-height: 3.3rem;
+}
+.m0{
+    margin:0;
+}

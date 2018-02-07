@@ -1,0 +1,161 @@
+<h2 class="title-h2 absolute">
+    我的订单——pengwt
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/user/myorders/_v020500</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid（必）</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>分页长度(默认10)</td>
+    </tr>
+    <tr>
+        <td>is_complete</td>
+        <td>1:已完成订单(默认值) 0:未完成订单</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": [
+    {
+    "status": "已支付",
+    "type": "activity",
+    "amount": "免费",
+    "oi_id": 1199,
+    "pay_way": "/",
+    "pay_at": "2017-02-16 14:49",
+    "id": 2200,
+    "type_name": "无界商圈活动门票购置",
+    "table": "order",
+    "goodsName": "[午FUN来了]拖延症不......(现场票·免费票)",
+    "refer_id": 1274,
+    "brand_goods_id":75
+    },
+    {
+    "status": "已支付",
+    "type": "live",
+    "amount": "¥1",
+    "oi_id": 1198,
+    "pay_way": "微信支付",
+    "pay_at": "2017-02-16 14:42",
+    "id": 2199,
+    "type_name": "无界商圈活动门票购置",
+    "table": "order",
+    "goodsName": "[午FUN来了]拖延症不......(直播票)",
+    "refer_id": 0,
+    "user_ticket_id":2185,
+    "brand_goods_id":75
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>status</td>
+        <td>订单状态 已支付,未支付,已过期,删除</td>
+    </tr>
+    <tr>
+        <td>amount</td>
+        <td>支付金额</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>订单类型 brand:品牌 ,activity:活动 ,live:直播 ,video:点播</td>
+    </tr>
+    <tr>
+        <td>type_name</td>
+        <td>订单类型,用于页面展示</td>
+    </tr>
+    <tr>
+        <td>oi_id</td>
+        <td>订单认购项id (直播,活动,点播为ticket_id)</td>
+    </tr>
+    <tr>
+        <td>pay_way</td>
+        <td>支付方式</td>
+    </tr>
+    <tr>
+        <td>pay_at</td>
+        <td>支付时间</td>
+    </tr>
+    <tr>
+        <td>goodsName</td>
+        <td>商品名称</td>
+    </tr>
+    <tr>
+        <td>refer_id</td>
+        <td>关联的id</td>
+    </tr>
+    <tr>
+        <td>treaty</td>
+        <td>线上合约 (类型为brand时返回)</td>
+    </tr>
+    <tr>
+        <td>deadline (未完成订单的特有字段)</td>
+        <td>过期时间(单位秒) -1:已过期 非-1的为距离过期的秒数 </td>
+    </tr>
+    <tr>
+        <td>created_at (未完成订单的特有字段)</td>
+        <td>订单生成时间</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>订单id</td>
+    </tr>
+    <tr>
+        <td>order_no</td>
+        <td>订单号（未完成订单的特有字段）</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>门票单价（未完成订单的特有字段，限门票类数据）</td>
+    </tr>
+    <tr>
+        <td>ticket_id</td>
+        <td>门票ID（未完成订单的特有字段，限门票类数据）</td>
+    </tr>
+    <tr>
+        <td>ticket_type</td>
+        <td>门票类型（未完成订单的特有字段，限门票类数据，1现场票，2直播票，-1点播票）</td>
+    </tr>
+    <tr>
+        <td>oi_type</td>
+        <td>品牌加盟类型（当type为brand或者brand_goods时的特有字段 brand品牌加盟 brand_goods品牌详情页购买）</td>
+    </tr>
+    <tr>
+        <td>user_ticket_id</td>
+        <td>用户购买票券id（已经完成订单特有字段）</td>
+    </tr>
+    <tr>
+        <td>brand_goods_id</td>
+        <td>品牌下的商品id（品牌特有字段）</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>原价</td>
+    </tr>
+
+
+
+</table>
+<div class="p-pub-title color10"></div>

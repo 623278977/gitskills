@@ -1,0 +1,83 @@
+<h2 class="title-h2 absolute">
+    直播的在线人数及登录用户头像——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/live/viewers/_v020400</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>live_id(必)</td>
+        <td>直播id</td>
+    </tr>
+    <tr>
+        <td>with_anonymous</td>
+        <td>是否需要匿名用户,0代表不需要,1,代表需要，默认0</td>
+    </tr>
+    <tr>
+        <td>fetch_size</td>
+        <td>获取用户条数，传入0为全部</td>
+    </tr>
+    <tr>
+        <td>log_id</td>
+        <td>从指定用户浏览ID开始获取，头像列表中不包含这个ID数据</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+<pre>
+    {
+  "message": {
+    "count": 21,
+    "users": [
+      {
+        "avatar": "http://test.wujie.com.cn/attached/image/20161230/20161230165800_78596.jpg",
+        "nickname": "小小的人哪",
+        "log_id": 4021
+      },
+      {
+        "avatar": "http://test.wujie.com.cn/attached/image/20161230/20161230165800_78596.jpg",
+        "nickname": "小小的人哪",
+        "log_id": 3875
+      },
+      {
+        "avatar": "http://test.wujie.com.cn/attached/image/20161230/20161230165800_78596.jpg",
+        "nickname": "小小的人哪",
+        "log_id": 3866
+      }
+    ],
+    "max_log_id": 4021
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+</pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>count</td>
+        <td>总在线人数(累积)</td>
+    </tr>
+    <tr>
+        <td>max_log_id</td>
+        <td>此次结果集中最大的记录id</td>
+    </tr>
+    <tr>
+        <td>users.avatar</td>
+        <td>用户头像</td>
+    </tr>
+    <tr>
+        <td>users.nickname</td>
+        <td>用户昵称</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

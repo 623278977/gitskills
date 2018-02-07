@@ -1,0 +1,157 @@
+<h2 class="title-h2 absolute">
+    直播提醒——tangem
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/message/liveremindmessages</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>分页长度(默认15)</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>用户uid（必）</td>
+    </tr>
+    <tr>
+        <td>Demo Params</td>
+        <td>uid=183779</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+<pre>
+{
+  "message": [
+    {
+      "live_messages": [
+        {
+          "subject": "测试测试2",
+          "live_url": "4208",
+          "begin_time": "09/20 11:35",
+          "list_img": "http://dev.wjsq3.com/attached/image/20160808/_large/20160808114749_93430.jpg"
+        },
+        {
+          "subject": "测试测试2",
+          "live_url": "http://dev.wjsq3-passport.loc/live/addoreditlive",
+          "begin_time": "09/20 11:35",
+          "list_img": "http://dev.wjsq3.com/attached/image/20160808/_large/20160808114749_93430.jpg"
+        },
+        {
+          "subject": "测试测试2",
+          "live_url": "http://dev.wjsq3-passport.loc/live/addoreditlive",
+          "begin_time": "09/20 11:35",
+          "list_img": "http://dev.wjsq3.com/attached/image/20160808/_large/20160808114749_93430.jpg"
+        }
+      ],
+      "type": 3
+    },
+    {
+      "type": 2,
+      "live_messages": [
+        {
+          "begin_time": "08/29 10:48",
+          "subject": "直播标题1",
+          "ticket_price": "10",
+          "ticket_type": "直播票",
+          "list_img": "http://dev.wjsq3.com/attached/image/20160617/_large/20160617141646_43538.jpeg",
+          "maker_id": 51
+        }
+      ]
+    },
+    {
+      "type": 2,
+      "live_messages": [
+        {
+          "begin_time": "08/29 10:48",
+          "subject": "直播标题1",
+          "ticket_price": "10",
+          "ticket_type": "直播票",
+          "list_img": "http://dev.wjsq3.com/attached/image/20160617/_large/20160617141646_43538.jpeg",
+          "maker_id": 51
+        }
+      ]
+    }
+  ],
+  "status": true,
+  "forwardUrl": ""
+}
+</pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>1入住的ovo有新直播 2直播取消 3直播推荐 4直播即将开始 5推介会直播即将开始</td>
+    </tr>
+    <tr>
+        <td>created_at</td>
+        <td>消息创建时间</td>
+    </tr>
+    <tr>
+        <td>live_messages</td>
+        <td>直播消息列表</td>
+    </tr>
+    <tr>
+        <td>live_messages.begin_time</td>
+        <td>直播开始时间</td>
+    </tr>
+    <tr>
+        <td>live_messages.subject</td>
+        <td>直播标题</td>
+    </tr>
+    <tr>
+        <td>live_messages.ticket_price</td>
+        <td>门票价格</td>
+    </tr>
+    <tr>
+        <td>live_messages.ticket_id</td>
+        <td>门票id</td>
+    </tr>
+    <tr>
+        <td>live_messages.ticket_type</td>
+        <td>门票类型</td>
+    </tr>
+    <tr>
+        <td>live_messages.list_img</td>
+        <td>消息列表页图片</td>
+    </tr>
+    <tr>
+        <td>live_messages.maker_id</td>
+        <td>直播活动ovo中心ID</td>
+    </tr>
+    <tr>
+        <td>live_messages.live_url</td>
+        <td>直播链接地址</td>
+    </tr>
+    <tr>
+        <td>live_messages.live_id</td>
+        <td>直播id</td>
+    </tr>
+    <tr>
+        <td>live_messages.tip</td>
+        <td>消息提示</td>
+    </tr>
+    <tr>
+        <td>live_messages.maker_name</td>
+        <td>ovo名</td>
+    </tr>
+    <tr>
+        <td>live_messages.highlightSubstringOfTip</td>
+        <td>提示中高亮显示子串</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

@@ -1,0 +1,141 @@
+<h2 class="title-h2 absolute">
+    群组加人/减人 从群组退出——pengwt
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/groupchat/addordelmember</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>groupid</td>
+        <td>群组id(必)</td>
+    </tr>
+    <tr>
+        <td>act</td>
+        <td>动作(必)
+            add:加人;delete:减人
+        </td>
+    </tr>
+    <tr>
+        <td>member_uid</td>
+        <td>群组成员uid(必)
+            增加或删除一个成员: ['11242']
+            增加或删除多个成员: ['11242','12536']
+        </td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+  "message": [
+    {
+      "groupid": "210092020973175208",
+      "sendtime": 0,
+      "uid": 183699,
+      "number": 4,
+      "avatar": "http://mt.wujie.com.cn/attached/image/20160621/20160621114419_92065.jpg",
+      "groupname": "yu 99、Sean、yu 22、yu 11、yu 44",
+      "created_at": 1466480660,
+      "updated_at": 1466480660,
+      "description": "群描述",
+      "owner": 183699,
+      "type": 0,
+      "activity_id": 0,
+      "opportunity_id": 0,
+      "members": [
+        {
+          "uid": 183699,
+          "username": "18202509999",
+          "avatar": "http://dev.wjsq3.loc/images/default/avator-xl.png",
+          "nickname": "yu 99"
+        },
+        {
+          "uid": 183694,
+          "username": "18202504444",
+          "avatar": "http://dev.wjsq3.loc/images/default/avator-xl.png",
+          "nickname": "yu 22"
+        },
+        {
+          "uid": 183693,
+          "username": "18202503333",
+          "avatar": "http://dev.wjsq3.loc/images/default/avator-xl.png",
+          "nickname": "yu 11"
+        },
+        {
+          "uid": 183696,
+          "username": "18202506666",
+          "avatar": "http://dev.wjsq3.loc/images/default/avator-xl.png",
+          "nickname": "yu 44"
+        }
+      ]
+    }
+  ],
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>groupid</td>
+        <td>群组id</td>
+    </tr>
+    <tr>
+        <td>groupname</td>
+        <td>群组名称</td>
+    </tr>
+    <tr>
+        <td>avatar</td>
+        <td>群组头像</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>群组描述</td>
+    </tr>
+    <tr>
+        <td>owner</td>
+        <td>管理员uid</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>类型 0:私有群 1:活动群 2:商机群 3:网点群 </td>
+    </tr>
+    <tr>
+        <td>activity_id</td>
+        <td>活动id</td>
+    </tr>
+    <tr>
+        <td>opportunity_id</td>
+        <td>商机id</td>
+    </tr>
+    <tr>
+        <td>memberinfo.uid</td>
+        <td>群组成员uid</td>
+    </tr>
+    <tr>
+        <td>memberinfo.username</td>
+        <td>群组成员用户名</td>
+    </tr>
+    <tr>
+        <td>memberinfo.avatar</td>
+        <td>群组成员头像</td>
+    </tr>
+    <tr>
+        <td>memberinfo.nickname</td>
+        <td>群组成员昵称</td>
+    </tr>
+    <tr>
+        <td>number</td>
+        <td>群人数</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

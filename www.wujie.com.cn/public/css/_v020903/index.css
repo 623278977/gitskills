@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url(../img/back2.png);
+	background-size: 100% 100%;
+}
+img{
+	width: 100%;
+}
+.img_1{
+	width: 33%;
+	position: absolute;
+	top: 22vw;
+	left: 30vw;
+	z-index: 99;
+	animation-delay: 0s;
+	animation-duration: 1s;
+}
+.img_2{
+	width:70%;
+	position: absolute;
+	top: 36vw;
+	left: 27vw;
+	z-index: 99;
+	animation-delay: 0s;
+	animation-duration: 1s;
+}
+.img_3{
+	width:30%;
+	position: absolute;
+	top: 67vw;
+	left: 28vw;
+	z-index: 99;
+	animation-delay: 0.5s;
+	animation-duration: 1s;
+}
+.img_4{
+	width:30%;
+	position: absolute;
+	top: 42vw;
+	left: 26vw;
+	z-index: 999;
+	animation-delay: 0.25s;
+	animation-duration: 1s;
+}
+.img_5{
+	width:25%;
+	position: absolute;
+	top:72vw;
+	right: 30vw;
+	z-index: 99;
+	animation-delay: 0.5s;
+	animation-duration: 1s;
+}
+
+.img_6{
+	width:23%;
+	position: absolute;
+	top:43vw;
+	right: 23vw;
+	z-index: 99;
+	animation-delay: 1s;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+.img_7{
+	width:23%;
+	position: absolute;
+	top:32vw;
+	right: 23vw;
+	z-index: 99;
+	animation-delay: 0.5;
+	animation-duration: 2s;
+}
+.img_8{
+	width:45%;
+	position: absolute;
+	top:88vw;
+	left: 5vw;
+	z-index: 99;
+	animation-delay: 0.5;
+	animation-duration: 2s;
+}
+.img_9{
+	width:12%;
+	position: absolute;
+	top:92vw;
+	right: 17vw;
+	z-index: 99;
+	animation-delay: 1.25s;
+	animation-duration: 1s;
+}
+.img_10{
+	width:12%;
+	position: absolute;
+	top:78vw;
+	right: 17vw;
+	z-index: 99;
+	animation-delay: 1s;
+	animation-duration: 1s;
+}
+.img_11{
+	width:12%;
+	position: absolute;
+	top:64vw;
+	right: 17vw;
+	z-index: 99;
+	animation-delay: 0.75s;
+	animation-duration: 1s;
+}
+.img_12{
+	width:45%;
+	position: absolute;
+	top:122vw;
+	left: 27.5vw;
+	z-index: 99;
+	animation-delay: 1.5s;
+	animation-duration: 1s;
+}
+.img_13{
+	width:45%;
+	position: absolute;
+	top:138vw;
+	left: 27.5vw;
+	z-index: 99;
+	animation-delay: 1.5s;
+	animation-duration: 1s;
+}

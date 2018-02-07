@@ -1,0 +1,204 @@
+<h2 class="title-h2 absolute">
+    我的订单——yaokai
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/user/myorders/_v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid（必）</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>分页长度(默认10)</td>
+    </tr>
+    <tr>
+        <td>is_complete</td>
+        <td>1:已完成订单(默认值) 0:未完成订单</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+<pre>
+    is_complete为1时
+    {
+  "message": {
+    "thisMonth": [
+      {
+        "id": 9,
+        "pay_way": "",
+        "deadline": 1463629502,
+        "score_price": 0,
+        "created_at": "1496287610",
+        "type": "活动",
+        "order_type": "活动门票",
+        "order_no": "vj1463627899fa",
+        "name": "66666666666666666666",
+        "price": "111.00",
+        "pay_at": "1465955725"
+      }
+    ],
+    "lastMonth": [
+      {
+        "id": 11,
+        "pay_way": "",
+        "deadline": 1463629680,
+        "score_price": 0,
+        "created_at": "1493609211",
+        "type": "活动",
+        "order_type": "活动门票",
+        "order_no": "vj1463627899fa",
+        "name": "66666666666666666666",
+        "price": "111.00",
+        "pay_at": "1465955725"
+      }
+    ],
+    "beforeOrder": [
+      {
+        "id": 13,
+        "pay_way": "",
+        "deadline": 1463629690,
+        "score_price": 0,
+        "created_at": "1491017211",
+        "type": "活动",
+        "order_type": "活动门票",
+        "order_no": "vj1463627899fa",
+        "name": "66666666666666666666",
+        "price": "111.00",
+        "pay_at": "1465955725"
+       }
+    ],
+    "count": {
+      "thisMonth": 4,
+      "lastMonth": 4,
+      "beforeOrder": 5,
+      "fail": ""
+    }
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+
+    is_complete为0时
+
+
+    {
+  "message": {
+    "count": {
+      "thisMonth": "",
+      "lastMonth": "",
+      "beforeOrder": "",
+      "fail": 5
+    },
+    "fail_order": [
+      {
+        "id": 15,
+        "pay_way": "",
+        "deadline": 1463629699,
+        "score_price": 0,
+        "created_at": "1463627899",
+        "type": "活动",
+        "order_type": "活动门票",
+        "order_no": "vj1463627899fa",
+        "name": "66666666666666666666",
+        "price": "111.00",
+        "pay_at": "1465955725"
+      },
+    ]
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（结构改了）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>thisMonth(本月订单)、lastMonth(上月订单)、<br>
+            beforeOrder(之前订单、fail_order(失败订单)</td>
+        <td>
+            <table class="table-ck">
+                <tr class="tc b">
+                    <td>id</td>
+                    <td>订单id</td>
+                </tr>
+                <tr>
+                    <td>pay_way</td>
+                    <td>支付方式</td>
+                </tr>
+                <tr>
+                    <td>deadline</td>
+                    <td>订单过期时间</td>
+                </tr>
+                <tr>
+                    <td>score_price</td>
+                    <td>积分形式的价格</td>
+                </tr>
+                <tr>
+                    <td>created_at</td>
+                    <td>创建时间</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>类型:活动(activity)，直播(live)，录播(video)，品牌加盟定金(brand)，
+                        品牌商品加盟(brand_goods)，资讯(news)，积分充值(score)</td>
+                </tr>
+                <tr>
+                    <td>order_type</td>
+                    <td>订单类型</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>订单相应标题、名称</td>
+                </tr>
+                <tr>
+                    <td>price</td>
+                    <td>订单非积分价格</td>
+                </tr>
+                <tr>
+                    <td>pay_at</td>
+                    <td>支付时间</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>count</td>
+        <td>
+            <table class="table-ck">
+                <tr class="tc b">
+                    <td>thisMonth</td>
+                    <td>本月订单数量</td>
+                </tr>
+                <tr>
+                    <td>lastMonth</td>
+                    <td>上月订单数量</td>
+                </tr>
+                <tr>
+                    <td>beforeOrder</td>
+                    <td>之前订单数量</td>
+                </tr>
+                <tr>
+                    <td>fail</td>
+                    <td>失败订单数量</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+
+</table>
+<div class="p-pub-title color10"></div>

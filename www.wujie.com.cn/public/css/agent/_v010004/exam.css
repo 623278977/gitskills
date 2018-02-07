@@ -1,0 +1,84 @@
+.exam_bg{
+	background:url('/images/agent/leaves.png') no-repeat  left 0 top 0/100% 14rem,url('/images/agent/mountain.png') no-repeat  left 0 bottom 0/100% 10.5rem,
+	-webkit-linear-gradient(top, #dcf5f3,  #bcdfe5);
+	padding-top:12rem;
+	min-height: 100%;
+
+}
+.frame{
+	background: rgba(42,190,255,0.9);
+	border-radius: 1.3rem;
+	margin:auto;
+	width: 90%;
+}
+.light-blue{
+	color:#c7eeff;
+}
+.choose{
+	background-color:#afe6ff;
+	border-radius: 0.2rem;
+	display: inline-block;
+	width: 2.5rem;height: 2.5rem;
+	margin-right: 1rem; 
+	vertical-align: middle;
+	position: relative;
+}
+.choosen{
+	width: 3.1rem;
+	height: 2.9rem;
+	position: absolute;
+	top:-0.4rem;left: -0.1rem;
+}
+.lh45{
+	line-height: 4.5rem;
+	height: 4.5rem;
+}
+.submit{
+	width:13rem;
+	height: 4.2rem;
+	background: #487e70;
+	color:#fff;
+	font-size: 2.1rem;
+	border:none;
+	border-radius: 0.3rem;
+}
+.fixed{
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top:0;left: 0;right: 0;bottom: 0;
+	z-index: 10;
+}
+.right,.error{
+	padding: 1rem 0;
+	position: fixed;
+	z-index: 20;
+	width:60%;
+	top:35%;left:50%;
+	margin-left:-30%;
+	background: #fff;
+	border-radius: 0.3rem;
+}
+.know,.again,.learn_next,.tochoose{
+	background: #2873ff;
+	color:#fff;
+	font-size: 1.4rem;
+	border-radius: 0.2rem;
+	border:none;
+	margin-top:2rem;
+	margin-bottom: 1rem;
+	height: 3rem;width:10rem;
+}
+.backto{
+	background: transparent;
+	color:#999;
+	font-size: 1.4rem;
+	border-radius: 0.2rem;
+	border:1px solid #999;
+	margin-top:2rem;
+	margin-bottom: 1rem;
+	height: 3rem;width:10rem;
+
+}
+.inline-block{
+	display: inline-block;
+}

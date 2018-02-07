@@ -1,0 +1,181 @@
+<h2 class="title-h2 absolute">
+    活动提醒——pengwt
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/message/activityremind</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>分页长度(默认10)</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>用户uid（必）</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+<pre>
+{
+  "message": [
+    {
+      "title": "Android继续蚕食iOS 在华市场份额已达78.8%报名成功",
+      "content": "你已成功订购活动门票，收取活动费用1000.00元届时请准点参加活动",
+      "created_at": "2016-06-22",
+      "url": "user_ticket_id=602",
+      "activity_id": 62,
+      "subject": "Android继续蚕食iOS 在华市场份额已达78.8%",
+      "begin_time": "06/22 13:00:00",
+      "ovo": "温州风险投资研究院",
+      "ovo_id": 21,
+      "zone_id": "温州市",
+      "address": "温州市鹿城区府东路717号工贸学院技能大楼3楼",
+      "price": "10",
+      "list_img": "http://dev.wjsq3.loc/attached/image/20160616/_large/20160616162541_22942.jpg",
+      "type": "现场票",
+      "remark": 1,
+      "is_over": 0
+    },
+    {
+      "title": "Android继续蚕食iOS 在华市场份额已达78.8%报名成功",
+      "content": "你已成功订购活动门票，收取活动费用1000.00元届时请准点参加活动",
+      "created_at": "2016-06-22",
+      "url": "user_ticket_id=602",
+      "activity_id": 62,
+      "subject": "Android继续蚕食iOS 在华市场份额已达78.8%",
+      "begin_time": "06/22 13:00:00",
+      "ovo": "创新之谷",
+      "ovo_id": 53,
+      "zone_id": "深圳市",
+      "address": "深圳市南山区蛇口工业六路9号创新谷",
+      "price": "10",
+      "list_img": "http://dev.wjsq3.loc/attached/image/20160616/_large/20160616162541_22942.jpg",
+      "type": "现场票",
+      "remark": 1,
+      "is_over": 0
+    },
+    {
+      "title": " 三星Note7下月量产 首月产量是前代三月总和报名成功",
+      "content": "你已成功订购活动门票，收取活动费用500000.00元届时请准点参加活动",
+      "created_at": "2016-06-22",
+      "url": "user_ticket_id=600",
+      "activity_id": 70,
+      "subject": " 三星Note7下月量产 首月产量是前代三月总和",
+      "begin_time": "06/22 00:00:00",
+      "ovo": "温州风险投资研究院",
+      "ovo_id": 21,
+      "zone_id": "温州市",
+      "address": "温州市鹿城区府东路717号工贸学院技能大楼3楼",
+      "price": "5000",
+      "list_img": "http://dev.wjsq3.loc/attached/image/20160617/_large/20160617152310_20119.jpg",
+      "type": "现场票",
+      "remark": 1,
+      "is_over": 0
+    },
+    {
+      "title": "真嚣张！市政路上私划车位 墓园边上圈地揽财报名成功",
+      "content": "你已成功订购活动门票，收取活动费用9900.00元届时请准点参加活动",
+      "created_at": "2016-06-22",
+      "url": "user_ticket_id=599",
+      "activity_id": 58,
+      "subject": "真嚣张！市政路上私划车位 墓园边上圈地揽财",
+      "begin_time": "06/22 20:00:00",
+      "ovo": "北软之风",
+      "ovo_id": 48,
+      "zone_id": "杭州市",
+      "address": "拱墅区祥园路",
+      "price": "99",
+      "list_img": "http://dev.wjsq3.loc/attached/image/20160616/_large/20160616162304_88601.jpg",
+      "type": "现场票",
+      "remark": 1,
+      "is_over": 0
+    }
+  ],
+  "status": true,
+  "forwardUrl": ""
+}
+</pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>消息标题</td>
+    </tr>
+    <tr>
+        <td>content</td>
+        <td>消息内容</td>
+    </tr>
+    <tr>
+        <td>created_at</td>
+        <td>消息时间</td>
+    </tr>
+    <tr>
+        <td>url</td>
+        <td>消息链接</td>
+    </tr>
+    <tr>
+        <td>activity_id</td>
+        <td>活动id</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动标题</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>活动开始时间</td>
+    </tr>
+    <tr>
+        <td>ovo</td>
+        <td>ovo名称</td>
+    </tr>
+    <tr>
+        <td>ovo_id</td>
+        <td>ovo</td>
+    </tr>
+    <tr>
+        <td>zone_id</td>
+        <td>城市</td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td>ovo地址</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>门票类型</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>门票价格</td>
+    </tr>
+    <tr>
+        <td>list_img</td>
+        <td>活动列表图片</td>
+    </tr>
+    <tr>
+        <td>is_over</td>
+        <td>是否取消活动 0:否 1:是</td>
+    </tr>
+    <tr>
+        <td>remark</td>
+        <td>消息类型 1:活动报名成功 2:活动将举办 3:活动临时取消</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

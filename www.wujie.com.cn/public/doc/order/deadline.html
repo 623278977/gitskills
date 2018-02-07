@@ -1,0 +1,47 @@
+<h2 class="title-h2 absolute">
+    获取某个订单还有多久未支付——fengzq
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/order/deadline</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>ticket_no(必)</td>
+        <td>门票票号</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {"message":{"order_status":0,"order_lefttime":108243529},"status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>order_status</td>
+        <td>订单状态-2：删除，-1：超时，0：待支付，1：已支付</td>
+    </tr>
+    <tr>
+        <td>order_lefttime</td>
+        <td>订单状态是未支付情况下:还剩多少秒过期  返回的秒数</td>
+    </tr>
+    <tr>
+        <td>order_no</td>
+        <td>订单号</td>
+    </tr>
+    <tr>
+        <td>product</td>
+        <td>订单产品名称</td>
+    </tr>
+    <tr>
+        <td>body</td>
+        <td>订单详情</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

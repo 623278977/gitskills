@@ -1,0 +1,9 @@
+/* line 2, ../sass/themes.scss */
+.blueLine {
+  border: 4px solid #207ee6;
+}
+
+/* line 7, ../sass/themes.scss */
+.yellowLine {
+  border: 4px solid #f7fa54;
+}

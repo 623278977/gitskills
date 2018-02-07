@@ -1,0 +1,95 @@
+.container{
+   background-color: #fff;
+   min-height:750px;
+}
+.font{
+    width: 1200px;
+    margin:0 auto;
+   padding-top: 30px;
+    padding-bottom: 14px;
+    line-height: 18px;
+}
+.font h2{
+    font-size: 18px;
+    color:#666666;
+    display: inline-block;
+    line-height:30px;
+}
+.detail{
+    width:1200px;
+    margin: 0 auto;
+    border-top:1px solid #ddd;
+}
+.detail p a span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 15px;
+    margin-right: 18px;
+}
+.detail p {
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #ddd;
+}
+.detail p.open a,.detail p.open>label{
+    color: #999;
+}
+.detail p.close a{
+    color: #333;
+}
+.detail .open span{
+    background: url("/images/citypartner/img/open_mes.png") no-repeat;
+}
+.detail .close span{
+    background: url("/images/citypartner/img/close_mes.png") no-repeat 0 5px;
+}
+.detail>p>label{
+    float: right;
+    margin-right: 24px;
+    font-size: 14px;
+    color: #333;
+    height: 80px;
+}
+.detail>p>label>i {
+    display: block;
+    color: #999;
+    font-style:normal ;
+    line-height: 0;
+    margin-top: -22px;
+}
+.detail>div{
+    text-align: right;
+    padding-top:55px;
+    padding-bottom: 40px;
+    font-size: 14px;
+}
+.detail>div>a{
+    color:#1e8cd4;
+    font-size: 14px;
+    padding-left:8px;
+}
+.no_msg{
+    width: 300px;
+    height: 150px;
+    padding-top: 50px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -150px;
+    position: absolute;
+    z-index: 100;
+}
+.no_msg p{
+      color:#23a4f8; 
+      font-size: 18px; 
+}
+.hidden{
+	display:none;
+}
+
+

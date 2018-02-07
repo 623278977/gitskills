@@ -1,0 +1,294 @@
+
+.font{
+    width: 1200px;
+    margin:0 auto;
+    padding-top:30px;
+    padding-bottom: 14px;
+    line-height: 18px;
+    border-bottom:1px solid #DAE1E5;
+}
+.font h2{
+    font-size: 18px;
+    color:#666666;
+    display: inline-block;
+    line-height: 30px;
+}
+.font>a{
+    display: inline-block;
+    width:100px;
+    height:30px;
+    border-radius:3px;
+    background-color:#23A4F8;
+    color:#fff;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    margin-left: 22px;
+    font-size: 14px;
+}
+.font>a:hover{
+    background-color:#47B6FF;
+}
+.total{
+    width:1200px;
+    height:180px;
+    margin:0 auto;
+    padding: 24px ;
+}
+.total>div{
+    padding-left: 80px;
+}
+.total h3{
+    font-size: 18px;
+    color:#333;
+    font-weight: normal;
+    padding-bottom: 40px;
+}
+.total ul>li{
+    float: left;
+    width:30%;
+}
+.total ul>li:first-child{
+    width:40%;
+}
+.total ul>li>p{
+    font-size: 14px;
+    color:#666;
+}
+.total ul>li>p:first-child{
+    color:#333;
+}
+.total ul>li:first-child>p:last-child{
+    font-size: 18px;
+}
+.total ul>li>p>span,.performance>p>span{
+    font-size: 36px;
+    color: #ff6633;
+    font-weight: bold;
+    padding-right: 8px;
+}
+.detail{
+    background-color: #fff;
+    border-bottom: 1px solid #e2e4e7;
+}
+.performance {
+    width:1200px;
+    margin:0 auto;
+}
+.performance h2{
+    font-size: 18px;
+    color:#666666;
+    line-height: 106px;
+}
+.performance form>label{
+    padding-left:80px;
+    padding-right:25px;
+    font-size: 18px;
+    color:#333;
+}
+.performance form>select{
+    width:270px;
+    height:60px;
+    background-color: #f0f1f3;
+    font-size: 18px;
+    color:#333;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    vertical-align: middle;
+     padding-left:8px;
+    padding-top:15px\9;
+    padding-bottom:20px\9;
+}
+/**新增*/
+.performance form{
+	position:relative;
+}
+.select {
+    width: 252px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background: url("/images/citypartner/img/select.png") no-repeat 240px 0;
+    background-color: #f0f1f3;
+    font-size: 18px;
+    padding-left: 18px;
+    color: #333;
+}
+.option {
+    width: 268px;
+    position: absolute;
+    left: 181px;
+    background-color: #f0f1f3;
+    border: 1px solid #23A4F8;
+}
+.meb+.option{
+	left:639px;
+}
+.option>li {
+    font-size: 18px;
+    color: #333;
+    white-space: pre;
+    min-height: 1.2em;
+    padding-left: 18px;
+}
+.choose {
+    background-color: #23A4F8;
+}
+.hide{
+	display:none;
+}
+/*****/
+.performance form>a{
+    color:#fff;
+    display: inline-block;
+    width:200px;
+    height:55px;
+    background-color: #23a4f8;
+    border-radius:28px;
+    text-align: center;
+    line-height: 55px;
+    float: right;
+    font-size: 20px;
+}
+.performance form>a:hover{
+    background-color:#47B6FF;
+}
+.performance> p{
+    padding-left:80px;
+    color:#333;
+    font-size: 18px;
+}
+.performance p.num{
+    padding-top:55px;
+    font-size: 14px;
+}
+.performance .selected {
+    display: inline-block;
+    width:270px;
+    height:60px;
+    border: none;
+    padding-right:10px;
+    overflow-x: hidden;
+    border-radius: 3px;
+}
+.performance table{
+    margin-top:40px;
+    width:100%;
+    border-spacing: 0;
+}
+.performance table>caption{
+    font-size: 14px;
+    color:#23a4f8;
+    background-color: #f6f7f8;
+    border-top:4px solid #f1f2f4;
+    height:35px;
+    line-height: 35px;
+}
+.performance table tr th{
+    font-weight: normal;
+    color:#333;
+    text-align: left;
+    border-bottom:1px solid  #D3E4F0;
+    padding-left: 49px;
+    height:55px;
+}
+.performance table tr th:first-child{
+	padding-left:14px;
+	width:15%;
+}
+.performance table .middle{
+	width:57%;
+}
+.performance table tr th s{
+    font-weight: normal;
+    color:#999;
+}
+.performance table tr td{
+    color:#333;
+    border-bottom:1px solid #d8dfe3;
+    padding-left: 49px;
+    height:80px;
+}
+.performance table tr td:first-child{
+	padding-left:14px;
+}
+.performance table tr td s{
+    color:#999;
+    font-weight: normal;
+}
+.performance table tr td:first-child{
+    color:#333;
+}
+.performance table tr td span{
+    color:#ff6633;
+}
+.performance table tr td p{
+    color:#999;
+}
+
+.detail>p,.member>p{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    padding-top:55px;
+    padding-bottom: 40px;
+    font-size: 14px;
+    color:#333;
+}
+.detail>p>a,.member>p>a{
+    color:#1e8cd4;
+    font-size: 14px;
+    padding:8px;
+
+}
+
+/*�ҵ�����--�����ܶ�*/
+.income p{
+    font-size: 18px;
+    color:#333;
+}
+.income p> span,.taste ul>li>p >span{
+    color:#ff6633;
+    font-weight: bold;
+    font-size: 36px;
+    padding-right: 8px;
+}
+.income p:first-child{
+    font-size: 14px;
+    padding-top: 50px;
+}
+.taste {
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-top:1px solid #F3F5F7 ;
+}
+.taste ul>li{
+    float: left;
+    width:25%;
+}
+.taste ul>li>p{
+    font-size: 18px;
+    padding-left: 80px;
+    color:#333;
+}
+
+/*����ҵ����ϸ*/
+.performance >table>tbody >tr.not>td,.performance >table>tbody >tr.not>td>span{
+    color:#999;
+}
+.performance .per_month{
+    background-color: #fff;
+    margin-top:-40px;
+    margin-bottom: 45px;
+}
+.member{
+    background-color: #fff;
+}
+.nav_menu ul li:nth-child(4) a{
+    color:#23a4f8;
+}
+.nav_menu ul li:first-child +li+li+li a{
+    color:#23a4f8;
+}

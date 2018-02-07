@@ -1,0 +1,117 @@
+<h2 class="title-h2 absolute">
+    分享详情——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/share/share-detail/_v020500</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>share_id(必)</td>
+        <td>分享id</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>默认1</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>默认10</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+  "message": [
+    {
+      "source": "weixin",
+      "uid": 0,
+      "num": 10,
+      "created_at": 1491234567,
+      "type": "relay",
+      "unit": "score",
+      "nickname": "无界商圈用户 ****"
+    },
+    {
+      "source": "app",
+      "uid": 223,
+      "num": 5,
+      "created_at": 1491234567,
+      "type": "share",
+      "unit": "score",
+      "nickname": "test184"
+    },
+    {
+      "source": "app",
+      "uid": 223,
+      "num": 120,
+      "created_at": 1466135947,
+      "type": "sign_share",
+      "unit": "score",
+      "nickname": "无界商圈用户 1586****"
+    },
+    {
+      "source": "app",
+      "uid": 223,
+      "num": 20,
+      "created_at": 1466135903,
+      "type": "sign_share",
+      "unit": "score",
+      "nickname": "无界商圈用户 1586****"
+    },
+    {
+      "source": "app",
+      "uid": 140,
+      "num": 20,
+      "created_at": 1466135861,
+      "type": "brand_message_share",
+      "unit": "score",
+      "nickname": "无界商圈用户 1375****224"
+    },
+    {
+      "source": "app",
+      "uid": 1,
+      "num": 100,
+      "created_at": 1466053333,
+      "type": "sign_share",
+      "unit": "score",
+      "nickname": "无界商圈用户 ****"
+    }
+  ],
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>source</td>
+        <td>平台,app:商圈用户, weixin:微信,qq:qq,weibo:微博,wap其他的wap浏览器</td>
+    </tr>
+    <tr>
+        <td>unit</td>
+        <td>单位，score:积分, currency:无界币</td>
+    </tr>
+    <tr>
+        <td>num</td>
+        <td>数目</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>类型, share:一次分享，relay:二次分享, sign_share:分享活动签到, enroll_share:分享活动报名,brand_message_share:分享品牌留言, share_click:分享点击阅读,share_watch_ten:分享观看超过十分钟 </td>
+    </tr>
+    <tr>
+        <td>nickname</td>
+        <td>用户名</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

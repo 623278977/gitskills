@@ -1,0 +1,197 @@
+<h2 class="title-h2 absolute">
+    订单详情——pengwt
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/user/myorderinfo</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid（必）</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>oi_id（必）</td>
+        <td>订单认购项id</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": {
+    "id": 231,
+    "order_no": "xey1478673598wlk",
+    "status": "已过期",
+    "score_num": 100,
+    "realname": "",
+    "mobile": "",
+    "online_money": "1099",
+    "score_money": "1",
+    "amount": "1100",
+    "product": [
+    {
+    "id": 1,
+    "uid": 32,
+    "logo": "http://www.gpqqtx.com/uploads/allimg/151027/2234562339-5.jpg",
+    "name": "品牌一号",
+    "investment_min": "1.01",
+    "investment_max": "2",
+    "keywords": [
+    "凑足五个字"
+    ],
+    "zone_name": "杭州市",
+    "activity_id": "331",
+    "category_name": "服装鞋包",
+    "code": "111-111",
+    "title": "暑期课程",
+    "investment_arrange": "1.01万-2万",
+    "remark": "奥特曼"
+    }
+    ],
+    "isDonePayment": 0,
+    "isReply": 1,
+    "isReplyTime": "2016-11-09 18:29:59",
+    "isDoneJob": 0,
+    "created_at_time": "2016-11-09 14:39:58",
+    "pay_at_time": 0
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>订单id</td>
+    </tr>
+    <tr>
+        <td>order_no</td>
+        <td>订单编号</td>
+    </tr>
+    <tr>
+        <td>status</td>
+        <td>支付状态</td>
+    </tr>
+    <tr>
+        <td>score_num</td>
+        <td>使用积分数额</td>
+    </tr>
+    <tr>
+        <td>online_money</td>
+        <td>实际支付金额</td>
+    </tr>
+    <tr>
+        <td>score_money</td>
+        <td>积分支付金额</td>
+    </tr>
+    <tr>
+        <td>amount</td>
+        <td>预付金额</td>
+    </tr>
+    <tr>
+        <td>realname</td>
+        <td>购买者姓名</td>
+    </tr>
+    <tr>
+        <td>mobile</td>
+        <td>手机号</td>
+    </tr>
+    <tr>
+        <td>product.id</td>
+        <td>商品id</td>
+    </tr>
+    <tr>
+        <td>product.uid</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>product.name</td>
+        <td>商品名称</td>
+    </tr>
+    <tr>
+        <td>product.logo</td>
+        <td>品牌logo</td>
+    </tr>
+    <tr>
+        <td>product.logo</td>
+        <td>品牌logo</td>
+    </tr>
+    <tr>
+        <td>product.investment_min</td>
+        <td>最小投资额度</td>
+    </tr>
+    <tr>
+        <td>product.investment_max</td>
+        <td>最大投资额度</td>
+    </tr>
+    <tr>
+        <td>product.keywords</td>
+        <td>商品关键字</td>
+    </tr>
+    <tr>
+        <td>product.zone_name</td>
+        <td>城市名称</td>
+    </tr>
+    <tr>
+        <td>product.activity_id</td>
+        <td>活动id</td>
+    </tr>
+    <tr>
+        <td>product.code</td>
+        <td>商品代号</td>
+    </tr>
+    <tr>
+        <td>product.title</td>
+        <td>商品名称</td>
+    </tr>
+    <tr>
+        <td>product.category_name</td>
+        <td>分类名称</td>
+    </tr>
+    <tr>
+        <td>product.investment_arrange</td>
+        <td>投资范围</td>
+    </tr>
+    <tr>
+        <td>product.remark</td>
+        <td>标识语</td>
+    </tr>
+    <tr>
+        <td>created_at_time</td>
+        <td>订单生成时间</td>
+    </tr>
+    <tr>
+        <td>isDonePayment</td>
+        <td>是否完成付款 0 否 1是</td>
+    </tr>
+    <tr>
+        <td>pay_at_time</td>
+        <td>订单支付时间</td>
+    </tr>
+    <tr>
+        <td>isReply</td>
+        <td>是否回复 0 否 1是</td>
+    </tr>
+    <tr>
+        <td>isReplyTime</td>
+        <td>回复时间</td>
+    </tr>
+    <tr>
+        <td>isDoneJob</td>
+        <td>是否实际落实 0否 1是</td>
+    </tr>
+    <tr>
+        <td>finish_time</td>
+        <td>实际落实时间</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

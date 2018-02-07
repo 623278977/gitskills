@@ -1,0 +1,280 @@
+<h2 class="title-h2 absolute">
+    专题详情-—yaokai
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/special/detail/_v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>专题ID</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+    "message": {
+        "id": 2,
+        "title": "测试嘉宾的",
+        "synopsis": "测试的测试的测试的测试的测试的",
+        "type": "brand",
+        "brands": [
+            {
+                "id": 1,
+                "name": "品牌一号",
+                "slogan": "",
+                "logo": "http://www.wjsq.loc//attached/2016/11/23/32f80a2a6b3b37cf67129969f90cdb2e.jpg",
+                "brand_summary": "尚品宫的summary，描述性文字说明展示，能显示几个字呢？会多显示几个字的吗？应该有截取的啊！",
+                "details": "",
+                "keywords": "凑足五个字"
+            },
+            {
+                "id": 2,
+                "name": "品牌二号",
+                "slogan": "",
+                "logo": "http://www.wjsq.loc//attached/2016/11/23/32f80a2a6b3b37cf67129969f90cdb2e.jpg",
+                "brand_summary": "尚品宫的summary，描述性文字说明展示，能显示几个字呢？会多显示几个字的吗？应该有截取的啊！",
+                "details": "",
+                "keywords": "凑足五个字"
+            }
+        ],
+        "videos": [
+            {
+                "id": 201102,
+                "subject": "subject1095",
+                "keywords": "",
+                "image": "http://www.wjsq.loc/images/default/small-pro.jpg",
+                "price": "0.00",
+                "duration": 0,
+                "created": "1970-01-01"
+            }
+        ],
+        "news": [
+            {
+                "id": 10,
+                "title": "四川小伙800万5",
+                "keywords": "",
+                "logo": "http://www.wjsq.loc/attached/image/20160526/20160526153837_74264.jpeg",
+                "type": "none",
+                "created_at": "1478591806",
+                "author": "",
+                "summary": "他们凭什么又长期忠于你的品牌   差异化营销，就是要让你的产品、服务和而不同，让消费者有某项特定需求",
+                "view": 0,
+                "created_at_format": "2017-04-17",
+                "count_zan": 1,
+                "count_comment": 0
+            },
+            {
+                "id": 11,
+                "title": "四川小伙800万6",
+                "keywords": "",
+                "logo": "http://www.wjsq.loc/attached/image/20160526/20160526153837_74264.jpeg",
+                "type": "none",
+                "created_at": "1478591806",
+                "author": "",
+                "summary": "他们凭什么又长期忠于你的品牌   差异化营销，就是要让你的产品、服务和而不同，让消费者有某项特定需求",
+                "view": 0,
+                "created_at_format": "2017-04-17",
+                "count_zan": 1,
+                "count_comment": 0
+            }
+        ]
+    },
+    "status": true,
+    "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>ID值</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>专题标题名</td>
+    </tr>
+    <tr>
+        <td>synopsis</td>
+        <td>专题简介描述</td>
+    </tr>
+    <tr>
+        <td>image</td>
+        <td>图片地址</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>类型，brand品牌（返回brands） guest嘉宾（返回guests）</td>
+    </tr>
+    <tr>
+        <td>brands</td>
+        <td>
+            <table class="table-ck">
+                <tr class="tc b">
+                    <td>参数</td>
+                    <td>值</td>
+                </tr>
+                <tr>
+                    <td>(新)brand_summary</td>
+                    <td>品牌描述</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>ID值</td>
+                </tr>
+                <tr>
+                    <td>logo</td>
+                    <td>品牌LOGO图片地址</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>品牌名</td>
+                </tr>
+                <tr>
+                    <td>slogan</td>
+                    <td>品牌短语</td>
+                </tr>
+                <tr>
+                    <td>details</td>
+                    <td>简短说明</td>
+                </tr>
+                <tr>
+                    <td>keywords</td>
+                    <td>关键字数据</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>guests</td>
+        <td>
+            <table class="table-ck">
+                <tr class="tc b">
+                    <td>参数</td>
+                    <td>值</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>ID值</td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td>嘉宾图片地址</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>嘉宾名</td>
+                </tr>
+                <tr>
+                    <td>brief</td>
+                    <td>简单介绍</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>news</td>
+        <td>
+            <table class="table-ck">
+                <tr class="tc b">
+                    <td>参数</td>
+                    <td>值</td>
+                </tr>
+                <tr>
+                    <td>(新)view</td>
+                    <td>浏览数</td>
+                </tr>
+                <tr>
+                    <td>(新)count_zan</td>
+                    <td>点赞数</td>
+                </tr>
+                <tr>
+                    <td>(新)count_comment</td>
+                    <td>评论数</td>
+                </tr>
+                <tr>
+                    <td>(新)summary</td>
+                    <td>资讯描述</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>ID值</td>
+                </tr>
+                <tr>
+                    <td>logo</td>
+                    <td>资讯图片地址</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>资讯标题</td>
+                </tr>
+                <tr>
+                    <td>author</td>
+                    <td>发布人</td>
+                </tr>
+                <tr>
+                    <td>created</td>
+                    <td>创建日期</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>类型 none , brand</td>
+                </tr>
+                <tr>
+                    <td>keywords</td>
+                    <td>关键字数组</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>videos</td>
+        <td>
+            <table class="table-ck">
+                <tr class="tc b">
+                    <td>参数</td>
+                    <td>值</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>ID值</td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td>图片地址</td>
+                </tr>
+                <tr>
+                    <td>subject</td>
+                    <td>标题</td>
+                </tr>
+                <tr>
+                    <td>duration</td>
+                    <td>时长秒</td>
+                </tr>
+                <tr>
+                    <td>created</td>
+                    <td>创建日期</td>
+                </tr>
+                <tr>
+                    <td>price</td>
+                    <td>价格</td>
+                </tr>
+                <tr>
+                    <td>keywords</td>
+                    <td>关键字数组</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

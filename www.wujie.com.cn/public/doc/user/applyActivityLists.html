@@ -1,0 +1,90 @@
+<h2 class="title-h2 absolute">
+    用户报名活动列表 ——tangjb
+</h2>
+<p class="p-pub-title">url链接：/api/user/apply-activity-lists</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>当前用户</td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>分页长度(默认10)</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>页号（默认为1）</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {"message":[{"id":1,"subject":"1","views":0,"list_img":null,"begin_time":1,"price":"30","city":"北京@上海@杭州","type":"assistance@organizer@assistance"},{"id":2,"subject":"1","views":0,"list_img":null,"begin_time":1,"price":null,"city":null,"type":null},{"id":3,"subject":"1","views":0,"list_img":null,"begin_time":1,"price":null,"city":null,"type":null},{"id":4,"subject":"1","views":0,"list_img":null,"begin_time":1,"price":null,"city":null,"type":null}],"status":true,"forwardUrl":""}
+
+    {"message":[{"id":1,"subject":"1","views":0,"list_img":null,"begin_time":1,"price":"30","city":"北京","type":"assistance"},{"id":2,"subject":"1","views":0,"list_img":null,"begin_time":1,"price":null,"city":null,"type":null},{"id":3,"subject":"1","views":0,"list_img":null,"begin_time":1,"price":null,"city":null,"type":null},{"id":4,"subject":"1","views":0,"list_img":null,"begin_time":1,"price":null,"city":null,"type":null}],"status":true,"forwardUrl":""}</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>活动id(string)</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动标题(string)</td>
+    </tr>
+    <tr>
+        <td>view</td>
+        <td>浏览量(string)</td>
+    </tr>
+    <tr>
+        <td>list_img</td>
+        <td>列表页图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>is_recommend</td>
+        <td>是否推荐0否 1是</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>开始时间</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>门票,多个以@隔开(string),如果每种门票价格都为0则返回-1</td>
+    </tr>
+    <tr>
+        <td>ticket_type</td>
+        <td>门票类型,多个以@隔开 1现场票 2直播票  0免费票 3vip票 (string)</td>
+    </tr>
+    <tr>
+        <td>min_price</td>
+        <td>最低门票</td>
+    </tr>
+    <tr>
+        <td>city</td>
+        <td>举行该场活动的城市，当有多个时，以@隔开(string)</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>举行该场活动的城市的类型（主办方，协办方），当有多个时，以@隔开,与上面的city字段对应(string或array)</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>当前活动的描述</td>
+    </tr>
+    <tr>
+        <td>url</td>
+        <td>当前活动的链接</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

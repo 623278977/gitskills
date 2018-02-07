@@ -1,0 +1,113 @@
+<h2 class="title-h2 absolute">
+    资讯列表(商圈头条)——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/news/list</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+
+    <tr>
+        <td>page_size</td>
+        <td>分页长度(默认15)</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": [
+    {
+    "id": 1,
+    "is_hot": 0,
+    "is_recommend": 0,
+    "relation_id": 1,
+    "type": "brand",
+    "detail": "1",
+    "logo": "http://www.wjsq3.com/./1",
+    "title": "1",
+    "brand": {
+    "name": "测试",
+    "category_name": "第一个分类"
+    }
+    },
+    {
+    "id": 2,
+    "is_hot": 0,
+    "is_recommend": 0,
+    "relation_id": 1,
+    "type": "brand",
+    "detail": "2",
+    "logo": "http://www.wjsq3.com/./2",
+    "title": "2",
+    "brand": {
+    "name": "测试",
+    "category_name": "第一个分类"
+    }
+    },
+    {
+    "id": 3,
+    "is_hot": 0,
+    "is_recommend": 0,
+    "relation_id": 0,
+    "type": "none",
+    "detail": "3",
+    "logo": "http://www.wjsq3.com/./3",
+    "title": "3"
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>新闻id</td>
+    </tr>
+    <tr>
+        <td>is_hot</td>
+        <td>是否热门，1:热门，0:非热门</td>
+    </tr>
+    <tr>
+        <td>is_recommend</td>
+        <td>是否推荐，1:推荐，0:非推荐</td>
+    </tr>
+    <tr>
+        <td>logo</td>
+        <td>新闻logo</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>新闻标题</td>
+    </tr>
+    <tr>
+        <td>detail</td>
+        <td>新闻详情</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>新闻分类，brand:品牌,none:无</td>
+    </tr>
+    <tr>
+        <td>brand.name</td>
+        <td>品牌名称， 只有当type为brand时才返回</td>
+    </tr>
+    <tr>
+        <td>brand.category_name</td>
+        <td>品牌分类名称， 只有当type为brand时才返回</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

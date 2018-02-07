@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-size:0.9rem;
+    font-family:"Hiragino Sans GB","Microsoft Yahei UI","Microsoft Yahei","微软雅黑",'Segoe UI',Tahoma,"宋体b8b\4f53",SimSun,sans-serif; 
+}
+.l{
+    float: left;
+}
+.detail-con {
+    margin-top: 2%;
+    border: 1px solid #c8c8c8;
+}
+.relative {
+    position: relative;
+}
+.head{
+    margin-left: 0.3rem;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0.3rem 0.5rem 0.3rem 0;
+}
+.head img{
+    width:20%;
+}
+.head span {
+    vertical-align: top;
+    color:#333;
+    width:75%;
+    font-weight: bold;
+    display: inline-block;
+}
+.light{
+    color:#999;
+}
+.person{
+    padding-left:0.3rem;
+    margin-top:2%;
+    border-top: 1px solid #f2f2f2;
+    padding: 2% 0 0 0;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+.pro_news{
+    padding-left:0.3rem;
+}
+.pro_news p span:last-child{
+    width:75%;
+    display: inline-block;
+    vertical-align: top;
+}
+.head_pic{
+    width:15%;
+}
+.head_pic img{
+   width:75%;
+   border-radius: 50%;
+}
+.new{
+    width:75%;
+}
+
+.friend{
+    float: right;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+.pro_item3{
+    padding: 4% 0;
+    background-color: #f2f2f2;
+    font-size: 114%;
+}
+.pro_item3 .xm_j {
+    border-left: 2px solid #f63;
+    height: 1em;
+    line-height: 1em;
+    padding-left: 3.2%;
+    margin-left: 2%;
+    background-size: 2.2% 84%;
+    width: 40%;
+    text-align: left;
+}
+.introduce{
+    border: none;
+    padding: 4% 3%;
+    margin: 0 auto;
+    word-wrap: break-word;
+    color: #999;
+}
+.pro_item4 {
+    padding: 2% 0;
+    font-size: 95%;
+}
+.pro_item4 .sum {
+    padding-left: 5%;
+    background: url(../../app/images/project/icon/i7.png) no-repeat 0% center;
+    background-size: 18%;
+    width: 20%;
+    margin-left: 3%;
+    font-size: 114%;
+}
+.blue_yuan, .orange_yuan {
+    width: 5px;
+    height: 5px;
+    border-radius: 5em;
+    background: #4fbef3;
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 3%;
+}
+.blue_line {
+    border: 1px solid #4fbef3;
+}
+.ml4_5 {
+    margin-left: 4.5%;
+}
+.txt_zj {
+    color: #999;
+    padding: 4% 3%;
+}
+.pro_item6 {
+    padding: 4% 3%;
+    background-color: #fff;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #999;
+}
+.bottom{
+    height:20%;
+    background: #f2f2f2;
+}

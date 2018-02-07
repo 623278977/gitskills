@@ -1,0 +1,61 @@
+<h2 class="title-h2 absolute">
+    获取单条评论——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/comment/single-comment/_v020400</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id(必)</td>
+        <td>评论id</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+        {
+  "message": {
+    "comment": {
+      "content": "啊啊啊啊",
+      "avatar": "http://www.wjsq3.com/attached/image/20160520/20160520170030_87870.jpg",
+      "nickname": "匿名用户25361"
+    },
+    "images": [
+      "http://www.wjsq3.com/attached/image/20160520/20160520170030_87870.jpg",
+      "http://www.wjsq3.com/attached/image/20160520/20160520170030_87870.jpg",
+      "http://www.wjsq3.com/attached/image/20160520/20160520170030_87870.jpg"
+    ]
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>comment.content</td>
+        <td>评论内容</td>
+    </tr>
+    <tr>
+        <td>comment.avatar</td>
+        <td>评论人头像</td>
+    </tr>
+    <tr>
+        <td>comment.nickname</td>
+        <td>评论人昵称</td>
+    </tr>
+    <tr>
+        <td>images</td>
+        <td>该评论的图片数组</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

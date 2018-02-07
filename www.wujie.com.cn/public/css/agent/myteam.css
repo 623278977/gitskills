@@ -1,0 +1,121 @@
+p{
+	margin:0;
+}
+.ffa300{
+	color:#ffa300;
+}
+.agentBlue{
+	color:#2873ff;
+}
+.myteamnav{
+	padding: 1.5rem 0;
+	font-size:0; 
+	background-color: #fff;
+	color:#999;
+	overflow: hidden;
+}
+.myteamnav>span {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	font-size:1.6rem;
+	float:left;
+}
+.myteamnav >span:first-child{
+	border-right:1px solid #f0f0f0;
+}
+.downliners li{
+  /*display: box;              /* OLD - Android 4.4- */
+  /*display: -webkit-box;       OLD - iOS 6-, Safari 3.1-6 */
+  /*display: -moz-box;          OLD - Firefox 19- (buggy but mostly works) */
+  /*display: -ms-flexbox;      /* TWEENER - IE 10 */
+  /*display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */  
+ /*-webkit-box-pack: space-between;*/
+  /* 12版 */
+ /* -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;*/
+  justify-content: space-between;
+	padding: 0.6rem 0;
+
+}
+.linersName>img{
+	width:4.4rem;
+	height:4.4rem;
+	border-radius: 0.3rem;
+	border:1px solid #ddd;
+}
+.getV{
+	font-size: 0.9rem;
+	color: #fff;
+	background: #ffa300;
+	height: 1.4rem;
+	line-height: 1.52rem;
+	border-radius: 0.7rem;
+	margin-left: 0.6rem;
+	margin-right: 0.3rem;
+	padding: 0 0.5rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+.getV img{
+	width:0.7rem;
+	height:0.7rem;
+	margin-right: 0.2rem;
+}
+.v_align_m{
+	vertical-align: middle;
+}
+.v_align_s{
+	vertical-align: sub;
+}
+.v_align_un{
+	vertical-align: unset;
+}
+.v_align_base{
+	vertical-align: baseline;
+}
+.gender{
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-top: 0.5rem;
+}
+.lh2-2{
+	line-height: 2.2rem;
+}
+.l2-2{
+	height:2.2rem;
+}
+.developliners{
+	width:100%;
+	height:5.5rem;
+	background:#2873ff;
+	position: fixed;
+	z-index: 10;
+	left:0;
+	bottom:0;
+	border:none;
+	color: #fff;
+	font-size: 1.6rem;
+	/*letter-spacing: 1em;*/
+}
+.viewDetail{
+	padding: 0.5rem 0.8rem;
+	border:1px solid #2873ff;
+	border-radius: 0.2rem;
+	color: #2873ff;
+	font-size: 1.2rem;
+	background: none;
+}
+.clanDetail{
+	padding: 1.5rem 0;
+	text-align: left;
+}
+.clanDetail p {
+	margin-bottom: 1rem;
+}
+.mt02{
+	margin-top: 0.2rem;
+}

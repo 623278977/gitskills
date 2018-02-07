@@ -1,0 +1,528 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/base.scss */
+.tc, .container .content .five_step, .container .content .con_top > button.next, .container .content .pmd_con .pmd .pmd_top .renshu, .container .content .pmd_con .pmd .pmd_top_f .renshu {
+  text-align: center;
+}
+
+/* line 11, ../sass/base.scss */
+.radius {
+  border-radius: 50%;
+}
+
+/* line 14, ../sass/base.scss */
+.c, .container, .container .content .five_step, .container .content .con_top > div.current {
+  margin: 0 auto;
+}
+
+/* line 17, ../sass/base.scss */
+.l {
+  float: left;
+}
+
+/* line 20, ../sass/base.scss */
+.r {
+  float: right;
+}
+
+/* line 23, ../sass/base.scss */
+.relative, .container .content .five_step, .container .content .pmd_con, .container .content .pmd_con .pmd, .container .content .pmd_con .pmd .pmd_person {
+  position: relative;
+}
+
+/* line 26, ../sass/base.scss */
+.absolute, .container .content .baseline, .container .content .five_step > div, .container .content .pmd_con .pmd .pmd_z, .container .content .pmd_con .pmd .pmd_f, .container .content .pmd_con .pmd .pmd_top, .container .content .pmd_con .pmd .pmd_top_f, .container .content .pmd_con .pmd .pmd_btn, .container .content .pmd_con .gan, #tc4 button {
+  position: absolute;
+}
+
+/* line 30, ../sass/base.scss */
+.vb, .container .content .con_top > button.next {
+  vertical-align: middle;
+}
+
+/* line 33, ../sass/base.scss */
+.tc, .container .content .five_step, .container .content .con_top > button.next, .container .content .pmd_con .pmd .pmd_top .renshu, .container .content .pmd_con .pmd .pmd_top_f .renshu {
+  text-align: center;
+}
+
+/* line 37, ../sass/base.scss */
+button {
+  border: 0;
+  background: none;
+}
+
+/* line 42, ../sass/base.scss */
+.cursor, .container .content .con_top > button.next, .container .content .winnerList ul li:hover, .tc_bg img, .tc_bg .Tc, #tc4 button {
+  cursor: pointer;
+}
+
+/* line 46, ../sass/base.scss */
+.pf, .container .content .five_step > div, .container .content .con_top > button.next, .container .content .pmd_con .pmd .pmd_person .person_news, .container .content .pmd_con .pmd .pmd_person .default_r, .container .content .winnerList ul li {
+  font-family: "PingFang Medium";
+}
+
+/* line 49, ../sass/base.scss */
+.fzby, .container .content .pmd_con .pmd .pmd_top .renshu, .container .content .pmd_con .pmd .pmd_top_f .renshu {
+  font-family: "FZYDZHJW_0";
+}
+
+/* line 59, ../sass/base.scss */
+a {
+  color: #fff;
+}
+/* line 61, ../sass/base.scss */
+a:hover {
+  color: #000;
+}
+
+/* line 66, ../sass/base.scss */
+.yuan {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+/* line 73, ../sass/base.scss */
+.big_j {
+  background: url(../images/yellow_tdj.png) no-repeat;
+  width: 40px;
+  height: 32px;
+  display: inline-block;
+}
+
+/* line 2, ../sass/themes.scss */
+.blueLine {
+  border: 4px solid #207ee6;
+}
+
+/* line 7, ../sass/themes.scss */
+.yellowLine {
+  border: 4px solid #f7fa54;
+}
+
+@font-face {
+  font-family: PingFang;
+  src: url("../images/PingFang Bold.ttf"), url("../images/PingFang Bold.eot");
+  /* IE9+ */
+}
+@font-face {
+  font-family: chinaz;
+  src: url("../images/chinaz.ttf"), url("../images/chinaz.eot");
+  /* IE9+ */
+}
+/* line 16, ../sass/index.scss */
+html {
+  display: table;
+  width: 100%;
+  font-family: "瀹嬩綋";
+}
+
+/* line 21, ../sass/index.scss */
+body {
+  background: url(../images/body_bg.png) no-repeat center top;
+  background-size: 100% 110%;
+  min-height: 100%;
+  height: 100%;
+}
+
+/* line 28, ../sass/index.scss */
+.container {
+  width: 1424px;
+}
+/* line 31, ../sass/index.scss */
+.container .top {
+  margin: 35px 0 15px 0;
+  text-align: center;
+  height: 217px;
+}
+/* line 36, ../sass/index.scss */
+.container .content {
+  background: url(../images/jiang_bg.png) no-repeat center top;
+  background-size: 100%;
+  height: 694px;
+  margin-bottom: 50px;
+  padding-top: 24px;
+}
+/* line 42, ../sass/index.scss */
+.container .content .con_top {
+  height: 75px;
+  margin-left: 20px;
+  width: 1400px;
+}
+/* line 47, ../sass/index.scss */
+.container .content .con_top > div {
+  float: left;
+}
+/* line 50, ../sass/index.scss */
+.container .content .con_top > div.steps {
+  width: 750px;
+  margin-left: 20px;
+  margin-top: 22px;
+}
+/* line 55, ../sass/index.scss */
+.container .content .baseline {
+  width: 540px;
+  top: 25px;
+  right: 25px;
+  height: 4px;
+}
+/* line 62, ../sass/index.scss */
+.container .content .baseline.yellow {
+  background: #f7fa54;
+  width: 100%;
+}
+/* line 66, ../sass/index.scss */
+.container .content .baseline.blue {
+  background: #207ee6;
+  width: 100%;
+}
+/* line 70, ../sass/index.scss */
+.container .content .five_step {
+  width: 540px;
+  color: #f7fa54;
+}
+/* line 74, ../sass/index.scss */
+.container .content .five_step .four {
+  left: 12px;
+}
+/* line 77, ../sass/index.scss */
+.container .content .five_step .three {
+  left: 122px;
+}
+/* line 80, ../sass/index.scss */
+.container .content .five_step .two {
+  left: 243px;
+}
+/* line 83, ../sass/index.scss */
+.container .content .five_step .one {
+  left: 353px;
+}
+/* line 86, ../sass/index.scss */
+.container .content .five_step .special {
+  right: -50px;
+  bottom: -45px;
+}
+/* line 90, ../sass/index.scss */
+.container .content .five_step .yuan {
+  background: #f7fa54;
+  margin-top: 9px;
+}
+/* line 94, ../sass/index.scss */
+.container .content .five_step .blue {
+  color: #207ee6;
+}
+/* line 96, ../sass/index.scss */
+.container .content .five_step .blue .yuan {
+  background: #207ee6;
+}
+/* line 99, ../sass/index.scss */
+.container .content .five_step .blue .big_j {
+  background: url(../images/blue_tdj.png) no-repeat;
+}
+/* line 105, ../sass/index.scss */
+.container .content .five_step > div {
+  bottom: -40px;
+  font-size: 18px;
+  width: 20%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: PingFang;
+}
+/* line 115, ../sass/index.scss */
+.container .content .con_top > button.next {
+  width: 220px;
+  background: url(../images/next_bg.png) no-repeat;
+  font-size: 24px;
+  color: #207ee6;
+  height: 55px;
+  line-height: 55px;
+  margin: 9px 0 0 15px;
+  letter-spacing: 3px;
+  font-family: PingFang;
+}
+/* line 127, ../sass/index.scss */
+.container .content .con_top > div.current {
+  margin-left: 67px;
+}
+/* line 132, ../sass/index.scss */
+.container .content .pmd_con {
+  margin-top: 40px;
+}
+/* line 135, ../sass/index.scss */
+.container .content .pmd_con .pmd {
+  background: url(../images/yjc_bg.png) no-repeat;
+  width: 757px;
+  height: 522px;
+  margin-left: 103px;
+}
+/* line 141, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_z, .container .content .pmd_con .pmd .pmd_f {
+  background: url(../images/pmd_z.png) no-repeat;
+  width: 884px;
+  height: 575px;
+  left: -63px;
+  top: -68px;
+}
+/* line 149, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_f {
+  background: url(../images/pmd_f.png) no-repeat !important;
+}
+/* line 153, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_top, .container .content .pmd_con .pmd .pmd_top_f {
+  background: url(../images/pmd2_z.png) no-repeat;
+  color: #ffce0c;
+  font-size: 36px;
+  width: 593px;
+  margin-left: 129px;
+  margin-top: 29px;
+  height: 64px;
+}
+/* line 162, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_top span, .container .content .pmd_con .pmd .pmd_top_f span {
+  float: left;
+  display: inline-block;
+}
+/* line 166, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_top .renshu, .container .content .pmd_con .pmd .pmd_top_f .renshu {
+  margin-top: 15px;
+  display: inline-block;
+  width: 95px;
+  font-family: chinaz;
+}
+/* line 175, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_top_f {
+  background: url(../images/pmd2_f.png) no-repeat;
+}
+/* line 178, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_person {
+  margin: 116px 0 0 40px;
+  height: 280px;
+  overflow: hidden;
+}
+/* line 184, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_person ul li {
+  width: 100%;
+  height: 280px;
+  oveflow: hidden;
+  clear: both;
+}
+/* line 191, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_person .person_head {
+  background: url(../images/head_bg.png) no-repeat;
+  float: left;
+  height: 270px;
+  width: 270px;
+  padding: 5px;
+}
+/* line 197, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_person .person_head img {
+  border-radius: 15px;
+  width: 270px;
+  height: 270px;
+}
+/* line 203, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_person .person_news, .container .content .pmd_con .pmd .pmd_person .default_r {
+  background: url(../images/person_newsbg.png) no-repeat;
+  padding: 5px;
+  float: left;
+  width: 382px;
+  height: 270px;
+  margin-left: 10px;
+  color: #fb4514;
+}
+/* line 212, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_person .person_news .name, .container .content .pmd_con .pmd .pmd_person .default_r .name {
+  font-family: PingFang;
+  font-size: 48px;
+  margin: 45px 0 0 20px;
+}
+/* line 217, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_person .person_news .tel, .container .content .pmd_con .pmd .pmd_person .default_r .tel {
+  font-family: chinaz;
+  font-size: 60px;
+  margin: 59px 0 0 20px;
+}
+/* line 223, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_person .default_r {
+  padding-left: 5px;
+}
+/* line 227, ../sass/index.scss */
+.container .content .pmd_con .pmd .pmd_btn {
+  bottom: 17px;
+  width: 505px;
+  margin-left: 120px;
+  cursor: url(../images/default.cur), default;
+}
+/* line 234, ../sass/index.scss */
+.container .content .pmd_con .pmd .hand1, .container .content .pmd_con .pmd .hand2 {
+  position: relative;
+  z-index: 4;
+  margin-right: 168px;
+  width: 165px;
+  float: right;
+}
+/* line 242, ../sass/index.scss */
+.container .content .pmd_con .gan {
+  background: url(../images/gan_top.png) no-repeat;
+  width: 47px;
+  height: 235px;
+  right: -36px;
+  top: 88px;
+}
+/* line 250, ../sass/index.scss */
+.container .content .pmd_con .gan.bottom {
+  background: url(../images/gan_bottom.png) no-repeat;
+  top: 175px;
+}
+/* line 256, ../sass/index.scss */
+.container .content .winnerList {
+  background: url(../images/person_bg.png) no-repeat;
+  width: 404px;
+  height: 507px;
+  margin: 43px 97px 0 0;
+}
+/* line 261, ../sass/index.scss */
+.container .content .winnerList ul {
+  width: 289px;
+  margin: 23px 43px;
+  padding-top: 5px;
+}
+/* line 265, ../sass/index.scss */
+.container .content .winnerList ul li {
+  padding: 5px 30px 5px 10px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-family: PingFang;
+}
+/* line 273, ../sass/index.scss */
+.container .content .winnerList ul li .head {
+  background: url(../images/md_head.png) no-repeat 10px center;
+  background-size: 28px 28px;
+  padding-left: 50px;
+  display: inline-block;
+  height: 28px;
+}
+/* line 281, ../sass/index.scss */
+.container .content .winnerList ul li:hover {
+  background: url(../images/lihover.png) no-repeat center;
+  background-size: 100%;
+}
+
+/* line 291, ../sass/index.scss */
+.tc_bg {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  display: none;
+}
+/* line 298, ../sass/index.scss */
+.tc_bg img, .tc_bg .Tc {
+  position: fixed;
+  width: 576px;
+  height: 313px;
+  top: 50%;
+  left: 50%;
+  margin-left: -288px;
+  margin-top: -157px;
+}
+
+/* line 310, ../sass/index.scss */
+#tc4 button {
+  bottom: -38px;
+  width: 100px;
+  height: 68px;
+}
+/* line 316, ../sass/index.scss */
+#tc4 .sure {
+  background: url(../images/sure.png) no-repeat;
+  right: 150px;
+}
+/* line 320, ../sass/index.scss */
+#tc4 .cancel {
+  background: url(../images/cancel.png) no-repeat;
+  right: 40px;
+}
+/* line 324, ../sass/index.scss */
+#tc4 .sure:hover {
+  background: url(../images/sure_hover.png) no-repeat;
+  right: 150px;
+}
+/* line 328, ../sass/index.scss */
+#tc4 .cancel:hover {
+  background: url(../images/cancel_hover.png) no-repeat;
+  right: 40px;
+}

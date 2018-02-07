@@ -1,0 +1,112 @@
+<h2 class="title-h2 absolute">
+    检测支付结果并改变活动报名及订单状态——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/check-and-apply/_v020400</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>order_no(必)</td>
+        <td>订单号(string)</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+  "message": {
+    "subject": "天涯行",
+    "begin_time": "2016年12月16日 10:51",
+    "id": 337,
+    "name": "去玩儿",
+    "tel": "13200****00",
+    "company": "err",
+    "job": "而噩噩",
+    "type": "现场票",
+    "ticket_name": "",
+    "price": "0",
+    "images": [
+      {
+        "image": "http://www.wjsq3.com/./we",
+        "name": "去玩儿"
+      },
+      {
+        "image": "http://www.wjsq3.com/./er",
+        "name": "到地方"
+      },
+      {
+        "image": "http://www.wjsq3.com/attached/image/20160827/20160827093305_51932.jpg",
+        "name": "星空"
+      }
+    ],
+    "images_count": 3
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>status</td>
+        <td>true:支付成功,或此单为免费单,false:支付失败</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动名称</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>活动开始时间</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>参会人姓名</td>
+    </tr>
+    <tr>
+        <td>tel</td>
+        <td>手机号</td>
+    </tr>
+    <tr>
+        <td>company</td>
+        <td>公司</td>
+    </tr>
+    <tr>
+        <td>job</td>
+        <td>职位</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>票券类型</td>
+    </tr>
+    <tr>
+        <td>ticket_name</td>
+        <td>票券名称</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>票券价格</td>
+    </tr>
+    <tr>
+        <td>images.image</td>
+        <td>报名者头像</td>
+    </tr>
+    <tr>
+        <td>images.name</td>
+        <td>报名者名称</td>
+    </tr>
+    <tr>
+        <td>images_count</td>
+        <td>报名者总数</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

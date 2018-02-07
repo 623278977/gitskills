@@ -1,0 +1,88 @@
+
+.fixedbottom{
+            position:fixed;
+            bottom:0;
+            left:0;
+            width:100%;
+            height:5.5rem;
+            background: #2873ff; 
+            color:#fff;
+            text-align: center;
+            line-height:5.5rem;
+            font-size:1.5rem;
+            z-index:100;
+            border:0;
+
+}
+
+.time_icon_ {
+    background-image: url(/images/020700/timer.png);
+    width: 1.65rem;
+    height: 1.65rem;
+    display: inline-block;
+    background-size: 100% 100%;
+}
+.city_icon_ {
+    background-image: url(/images/020700/addressr.png);
+    width: 1.65rem;
+    height: 1.65rem;
+    display: inline-block;
+    background-size: 100% 100%;
+}
+.ui_title{
+    width:100%;
+}
+.ui_title li{
+    float:left;
+    display:block;
+}
+.ui_title li:nth-child(1){
+    width:78%;
+    text-align: left;
+}
+.ui_title li:nth-child(2){
+    width:22%;
+    text-align: right;
+}
+.margin0{
+    margin:0 0 0rem;
+}
+#actdescription img{
+    width:100%;
+    height:100%;
+}
+.ui_share{
+            position:fixed;
+            bottom:0;
+            left:0;
+            width:100%;
+            height:5rem;
+           /* background: #2873ff; */
+            color:#fff;
+            text-align: center;
+            line-height:5rem;
+            font-size:1.5rem;
+            z-index:100;
+            border:0;
+            display: flex;
+}
+.ui_share li{
+    flex: 1;
+    height:5rem;
+    line-height:5rem;
+    text-align:center;
+}
+.ui_share li img{
+    width:60%;
+    height:3.3rem;
+}
+.ui_share li:nth-child(2){
+    background: #2873ff; 
+}
+.ui_share li:nth-child(1){
+    background: #fff; 
+}
+.baoming {
+    background: url('/images/020700/agent.png') no-repeat center;
+    background-size: auto auto;
+}

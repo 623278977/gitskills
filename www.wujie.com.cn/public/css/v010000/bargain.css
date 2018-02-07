@@ -1,0 +1,133 @@
+.ui_bargain{
+	width:100%;
+	height:auto;
+	margin-bottom:5rem;
+}
+.ui_bargain_container{
+    width:90%;
+	min-height:32.5rem;
+	background: url(/images/020700/bargain1.png) no-repeat center;
+	background-size: 100% 100%;
+	margin:0 auto;
+	padding:1.8rem 1.8rem;
+}
+.ui_top_time{
+	width:100%;
+	height:4.65rem;
+	line-height:4.65rem;
+}
+.ui_show_time{
+	width: 8.1rem;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	text-align: center;
+	background: #dddddd;
+	font-size: 0.9rem;
+	border-radius: 10px;
+	color: #fff;
+}
+.clear{
+	clear:both;
+}
+.ui_text_con{
+	width:100%;
+}
+.ui_text_con li{
+	float:left;
+    display:inline-block;
+}
+.ui_text_con li:nth-child(1){
+	font-size:1.2rem;
+	color:#333;
+	width:15%;
+	text-align:right;
+}
+.ui_text_con li:nth-child(2){
+	font-size:1.2rem;
+	color:#666;
+	width:85%;
+	text-align:right;
+	padding-left: 1.5rem;
+}
+.margin15{
+	margin-bottom:1.5rem;
+}
+.ui_detail{
+	width:100%;
+	height:5.4rem;
+	background: #f2f2f2;
+	border-radius:8px;
+	padding-left:1.5rem;
+}
+.ui_detail_text{
+	width:94%;
+	height:2.2rem;
+	line-height: 2.2rem;
+	text-align: left!important;
+}
+.ui_detail_text img{
+	width:2.2rem;
+	height:2.2rem;
+}
+.ui_detail_name{
+	padding-left: 1rem;
+	color:#333;
+	font-size:1.2rem;
+	font-weight: bold
+}
+.ui_click{
+	float:right;
+	color:#548ffc;
+	font-size:1.2rem;
+	padding-top: 0.1rem;
+}
+.ui_send_again{
+	clear:both!important;
+	width:90%;
+	height:4.4rem;
+	margin:0 auto;
+	text-align:center;
+	line-height:4.4rem;
+	background: url(/images/020700/blue.png) no-repeat center;
+	background-size: 100% 100%;
+	color:#fff;
+	font-size:1.5rem;
+}
+.tips{
+	padding:1rem 2rem;
+	background-color: rgba(0,0,0,0.9);
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 9999999;
+	font-size: 1.6rem;
+	color:#fff;
+	border-radius: 0.4rem;
+	-ms-transform:translateX(-50%);	/* IE 9 */
+	-moz-transform:translateX(-50%); 	/* Firefox */
+	-webkit-transform:translateX(-50%); /* Safari 和 Chrome */
+	-o-transform:translateX(-50%); 	/* Opera */
+}
+/*合同已经完成*/
+.ui_complete{
+	width:90%;
+	background: url(/images/020700/bargain3.png) no-repeat center;
+	min-height:46.4rem;
+	background-size: 100% 100%;
+	margin:0 auto;
+	padding:1.8rem 1.8rem;
+}
+/*已经取消的合同*/
+.ui_cancel{
+	width:90%;
+	background: url(/images/020700/bargain4.png) no-repeat center;
+	min-height:38.4rem;
+	background-size: 100% 100%;
+	margin:0 auto;
+	padding:1.8rem 1.8rem;
+}
+.ccc{
+	background: #CCc;
+}

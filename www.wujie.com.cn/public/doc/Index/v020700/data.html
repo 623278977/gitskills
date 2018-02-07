@@ -1,0 +1,111 @@
+<h2 class="title-h2 absolute">
+    获取指定数据部分数据源 —— yaokai
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/index/data/_v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>数据ID</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>数据类型，brand</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+  "message": {
+    "id": 2,
+    "name": "大东",
+    "category_name": "服装鞋包",
+    "investment_min": "1",
+    "investment_max": "4",
+    "logo": "http://www.wjsq.loc//attached/image/20161107/_large/20161107171808_18635.jpg",
+    "created": "2016-11-10 11:47:52",
+    "keywords": [
+      "大东",
+      "冬日里的火把",
+      "鞋子"
+    ],
+    "issuer": "",
+    "slogan": "",
+    "investment_arrange": "1.00万-4.00万",
+    "is_recommend": "no",
+    "brand_summary": "大东，你值得拥有"
+  },
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>类型</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>brands</td>
+        <td>
+            <table class="table-ck">
+                <tr class="tc b">
+                    <td>参数</td>
+                    <td>值</td>
+                </tr>
+                <tr>
+                    <td>(新)brand_summary</td>
+                    <td>品牌描述</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>ID值</td>
+                </tr>
+                <tr>
+                    <td>logo</td>
+                    <td>品牌logo</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>品牌名称</td>
+                </tr>
+                <tr>
+                    <td>investment_min</td>
+                    <td>投资最小值</td>
+                </tr>
+                <tr>
+                    <td>investment_max</td>
+                    <td>投资最大值</td>
+                </tr>
+                <tr>
+                    <td>keywords</td>
+                    <td>关键字(array)</td>
+                </tr>
+                <tr>
+                    <td>category_name</td>
+                    <td>一级分类</td>
+                </tr>
+                <tr>
+                    <td>issuer</td>
+                    <td>发布人</td>
+                </tr>
+                <tr>
+                    <td>slogan</td>
+                    <td>品牌短语</td>
+                </tr>
+                <tr>
+                    <td>is_recommend</td>
+                    <td>是否推荐 yes 是 no 否</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

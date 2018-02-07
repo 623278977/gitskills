@@ -1,0 +1,192 @@
+<h2 class="title-h2 absolute">
+    直播列表——yaokai
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/live/list/_v020700</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>分页(默认1)</td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td>分页长度(默认10)</td>
+    </tr>
+    <tr>
+        <td>keywords</td>
+        <td>关键词</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>用户id</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>专版id</td>
+    </tr>
+
+    <tr>
+        <td>fetch_end</td>
+        <td><span style="color:red;">begin:正在直播+未来直播</span> over:过往直播</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+  "message": [
+    {
+      "id": 297,
+      "activity_id": 1253,
+      "subject": "三星：即将公布Note7起火的根本原因",
+      "keywords": [],
+      "live_url": "http://2123.liveplay.myqcloud.com/2123_fc382bd7c03211e69776e435c87f075e_900.m3u8",
+      "foreshow_url": "",
+      "list_img": "http://dev.wjsq3.loc//attached/image/20170105/20170105180515_24544.jpg",
+      "description": "三星：即将公布Note7起火的根本原因",
+      "need_ticket": 0,
+      "begin_time": 1484456400,
+      "end_time": "01/15 18:00",
+      "preview_time": "01/15 00:00",
+      "created_at": "1483610784",
+      "updated_at": "1484017078",
+      "detail_img": "http://dev.wjsq3.loc//attached/image/20170105/20170105180511_13023.jpg",
+      "view": 10,
+      "maker_id": 94,
+      "status": 0,
+      "chatroom_id": "283665342230692376",
+      "vip_id": 0,
+      "share_score": 0,
+      "is_being": 0,
+      "begin_time_format": "01/15 13:00",
+      "end_time_stamp": 1484474400,
+      "brand_name": "",
+      "min_price": 0,
+      "length": "",
+      "video_count": 0,
+      "score_price": 998
+    }
+  ],
+  "status": true,
+  "forwardUrl": ""
+}
+    </pre>
+
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>(新)score_price</td>
+        <td>积分形式价格</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>直播id</td>
+    </tr>
+    <tr>
+        <td>activity_id</td>
+        <td>相关联的活动id</td>
+    </tr>
+    <tr>
+        <td>live_url</td>
+        <td>直播频道号</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>直播标题</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>描述</td>
+    </tr>
+    <tr>
+        <td>need_ticket</td>
+        <td>是否需要门票，0不需要，1需要</td>
+    </tr>
+    <tr>
+        <td>preview_time</td>
+        <td>预告时间，已经格式化(如：09/30 19:56)</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>开始时间，时间戳</td>
+    </tr>
+    <tr>
+        <td>begin_time_format</td>
+        <td>开始时间，已经格式化(如：09/30 19:56)</td>
+    </tr>
+    <tr>
+        <td>end_time</td>
+        <td>结束时间，已经格式化(如：2017/09/30 19:56)</td>
+    </tr>
+    <tr>
+        <td>duration_hour</td>
+        <td>直播时长（小时）</td>
+    </tr>
+    <tr>
+        <td>list_img</td>
+        <td>列表页图片地址(string)</td>
+    </tr>
+    <tr>
+        <td>view</td>
+        <td>浏览量</td>
+    </tr>
+    <tr>
+        <td>status</td>
+        <td>是否已删除，0，未删除，1，已删除</td>
+    </tr>
+    <tr>
+        <td>chatroom_id</td>
+        <td>聊天室id</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>所属专版id</td>
+    </tr>
+    <tr>
+        <td>subscribe</td>
+        <td>是否已订阅，1代表已订阅，0代表未订阅</td>
+    </tr>
+    <tr>
+        <td>is_being</td>
+        <td>是否正在直播，1代表正直播，0代表预告，-1代表已结束</td>
+    </tr>
+    <tr>
+        <td>share_score</td>
+        <td>分享送积分数</td>
+    </tr>
+    <tr>
+        <td>keywords</td>
+        <td>关键字</td>
+    </tr>
+    <tr>
+        <td>brand_name</td>
+        <td>品牌名称</td>
+    </tr>
+    <tr>
+        <td>min_price</td>
+        <td>票价</td>
+    </tr>
+    <tr>
+        <td>video_count</td>
+        <td>相关视频数量</td>
+    </tr>
+    <tr>
+        <td>length</td>
+        <td>长度</td>
+    </tr>
+    <tr>
+        <td><span style="color:red;">part_description</span></td>
+        <td><span style="color:red;">部分描述内容</span></td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

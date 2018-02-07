@@ -1,0 +1,52 @@
+.ff5{
+	color:#ff5a00;
+}
+.time_icon_v5 {
+    background: url(/images/020502/time.png) no-repeat;
+    background-size:100% 100%; 
+}
+.city_icon_v5 {
+    background: url(/images/020502/address.png) no-repeat;
+     background-size:100% 100%; 
+}
+.wjb_icon_v5 {
+    background: url(/images/020502/price.png) no-repeat;
+     background-size:100% 100%; 
+}
+.head_icon_li_v5 {
+    background: url(/images/020502/head.png) no-repeat ;
+    background-size:100% 100%; 
+}
+.hotness .seen {
+    background: #fff url(/images/020502/seens.png) no-repeat left center;
+    background-size: 1.3rem 0.9rem;
+}
+.hotness .dianzan {
+    background: #fff url(/images/020502/zan.png) no-repeat left center;
+    background-size: 1.3rem 1.3rem;
+}
+.hotness .plun {  
+    background: #fff url(/images/020502/plun.png) no-repeat left center;
+    background-size: 1.3rem 1.3rem;   
+}
+.hotness .zhuan {
+    background: #fff url(/images/020502/zhuanfa.png) no-repeat left center;
+    background-size: 1.3rem 1.3rem;
+}
+.fixed_btn .weizan {
+    background: url('/images/020502/weizan.png') no-repeat center;
+    background-size: 1.8rem 1.8rem;
+}
+.fixed_btn .yizan {
+    background: url('/images/020502/yizan.png') no-repeat center;
+    background-size: 1.8rem 1.8rem;
+}
+.fixed_btn .chat {
+    background: url('/images/020502/pinglun.png') no-repeat center;
+    background-size: 1.8rem 1.8rem;
+
+}
+.fixed_btn .zhuan {
+    background: url('/images/020502/zhuan.png') no-repeat center;
+    background-size: 1.8rem 1.8rem;
+}

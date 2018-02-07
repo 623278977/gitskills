@@ -1,0 +1,78 @@
+<h2 class="title-h2 absolute">
+    获得广告图——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/ad/list/_v020400</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>默认app_index_banner， app_index_banner:app首页的轮播,
+            news:资讯头条页, find_brand:发现商机品牌页,
+            index_reserved：首页预留,after_welcome:启动广告图,
+        </td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>
+            分页,默认为1
+        </td>
+    </tr>
+    <tr>
+        <td>page_size</td>
+        <td>
+            规格,默认为5
+        </td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    <pre>
+{
+  "message": [
+    {
+      "title": "启动页广告图",
+      "type": "after_welcome",
+      "link_url": "",
+      "app_url": "",
+      "stay_at": 0,
+      "image": {
+        "small": "http://www.wjsq3.com//attached/image/20161227/20161227171838_37015_480X800.jpg",
+        "big": "http://www.wjsq3.com//attached/image/20161227/20161227171838_37015_720X1280.jpg"
+      }
+    }
+  ],
+  "status": true,
+  "forwardUrl": ""
+}
+        </pre>
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr style="background:yellow">
+        <td>image</td>
+        <td >图片地址,当类型为after_welcome时，返回一个数组,键名为 720X1280 或 480X800</td>
+    </tr>
+    <tr>
+        <td>link_url</td>
+        <td>跳转地址</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>标题</td>
+    </tr>
+    <tr>
+        <td>stay_at</td>
+        <td>停留时间,单位:秒</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

@@ -1,0 +1,198 @@
+body{
+	background-color: #f0f0f0;
+}
+.p15{
+	padding:1.5rem;
+}
+.plr1-1{
+	padding-left:1.1rem;
+	padding-right:1.1rem;  
+}
+.ml0-4{
+	margin-left: 0.4rem;
+}
+.mr0-4{
+	margin-right:0.4rem;
+}
+.pr0-4 {
+	padding-right:0.4rem;
+}
+.ml3-2{
+	margin-left: 3.2rem;
+}
+.pl3-2{
+	padding-left: 3.2rem;
+}
+
+.fd4d4d{
+	color:#fd4d4d;
+}
+.ffa300{
+	color:#ffa300;
+}
+.agentBlue{
+	color:#2873ff;
+}
+.agentnav{
+	padding: 1.5rem 0;
+	font-size:0; 
+	background-color: #fff;
+	color:#999;
+	margin-bottom: 1.4rem;
+}
+.agentnav>span {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	font-size:1.6rem;
+
+}
+.agentnav >span:first-child{
+	border-right:1px solid #f0f0f0;
+}
+.brandImg{
+	width:7.5rem;
+	height: 7.5rem;
+	border-radius: 0.2rem;
+	overflow: hidden;
+}
+.brandImg img{
+	width:100%;
+	height:100%;
+}
+.brandInfo {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+.brandInfo p{
+	margin:0.2rem;
+}
+.to{
+	width: 0.6rem;
+	height:1.2rem;
+}
+.imgTo{
+	margin-top: 3.2rem;
+	margin-left: 1rem;
+	margin-right: 0.4rem;
+}
+.events li{
+	font-size:1.2rem; 
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+em.point{
+	display: inline-block;
+	width: 0.75rem;
+	height: 0.75rem;
+	background: #2873ff;
+	border-radius: 50%;
+	border: 0.15rem solid #bed5ff;
+	margin-right: 0.75rem;
+	position: relative;
+}
+.sucIcon{
+	width:1.6rem;
+	height: 1.6rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1.6rem;
+	display: inline-block;
+	background-color: #fd4d4d;
+	border-radius: 0.2rem;
+	text-align: center;
+	color: #fff;
+}
+.mycustomer{
+	padding-left: 3.2rem;
+	background:url('/images/agent/user.png') no-repeat 0.4rem 1.7rem/1.6rem 1.6rem;
+}
+.deals,.docCustomer {
+	overflow: hidden;
+}
+.deals span,.docCustomer span{
+	width: 50%;
+	float: left;
+}
+.deals em,.docCustomer em{
+	color: #ffa300;
+	margin-right:3.8rem;
+	float: right;
+}
+.eventPoint{
+	padding-left: 3.2rem;
+	background: url('/images/agent/note.png') no-repeat 0.4rem 1.7rem/1.4rem 1.6rem;
+}
+.verLine{
+	position: absolute;
+	bottom: 0.6rem;
+	height: 2rem;
+	background: #bed5ff;
+	width: 1px;
+	 -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0.5);
+    -ms-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+.up_down{
+	color: #fff;
+	background: #2873ff;
+	width: 2.2rem;
+	height: 1.1rem;
+	border-top-left-radius: 0.2rem;
+	border-top-right-radius: 0.2rem;
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 0;
+	line-height: 0.8rem;
+}
+.up_down img{
+	width: 0.9rem;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.brandAgents{
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	max-height:30rem;
+	overflow: hidden;
+	opacity: 1;
+}
+.down img{
+	-webkit-transform: rotateZ(180deg);
+	-o-transform: rotateZ(180deg);
+	-moz-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+}
+
+.showBrand{
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+}
+/*申请代理品牌*/
+.brandlogo{
+	width: 9rem;
+	height: 9rem;
+	border-radius: 0.3rem;	
+}
+.agent-red{
+	color: #ff4d64;
+}
+.cffa300{
+	color: #ffa300;
+}
+.width48{
+	width:48%;
+}
+

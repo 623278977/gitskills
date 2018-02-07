@@ -1,0 +1,134 @@
+<h2 class="title-h2 absolute">
+    票券详情——tangem
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/userticket/detail</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>id(必)</td>
+        <td>票券id</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": {
+    "list_img": "http://dev.wjsq3.com//images/citypartner/img/_large/haibao.png",
+    "id": 1045,
+    "activity_id": 34,
+    "subject": "6666666666666666666666666",
+    "price": "1",
+    "begin_time": "2016-09-01 09:40",
+    "maker_subject": "杭州下城区OVO运营中心",
+    "maker_id": 1,
+    "address": "杭州大厦8楼801室",
+    "is_over": 0,
+    "type": "直播票",
+    "is_check": 1,
+    "ticket_no": "081700019575",
+    "order_no": "lc1471414858ma",
+    "is_send": 0,
+    "ticket_url": "http://mt.wujie.com.cn/webapp/ticket/scene-ticket-detial?id=1045&pagetag=02-2",
+    "order_status": 1,
+    "order_lefttime": -414089
+    },
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>list_img</td>
+        <td>活动列表图片</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>活动标题</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>门票id</td>
+    </tr>
+    <tr>
+        <td>activity_id</td>
+        <td>活动id</td>
+    </tr>
+    <tr>
+        <td>price</td>
+        <td>门票价格(总价)</td>
+    </tr>
+    <tr>
+        <td>online_money</td>
+        <td>需支付价格(扣除价格后)</td>
+    </tr>
+    <tr>
+        <td>begin_time</td>
+        <td>活动开始时间（字符串：2019-06-22 20:16）</td>
+    </tr>
+    <tr>
+        <td>maker_subject</td>
+        <td>ovo名称</td>
+    </tr>
+    <tr>
+        <td>maker_id</td>
+        <td>ovo的id</td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td>ovo详细地址</td>
+    </tr>
+    <tr>
+        <td>is_over</td>
+        <td>活动是否结束</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>门票类型 字符串（现场票 直播票）</td>
+    </tr>
+    <tr>
+        <td>is_check</td>
+        <td>门票是否验证 1 已验证  0未验证</td>
+    </tr>
+    <tr>
+        <td>order_status</td>
+        <td>订单状态-2：删除，-1：超时，0：待支付，1：已支付</td>
+    </tr>
+    <tr>
+        <td>order_lefttime</td>
+        <td>订单状态是未支付情况下:还剩多少秒过期  返回的秒数</td>
+    </tr>
+    <tr>
+        <td>ticket_no</td>
+        <td>门票票号</td>
+    </tr>
+    <tr>
+        <td>order_no</td>
+        <td>订单号</td>
+    </tr>
+    <tr>
+        <td>qrcode</td>
+        <td>门票二维码地址</td>
+    </tr>
+    <tr>
+        <td>activity_url</td>
+        <td>活动url</td>
+    </tr>
+    <tr>
+        <td>ticket_url</td>
+        <td>我的门票详情url</td>
+    </tr>
+    <tr>
+        <td>is_send</td>
+        <td>是否赠票（1 是，0 否）</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

@@ -1,0 +1,152 @@
+/*zhangxm*/
+.title {
+	padding:0.5rem 1.5rem;
+}
+.list {
+	padding: 0.5rem 1.5rem 0.5rem 0;
+}
+p,div,span{
+	font-family: "PingFang-SC-Medium";
+	font-size:1.1rem;
+	color:#666666;
+}
+p {
+	margin-bottom:0;
+}
+.list {
+	justify-content: space-between;
+	margin-bottom: 0.1rem;
+}
+.list,.list-l {
+	display: flex;
+	align-items: center;
+	/*vertical-align: baseline;*/
+}
+.list-l {
+	justify-content: flex-start;
+}
+.listl-name {
+	font-family: "PingFang-SC-Bold";
+	font-size: 1.5rem;
+	color:#333333;
+}
+.pact-choose {
+	width:1.6rem;
+	height:1.6rem;
+	border:1px solid #999999;
+	display: inline-block;
+	border-radius: 50%;
+}
+.pact-choose-img {
+	background-image:url(/images/agent/select.png);
+	background-size:100% 100%;
+}
+.title {
+	height:3.5rem;
+	line-height:3.5rem;
+}
+.gender {
+	width:1.15rem;
+	height:1.3rem;
+	/*margin-bottom: 0.7rem;*/
+	margin-left: 0.6rem;
+}
+.avatar {
+	width:4.4rem;
+	height:4.4rem;
+}
+.list-r {
+	text-align: right;
+}
+.listr-yet {
+	margin-top: 0.5rem;
+	display: inline-block;
+}
+.listl-left {
+	line-height: 100%;
+}
+.listl-right {
+	vertical-align: text-bottom;
+}
+.btn {
+	height:5.5rem;
+	width:100%;
+	background-color: #2873FF;
+	color:#FFFFFF;
+	text-align: center;
+	line-height: 5.5rem;
+	position: fixed;
+	bottom: 0;
+}
+.invite-succes {
+	position:relative;
+	width:78%;
+	margin: 50% auto;
+	text-align: center;
+	background-color: #FFFFFF;
+	padding-bottom:4rem;
+	border-radius:0.2rem;
+}
+.masking {
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 999999;
+	display: flex;
+}
+.stay,.back {
+	width:38%;
+	margin: 1rem 0;
+	padding: 1rem;
+	text-align: center;
+	opacity: 1;
+	border-radius: 0.5rem;
+}
+.stay {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(153, 153, 153, 1);
+	margin-left: 3rem;
+	margin-right: 1rem;
+}
+.back {
+	color:#FFFFFF;
+	right:0;
+	background-color: #2873ff;
+}
+.send {
+	color: #FFFFFF;
+	height:4rem;
+	line-height: 4rem;
+	width:100%;
+	background: url(/images/agent/blue.png) no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+}
+.masking img{
+	width: 3.3rem;
+	border-radius: 50%;
+	margin:3.2rem auto 1.2rem;
+}
+.masking-p {
+	display: flex;
+	justify-content: flex-start;
+	margin-top:2.9rem;
+}
+.dis_cen {
+	display: flex;
+	align-items: center;
+}
+.default {
+	background-color: #f2f2f2;
+	height: 60rem;
+	line-height:60rem;
+	text-align: center;
+}
+.default img {
+	width:18.5rem;
+	height: 14.9rem;
+}

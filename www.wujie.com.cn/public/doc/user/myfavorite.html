@@ -1,0 +1,114 @@
+<h2 class="title-h2 absolute">
+    我的收藏——fengzq
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/user/favorite</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid（必）</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>model（必）</td>
+        <td>收藏数据的类型 活动传activity 视频传video 商机传opportunity 品牌传brand</td>
+    </tr>
+    <tr>
+        <td>page（必）</td>
+        <td>从0开始的整数</td>
+    </tr>
+    <tr>
+        <td>keyword</td>
+        <td>关键词</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    活动:<br>
+    {"message":[{<br>
+    "id":1,<b>id</b><br>
+    "list_img":"http:\/\/www.wjsq1.com\/images\/default\/large-pro.jpg",<b>列表图片</b><br>
+    "url":"http:\/\/mt.wujie.com.cn\/webapp\/activity\/detail?id=1&pagetag=02-2",<b>详情url</b><br>
+    "subject":"1sdf",<b>标题</b><br>
+    "begin_time":"06\/22",<b>开始时间</b><br>
+    "views":0,<b>访问量</b><br>
+    "zone":['杭州','北京'],<b>地区（数组）</b><br>
+    "price":10,<b>最低价格（只有免费时为-1，否则为最低值，有免费时为0）</b><br>
+    "is_over":1,<b>是否结束 1是 0否</b><br>
+    "created_at":"1970-01-01 00:00",<b>收藏时间</b><br>
+    "count":1<b>收藏数量</b><br>
+    }],"status":true,"forwardUrl":""}<br><br><br>
+    视频<br>
+    {"message":[{<br>
+    "id":2,<b>id</b><br>
+    "view":0,<b>访问量</b><br>
+    "image":"http:\/\/www.wjsq1.com\/images\/default\/large-pro.jpg",<b>列表图片</b><br>
+    "subject":"d\u7b2c2\u4e2a\u6d4b\u8bd5\u89c6\u9891",<b>标题</b><br>
+    "is_recommend":0,<br>
+    "is_hot":0,<br>
+    "description":"是打发",<b>描述</b><br>
+    "type":"\u91d1\u878d\u4ea7\u54c1",<b>类型</b><br>
+    "url":"http:\/\/mt.wujie.com.cn\/webapp\/video\/detail?id=2&pagetag=05-4",<b>详情url</b><br>
+    "created_at":"1970-01-01 00:00",<b>收藏时间</b><br>
+    "count":1<b>收藏数量</b><br>
+    }],"status":true,"forwardUrl":""}<br>
+    <br><br><br>
+    商机：<br>
+    {"message":[{
+        "subject":"\u7b2c100\u4e2a\u5546\u673a",<b>商机标题</b><br>
+        "recommend":0,<b>是否推荐 1是 0否</b><br>
+        "type":"goverment",<b>商机类型 goverment代表政府 park代表园区</b><br>
+        "park_level":"\u56fd\u5bb6\u7ea7",<b>园区级别</b><br>
+        "park_type":"\u6587\u521b\u56ed\u533a",<b>园区类型</b><br>
+        "park_attr":"\u6c11\u8425",<b>园区属性</b><br>
+        "attract_invest_way":"BOO",<b>招商融资方式</b><br>
+        "view":188,<b>访问量</b><br>
+        "id":1,<b>商机id</b><br>
+        "url":"http:\/\/mt.wujie.com.cn\/webapp\/opportunity\/detail?id=1&pagetag=12-2",<b>商机详情页url</b><br>
+        "maker_subject":"11",<b>ovo标题</b><br>
+        "address":"\u6167\u56ed8\u5e621\u697c",<b>详细地址</b><br>
+        "industry":"\u4e92\u8054\u7f51 | \u7535\u5546O2O\u6e38\u620f",<b>行业</b><br>
+        "created_at":"1970-01-01 00:00",<b>商机标题</b><br>
+        "favorite_count":1<b>收藏量</b><br>
+        <!--"intro":'各种高大尚'<b>招商（园区）简介</b><br>-->
+        }],"status":true,"forwardUrl":""}
+    <br><br><br>
+    品牌：<br>
+    {"message":[
+    {
+    "id": 2,
+    "uid": 32,
+    "logo": "http://dev.wjsq3.loc/images/default/avator-xl.png",
+    "name": "测试2",
+    "investment_min": "2.00",
+    "investment_max": "2.00",
+    "keywords": [
+    "2"
+    ],
+    "zone_name": "175,杭州市",
+    "activity_id": null,
+    "category_name": "第二个分类",
+    "investment_arrange": "2.00-2.00",
+    "remark": ""
+    }
+    ],"status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>视频：该视频的描述，活动：该活动的描述，商机：该商机的项目介绍</td>
+    </tr>
+
+
+
+</table>
+<div class="p-pub-title color10"></div>

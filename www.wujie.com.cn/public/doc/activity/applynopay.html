@@ -1,0 +1,93 @@
+<h2 class="title-h2 absolute">
+    活动报名不支付——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/activity/apply-no-pay</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid(必)</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>activity_id(必)</td>
+        <td>活动id(string)</td>
+    </tr>
+    <tr>
+        <td>company</td>
+        <td>公司</td>
+    </tr>
+    <tr>
+        <td>job</td>
+        <td>职务</td>
+    </tr>
+    <tr>
+        <td>ticket_id(必)</td>
+        <td>门票id</td>
+    </tr>
+    <tr>
+        <td>maker_id(必)</td>
+        <td>空间id</td>
+    </tr>
+    <tr>
+        <td>cost(必)</td>
+        <td>价格,免费票传0</td>
+    </tr>
+    <tr>
+        <td>product（必）</td>
+        <td>活动标题</td>
+    </tr>
+    <tr>
+        <td>body（必）</td>
+        <td>活动描述,可以传和活动标题一样的内容</td>
+    </tr>
+    <tr>
+        <td>pay_way（必）</td>
+        <td>ali或weixin或none， 免费传none</td>
+    </tr>
+    <tr>
+        <td>name（必）</td>
+        <td>参会人姓名</td>
+    </tr>
+    <tr>
+        <td>tel（必）</td>
+        <td>参会人手机号</td>
+    </tr>
+    <tr>
+        <td>score_num</td>
+        <td>使用积分数</td>
+    </tr>
+    <tr>
+        <td>path</td>
+        <td>报名通道,app:手机app，html5:分享出去的页面,默认app</td>
+    </tr>
+    <tr>
+        <td>code</td>
+        <td>手机验证码，只有当path参数为html5时，才需要传。</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {"message":"jv1465203198qd","status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>order_no</td>
+        <td>返回订单号，供签名</td>
+    </tr>
+    <tr>
+        <td>is_register</td>
+        <td>是否已经注册，改参数只有当报名的通道为html5时才返回，1代表已经注册，0代表未注册</td>
+    </tr>
+
+</table>
+<div class="p-pub-title color10"></div>

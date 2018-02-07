@@ -1,0 +1,89 @@
+<h2 class="title-h2 absolute">
+    品牌洽讯信息——tangjb
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/brand/consult</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td>返回条数，默认为0，为0则全部返回</td>
+    </tr>
+
+    <tr>
+        <td>id</td>
+        <td>默认为0，返回为一个月内的数据，如果大于0，则返回数据的id都大于此id</td>
+    </tr>
+
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {
+    "message": [
+    {
+    "uid": 1,
+    "brand_id": 1,
+    "id": 1,
+    "created_at": "1478590236",
+    "type": "quiz",
+    "status": "pending",
+    "nickname": "匿名用户12345",
+    "brand_name": "测试",
+    "created_at_format": "2016-11-08 15:30:36"
+    },
+    {
+    "uid": 1,
+    "brand_id": 1,
+    "id": 2,
+    "created_at": "1478590236",
+    "type": "intent_success",
+    "status": "finish",
+    "nickname": "匿名用户12345",
+    "brand_name": "测试",
+    "created_at_format": "2016-11-08 15:30:36"
+    }
+    ],
+    "status": true,
+    "forwardUrl": ""
+    }
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>信息id</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>用户id</td>
+    </tr>
+    <tr>
+        <td>brand_id</td>
+        <td>品牌id</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>类型，quiz:提问,intent:洽询,intent_success:洽询成功</td>
+    </tr>
+    <tr>
+        <td>nickname</td>
+        <td>用户昵称</td>
+    </tr>
+    <tr>
+        <td>brand_name</td>
+        <td>品牌名称</td>
+    </tr>
+    <tr>
+        <td>created_at_format</td>
+        <td>洽询时间</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>

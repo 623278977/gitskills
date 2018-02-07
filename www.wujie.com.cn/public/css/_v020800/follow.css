@@ -1,0 +1,68 @@
+span {
+	display: inline-block;
+}
+p {
+	margin-bottom: 0;
+}
+.c8a869e {
+	color: #8A869E;
+}
+.cffac00 { color: #FFAC00; }
+.cff4d64 { color: #FF4D64; }
+.fellow_brand {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.3333rem;
+}
+.fellow_mes {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.fellow_logo,.avater {
+	width: 4.8rem;
+	height: 4.8rem;
+	
+}
+.fellow_jump {
+	width: 0.7333rem;
+	height: 1.333rem;
+}
+.mb08 {
+	margin-bottom: 0.8rem;
+}
+.gender {
+	width: 1.3rem;
+	height: 1.4rem;
+}
+.fellow_agent {
+	padding:1rem 0 0.43rem;
+}
+.name_gen ,.fellow_agent{
+	display: flex;
+	justify-content: flex-start;
+	align-items: last baseline;
+}
+.down {
+	width: 1.3rem;
+	height: 0.87rem;
+	margin-right: 0.6rem;
+}
+.cont,.cont_l {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.cont {
+	padding: 1.2rem 1.7rem 0.9rem;
+}
+/*.define {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}*/
+.no_brand {
+	width: 100%;
+	height: 100%;
+}

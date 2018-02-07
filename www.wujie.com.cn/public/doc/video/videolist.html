@@ -1,0 +1,113 @@
+<h2 class="title-h2 absolute">
+    点播（精彩回放）列表-—fengzq
+</h2>
+<p class="p-pub-title">url链接：http://mt.wujie.com.cn/api/video/list</p>
+<p class="p-pub-title">post</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>uid</td>
+        <td>用户uid</td>
+    </tr>
+    <tr>
+        <td>page</td>
+        <td>从0开始的整数</td>
+    </tr>
+    <tr>
+        <td>keyword</td>
+        <td>关键词</td>
+    </tr>
+    <tr>
+        <td>type_id</td>
+        <td>对应点播类型的id  全部可不传这个参数 或者传0</td>
+    </tr>
+    <tr>
+        <td>order</td>
+        <td>智能排序传zhineng  最新观看created_at  人气最高view  收藏最多favor_count</td>
+    </tr>
+    <tr>
+        <td>selection</td>
+        <td>筛选 本地商圈传（用户的ovo中心id）maker_id的值   小编推荐is_recommend  热门视频is_hot  专版视频is_vip</td>
+    </tr>
+    <tr>
+        <td>vip_id</td>
+        <td>专版id(非必传)</td>
+    </tr>
+</table>
+<p class="p-pub-title">返回数据(例):</p>
+<div class="div-down-con">
+    {"message":[
+        {"id":1,
+        "view":11,
+        "image":"http:\/\/www.wjsq1.com\/images\/default\/large-pro.jpg",
+        "subject":"d\u7b2c\u4e00\u4e2a\u6d4b\u8bd5\u89c6\u9891",
+        "description":"asdfasdfasdf",
+        "type":"ppp",
+        "url":"http:\/\/mt.wujie.com.cn\/webapp\/video\/detail?id=1&pagetag=05-4",
+        "favorite_count":1,
+        "is_favorite":0}],"status":true,"forwardUrl":""}
+</div>
+<h3 class="title-h3 b"></h3>
+<p class="p-pub-title b">参数说明（返回参数可补充）</p>
+<table class="table-ck">
+    <tr class="tc b">
+        <td>参数</td>
+        <td>值</td>
+    </tr>
+    <tr>
+        <td>small_image</td>
+        <td>显示的分类图片（小图）</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>点播id</td>
+    </tr>
+    <tr>
+        <td>view</td>
+        <td>访问量</td>
+    </tr>
+    <tr>
+        <td>image</td>
+        <td>点播图片</td>
+    </tr>
+    <tr>
+        <td>subject</td>
+        <td>点播标题</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>点播摘要</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>点播类型 中文</td>
+    </tr>
+    <tr>
+        <td>url</td>
+        <td>跳转地址</td>
+    </tr>
+    <tr>
+        <td>favorite_count</td>
+        <td>收藏量</td>
+    </tr>
+    <tr>
+        <td>is_favorite</td>
+        <td>是否收藏 1是  0否</td>
+    </tr>
+    <tr>
+        <td>is_recommend</td>
+        <td>是否推荐 1是  0否</td>
+    </tr>
+    <tr>
+        <td>is_hot</td>
+        <td>是否热门 1是  0否</td>
+    </tr>
+    <tr>
+        <td>is_new</td>
+        <td>是否最新 1是  0否</td>
+    </tr>
+</table>
+<div class="p-pub-title color10"></div>
